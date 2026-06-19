@@ -1,0 +1,44 @@
+# Local SDKs and Tools (these take up the 15+ GBs)
+/android-sdk/
+/flutter-sdk/
+
+# Environment activation scripts (optional, keeping them is fine as they are small)
+# If you want to ignore them, uncomment the lines below:
+# /activate_flutter.bat
+# /activate_flutter.ps1
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.history/
+.project
+.classpath
+.settings/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Flutter/Dart/Pub related (general rules for any Flutter subdirectory)
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/coverage/
+
+# Android Studio/Gradle build files
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/.gradle/
+**/local.properties
+
+# Logs
+*.log
+*.log.*
