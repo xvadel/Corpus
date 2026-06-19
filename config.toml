@@ -1,0 +1,47 @@
+# Corpus App - Central Configuration TOML
+
+[app]
+name = "Corpus"
+version = "1.0.0"
+environment = "development"
+description = "Domain-specific language learning for high-stakes professional communication."
+
+[localization]
+default_source_language = "ar"  # Default user language
+default_target_language = "en"  # Language to learn (e.g. English for investor pitches)
+supported_languages = ["en", "es", "de", "fr", "ar"]
+
+[ai_coach]
+provider = "gemini"             # Default AI provider (gemini, openai)
+model = "gemini-1.5-pro"        # Model used for roleplay and grammar evaluation
+temperature = 0.7
+max_tokens = 1000
+
+# Professional and Technical Career Tracks
+[[tracks]]
+id = "startup_pitching"
+name = "Startup & Venture Capital"
+description = "Learn to pitch ideas to investors, negotiate term sheets, and handle Q&A."
+difficulty_levels = ["Intermediate", "Advanced"]
+focus_areas = ["Investor Pitching", "Financial Terminology", "Confidence & Delivery"]
+
+[[tracks]]
+id = "software_engineering"
+name = "Software Engineering & Tech"
+description = "Master technical communication during system design, standups, and code reviews."
+difficulty_levels = ["Beginner", "Intermediate", "Advanced"]
+focus_areas = ["System Design", "Agile Communication", "Explaining Technical Concepts"]
+
+[[tracks]]
+id = "business_product"
+name = "Business & Product Management"
+description = "Communicate effectively with cross-functional teams, stakeholders, and clients."
+difficulty_levels = ["Intermediate", "Advanced"]
+focus_areas = ["Stakeholder Alignment", "Product Discovery", "Metrics & KPI Reporting"]
+
+[features]
+enable_ai_chat = true           # Interactive roleplay chat with AI investors/colleagues
+enable_speech_to_text = true    # Pronunciation and oral practice
+enable_grammar_corrector = true # Real-time grammar analysis
+enable_flashcards = true        # Spaced repetition system (SRS) for tech jargon
+enable_offline_mode = false
