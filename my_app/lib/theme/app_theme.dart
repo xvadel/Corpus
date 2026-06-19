@@ -55,9 +55,7 @@ class AppTheme {
     double opacity = 0.08,
   }) {
     BorderRadiusGeometry r;
-    if (borderRadius is double) {
-      r = BorderRadius.circular(borderRadius);
-    } else if (borderRadius is int) {
+    if (borderRadius is num) {
       r = BorderRadius.circular(borderRadius.toDouble());
     } else {
       r = borderRadius as BorderRadiusGeometry;
