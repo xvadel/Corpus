@@ -1,0 +1,72 @@
+# Corpus Project - Complete Dependencies Manifest
+
+[project]
+name = "Corpus"
+framework = "Flutter"
+type = "Mobile / Desktop / Web App"
+
+[system_requirements]
+os = ["Windows 10/11", "macOS", "Linux"]
+conda_env = "flutter_env"
+jdk_version = "17 (Conda-provided)"
+android_sdk_build_tools = "35.0.1"
+android_sdk_platform_tools = "latest"
+
+[sdk_versions]
+flutter = "^3.19.0"  # Target Flutter SDK version
+dart = "^3.12.0"     # Target Dart SDK version
+
+# Production dependencies to be defined in pubspec.yaml
+[dependencies.core]
+flutter = { sdk = "flutter" }
+cupertino_icons = "^1.0.8"
+
+[dependencies.state_management]
+flutter_riverpod = "^2.5.1"  # Recommended for clean reactive state architecture
+
+[dependencies.database]
+hive = "^2.2.3"              # NoSQL database for fast jargon corpus caching
+hive_flutter = "^1.1.0"
+path_provider = "^2.1.2"     # Local directory path access
+
+[dependencies.networking_api]
+http = "^1.2.1"                      # Standard HTTP requests
+google_generative_ai = "^0.2.2"      # Official Google Gemini API client for Dart
+
+[dependencies.multimedia_voice]
+speech_to_text = "^6.6.0"   # Speech recognition for voice roleplay
+flutter_tts = "^3.8.5"      # Text-to-Speech for investor voice replies
+audioplayers = "^6.0.0"     # Play alert sounds / recordings
+
+# Development dependencies to be defined in pubspec.yaml
+[dev_dependencies.lints]
+flutter_lints = "^6.0.0"
+
+[dev_dependencies.testing]
+flutter_test = { sdk = "flutter" }
+
+[dev_dependencies.generators]
+build_runner = "^2.4.9"
+hive_generator = "^2.0.1"
+
+# Target deployment configurations
+[platforms]
+android = { min_sdk = 21, target_sdk = 34 }
+ios = { deployment_target = "12.0" }
+windows = { cxx_standard = 17 }
+macos = { deployment_target = "10.15" }
+linux = { gtk_version = "3.0" }
+web = { renderer = "html/canvaskit" }
+
+# Recommended IDE Extensions
+[ide_extensions]
+vscode = [
+    "Dart.dart-code",
+    "Daator.flutter-stylizer",
+    "nash.awesome-flutter-snippets",
+    "tamasfe.even-better-toml"
+]
+android_studio = [
+    "Flutter",
+    "Dart"
+]
