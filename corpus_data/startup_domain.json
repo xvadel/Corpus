@@ -1,0 +1,47 @@
+[
+  {
+    "term": "Product-Market Fit (PMF)",
+    "definition": "The degree to which a product satisfies a strong market demand.",
+    "simple_explanation": "When people are buying your product as fast as you can make it, or using it as fast as you can add servers.",
+    "investor_explanation": "We believe we have achieved early PMF because our organic growth rate is 15% month-over-month and our user retention curve flattens out at 40%.",
+    "examples": [
+      "Before scaling the sales team, we need to ensure we have true product-market fit.",
+      "The survey showed that 50% of users would be 'very disappointed' if they could no longer use our app, indicating strong PMF."
+    ],
+    "questions": [
+      "How are you measuring product-market fit?",
+      "Who is your ideal customer profile?",
+      "What evidence do you have that people actually want this?"
+    ]
+  },
+  {
+    "term": "Runway",
+    "definition": "The amount of time a company has before it runs out of cash, assuming current income and expenses remain constant.",
+    "simple_explanation": "How many months your startup can survive on the money it currently has in the bank.",
+    "investor_explanation": "With our current burn rate of $50k per month and $1M in the bank, we have 20 months of runway, which gives us plenty of time to reach our Series A milestones.",
+    "examples": [
+      "We need to raise a bridge round to extend our runway by 6 months.",
+      "Cutting our marketing spend increased our runway significantly."
+    ],
+    "questions": [
+      "What is your current runway?",
+      "How will this funding round impact your runway?",
+      "What happens if revenue drops by 50%?"
+    ]
+  },
+  {
+    "term": "Competitive Advantage",
+    "definition": "An attribute that enables a company to outperform its competitors.",
+    "simple_explanation": "The special thing you do better than anyone else that makes it hard for rivals to copy you.",
+    "investor_explanation": "Our durable competitive advantage is our proprietary dataset; while competitors rely on open-source data, our models are trained on exclusive, industry-specific records.",
+    "examples": [
+      "Their deep integration with legacy banking systems serves as a strong competitive advantage.",
+      "We need to clearly communicate our competitive advantage in the pitch deck."
+    ],
+    "questions": [
+      "What is your moat?",
+      "Why can't Google or Microsoft just copy this?",
+      "How will your competitive advantage scale as you grow?"
+    ]
+  }
+]

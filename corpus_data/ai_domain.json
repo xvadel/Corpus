@@ -1,0 +1,62 @@
+[
+  {
+    "term": "RAG (Retrieval-Augmented Generation)",
+    "definition": "An AI framework that improves the quality of LLM-generated responses by grounding the model on external sources of knowledge.",
+    "simple_explanation": "Instead of relying on what the AI memorized during training, RAG lets the AI search a specific database (like your company documents) to find the exact answer before speaking.",
+    "investor_explanation": "RAG solves the hallucination problem in Enterprise AI. It allows companies to safely deploy LLMs on their proprietary, secure data without expensive model retraining, drastically reducing time-to-market for AI features.",
+    "examples": [
+      "We built a customer support bot using a RAG architecture to query our internal wiki.",
+      "By implementing RAG, we reduced hallucinations by 80%."
+    ],
+    "questions": [
+      "Why did you choose RAG over fine-tuning?",
+      "How do you handle stale data in your vector store?",
+      "What chunking strategy did you use for the documents?"
+    ]
+  },
+  {
+    "term": "Embedding",
+    "definition": "A mathematical representation of data (like text or images) as a vector of continuous numbers in a high-dimensional space.",
+    "simple_explanation": "It's a way to turn words into coordinates on a map so that words with similar meanings are placed close to each other.",
+    "investor_explanation": "Embeddings are the foundational technology that allows our search engine to understand the 'meaning' of a user's query, rather than just matching exact keywords. This dramatically increases search conversion rates.",
+    "examples": [
+      "We used OpenAI's text-embedding-ada-002 model to generate document embeddings.",
+      "The semantic search relies on cosine similarity between the query embedding and document embeddings."
+    ],
+    "questions": [
+      "Which embedding model are you using and why?",
+      "How many dimensions do your embeddings have?",
+      "What is the cost of generating embeddings for your entire dataset?"
+    ]
+  },
+  {
+    "term": "Vector Database",
+    "definition": "A specialized database designed to store, manage, and query high-dimensional vectors (embeddings).",
+    "simple_explanation": "A search engine built specifically for AI. Instead of searching by keywords like a normal database, it searches by meaning.",
+    "investor_explanation": "Vector databases are the infrastructure layer of the generative AI boom. They allow applications to quickly retrieve relevant information from millions of unstructured documents, forming the backbone of any enterprise RAG system.",
+    "examples": [
+      "We migrated from Pinecone to a local ChromaDB instance to save on cloud costs.",
+      "The vector database performs an Approximate Nearest Neighbor (ANN) search to find relevant context."
+    ],
+    "questions": [
+      "How does your vector database handle scaling?",
+      "Why did you choose ChromaDB over Pinecone or Milvus?",
+      "How are you managing metadata filtering within the vector search?"
+    ]
+  },
+  {
+    "term": "Fine-Tuning",
+    "definition": "The process of taking a pre-trained language model and training it further on a smaller, domain-specific dataset to adapt its behavior.",
+    "simple_explanation": "Taking an AI that already knows how to speak English, and giving it specialized training so it sounds exactly like a doctor, or a lawyer, or your brand.",
+    "investor_explanation": "While RAG provides factual context, fine-tuning aligns the model's tone and output format to our exact enterprise standards. This creates a proprietary advantage because the model learns our unique business logic.",
+    "examples": [
+      "We fine-tuned Llama-3 using LoRA to generate code in our proprietary domain-specific language.",
+      "The fine-tuning process cost about $500 in compute credits."
+    ],
+    "questions": [
+      "Did you use full fine-tuning or a parameter-efficient method like LoRA?",
+      "How large was your instruction-tuning dataset?",
+      "When would you use fine-tuning instead of RAG?"
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "term": "CAC (Customer Acquisition Cost)",
+    "definition": "The total cost of sales and marketing efforts required to acquire a new customer.",
+    "simple_explanation": "How much money you have to spend on ads, marketing, and sales to get exactly one new paying customer.",
+    "investor_explanation": "Our CAC has decreased by 20% over the last two quarters due to our shift toward organic content marketing, which significantly improves our unit economics.",
+    "examples": [
+      "Our blended CAC is currently $150.",
+      "We need to optimize the ad spend to bring the CAC down before we scale."
+    ],
+    "questions": [
+      "What is your blended CAC versus your paid CAC?",
+      "How does your CAC compare to industry benchmarks?",
+      "What channels are driving the lowest CAC?"
+    ]
+  },
+  {
+    "term": "LTV (Lifetime Value)",
+    "definition": "The total revenue a business can reasonably expect from a single customer account throughout the business relationship.",
+    "simple_explanation": "The total amount of money a customer will spend with your company before they leave and never come back.",
+    "investor_explanation": "With an LTV of $4,500 and a CAC of $150, our LTV:CAC ratio is an exceptionally healthy 30:1, proving that we are ready for aggressive growth capital.",
+    "examples": [
+      "By introducing annual subscriptions, we increased the average LTV by 15%.",
+      "We calculate LTV over a conservative 24-month horizon."
+    ],
+    "questions": [
+      "How are you calculating LTV? What is the churn assumption?",
+      "What is your LTV to CAC ratio?",
+      "How can you increase LTV through upselling?"
+    ]
+  },
+  {
+    "term": "Churn Rate",
+    "definition": "The percentage of customers or subscribers who cancel or fail to renew their subscriptions over a given time period.",
+    "simple_explanation": "The speed at which you are losing customers.",
+    "investor_explanation": "We maintain a negative net revenue churn of -2% because our expansion revenue from existing enterprise clients outpaces the revenue lost from cancelled accounts.",
+    "examples": [
+      "Our monthly user churn rate spiked to 8% after the pricing change.",
+      "Improving the onboarding flow reduced early-stage churn."
+    ],
+    "questions": [
+      "What is the difference between your user churn and revenue churn?",
+      "Why did churn spike in Q2?",
+      "What strategies are you implementing to retain at-risk accounts?"
+    ]
+  }
+]

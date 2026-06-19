@@ -1,0 +1,22 @@
+# Backend Framework & Validation
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+# Database & ORM
+sqlalchemy
+alembic
+psycopg2-binary
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+
+# AI & RAG Engine
+chromadb
+sentence-transformers
+google-generativeai
+
+# Environment Variables
+python-dotenv
