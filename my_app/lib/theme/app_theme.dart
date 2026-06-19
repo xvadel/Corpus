@@ -37,15 +37,34 @@ class AppTheme {
     colors: [Color(0xFFFF6B6B), Color(0xFFFF8E53)],
   );
 
+  static LinearGradient buttonGradient(Color accentColor) {
+    return LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      colors: [
+        accentColor,
+        accentColor.withValues(alpha: 0.8),
+      ],
+    );
+  }
+
   // ── Glassmorphism decoration ──
   static BoxDecoration glassDecoration({
     Color? borderColor,
-    double borderRadius = 20,
+    dynamic borderRadius = 20.0,
     double opacity = 0.08,
   }) {
+    BorderRadiusGeometry r;
+    if (borderRadius is double) {
+      r = BorderRadius.circular(borderRadius);
+    } else if (borderRadius is int) {
+      r = BorderRadius.circular(borderRadius.toDouble());
+    } else {
+      r = borderRadius as BorderRadiusGeometry;
+    }
     return BoxDecoration(
       color: Colors.white.withValues(alpha: opacity),
-      borderRadius: BorderRadius.circular(borderRadius),
+      borderRadius: r,
       border: Border.all(
         color: borderColor ?? Colors.white.withValues(alpha: 0.12),
         width: 1,
