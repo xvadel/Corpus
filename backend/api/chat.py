@@ -62,6 +62,16 @@ PERSONAS: Dict[str, Any] = {
             "Sounds reasonable. Keep the roadmap tightly coupled to business KPIs for executive buy-in.",
         ],
     },
+    "ai_engineering": {
+        "name": "Dr. Evelyn Vance",
+        "title": "Lead AI Architect",
+        "responses": [
+            "Interesting choice. How are you chunking your documents, and what's the embedding dimension for your search pipeline?",
+            "Before we commit to this architecture, how are you validating retrieval faithfulness? Have you looked at RAGAS?",
+            "That works for simple queries. But how do you plan to handle multi-step planning and tool usage inside your agentic flow?",
+            "Excellent. Always tie your semantic search architecture back to latency and context injection limits.",
+        ],
+    },
 }
 
 _response_counters: Dict[str, int] = {}

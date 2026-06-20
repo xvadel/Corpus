@@ -108,18 +108,41 @@
     isTyping = true;
     scrollToBottom();
 
-    setTimeout(() => {
-      isTyping = false;
-      const botReply = botResponses[botResponseIndex % botResponses.length];
-      botResponseIndex++;
+    setTimeout(async () => {
+      try {
+        const res = await fetch('/api/chat/message', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            track_id: track.id,
+            user_message: text,
+            history_length: messages.length
+          })
+        });
+        
+        if (!res.ok) throw new Error('API request failed');
+        const data = await res.json();
+        
+        isTyping = false;
+        messages = [...messages, {
+          text: data.reply,
+          isUser: false,
+          timestamp: new Date()
+        }];
+      } catch (err) {
+        console.error("Chat API failed, falling back to local simulation:", err);
+        isTyping = false;
+        const botReply = botResponses[botResponseIndex % botResponses.length];
+        botResponseIndex++;
 
-      messages = [...messages, {
-        text: botReply,
-        isUser: false,
-        timestamp: new Date()
-      }];
+        messages = [...messages, {
+          text: botReply,
+          isUser: false,
+          timestamp: new Date()
+        }];
+      }
       scrollToBottom();
-    }, 1500);
+    }, 1200);
   }
 
   // Helper function to tokenize text and highlight vocab terms
