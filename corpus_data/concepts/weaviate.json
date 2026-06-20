@@ -1,0 +1,35 @@
+{
+  "id": "weaviate",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Vector Databases",
+  "term": "Weaviate",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Vector Databases, representing Weaviate.",
+  "simple_explanation": "Think of Weaviate as an essential building block of Retrieval Augmented Generation. It is commonly used within Vector Databases.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Weaviate plays a key role within Vector Databases. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Weaviate directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Weaviate in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Weaviate and alternative solutions.",
+    "Understanding Weaviate is highly beneficial when scaling our Vector Databases capabilities."
+  ],
+  "related_terms": [
+    "Weaviate",
+    "Retrieval Augmented Generation",
+    "Vector Databases"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Vector Databases"
+  ],
+  "interview_questions": [
+    "How does Weaviate fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Weaviate?",
+    "How do you debug common failure modes associated with Weaviate?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Weaviate, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Weaviate."
+  ]
+}

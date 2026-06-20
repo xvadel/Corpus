@@ -1,0 +1,35 @@
+{
+  "id": "ragas",
+  "domain": "AI",
+  "subdomain": "AI Engineering",
+  "category": "Evaluation",
+  "term": "RAGAS",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in AI Engineering under Evaluation, representing RAGAS.",
+  "simple_explanation": "Think of RAGAS as an essential building block of AI Engineering. It is commonly used within Evaluation.",
+  "technical_explanation": "In production AI Engineering systems, RAGAS plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of RAGAS directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized RAGAS in our AI Engineering pipeline to improve performance.",
+    "Our team discussed the differences between RAGAS and alternative solutions.",
+    "Understanding RAGAS is highly beneficial when scaling our Evaluation capabilities."
+  ],
+  "related_terms": [
+    "RAGAS",
+    "AI Engineering",
+    "Evaluation"
+  ],
+  "prerequisites": [
+    "AI Engineering",
+    "Evaluation"
+  ],
+  "interview_questions": [
+    "How does RAGAS fit into standard AI Engineering architectures?",
+    "What are the major engineering trade-offs when implementing RAGAS?",
+    "How do you debug common failure modes associated with RAGAS?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for RAGAS, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of RAGAS."
+  ]
+}

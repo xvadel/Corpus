@@ -1,0 +1,35 @@
+{
+  "id": "one_shot",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Prompt Engineering",
+  "term": "One-Shot",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing One-Shot.",
+  "simple_explanation": "Think of One-Shot as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
+  "technical_explanation": "In production Agentic AI systems, One-Shot plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of One-Shot directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized One-Shot in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between One-Shot and alternative solutions.",
+    "Understanding One-Shot is highly beneficial when scaling our Prompt Engineering capabilities."
+  ],
+  "related_terms": [
+    "One-Shot",
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "interview_questions": [
+    "How does One-Shot fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing One-Shot?",
+    "How do you debug common failure modes associated with One-Shot?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for One-Shot, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of One-Shot."
+  ]
+}

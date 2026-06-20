@@ -1,0 +1,35 @@
+{
+  "id": "caching",
+  "domain": "AI",
+  "subdomain": "AI Engineering",
+  "category": "System Design",
+  "term": "Caching",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in AI Engineering under System Design, representing Caching.",
+  "simple_explanation": "Think of Caching as an essential building block of AI Engineering. It is commonly used within System Design.",
+  "technical_explanation": "In production AI Engineering systems, Caching plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Caching directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Caching in our AI Engineering pipeline to improve performance.",
+    "Our team discussed the differences between Caching and alternative solutions.",
+    "Understanding Caching is highly beneficial when scaling our System Design capabilities."
+  ],
+  "related_terms": [
+    "Caching",
+    "AI Engineering",
+    "System Design"
+  ],
+  "prerequisites": [
+    "AI Engineering",
+    "System Design"
+  ],
+  "interview_questions": [
+    "How does Caching fit into standard AI Engineering architectures?",
+    "What are the major engineering trade-offs when implementing Caching?",
+    "How do you debug common failure modes associated with Caching?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Caching, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Caching."
+  ]
+}

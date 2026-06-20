@@ -1,0 +1,35 @@
+{
+  "id": "tool_calling",
+  "domain": "AI",
+  "subdomain": "Natural Language Processing",
+  "category": "LLMs",
+  "term": "Tool Calling",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Tool Calling.",
+  "simple_explanation": "Think of Tool Calling as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
+  "technical_explanation": "In production Natural Language Processing systems, Tool Calling plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Tool Calling directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Tool Calling in our Natural Language Processing pipeline to improve performance.",
+    "Our team discussed the differences between Tool Calling and alternative solutions.",
+    "Understanding Tool Calling is highly beneficial when scaling our LLMs capabilities."
+  ],
+  "related_terms": [
+    "Tool Calling",
+    "Natural Language Processing",
+    "LLMs"
+  ],
+  "prerequisites": [
+    "Natural Language Processing",
+    "LLMs"
+  ],
+  "interview_questions": [
+    "How does Tool Calling fit into standard Natural Language Processing architectures?",
+    "What are the major engineering trade-offs when implementing Tool Calling?",
+    "How do you debug common failure modes associated with Tool Calling?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Tool Calling, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Tool Calling."
+  ]
+}

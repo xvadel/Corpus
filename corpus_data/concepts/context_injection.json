@@ -1,0 +1,35 @@
+{
+  "id": "context_injection",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Generation",
+  "term": "Context Injection",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Generation, representing Context Injection.",
+  "simple_explanation": "Think of Context Injection as an essential building block of Retrieval Augmented Generation. It is commonly used within Generation.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Context Injection plays a key role within Generation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Context Injection directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Context Injection in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Context Injection and alternative solutions.",
+    "Understanding Context Injection is highly beneficial when scaling our Generation capabilities."
+  ],
+  "related_terms": [
+    "Context Injection",
+    "Retrieval Augmented Generation",
+    "Generation"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Generation"
+  ],
+  "interview_questions": [
+    "How does Context Injection fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Context Injection?",
+    "How do you debug common failure modes associated with Context Injection?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Context Injection, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Context Injection."
+  ]
+}

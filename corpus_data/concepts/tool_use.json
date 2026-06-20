@@ -1,0 +1,35 @@
+{
+  "id": "tool_use",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Core Concepts",
+  "term": "Tool Use",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Tool Use.",
+  "simple_explanation": "Think of Tool Use as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
+  "technical_explanation": "In production Agentic AI systems, Tool Use plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Tool Use directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Tool Use in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Tool Use and alternative solutions.",
+    "Understanding Tool Use is highly beneficial when scaling our Core Concepts capabilities."
+  ],
+  "related_terms": [
+    "Tool Use",
+    "Agentic AI",
+    "Core Concepts"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Core Concepts"
+  ],
+  "interview_questions": [
+    "How does Tool Use fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Tool Use?",
+    "How do you debug common failure modes associated with Tool Use?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Tool Use, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Tool Use."
+  ]
+}

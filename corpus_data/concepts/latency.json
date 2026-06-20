@@ -1,0 +1,35 @@
+{
+  "id": "latency",
+  "domain": "AI",
+  "subdomain": "AI Engineering",
+  "category": "Evaluation",
+  "term": "Latency",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in AI Engineering under Evaluation, representing Latency.",
+  "simple_explanation": "Think of Latency as an essential building block of AI Engineering. It is commonly used within Evaluation.",
+  "technical_explanation": "In production AI Engineering systems, Latency plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Latency directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Latency in our AI Engineering pipeline to improve performance.",
+    "Our team discussed the differences between Latency and alternative solutions.",
+    "Understanding Latency is highly beneficial when scaling our Evaluation capabilities."
+  ],
+  "related_terms": [
+    "Latency",
+    "AI Engineering",
+    "Evaluation"
+  ],
+  "prerequisites": [
+    "AI Engineering",
+    "Evaluation"
+  ],
+  "interview_questions": [
+    "How does Latency fit into standard AI Engineering architectures?",
+    "What are the major engineering trade-offs when implementing Latency?",
+    "How do you debug common failure modes associated with Latency?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Latency, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Latency."
+  ]
+}

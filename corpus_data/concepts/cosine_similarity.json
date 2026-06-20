@@ -1,0 +1,35 @@
+{
+  "id": "cosine_similarity",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Embeddings",
+  "term": "Cosine Similarity",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Embeddings, representing Cosine Similarity.",
+  "simple_explanation": "Think of Cosine Similarity as an essential building block of Retrieval Augmented Generation. It is commonly used within Embeddings.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Cosine Similarity plays a key role within Embeddings. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Cosine Similarity directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Cosine Similarity in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Cosine Similarity and alternative solutions.",
+    "Understanding Cosine Similarity is highly beneficial when scaling our Embeddings capabilities."
+  ],
+  "related_terms": [
+    "Cosine Similarity",
+    "Retrieval Augmented Generation",
+    "Embeddings"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Embeddings"
+  ],
+  "interview_questions": [
+    "How does Cosine Similarity fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Cosine Similarity?",
+    "How do you debug common failure modes associated with Cosine Similarity?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Cosine Similarity, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Cosine Similarity."
+  ]
+}

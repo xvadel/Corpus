@@ -1,0 +1,35 @@
+{
+  "id": "drift_detection",
+  "domain": "AI",
+  "subdomain": "MLOps",
+  "category": "Model Lifecycle",
+  "term": "Drift Detection",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in MLOps under Model Lifecycle, representing Drift Detection.",
+  "simple_explanation": "Think of Drift Detection as an essential building block of MLOps. It is commonly used within Model Lifecycle.",
+  "technical_explanation": "In production MLOps systems, Drift Detection plays a key role within Model Lifecycle. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Drift Detection directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Drift Detection in our MLOps pipeline to improve performance.",
+    "Our team discussed the differences between Drift Detection and alternative solutions.",
+    "Understanding Drift Detection is highly beneficial when scaling our Model Lifecycle capabilities."
+  ],
+  "related_terms": [
+    "Drift Detection",
+    "MLOps",
+    "Model Lifecycle"
+  ],
+  "prerequisites": [
+    "MLOps",
+    "Model Lifecycle"
+  ],
+  "interview_questions": [
+    "How does Drift Detection fit into standard MLOps architectures?",
+    "What are the major engineering trade-offs when implementing Drift Detection?",
+    "How do you debug common failure modes associated with Drift Detection?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Drift Detection, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Drift Detection."
+  ]
+}

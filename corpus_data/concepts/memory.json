@@ -1,0 +1,35 @@
+{
+  "id": "memory",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Core Concepts",
+  "term": "Memory",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Memory.",
+  "simple_explanation": "Think of Memory as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
+  "technical_explanation": "In production Agentic AI systems, Memory plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Memory directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Memory in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Memory and alternative solutions.",
+    "Understanding Memory is highly beneficial when scaling our Core Concepts capabilities."
+  ],
+  "related_terms": [
+    "Memory",
+    "Agentic AI",
+    "Core Concepts"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Core Concepts"
+  ],
+  "interview_questions": [
+    "How does Memory fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Memory?",
+    "How do you debug common failure modes associated with Memory?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Memory, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Memory."
+  ]
+}

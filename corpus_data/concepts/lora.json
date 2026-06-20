@@ -1,0 +1,35 @@
+{
+  "id": "lora",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Model Adaptation",
+  "term": "LoRA",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing LoRA.",
+  "simple_explanation": "Think of LoRA as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
+  "technical_explanation": "In production Agentic AI systems, LoRA plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of LoRA directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized LoRA in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between LoRA and alternative solutions.",
+    "Understanding LoRA is highly beneficial when scaling our Model Adaptation capabilities."
+  ],
+  "related_terms": [
+    "LoRA",
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "interview_questions": [
+    "How does LoRA fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing LoRA?",
+    "How do you debug common failure modes associated with LoRA?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for LoRA, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of LoRA."
+  ]
+}

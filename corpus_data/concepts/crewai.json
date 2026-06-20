@@ -1,0 +1,35 @@
+{
+  "id": "crewai",
+  "domain": "AI",
+  "subdomain": "AI Engineering",
+  "category": "Orchestration",
+  "term": "CrewAI",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in AI Engineering under Orchestration, representing CrewAI.",
+  "simple_explanation": "Think of CrewAI as an essential building block of AI Engineering. It is commonly used within Orchestration.",
+  "technical_explanation": "In production AI Engineering systems, CrewAI plays a key role within Orchestration. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of CrewAI directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized CrewAI in our AI Engineering pipeline to improve performance.",
+    "Our team discussed the differences between CrewAI and alternative solutions.",
+    "Understanding CrewAI is highly beneficial when scaling our Orchestration capabilities."
+  ],
+  "related_terms": [
+    "CrewAI",
+    "AI Engineering",
+    "Orchestration"
+  ],
+  "prerequisites": [
+    "AI Engineering",
+    "Orchestration"
+  ],
+  "interview_questions": [
+    "How does CrewAI fit into standard AI Engineering architectures?",
+    "What are the major engineering trade-offs when implementing CrewAI?",
+    "How do you debug common failure modes associated with CrewAI?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for CrewAI, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of CrewAI."
+  ]
+}

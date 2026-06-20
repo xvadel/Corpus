@@ -1,0 +1,35 @@
+{
+  "id": "structured_prompting",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Prompt Engineering",
+  "term": "Structured Prompting",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Structured Prompting.",
+  "simple_explanation": "Think of Structured Prompting as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
+  "technical_explanation": "In production Agentic AI systems, Structured Prompting plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Structured Prompting directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Structured Prompting in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Structured Prompting and alternative solutions.",
+    "Understanding Structured Prompting is highly beneficial when scaling our Prompt Engineering capabilities."
+  ],
+  "related_terms": [
+    "Structured Prompting",
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "interview_questions": [
+    "How does Structured Prompting fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Structured Prompting?",
+    "How do you debug common failure modes associated with Structured Prompting?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Structured Prompting, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Structured Prompting."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "role_prompting",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Prompt Engineering",
+  "term": "Role Prompting",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Role Prompting.",
+  "simple_explanation": "Think of Role Prompting as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
+  "technical_explanation": "In production Agentic AI systems, Role Prompting plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Role Prompting directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Role Prompting in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Role Prompting and alternative solutions.",
+    "Understanding Role Prompting is highly beneficial when scaling our Prompt Engineering capabilities."
+  ],
+  "related_terms": [
+    "Role Prompting",
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "interview_questions": [
+    "How does Role Prompting fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Role Prompting?",
+    "How do you debug common failure modes associated with Role Prompting?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Role Prompting, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Role Prompting."
+  ]
+}

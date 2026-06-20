@@ -1,0 +1,35 @@
+{
+  "id": "zero_shot",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Prompt Engineering",
+  "term": "Zero-Shot",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Zero-Shot.",
+  "simple_explanation": "Think of Zero-Shot as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
+  "technical_explanation": "In production Agentic AI systems, Zero-Shot plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Zero-Shot directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Zero-Shot in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Zero-Shot and alternative solutions.",
+    "Understanding Zero-Shot is highly beneficial when scaling our Prompt Engineering capabilities."
+  ],
+  "related_terms": [
+    "Zero-Shot",
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "interview_questions": [
+    "How does Zero-Shot fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Zero-Shot?",
+    "How do you debug common failure modes associated with Zero-Shot?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Zero-Shot, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Zero-Shot."
+  ]
+}

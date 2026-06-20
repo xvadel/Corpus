@@ -1,0 +1,35 @@
+{
+  "id": "self_attention",
+  "domain": "AI",
+  "subdomain": "Deep Learning Foundations",
+  "category": "Transformers",
+  "term": "Self-Attention",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Self-Attention.",
+  "simple_explanation": "Think of Self-Attention as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
+  "technical_explanation": "In production Deep Learning Foundations systems, Self-Attention plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Self-Attention directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Self-Attention in our Deep Learning Foundations pipeline to improve performance.",
+    "Our team discussed the differences between Self-Attention and alternative solutions.",
+    "Understanding Self-Attention is highly beneficial when scaling our Transformers capabilities."
+  ],
+  "related_terms": [
+    "Self-Attention",
+    "Deep Learning Foundations",
+    "Transformers"
+  ],
+  "prerequisites": [
+    "Deep Learning Foundations",
+    "Transformers"
+  ],
+  "interview_questions": [
+    "How does Self-Attention fit into standard Deep Learning Foundations architectures?",
+    "What are the major engineering trade-offs when implementing Self-Attention?",
+    "How do you debug common failure modes associated with Self-Attention?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Self-Attention, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Self-Attention."
+  ]
+}

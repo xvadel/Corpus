@@ -1,0 +1,35 @@
+{
+  "id": "few_shot",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Prompt Engineering",
+  "term": "Few-Shot",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Few-Shot.",
+  "simple_explanation": "Think of Few-Shot as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
+  "technical_explanation": "In production Agentic AI systems, Few-Shot plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Few-Shot directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Few-Shot in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Few-Shot and alternative solutions.",
+    "Understanding Few-Shot is highly beneficial when scaling our Prompt Engineering capabilities."
+  ],
+  "related_terms": [
+    "Few-Shot",
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Prompt Engineering"
+  ],
+  "interview_questions": [
+    "How does Few-Shot fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Few-Shot?",
+    "How do you debug common failure modes associated with Few-Shot?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Few-Shot, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Few-Shot."
+  ]
+}

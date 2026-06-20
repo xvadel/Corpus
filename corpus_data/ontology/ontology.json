@@ -1,0 +1,360 @@
+{
+  "version": "1.0",
+  "title": "AI Domain Ontology",
+  "description": "Structured knowledge map of Artificial Intelligence subdomains used by Corpus to generate personalized learning curricula.",
+  "domains": {
+    "Artificial Intelligence": {
+      "Natural Language Processing": {
+        "Text Processing": [
+          "Tokenization",
+          "Stemming",
+          "Lemmatization",
+          "Stop Words",
+          "Named Entity Recognition"
+        ],
+        "Language Modeling": [
+          "Language Model",
+          "Masked Language Model",
+          "Autoregressive Model",
+          "Next Token Prediction"
+        ],
+        "LLMs": [
+          "Prompt Engineering",
+          "Context Window",
+          "Hallucination",
+          "Few-Shot Learning",
+          "Chain of Thought",
+          "Function Calling",
+          "Tool Calling"
+        ]
+      },
+      "Retrieval Augmented Generation": {
+        "Data Processing": [
+          "Chunking",
+          "Document Parsing",
+          "Metadata Extraction",
+          "Knowledge Base"
+        ],
+        "Embeddings": [
+          "Embedding",
+          "Vector Representation",
+          "Semantic Similarity"
+        ],
+        "Vector Databases": [
+          "ChromaDB",
+          "Pinecone",
+          "Weaviate",
+          "FAISS",
+          "Milvus"
+        ],
+        "Retrieval": [
+          "Similarity Search",
+          "Hybrid Search",
+          "BM25",
+          "Reranking",
+          "Top-K Retrieval"
+        ],
+        "Generation": [
+          "Context Injection",
+          "Grounding",
+          "Answer Synthesis"
+        ]
+      },
+      "Agentic AI": {
+        "Core Concepts": [
+          "Agent",
+          "Planner",
+          "Memory",
+          "Tool Use",
+          "Multi-Agent System",
+          "Workflow Orchestration"
+        ],
+        "Prompt Engineering": [
+          "Zero-Shot",
+          "One-Shot",
+          "Few-Shot",
+          "Role Prompting",
+          "Structured Prompting"
+        ],
+        "Model Adaptation": [
+          "Fine-Tuning",
+          "LoRA",
+          "QLoRA",
+          "RLHF",
+          "Instruction Tuning"
+        ]
+      },
+      "AI Engineering": {
+        "System Design": [
+          "Model Serving",
+          "API Design",
+          "Caching",
+          "Load Balancing",
+          "Scalability"
+        ],
+        "Evaluation": [
+          "Benchmarking",
+          "RAGAS",
+          "DeepEval",
+          "Latency",
+          "Accuracy",
+          "Faithfulness"
+        ],
+        "Orchestration": [
+          "LiteLLM",
+          "LangChain",
+          "LlamaIndex",
+          "LangGraph",
+          "CrewAI"
+        ]
+      },
+      "MLOps": {
+        "Data Management": [
+          "Dataset Versioning",
+          "Data Pipeline",
+          "Data Validation"
+        ],
+        "Model Lifecycle": [
+          "Training",
+          "Evaluation",
+          "Deployment",
+          "Monitoring",
+          "Drift Detection"
+        ],
+        "Tools": [
+          "MLflow",
+          "Kubeflow",
+          "Airflow",
+          "Weights & Biases"
+        ]
+      },
+      "Deep Learning Foundations": {
+        "Neural Networks": [
+          "Perceptron",
+          "Feed Forward Network",
+          "Backpropagation",
+          "Activation Function",
+          "Loss Function",
+          "Gradient Descent"
+        ],
+        "Transformers": [
+          "Attention",
+          "Self-Attention",
+          "Multi-Head Attention",
+          "Encoder",
+          "Decoder",
+          "Positional Encoding"
+        ]
+      }
+    }
+  },
+  "mvp_branches": [
+    "Natural Language Processing",
+    "Retrieval Augmented Generation",
+    "Agentic AI",
+    "AI Engineering",
+    "MLOps"
+  ],
+  "full_ontology": {
+    "Artificial Intelligence": {
+      "Machine Learning": {
+        "Supervised Learning": [
+          "Linear Regression",
+          "Logistic Regression",
+          "Decision Trees",
+          "Random Forest",
+          "Gradient Boosting",
+          "XGBoost",
+          "Support Vector Machine",
+          "K-Nearest Neighbors"
+        ],
+        "Unsupervised Learning": [
+          "Clustering",
+          "K-Means",
+          "DBSCAN",
+          "Hierarchical Clustering",
+          "Dimensionality Reduction",
+          "PCA",
+          "t-SNE",
+          "UMAP"
+        ],
+        "Reinforcement Learning": [
+          "Markov Decision Process",
+          "Q-Learning",
+          "Deep Q Networks",
+          "Policy Gradient",
+          "Actor-Critic",
+          "Reward Function"
+        ]
+      },
+      "Deep Learning": {
+        "Neural Networks": [
+          "Perceptron",
+          "Feed Forward Network",
+          "Backpropagation",
+          "Activation Function",
+          "Loss Function",
+          "Gradient Descent"
+        ],
+        "CNN": [
+          "Convolution",
+          "Pooling",
+          "Feature Maps",
+          "Object Detection",
+          "Image Classification"
+        ],
+        "RNN": [
+          "LSTM",
+          "GRU",
+          "Sequence Modeling"
+        ],
+        "Transformers": [
+          "Attention",
+          "Self-Attention",
+          "Multi-Head Attention",
+          "Encoder",
+          "Decoder",
+          "Positional Encoding"
+        ]
+      },
+      "Natural Language Processing": {
+        "Text Processing": [
+          "Tokenization",
+          "Stemming",
+          "Lemmatization",
+          "Stop Words",
+          "Named Entity Recognition"
+        ],
+        "Language Modeling": [
+          "Language Model",
+          "Masked Language Model",
+          "Autoregressive Model",
+          "Next Token Prediction"
+        ],
+        "LLMs": [
+          "Prompt Engineering",
+          "Context Window",
+          "Hallucination",
+          "Few-Shot Learning",
+          "Chain of Thought",
+          "Function Calling",
+          "Tool Calling"
+        ]
+      },
+      "Retrieval Augmented Generation": {
+        "Data Processing": [
+          "Chunking",
+          "Document Parsing",
+          "Metadata Extraction",
+          "Knowledge Base"
+        ],
+        "Embeddings": [
+          "Embedding",
+          "Vector Representation",
+          "Semantic Similarity"
+        ],
+        "Vector Databases": [
+          "ChromaDB",
+          "Pinecone",
+          "Weaviate",
+          "FAISS",
+          "Milvus"
+        ],
+        "Retrieval": [
+          "Similarity Search",
+          "Hybrid Search",
+          "BM25",
+          "Reranking",
+          "Top-K Retrieval"
+        ],
+        "Generation": [
+          "Context Injection",
+          "Grounding",
+          "Answer Synthesis"
+        ]
+      },
+      "Computer Vision": {
+        "Image Processing": [
+          "Image Classification",
+          "Object Detection",
+          "Segmentation",
+          "Feature Extraction"
+        ],
+        "Models": [
+          "YOLO",
+          "ResNet",
+          "EfficientNet",
+          "Vision Transformer"
+        ]
+      },
+      "MLOps": {
+        "Data Management": [
+          "Dataset Versioning",
+          "Data Pipeline",
+          "Data Validation"
+        ],
+        "Model Lifecycle": [
+          "Training",
+          "Evaluation",
+          "Deployment",
+          "Monitoring",
+          "Drift Detection"
+        ],
+        "Tools": [
+          "MLflow",
+          "Kubeflow",
+          "Airflow",
+          "Weights & Biases"
+        ]
+      },
+      "Generative AI": {
+        "Prompt Engineering": [
+          "Zero-Shot",
+          "One-Shot",
+          "Few-Shot",
+          "Role Prompting",
+          "Structured Prompting"
+        ],
+        "Agentic AI": [
+          "Agent",
+          "Planner",
+          "Memory",
+          "Tool Use",
+          "Multi-Agent System",
+          "Workflow Orchestration"
+        ],
+        "Model Adaptation": [
+          "Fine-Tuning",
+          "LoRA",
+          "QLoRA",
+          "RLHF",
+          "Instruction Tuning"
+        ]
+      },
+      "AI Engineering": {
+        "System Design": [
+          "Model Serving",
+          "API Design",
+          "Caching",
+          "Load Balancing",
+          "Scalability"
+        ],
+        "Evaluation": [
+          "Benchmarking",
+          "RAGAS",
+          "DeepEval",
+          "Latency",
+          "Accuracy",
+          "Faithfulness"
+        ],
+        "Orchestration": [
+          "LiteLLM",
+          "LangChain",
+          "LlamaIndex",
+          "LangGraph",
+          "CrewAI"
+        ]
+      }
+    }
+  }
+}

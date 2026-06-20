@@ -1,0 +1,35 @@
+{
+  "id": "context_window",
+  "domain": "AI",
+  "subdomain": "Natural Language Processing",
+  "category": "LLMs",
+  "term": "Context Window",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Context Window.",
+  "simple_explanation": "Think of Context Window as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
+  "technical_explanation": "In production Natural Language Processing systems, Context Window plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Context Window directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Context Window in our Natural Language Processing pipeline to improve performance.",
+    "Our team discussed the differences between Context Window and alternative solutions.",
+    "Understanding Context Window is highly beneficial when scaling our LLMs capabilities."
+  ],
+  "related_terms": [
+    "Context Window",
+    "Natural Language Processing",
+    "LLMs"
+  ],
+  "prerequisites": [
+    "Natural Language Processing",
+    "LLMs"
+  ],
+  "interview_questions": [
+    "How does Context Window fit into standard Natural Language Processing architectures?",
+    "What are the major engineering trade-offs when implementing Context Window?",
+    "How do you debug common failure modes associated with Context Window?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Context Window, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Context Window."
+  ]
+}

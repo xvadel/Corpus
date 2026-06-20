@@ -1,0 +1,96 @@
+term,id,domain,subdomain,category,difficulty
+Tokenization,tokenization,AI,Natural Language Processing,Text Processing,Beginner
+Stemming,stemming,AI,Natural Language Processing,Text Processing,Beginner
+Lemmatization,lemmatization,AI,Natural Language Processing,Text Processing,Beginner
+Stop Words,stop_words,AI,Natural Language Processing,Text Processing,Beginner
+Named Entity Recognition,named_entity_recognition,AI,Natural Language Processing,Text Processing,Intermediate
+Language Model,language_model,AI,Natural Language Processing,Language Modeling,Beginner
+Masked Language Model,masked_language_model,AI,Natural Language Processing,Language Modeling,Intermediate
+Autoregressive Model,autoregressive_model,AI,Natural Language Processing,Language Modeling,Intermediate
+Next Token Prediction,next_token_prediction,AI,Natural Language Processing,Language Modeling,Beginner
+Prompt Engineering,prompt_engineering,AI,Natural Language Processing,LLMs,Beginner
+Context Window,context_window,AI,Natural Language Processing,LLMs,Beginner
+Hallucination,hallucination,AI,Natural Language Processing,LLMs,Beginner
+Few-Shot Learning,few_shot_learning,AI,Natural Language Processing,LLMs,Intermediate
+Chain of Thought,chain_of_thought,AI,Natural Language Processing,LLMs,Intermediate
+Function Calling,function_calling,AI,Natural Language Processing,LLMs,Intermediate
+Tool Calling,tool_calling,AI,Natural Language Processing,LLMs,Intermediate
+Chunking,chunking,AI,Retrieval Augmented Generation,Data Processing,Beginner
+Document Parsing,document_parsing,AI,Retrieval Augmented Generation,Data Processing,Beginner
+Metadata Extraction,metadata_extraction,AI,Retrieval Augmented Generation,Data Processing,Intermediate
+Knowledge Base,knowledge_base,AI,Retrieval Augmented Generation,Data Processing,Beginner
+Embedding,embedding,AI,Retrieval Augmented Generation,Embeddings,Intermediate
+Vector Representation,vector_representation,AI,Retrieval Augmented Generation,Embeddings,Intermediate
+Semantic Similarity,semantic_similarity,AI,Retrieval Augmented Generation,Embeddings,Intermediate
+ChromaDB,chromadb,AI,Retrieval Augmented Generation,Vector Databases,Intermediate
+Pinecone,pinecone,AI,Retrieval Augmented Generation,Vector Databases,Intermediate
+Weaviate,weaviate,AI,Retrieval Augmented Generation,Vector Databases,Intermediate
+FAISS,faiss,AI,Retrieval Augmented Generation,Vector Databases,Advanced
+Milvus,milvus,AI,Retrieval Augmented Generation,Vector Databases,Advanced
+Similarity Search,similarity_search,AI,Retrieval Augmented Generation,Retrieval,Beginner
+Hybrid Search,hybrid_search,AI,Retrieval Augmented Generation,Retrieval,Intermediate
+BM25,bm25,AI,Retrieval Augmented Generation,Retrieval,Intermediate
+Reranking,reranking,AI,Retrieval Augmented Generation,Retrieval,Advanced
+Top-K Retrieval,top_k_retrieval,AI,Retrieval Augmented Generation,Retrieval,Intermediate
+Context Injection,context_injection,AI,Retrieval Augmented Generation,Generation,Beginner
+Grounding,grounding,AI,Retrieval Augmented Generation,Generation,Intermediate
+Answer Synthesis,answer_synthesis,AI,Retrieval Augmented Generation,Generation,Intermediate
+Agent,agent,AI,Agentic AI,Core Concepts,Beginner
+Planner,planner,AI,Agentic AI,Core Concepts,Intermediate
+Memory,memory,AI,Agentic AI,Core Concepts,Intermediate
+Tool Use,tool_use,AI,Agentic AI,Core Concepts,Intermediate
+Multi-Agent System,multi_agent_system,AI,Agentic AI,Core Concepts,Advanced
+Workflow Orchestration,workflow_orchestration,AI,Agentic AI,Core Concepts,Advanced
+Zero-Shot,zero_shot,AI,Agentic AI,Prompt Engineering,Beginner
+One-Shot,one_shot,AI,Agentic AI,Prompt Engineering,Beginner
+Few-Shot,few_shot,AI,Agentic AI,Prompt Engineering,Beginner
+Role Prompting,role_prompting,AI,Agentic AI,Prompt Engineering,Intermediate
+Structured Prompting,structured_prompting,AI,Agentic AI,Prompt Engineering,Intermediate
+Fine-Tuning,fine_tuning,AI,Agentic AI,Model Adaptation,Intermediate
+LoRA,lora,AI,Agentic AI,Model Adaptation,Advanced
+QLoRA,qlora,AI,Agentic AI,Model Adaptation,Advanced
+RLHF,rlhf,AI,Agentic AI,Model Adaptation,Advanced
+Instruction Tuning,instruction_tuning,AI,Agentic AI,Model Adaptation,Intermediate
+Model Serving,model_serving,AI,AI Engineering,System Design,Intermediate
+API Design,api_design,AI,AI Engineering,System Design,Intermediate
+Caching,caching,AI,AI Engineering,System Design,Intermediate
+Load Balancing,load_balancing,AI,AI Engineering,System Design,Advanced
+Scalability,scalability,AI,AI Engineering,System Design,Advanced
+Benchmarking,benchmarking,AI,AI Engineering,Evaluation,Beginner
+RAGAS,ragas,AI,AI Engineering,Evaluation,Advanced
+DeepEval,deepeval,AI,AI Engineering,Evaluation,Advanced
+Latency,latency,AI,AI Engineering,Evaluation,Beginner
+Accuracy,accuracy,AI,AI Engineering,Evaluation,Beginner
+Faithfulness,faithfulness,AI,AI Engineering,Evaluation,Intermediate
+LiteLLM,litellm,AI,AI Engineering,Orchestration,Intermediate
+LangChain,langchain,AI,AI Engineering,Orchestration,Intermediate
+LlamaIndex,llamaindex,AI,AI Engineering,Orchestration,Intermediate
+LangGraph,langgraph,AI,AI Engineering,Orchestration,Advanced
+CrewAI,crewai,AI,AI Engineering,Orchestration,Advanced
+Dataset Versioning,dataset_versioning,AI,MLOps,Data Management,Intermediate
+Data Pipeline,data_pipeline,AI,MLOps,Data Management,Intermediate
+Data Validation,data_validation,AI,MLOps,Data Management,Intermediate
+Training,training,AI,MLOps,Model Lifecycle,Beginner
+Deployment,deployment,AI,MLOps,Model Lifecycle,Intermediate
+Monitoring,monitoring,AI,MLOps,Model Lifecycle,Intermediate
+Drift Detection,drift_detection,AI,MLOps,Model Lifecycle,Advanced
+MLflow,mlflow,AI,MLOps,Tools,Intermediate
+Weights & Biases,weights_and_biases,AI,MLOps,Tools,Intermediate
+Attention,attention,AI,Deep Learning Foundations,Transformers,Intermediate
+Self-Attention,self_attention,AI,Deep Learning Foundations,Transformers,Intermediate
+Multi-Head Attention,multi_head_attention,AI,Deep Learning Foundations,Transformers,Advanced
+Encoder,encoder,AI,Deep Learning Foundations,Transformers,Intermediate
+Decoder,decoder,AI,Deep Learning Foundations,Transformers,Intermediate
+Positional Encoding,positional_encoding,AI,Deep Learning Foundations,Transformers,Advanced
+Gradient Descent,gradient_descent,AI,Deep Learning Foundations,Neural Networks,Beginner
+Backpropagation,backpropagation,AI,Deep Learning Foundations,Neural Networks,Intermediate
+Activation Function,activation_function,AI,Deep Learning Foundations,Neural Networks,Beginner
+Loss Function,loss_function,AI,Deep Learning Foundations,Neural Networks,Beginner
+Perceptron,perceptron,AI,Deep Learning Foundations,Neural Networks,Beginner
+Feed Forward Network,feed_forward_network,AI,Deep Learning Foundations,Neural Networks,Beginner
+Transfer Learning,transfer_learning,AI,Deep Learning Foundations,Neural Networks,Intermediate
+Retrieval Augmented Generation,retrieval_augmented_generation,AI,Retrieval Augmented Generation,Core Concepts,Intermediate
+Vector Database,vector_database,AI,Retrieval Augmented Generation,Vector Databases,Beginner
+Approximate Nearest Neighbor,approximate_nearest_neighbor,AI,Retrieval Augmented Generation,Retrieval,Advanced
+Cosine Similarity,cosine_similarity,AI,Retrieval Augmented Generation,Embeddings,Intermediate
+Transformer,transformer,AI,Deep Learning Foundations,Transformers,Intermediate

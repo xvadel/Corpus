@@ -1,0 +1,35 @@
+{
+  "id": "dataset_versioning",
+  "domain": "AI",
+  "subdomain": "MLOps",
+  "category": "Data Management",
+  "term": "Dataset Versioning",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in MLOps under Data Management, representing Dataset Versioning.",
+  "simple_explanation": "Think of Dataset Versioning as an essential building block of MLOps. It is commonly used within Data Management.",
+  "technical_explanation": "In production MLOps systems, Dataset Versioning plays a key role within Data Management. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Dataset Versioning directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Dataset Versioning in our MLOps pipeline to improve performance.",
+    "Our team discussed the differences between Dataset Versioning and alternative solutions.",
+    "Understanding Dataset Versioning is highly beneficial when scaling our Data Management capabilities."
+  ],
+  "related_terms": [
+    "Dataset Versioning",
+    "MLOps",
+    "Data Management"
+  ],
+  "prerequisites": [
+    "MLOps",
+    "Data Management"
+  ],
+  "interview_questions": [
+    "How does Dataset Versioning fit into standard MLOps architectures?",
+    "What are the major engineering trade-offs when implementing Dataset Versioning?",
+    "How do you debug common failure modes associated with Dataset Versioning?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Dataset Versioning, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Dataset Versioning."
+  ]
+}

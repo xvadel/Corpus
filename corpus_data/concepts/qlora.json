@@ -1,0 +1,35 @@
+{
+  "id": "qlora",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Model Adaptation",
+  "term": "QLoRA",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing QLoRA.",
+  "simple_explanation": "Think of QLoRA as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
+  "technical_explanation": "In production Agentic AI systems, QLoRA plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of QLoRA directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized QLoRA in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between QLoRA and alternative solutions.",
+    "Understanding QLoRA is highly beneficial when scaling our Model Adaptation capabilities."
+  ],
+  "related_terms": [
+    "QLoRA",
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "interview_questions": [
+    "How does QLoRA fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing QLoRA?",
+    "How do you debug common failure modes associated with QLoRA?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for QLoRA, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of QLoRA."
+  ]
+}

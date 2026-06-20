@@ -1,0 +1,35 @@
+{
+  "id": "decoder",
+  "domain": "AI",
+  "subdomain": "Deep Learning Foundations",
+  "category": "Transformers",
+  "term": "Decoder",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Decoder.",
+  "simple_explanation": "Think of Decoder as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
+  "technical_explanation": "In production Deep Learning Foundations systems, Decoder plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Decoder directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Decoder in our Deep Learning Foundations pipeline to improve performance.",
+    "Our team discussed the differences between Decoder and alternative solutions.",
+    "Understanding Decoder is highly beneficial when scaling our Transformers capabilities."
+  ],
+  "related_terms": [
+    "Decoder",
+    "Deep Learning Foundations",
+    "Transformers"
+  ],
+  "prerequisites": [
+    "Deep Learning Foundations",
+    "Transformers"
+  ],
+  "interview_questions": [
+    "How does Decoder fit into standard Deep Learning Foundations architectures?",
+    "What are the major engineering trade-offs when implementing Decoder?",
+    "How do you debug common failure modes associated with Decoder?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Decoder, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Decoder."
+  ]
+}

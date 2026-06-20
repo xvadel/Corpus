@@ -1,0 +1,35 @@
+{
+  "id": "multi_agent_system",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Core Concepts",
+  "term": "Multi-Agent System",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Multi-Agent System.",
+  "simple_explanation": "Think of Multi-Agent System as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
+  "technical_explanation": "In production Agentic AI systems, Multi-Agent System plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Multi-Agent System directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Multi-Agent System in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Multi-Agent System and alternative solutions.",
+    "Understanding Multi-Agent System is highly beneficial when scaling our Core Concepts capabilities."
+  ],
+  "related_terms": [
+    "Multi-Agent System",
+    "Agentic AI",
+    "Core Concepts"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Core Concepts"
+  ],
+  "interview_questions": [
+    "How does Multi-Agent System fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Multi-Agent System?",
+    "How do you debug common failure modes associated with Multi-Agent System?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Multi-Agent System, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Multi-Agent System."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chunking",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Data Processing",
+  "term": "Chunking",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Data Processing, representing Chunking.",
+  "simple_explanation": "Think of Chunking as an essential building block of Retrieval Augmented Generation. It is commonly used within Data Processing.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Chunking plays a key role within Data Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Chunking directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Chunking in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Chunking and alternative solutions.",
+    "Understanding Chunking is highly beneficial when scaling our Data Processing capabilities."
+  ],
+  "related_terms": [
+    "Chunking",
+    "Retrieval Augmented Generation",
+    "Data Processing"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Data Processing"
+  ],
+  "interview_questions": [
+    "How does Chunking fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Chunking?",
+    "How do you debug common failure modes associated with Chunking?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Chunking, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Chunking."
+  ]
+}

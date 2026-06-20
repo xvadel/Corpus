@@ -1,0 +1,35 @@
+{
+  "id": "stop_words",
+  "domain": "AI",
+  "subdomain": "Natural Language Processing",
+  "category": "Text Processing",
+  "term": "Stop Words",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Natural Language Processing under Text Processing, representing Stop Words.",
+  "simple_explanation": "Think of Stop Words as an essential building block of Natural Language Processing. It is commonly used within Text Processing.",
+  "technical_explanation": "In production Natural Language Processing systems, Stop Words plays a key role within Text Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Stop Words directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Stop Words in our Natural Language Processing pipeline to improve performance.",
+    "Our team discussed the differences between Stop Words and alternative solutions.",
+    "Understanding Stop Words is highly beneficial when scaling our Text Processing capabilities."
+  ],
+  "related_terms": [
+    "Stop Words",
+    "Natural Language Processing",
+    "Text Processing"
+  ],
+  "prerequisites": [
+    "Natural Language Processing",
+    "Text Processing"
+  ],
+  "interview_questions": [
+    "How does Stop Words fit into standard Natural Language Processing architectures?",
+    "What are the major engineering trade-offs when implementing Stop Words?",
+    "How do you debug common failure modes associated with Stop Words?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Stop Words, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Stop Words."
+  ]
+}

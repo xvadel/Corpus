@@ -1,0 +1,35 @@
+{
+  "id": "rlhf",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Model Adaptation",
+  "term": "RLHF",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing RLHF.",
+  "simple_explanation": "Think of RLHF as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
+  "technical_explanation": "In production Agentic AI systems, RLHF plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of RLHF directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized RLHF in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between RLHF and alternative solutions.",
+    "Understanding RLHF is highly beneficial when scaling our Model Adaptation capabilities."
+  ],
+  "related_terms": [
+    "RLHF",
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "interview_questions": [
+    "How does RLHF fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing RLHF?",
+    "How do you debug common failure modes associated with RLHF?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for RLHF, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of RLHF."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "approximate_nearest_neighbor",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Retrieval",
+  "term": "Approximate Nearest Neighbor",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Approximate Nearest Neighbor.",
+  "simple_explanation": "Think of Approximate Nearest Neighbor as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Approximate Nearest Neighbor plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Approximate Nearest Neighbor directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Approximate Nearest Neighbor in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Approximate Nearest Neighbor and alternative solutions.",
+    "Understanding Approximate Nearest Neighbor is highly beneficial when scaling our Retrieval capabilities."
+  ],
+  "related_terms": [
+    "Approximate Nearest Neighbor",
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "interview_questions": [
+    "How does Approximate Nearest Neighbor fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Approximate Nearest Neighbor?",
+    "How do you debug common failure modes associated with Approximate Nearest Neighbor?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Approximate Nearest Neighbor, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Approximate Nearest Neighbor."
+  ]
+}

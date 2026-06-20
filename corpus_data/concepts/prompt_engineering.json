@@ -1,0 +1,35 @@
+{
+  "id": "prompt_engineering",
+  "domain": "AI",
+  "subdomain": "Natural Language Processing",
+  "category": "LLMs",
+  "term": "Prompt Engineering",
+  "difficulty": "Beginner",
+  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Prompt Engineering.",
+  "simple_explanation": "Think of Prompt Engineering as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
+  "technical_explanation": "In production Natural Language Processing systems, Prompt Engineering plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Prompt Engineering directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Prompt Engineering in our Natural Language Processing pipeline to improve performance.",
+    "Our team discussed the differences between Prompt Engineering and alternative solutions.",
+    "Understanding Prompt Engineering is highly beneficial when scaling our LLMs capabilities."
+  ],
+  "related_terms": [
+    "Prompt Engineering",
+    "Natural Language Processing",
+    "LLMs"
+  ],
+  "prerequisites": [
+    "Natural Language Processing",
+    "LLMs"
+  ],
+  "interview_questions": [
+    "How does Prompt Engineering fit into standard Natural Language Processing architectures?",
+    "What are the major engineering trade-offs when implementing Prompt Engineering?",
+    "How do you debug common failure modes associated with Prompt Engineering?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Prompt Engineering, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Prompt Engineering."
+  ]
+}

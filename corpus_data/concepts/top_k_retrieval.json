@@ -1,0 +1,35 @@
+{
+  "id": "top_k_retrieval",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Retrieval",
+  "term": "Top-K Retrieval",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Top-K Retrieval.",
+  "simple_explanation": "Think of Top-K Retrieval as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Top-K Retrieval plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Top-K Retrieval directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Top-K Retrieval in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Top-K Retrieval and alternative solutions.",
+    "Understanding Top-K Retrieval is highly beneficial when scaling our Retrieval capabilities."
+  ],
+  "related_terms": [
+    "Top-K Retrieval",
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "interview_questions": [
+    "How does Top-K Retrieval fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Top-K Retrieval?",
+    "How do you debug common failure modes associated with Top-K Retrieval?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Top-K Retrieval, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Top-K Retrieval."
+  ]
+}

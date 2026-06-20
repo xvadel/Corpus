@@ -1,0 +1,35 @@
+{
+  "id": "backpropagation",
+  "domain": "AI",
+  "subdomain": "Deep Learning Foundations",
+  "category": "Neural Networks",
+  "term": "Backpropagation",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Deep Learning Foundations under Neural Networks, representing Backpropagation.",
+  "simple_explanation": "Think of Backpropagation as an essential building block of Deep Learning Foundations. It is commonly used within Neural Networks.",
+  "technical_explanation": "In production Deep Learning Foundations systems, Backpropagation plays a key role within Neural Networks. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Backpropagation directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Backpropagation in our Deep Learning Foundations pipeline to improve performance.",
+    "Our team discussed the differences between Backpropagation and alternative solutions.",
+    "Understanding Backpropagation is highly beneficial when scaling our Neural Networks capabilities."
+  ],
+  "related_terms": [
+    "Backpropagation",
+    "Deep Learning Foundations",
+    "Neural Networks"
+  ],
+  "prerequisites": [
+    "Deep Learning Foundations",
+    "Neural Networks"
+  ],
+  "interview_questions": [
+    "How does Backpropagation fit into standard Deep Learning Foundations architectures?",
+    "What are the major engineering trade-offs when implementing Backpropagation?",
+    "How do you debug common failure modes associated with Backpropagation?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Backpropagation, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Backpropagation."
+  ]
+}

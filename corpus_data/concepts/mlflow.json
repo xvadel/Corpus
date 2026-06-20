@@ -1,0 +1,35 @@
+{
+  "id": "mlflow",
+  "domain": "AI",
+  "subdomain": "MLOps",
+  "category": "Tools",
+  "term": "MLflow",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in MLOps under Tools, representing MLflow.",
+  "simple_explanation": "Think of MLflow as an essential building block of MLOps. It is commonly used within Tools.",
+  "technical_explanation": "In production MLOps systems, MLflow plays a key role within Tools. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of MLflow directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized MLflow in our MLOps pipeline to improve performance.",
+    "Our team discussed the differences between MLflow and alternative solutions.",
+    "Understanding MLflow is highly beneficial when scaling our Tools capabilities."
+  ],
+  "related_terms": [
+    "MLflow",
+    "MLOps",
+    "Tools"
+  ],
+  "prerequisites": [
+    "MLOps",
+    "Tools"
+  ],
+  "interview_questions": [
+    "How does MLflow fit into standard MLOps architectures?",
+    "What are the major engineering trade-offs when implementing MLflow?",
+    "How do you debug common failure modes associated with MLflow?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for MLflow, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of MLflow."
+  ]
+}

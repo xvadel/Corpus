@@ -1,0 +1,35 @@
+{
+  "id": "named_entity_recognition",
+  "domain": "AI",
+  "subdomain": "Natural Language Processing",
+  "category": "Text Processing",
+  "term": "Named Entity Recognition",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Natural Language Processing under Text Processing, representing Named Entity Recognition.",
+  "simple_explanation": "Think of Named Entity Recognition as an essential building block of Natural Language Processing. It is commonly used within Text Processing.",
+  "technical_explanation": "In production Natural Language Processing systems, Named Entity Recognition plays a key role within Text Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Named Entity Recognition directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Named Entity Recognition in our Natural Language Processing pipeline to improve performance.",
+    "Our team discussed the differences between Named Entity Recognition and alternative solutions.",
+    "Understanding Named Entity Recognition is highly beneficial when scaling our Text Processing capabilities."
+  ],
+  "related_terms": [
+    "Named Entity Recognition",
+    "Natural Language Processing",
+    "Text Processing"
+  ],
+  "prerequisites": [
+    "Natural Language Processing",
+    "Text Processing"
+  ],
+  "interview_questions": [
+    "How does Named Entity Recognition fit into standard Natural Language Processing architectures?",
+    "What are the major engineering trade-offs when implementing Named Entity Recognition?",
+    "How do you debug common failure modes associated with Named Entity Recognition?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Named Entity Recognition, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Named Entity Recognition."
+  ]
+}

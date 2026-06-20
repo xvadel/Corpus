@@ -1,0 +1,35 @@
+{
+  "id": "semantic_similarity",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Embeddings",
+  "term": "Semantic Similarity",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Embeddings, representing Semantic Similarity.",
+  "simple_explanation": "Think of Semantic Similarity as an essential building block of Retrieval Augmented Generation. It is commonly used within Embeddings.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Semantic Similarity plays a key role within Embeddings. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Semantic Similarity directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Semantic Similarity in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Semantic Similarity and alternative solutions.",
+    "Understanding Semantic Similarity is highly beneficial when scaling our Embeddings capabilities."
+  ],
+  "related_terms": [
+    "Semantic Similarity",
+    "Retrieval Augmented Generation",
+    "Embeddings"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Embeddings"
+  ],
+  "interview_questions": [
+    "How does Semantic Similarity fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Semantic Similarity?",
+    "How do you debug common failure modes associated with Semantic Similarity?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Semantic Similarity, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Semantic Similarity."
+  ]
+}

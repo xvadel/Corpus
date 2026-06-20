@@ -1,0 +1,35 @@
+{
+  "id": "reranking",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Retrieval",
+  "term": "Reranking",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Reranking.",
+  "simple_explanation": "Think of Reranking as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Reranking plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Reranking directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Reranking in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Reranking and alternative solutions.",
+    "Understanding Reranking is highly beneficial when scaling our Retrieval capabilities."
+  ],
+  "related_terms": [
+    "Reranking",
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "interview_questions": [
+    "How does Reranking fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Reranking?",
+    "How do you debug common failure modes associated with Reranking?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Reranking, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Reranking."
+  ]
+}

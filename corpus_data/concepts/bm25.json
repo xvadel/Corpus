@@ -1,0 +1,35 @@
+{
+  "id": "bm25",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Retrieval",
+  "term": "BM25",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing BM25.",
+  "simple_explanation": "Think of BM25 as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, BM25 plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of BM25 directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized BM25 in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between BM25 and alternative solutions.",
+    "Understanding BM25 is highly beneficial when scaling our Retrieval capabilities."
+  ],
+  "related_terms": [
+    "BM25",
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "interview_questions": [
+    "How does BM25 fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing BM25?",
+    "How do you debug common failure modes associated with BM25?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for BM25, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of BM25."
+  ]
+}

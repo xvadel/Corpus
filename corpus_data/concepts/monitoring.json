@@ -1,0 +1,35 @@
+{
+  "id": "monitoring",
+  "domain": "AI",
+  "subdomain": "MLOps",
+  "category": "Model Lifecycle",
+  "term": "Monitoring",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in MLOps under Model Lifecycle, representing Monitoring.",
+  "simple_explanation": "Think of Monitoring as an essential building block of MLOps. It is commonly used within Model Lifecycle.",
+  "technical_explanation": "In production MLOps systems, Monitoring plays a key role within Model Lifecycle. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Monitoring directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Monitoring in our MLOps pipeline to improve performance.",
+    "Our team discussed the differences between Monitoring and alternative solutions.",
+    "Understanding Monitoring is highly beneficial when scaling our Model Lifecycle capabilities."
+  ],
+  "related_terms": [
+    "Monitoring",
+    "MLOps",
+    "Model Lifecycle"
+  ],
+  "prerequisites": [
+    "MLOps",
+    "Model Lifecycle"
+  ],
+  "interview_questions": [
+    "How does Monitoring fit into standard MLOps architectures?",
+    "What are the major engineering trade-offs when implementing Monitoring?",
+    "How do you debug common failure modes associated with Monitoring?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Monitoring, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Monitoring."
+  ]
+}

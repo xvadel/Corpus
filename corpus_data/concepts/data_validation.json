@@ -1,0 +1,35 @@
+{
+  "id": "data_validation",
+  "domain": "AI",
+  "subdomain": "MLOps",
+  "category": "Data Management",
+  "term": "Data Validation",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in MLOps under Data Management, representing Data Validation.",
+  "simple_explanation": "Think of Data Validation as an essential building block of MLOps. It is commonly used within Data Management.",
+  "technical_explanation": "In production MLOps systems, Data Validation plays a key role within Data Management. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Data Validation directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Data Validation in our MLOps pipeline to improve performance.",
+    "Our team discussed the differences between Data Validation and alternative solutions.",
+    "Understanding Data Validation is highly beneficial when scaling our Data Management capabilities."
+  ],
+  "related_terms": [
+    "Data Validation",
+    "MLOps",
+    "Data Management"
+  ],
+  "prerequisites": [
+    "MLOps",
+    "Data Management"
+  ],
+  "interview_questions": [
+    "How does Data Validation fit into standard MLOps architectures?",
+    "What are the major engineering trade-offs when implementing Data Validation?",
+    "How do you debug common failure modes associated with Data Validation?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Data Validation, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Data Validation."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "data_pipeline",
+  "domain": "AI",
+  "subdomain": "MLOps",
+  "category": "Data Management",
+  "term": "Data Pipeline",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in MLOps under Data Management, representing Data Pipeline.",
+  "simple_explanation": "Think of Data Pipeline as an essential building block of MLOps. It is commonly used within Data Management.",
+  "technical_explanation": "In production MLOps systems, Data Pipeline plays a key role within Data Management. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Data Pipeline directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Data Pipeline in our MLOps pipeline to improve performance.",
+    "Our team discussed the differences between Data Pipeline and alternative solutions.",
+    "Understanding Data Pipeline is highly beneficial when scaling our Data Management capabilities."
+  ],
+  "related_terms": [
+    "Data Pipeline",
+    "MLOps",
+    "Data Management"
+  ],
+  "prerequisites": [
+    "MLOps",
+    "Data Management"
+  ],
+  "interview_questions": [
+    "How does Data Pipeline fit into standard MLOps architectures?",
+    "What are the major engineering trade-offs when implementing Data Pipeline?",
+    "How do you debug common failure modes associated with Data Pipeline?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Data Pipeline, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Data Pipeline."
+  ]
+}
