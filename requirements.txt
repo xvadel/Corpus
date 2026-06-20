@@ -2,7 +2,8 @@
 fastapi
 uvicorn
 pydantic
-python-multipart
+pydantic[email]          # EmailStr support for auth schemas
+python-multipart         # Required for file upload (UploadFile)
 
 # Database & ORM
 sqlalchemy

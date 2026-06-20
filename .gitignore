@@ -1,13 +1,8 @@
-# Local SDKs and Tools (these take up the 15+ GBs)
-/android-sdk/
-/flutter-sdk/
+# =============================================================
+# Corpus — .gitignore
+# =============================================================
 
-# Environment activation scripts (optional, keeping them is fine as they are small)
-# If you want to ignore them, uncomment the lines below:
-# /activate_flutter.bat
-# /activate_flutter.ps1
-
-# IDE and Editor Files
+# ── IDE & Editor ──────────────────────────────────────────────
 .idea/
 .vscode/
 *.iml
@@ -18,29 +13,57 @@
 .classpath
 .settings/
 
-# OS Files
+# ── OS Files ──────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Flutter/Dart/Pub related (general rules for any Flutter subdirectory)
-**/build/
-**/.dart_tool/
-**/.flutter-plugins
-**/.flutter-plugins-dependencies
-**/.pub-cache/
-**/.pub/
-**/coverage/
+# ── Frontend Build Artifacts ──────────────────────────────────
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.svelte-kit/
 
-# Android Studio/Gradle build files
-**/android/app/debug/
-**/android/app/profile/
-**/android/app/release/
-**/.gradle/
-**/local.properties
+# ── Backend — Compiled Static Assets (built by Dockerfile) ───
+/backend/static/
 
-# Logs
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Alembic — keep versions folder but ignore local state ─────
+# alembic/versions/*.py   # Uncomment if you want to ignore migrations
+
+# ── Databases & Local Storage ─────────────────────────────────
+*.db
+*.sqlite3
+corpus_dev.db
+
+# ── Environment Variables (NEVER commit secrets) ──────────────
+.env
+
+# ── Logs ──────────────────────────────────────────────────────
 *.log
 *.log.*
 
-.env
+# ── RAG / Vector DB artifacts ─────────────────────────────────
+/rag/chroma_db/
+/rag/*.pkl
+
+# ── Tests cache ───────────────────────────────────────────────
+/tests/.pytest_cache/
+/tests/__pycache__/
+htmlcov/
+.coverage

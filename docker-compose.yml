@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  corpus:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: corpus-app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # Override these here or via .env for your deployment
+      - DATABASE_URL=${DATABASE_URL:-sqlite:///./corpus_dev.db}
+      - SECRET_KEY=${SECRET_KEY:-corpus_dev_secret_change_me}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    volumes:
+      # Persist the SQLite database between container restarts
+      - corpus_data:/app/corpus_dev.db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  corpus_data:
+    driver: local

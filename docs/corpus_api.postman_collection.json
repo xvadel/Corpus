@@ -1,0 +1,400 @@
+{
+  "info": {
+    "_postman_id": "corpus-api-v1",
+    "name": "Corpus API",
+    "description": "Complete API collection for the Corpus 🗣️💼 platform.\n\nBase URL: http://localhost:8000\n\nPhase 1 endpoints are fully functional.\nPhase 2 endpoints (Auth, Custom Vocab) return 501 until implemented.\n\nSwagger UI: http://localhost:8000/api/docs\nReDoc:       http://localhost:8000/api/redoc",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000",
+      "type": "string",
+      "description": "Change to your deployed URL for production testing"
+    },
+    {
+      "key": "authToken",
+      "value": "",
+      "type": "string",
+      "description": "JWT Bearer token — set after calling /api/auth/login (Phase 2)"
+    }
+  ],
+  "item": [
+    {
+      "name": "🏥 Health",
+      "description": "Service liveness check. Used by Docker healthcheck and uptime monitors.",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "health"]
+            },
+            "description": "Returns 200 OK with service status when the backend is running."
+          },
+          "response": [
+            {
+              "name": "200 OK — Service is healthy",
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"status\": \"ok\",\n  \"service\": \"Corpus API\",\n  \"version\": \"1.0.0\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "📂 Projects",
+      "description": "Upload and analyze project markdown files to extract professional domain and skills.",
+      "item": [
+        {
+          "name": "Upload Project for Analysis",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "description": "A Markdown (.md) file describing your project",
+                  "src": []
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/projects/upload",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "projects", "upload"]
+            },
+            "description": "Upload a `.md` file. The backend extracts domain, subdomains, and skills.\n\n**Phase 1:** Returns a simulated Gemini response.\n**Phase 2:** Calls the real Gemini API."
+          },
+          "response": [
+            {
+              "name": "200 OK — Analysis result",
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"status\": \"success\",\n  \"filename\": \"my_project.md\",\n  \"analysis\": {\n    \"domain\": \"Artificial Intelligence\",\n    \"subdomains\": [\n      \"Retrieval-Augmented Generation (RAG)\",\n      \"Natural Language Processing\",\n      \"Vector Databases\"\n    ],\n    \"extracted_skills\": [\"Python\", \"FastAPI\", \"Prompt Engineering\"],\n    \"content_length\": 1420\n  }\n}"
+            },
+            {
+              "name": "400 Bad Request — Wrong file type",
+              "status": "Bad Request",
+              "code": 400,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"detail\": \"Only Markdown (.md) files are supported.\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "📚 Vocabulary",
+      "description": "Browse learning tracks and vocabulary term lists by professional domain.",
+      "item": [
+        {
+          "name": "List All Tracks",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulary/tracks",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulary", "tracks"]
+            },
+            "description": "Returns a summary list of all available learning tracks (no vocabulary terms)."
+          },
+          "response": [
+            {
+              "name": "200 OK — Track list",
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "[\n  {\n    \"id\": \"startup_pitching\",\n    \"name\": \"Startup & Venture Capital\",\n    \"accent_color\": \"#FF6B6B\",\n    \"term_count\": 8\n  },\n  {\n    \"id\": \"software_engineering\",\n    \"name\": \"Software Engineering & Tech\",\n    \"accent_color\": \"#4FC3F7\",\n    \"term_count\": 8\n  },\n  {\n    \"id\": \"business_product\",\n    \"name\": \"Business & Product Management\",\n    \"accent_color\": \"#AB6CFF\",\n    \"term_count\": 8\n  }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Get Vocabulary — Startup & VC",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulary/startup_pitching",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulary", "startup_pitching"]
+            },
+            "description": "Full vocabulary list for the Startup & Venture Capital track."
+          },
+          "response": [
+            {
+              "name": "200 OK — Vocabulary list",
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"id\": \"startup_pitching\",\n  \"name\": \"Startup & Venture Capital\",\n  \"accent_color\": \"#FF6B6B\",\n  \"terms\": [\n    {\n      \"term\": \"Burn Rate\",\n      \"definition\": \"The rate at which a startup spends capital before positive cash flow.\",\n      \"category\": \"Finance\"\n    },\n    {\n      \"term\": \"Runway\",\n      \"definition\": \"How long a company can operate before running out of money.\",\n      \"category\": \"Finance\"\n    }\n  ]\n}"
+            },
+            {
+              "name": "404 Not Found — Invalid track ID",
+              "status": "Not Found",
+              "code": 404,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"detail\": \"Track 'unknown_track' not found. Valid IDs: ['startup_pitching', 'software_engineering', 'business_product']\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Vocabulary — Software Engineering",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulary/software_engineering",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulary", "software_engineering"]
+            },
+            "description": "Full vocabulary list for the Software Engineering & Tech track."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vocabulary — Business & Product",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulary/business_product",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulary", "business_product"]
+            },
+            "description": "Full vocabulary list for the Business & Product Management track."
+          },
+          "response": []
+        },
+        {
+          "name": "Add Custom Term [Phase 2 — 501]",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}",
+                "description": "Required in Phase 2"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"term\": \"Freemium\",\n  \"definition\": \"A pricing model where basic features are free and advanced features are paid.\",\n  \"category\": \"Strategy\",\n  \"track_id\": \"startup_pitching\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/vocabulary/custom",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "vocabulary", "custom"]
+            },
+            "description": "**Phase 2 only.** Returns 501 until auth + DB is implemented."
+          },
+          "response": [
+            {
+              "name": "501 Not Implemented",
+              "status": "Not Implemented",
+              "code": 501,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"detail\": \"Custom vocabulary requires user authentication. Coming in Phase 2.\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "💬 Chat & Roleplay",
+      "description": "Interact with AI coach personas for roleplay-based language practice.",
+      "item": [
+        {
+          "name": "List AI Coach Personas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/chat/personas",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "chat", "personas"]
+            },
+            "description": "Returns the available AI coach persona name and title for each track."
+          },
+          "response": [
+            {
+              "name": "200 OK — Persona list",
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"startup_pitching\": {\n    \"name\": \"Alex Mercer\",\n    \"title\": \"Partner, Apex Ventures\"\n  },\n  \"software_engineering\": {\n    \"name\": \"Sarah Connor\",\n    \"title\": \"Principal Tech Architect\"\n  },\n  \"business_product\": {\n    \"name\": \"Michael Vance\",\n    \"title\": \"Managing Director, Global Tech\"\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Send Message — Startup Pitch",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"track_id\": \"startup_pitching\",\n  \"user_message\": \"Our burn rate is $50K/month and we have 18 months of runway.\",\n  \"history_length\": 0\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/chat/message",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "chat", "message"]
+            },
+            "description": "Send a user message and receive an AI coach reply.\n\n**Phase 1:** Returns scripted responses in sequence.\n**Phase 2:** Returns real Gemini AI replies."
+          },
+          "response": [
+            {
+              "name": "200 OK — Coach reply",
+              "status": "OK",
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"reply\": \"Interesting. What's your plan to reduce burn rate? With our investment, what runway does that give you?\",\n  \"coach_name\": \"Alex Mercer\",\n  \"coach_title\": \"Partner, Apex Ventures\",\n  \"highlighted_terms\": [\"Burn Rate\", \"Runway\"]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Send Message — Software Engineering",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"track_id\": \"software_engineering\",\n  \"user_message\": \"We should decompose the monolith into microservices to improve scalability.\",\n  \"history_length\": 0\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/chat/message",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "chat", "message"]
+            },
+            "description": "Practice a system design conversation with the tech architect coach."
+          },
+          "response": []
+        },
+        {
+          "name": "Send Message — Business & Product",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"track_id\": \"business_product\",\n  \"user_message\": \"Our primary KPI for Q3 is a 15% improvement in user retention.\",\n  \"history_length\": 0\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/chat/message",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "chat", "message"]
+            },
+            "description": "Practice stakeholder communication with the business director coach."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "🔐 Authentication [Phase 2]",
+      "description": "User registration and login. All endpoints return 501 until Phase 2 is implemented.",
+      "item": [
+        {
+          "name": "Register New User [Phase 2 — 501]",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"SecurePass123!\",\n  \"full_name\": \"Jane Doe\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/register",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "register"]
+            },
+            "description": "Create a new account. **Returns 501 until Phase 2.**"
+          },
+          "response": [
+            {
+              "name": "501 Not Implemented",
+              "status": "Not Implemented",
+              "code": 501,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"detail\": \"User registration coming in Phase 2.\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Login [Phase 2 — 501]",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"SecurePass123!\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "login"]
+            },
+            "description": "Log in and receive a JWT Bearer token. **Returns 501 until Phase 2.**"
+          },
+          "response": [
+            {
+              "name": "501 Not Implemented",
+              "status": "Not Implemented",
+              "code": 501,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"detail\": \"Authentication coming in Phase 2.\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Current User [Phase 2 — 501]",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/me",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "me"]
+            },
+            "description": "Get the authenticated user's profile. **Returns 501 until Phase 2.**"
+          },
+          "response": [
+            {
+              "name": "501 Not Implemented",
+              "status": "Not Implemented",
+              "code": 501,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"detail\": \"User profile coming in Phase 2.\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

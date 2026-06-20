@@ -1,0 +1,62 @@
+# Corpus Project - Complete Dependencies Manifest
+# =============================================================================
+# This file serves as the documentation and tracking manifest for all 
+# technologies, system requirements, and package dependencies in Corpus.
+# =============================================================================
+
+[project]
+name = "Corpus"
+version = "1.0.0"
+description = "Domain-specific language learning platform for professionals"
+backend_framework = "FastAPI (Python 3.10+)"
+frontend_framework = "Svelte + Vite (Node 20+)"
+database_engine = "SQLite (Local) / SQLAlchemy"
+
+[system_requirements]
+python = ">=3.10"
+node = ">=20.0.0"
+npm = ">=9.0.0"
+docker = ">=20.10"
+docker_compose = ">=2.0"
+
+# Backend Python Dependencies (defined in requirements.txt)
+[dependencies.backend_core]
+fastapi = ">=0.100.0"          # Async web framework for REST API
+uvicorn = ">=0.22.0"           # ASGI server implementation
+pydantic = ">=2.0"             # Data validation and settings management
+python-multipart = ">=0.0.9"   # Form-data processing for file uploads
+python-dotenv = ">=1.0.0"      # Environment configuration loader
+
+[dependencies.backend_database]
+sqlalchemy = ">=2.0"           # Object Relational Mapper (ORM)
+alembic = ">=1.11.0"           # Database migrations tool
+psycopg2-binary = ">=2.9.0"    # PostgreSQL database adapter (production fallback)
+
+[dependencies.backend_auth]
+python-jose = ">=3.3.0"        # JOSE (JSON Object Signing and Encryption) for JWT tokens
+passlib = ">=1.7.4"            # Password hashing utility (using bcrypt)
+bcrypt = ">=4.0.1"             # Hashing library for secure passwords
+
+[dependencies.backend_ai_rag]
+google-generativeai = ">=0.8.0" # Google Gemini API Python SDK
+chromadb = ">=0.4.0"            # Vector database for RAG context storage
+sentence-transformers = ">=2.2" # Text embeddings generation
+
+# Frontend JavaScript Dependencies (defined in frontend/package.json)
+[dependencies.frontend_core]
+svelte = "^4.2.7"              # Svelte component framework
+vite = "^5.0.0"                # Asset compilation, bundling, and hot dev server
+lucide-svelte = "^0.300.0"     # Elegant vector icon pack
+
+# Recommended IDE Extensions
+[ide_extensions]
+vscode = [
+    "ms-python.python",        # Official Python extension (debugging, linting)
+    "ms-python.vscode-pylance", # Premium type checking and autocomplete
+    "svelte.svelte-vscode",    # Svelte syntax highlighting and components help
+    "tamasfe.even-better-toml" # TOML configuration assistant
+]
+cursor = [
+    "ms-python.python",
+    "svelte.svelte-vscode"
+]
