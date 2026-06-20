@@ -6,8 +6,8 @@
 # into an isolated local Python virtual environment (venv) on macOS/Linux.
 #
 # Usage:
-#   chmod +x setup/setup_venv.sh
-#   ./setup/setup_venv.sh
+#   chmod +x infrastructure/setup/setup_venv.sh
+#   ./infrastructure/setup/setup_venv.sh
 # =============================================================================
 
 set -e
@@ -20,12 +20,12 @@ RED='\033[0;31m'
 NC='\033[0;37m' # No Color
 
 echo -e "${CYAN}==========================================================${NC}"
-echo -e "${CYAN}  Corpus 🗣️💼 — Local Development Environment Initializer${NC}"
+echo -e "${CYAN}  Corpus — Local Development Environment Initializer${NC}"
 echo -e "${CYAN}==========================================================${NC}"
 
-# Navigate to project root (directory containing this script's parent)
+# Navigate to project root (2 directories up from this script's directory)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 cd "$PROJECT_ROOT"
 echo -e "Project root located at: $PROJECT_ROOT"
 

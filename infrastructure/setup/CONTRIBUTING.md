@@ -27,22 +27,24 @@ d:\Lantest
 │   ├── services/          # External Integrations (Gemini API, RAG, etc.)
 │   ├── static/            # Compiled static assets (created during build)
 │   └── main.py            # FastAPI App initialization & route mounting
-├── frontend/              # Svelte + Vite Client Application
+├── frontend/              # Svelte + Vite Client Application (TS + Tailwind)
 │   ├── src/
 │   │   ├── lib/           # UI Components (Splash, Onboarding, Chat, etc.)
 │   │   │   └── tracks.js  # Static Track & Vocabulary configurations
 │   │   ├── App.svelte     # State-based navigation router
-│   │   ├── app.css        # Premium dark glassmorphic styling tokens
-│   │   └── main.js        # Main Svelte mounting entry point
+│   │   ├── app.css        # Premium dark glassmorphic styling tokens (includes Tailwind directives)
+│   │   └── main.ts        # Main Svelte mounting entry point
 │   ├── package.json       # Node package configurations
-│   └── vite.config.js     # Vite compiler configuration
+│   ├── tsconfig.json      # TypeScript compiler configuration
+│   └── vite.config.ts     # Vite compiler configuration with Tailwind plugin
 ├── corpus_data/           # Static terminology database files (.json)
 ├── config.toml            # Application settings and tracks configuration
-├── setup/                 # Project installation, hosting, & contribution guides
-│   ├── CONTRIBUTING.md    # Developer setup guide (This file)
-│   ├── dependencies.toml  # Tech stack dependencies manifest
-│   ├── setup_venv.ps1     # Windows automated virtual environment script
-│   └── setup_venv.sh      # macOS/Linux automated virtual environment script
+├── infrastructure/        # Project installation, hosting, & contribution guides
+│   └── setup/
+│       ├── CONTRIBUTING.md    # Developer setup guide (This file)
+│       ├── dependencies.toml  # Tech stack dependencies manifest
+│       ├── setup_venv.ps1     # Windows automated virtual environment script
+│       └── setup_venv.sh      # macOS/Linux automated virtual environment script
 ├── Dockerfile             # Multi-stage Docker deployment definition
 ├── docker-compose.yml     # Container services configuration
 ├── requirements.txt       # Python environment packages listing
@@ -61,13 +63,13 @@ We provide setup scripts to automate virtualenv creation, activation, and pip de
 
 **On Windows (PowerShell):**
 ```powershell
-powershell -ExecutionPolicy Bypass -File setup/setup_venv.ps1
+powershell -ExecutionPolicy Bypass -File infrastructure/setup/setup_venv.ps1
 ```
 
 **On macOS / Linux (Terminal):**
 ```bash
-chmod +x setup/setup_venv.sh
-./setup/setup_venv.sh
+chmod +x infrastructure/setup/setup_venv.sh
+./infrastructure/setup/setup_venv.sh
 ```
 
 ---
@@ -146,7 +148,7 @@ Follow these quick steps to register the virtual environment inside your IDE:
 ## 🎨 Code & Design Standards
 
 ### 1. Frontend Styling & Theming
-All UI components must adhere to the premium **dark glassmorphic** theme. Use the variables defined in `frontend/src/app.css`:
+All UI components must adhere to the premium **dark glassmorphic** theme. Use the variables defined in `frontend/src/app.css` and incorporate Tailwind CSS utility classes.
 - **Main Background**: `#0A0E21` (Dark Navy)
 - **Secondary Card Background**: `#1C2043`
 - **Glass Utility class**:

@@ -44,8 +44,10 @@ sentence-transformers = ">=2.2" # Text embeddings generation
 
 # Frontend JavaScript Dependencies (defined in frontend/package.json)
 [dependencies.frontend_core]
-svelte = "^4.2.7"              # Svelte component framework
-vite = "^5.0.0"                # Asset compilation, bundling, and hot dev server
+svelte = "^5.55.5"             # Svelte component framework
+vite = "^8.0.12"               # Asset compilation, bundling, and hot dev server
+typescript = "^5.0.0"          # Type safety
+tailwindcss = "^4.0.0"         # Utility-first CSS styling
 lucide-svelte = "^0.300.0"     # Elegant vector icon pack
 
 # Recommended IDE Extensions

@@ -1,0 +1,21 @@
+# pyrefly.toml — Pyrefly (Python type checker) configuration
+# Docs: https://pyrefly.dev/configuration
+
+# Point Pyrefly at the project virtual environment so it resolves
+# installed packages (fastapi, pydantic, etc.) correctly and does NOT
+# fall back to guessing import paths via heuristics (which produces
+# the "Cannot find module" false positives).
+python_interpreter = "venv/Scripts/python.exe"
+
+# Only type-check source roots — do NOT crawl frontend/, docs/, etc.
+source_roots = ["backend", "rag", "tests"]
+
+# Exclude generated / third-party directories
+exclude = [
+    "venv",
+    "frontend",
+    "docs",
+    "infrastructure",
+    "corpus_data",
+    ".git",
+]

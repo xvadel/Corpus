@@ -49,19 +49,19 @@ Many skilled professionals face a career bottleneck due to:
 
 ## 🗂️ Project Structure & Setup Index
 
-Corpus groups all contributing, developer setup, and self-hosting documentation/scripts into the [setup/](file:///d:/Lantest/setup) folder to keep the root directory clean and highly organized.
+Corpus groups all contributing, developer setup, and self-hosting documentation/scripts into the [infrastructure/setup/](file:///d:/Lantest/infrastructure/setup) folder to keep the root directory clean and highly organized.
 
 ### ⚙️ Setup & Contributing Folder Index
 
-Each of these files is located inside the [setup/](file:///d:/Lantest/setup) directory:
+Each of these files is located inside the [infrastructure/setup/](file:///d:/Lantest/infrastructure/setup) directory:
 
-1. **[CONTRIBUTING.md](file:///d:/Lantest/setup/CONTRIBUTING.md)**
+1. **[CONTRIBUTING.md](file:///d:/Lantest/infrastructure/setup/CONTRIBUTING.md)**
    - Detailed guide for setting up local python environment, frontend svelte dev server, IDE python interpreter path integration (VS Code, Cursor, PyCharm), code standards, and database structure.
-2. **[dependencies.toml](file:///d:/Lantest/setup/dependencies.toml)**
+2. **[dependencies.toml](file:///d:/Lantest/infrastructure/setup/dependencies.toml)**
    - Modernized developer manifest defining backend Python dependencies (FastAPI, SQLAlchemy, etc.) and frontend packages (Svelte, Vite, Lucide icons) along with target IDE tools.
-3. **[setup_venv.ps1](file:///d:/Lantest/setup/setup_venv.ps1)**
+3. **[setup_venv.ps1](file:///d:/Lantest/infrastructure/setup/setup_venv.ps1)**
    - PowerShell script that automates creating an isolated virtual environment (`venv`), upgrading pip, and installing all package requirements on **Windows**.
-4. **[setup_venv.sh](file:///d:/Lantest/setup/setup_venv.sh)**
+4. **[setup_venv.sh](file:///d:/Lantest/infrastructure/setup/setup_venv.sh)**
    - Bash script that automates creating an isolated virtual environment (`venv`), upgrading pip, and installing all package requirements on **macOS/Linux**.
 
 ### 🐳 Self-Hosting & Root Assets
@@ -109,12 +109,12 @@ Run the setup script corresponding to your operating system to automatically ini
 
 - **Windows (PowerShell):**
   ```powershell
-  powershell -ExecutionPolicy Bypass -File setup/setup_venv.ps1
+  powershell -ExecutionPolicy Bypass -File infrastructure/setup/setup_venv.ps1
   ```
 - **macOS / Linux (Bash):**
   ```bash
-  chmod +x setup/setup_venv.sh
-  ./setup/setup_venv.sh
+  chmod +x infrastructure/setup/setup_venv.sh
+  ./infrastructure/setup/setup_venv.sh
   ```
 
 #### 2. Manual Setup
@@ -139,7 +139,7 @@ npm run dev
 ```
 
 > [!IMPORTANT]
-> **IDE Setup**: After setting up your virtual environment, verify that your IDE (VS Code, Cursor, PyCharm) is set to use the environment's Python interpreter path (`venv/Scripts/python.exe` on Windows or `venv/bin/python` on Unix). This resolves any "Cannot find module" linter and path configuration warnings. See the **[CONTRIBUTING.md](file:///d:/Lantest/setup/CONTRIBUTING.md)** instructions for full IDE screenshots and details.
+> **IDE Setup**: After setting up your virtual environment, verify that your IDE (VS Code, Cursor, PyCharm) is set to use the environment's Python interpreter path (`venv/Scripts/python.exe` on Windows or `venv/bin/python` on Unix). This resolves any "Cannot find module" linter and path configuration warnings. See the **[CONTRIBUTING.md](file:///d:/Lantest/infrastructure/setup/CONTRIBUTING.md)** instructions for full IDE screenshots and details.
 
 ---
 
@@ -197,7 +197,7 @@ Ensure port `8000` is exposed and `DATABASE_URL` points to your production Postg
 
 ## 🍴 Contributing
 
-We welcome all contributions! Detailed workflows are documented in **[setup/CONTRIBUTING.md](file:///d:/Lantest/setup/CONTRIBUTING.md)**:
+We welcome all contributions! Detailed workflows are documented in **[setup/CONTRIBUTING.md](file:///d:/Lantest/infrastructure/setup/CONTRIBUTING.md)**:
 - Local setup guide
 - Code architecture deep-dive
 - How to add a new learning track

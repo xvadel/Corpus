@@ -5,7 +5,7 @@
 # into an isolated local Python virtual environment (venv).
 #
 # Usage:
-#   powershell -ExecutionPolicy Bypass -File setup/setup_venv.ps1
+#   powershell -ExecutionPolicy Bypass -File infrastructure/setup/setup_venv.ps1
 # =============================================================================
 
 $ErrorActionPreference = "Stop"
@@ -14,9 +14,9 @@ Write-Host "==========================================================" -Foregro
 Write-Host "  Corpus - Local Development Environment Initializer" -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
 
-# Ensure script runs from project root
+# Ensure script runs from project root (2 folders up from this script's directory)
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ProjectRoot = Resolve-Path (Join-Path $ScriptDir "..")
+$ProjectRoot = Resolve-Path (Join-Path $ScriptDir "../..")
 Set-Location $ProjectRoot
 Write-Host "Project root located at: $ProjectRoot" -ForegroundColor Gray
 
