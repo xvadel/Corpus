@@ -5,9 +5,9 @@
   "category": "Embeddings",
   "term": "Cosine Similarity",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Embeddings, representing Cosine Similarity.",
-  "simple_explanation": "Think of Cosine Similarity as an essential building block of Retrieval Augmented Generation. It is commonly used within Embeddings.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Cosine Similarity plays a key role within Embeddings. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Cosine similarity, also known as cosine coefficient or cosine distance, is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. It is often used in information retrieval and text mining to compare the semantic similarity between documents or embeddings.",
+  "simple_explanation": "Imagine two vectors in a high-dimensional space, each representing a piece of text or an image, and the cosine similarity is a way to measure how closely these vectors point in the same direction, with 1 being identical and -1 being opposite, and 0 being orthogonal or unrelated. For example, if you have two sentences 'I love playing soccer' and 'I enjoy playing football', their vector representations would have a high cosine similarity because they point in a similar direction in the semantic space. This allows us to compare and retrieve similar items from a large dataset.",
+  "technical_explanation": "Under the hood, cosine similarity is calculated as the dot product of two vectors divided by the product of their magnitudes, which normalizes the vectors to have a length of 1, allowing for comparison of direction rather than magnitude. This mechanism is useful for comparing high-dimensional embeddings, but it can be sensitive to the choice of embedding algorithm and dimensionality, and may require techniques like normalization or regularization to mitigate issues like noise or outliers. The trade-off is between capturing nuanced semantic relationships and avoiding overfitting or underfitting in the embedding space.",
   "investor_explanation": "Robust configuration of Cosine Similarity directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Cosine Similarity in our Retrieval Augmented Generation pipeline to improve performance.",

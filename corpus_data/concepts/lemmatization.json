@@ -5,9 +5,9 @@
   "category": "Text Processing",
   "term": "Lemmatization",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Natural Language Processing under Text Processing, representing Lemmatization.",
-  "simple_explanation": "Think of Lemmatization as an essential building block of Natural Language Processing. It is commonly used within Text Processing.",
-  "technical_explanation": "In production Natural Language Processing systems, Lemmatization plays a key role within Text Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Lemmatization is a process in Natural Language Processing (NLP) that reduces words to their base or root form, also known as the lemma, which is the dictionary form of a word. It is also referred to as lexical normalization or base form reduction.",
+  "simple_explanation": "Lemmatization is like finding the common root of a family of words, for example, 'running', 'runs', and 'runner' all come from the base word 'run', so lemmatization would reduce these words to 'run', making it easier to compare and analyze text. This process helps to reduce the dimensionality of text data and improve the accuracy of NLP models. By normalizing words to their base form, lemmatization enables more efficient text processing and analysis.",
+  "technical_explanation": "Lemmatization works by using a combination of rules-based approaches and machine learning algorithms to identify the base form of a word, taking into account the word's context, part-of-speech, and morphological properties. The process involves tokenization, part-of-speech tagging, and lexical lookups to determine the lemma of each word, and may also involve handling exceptions, such as irregular verbs and nouns. The choice of lemmatization algorithm and dictionary can significantly impact the accuracy and efficiency of the process, and may require trade-offs between precision, recall, and computational complexity.",
   "investor_explanation": "Robust configuration of Lemmatization directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Lemmatization in our Natural Language Processing pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Orchestration",
   "term": "LiteLLM",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in AI Engineering under Orchestration, representing LiteLLM.",
-  "simple_explanation": "Think of LiteLLM as an essential building block of AI Engineering. It is commonly used within Orchestration.",
-  "technical_explanation": "In production AI Engineering systems, LiteLLM plays a key role within Orchestration. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "LiteLLM (Lightweight Large Language Model) refers to a class of compact, efficient, and optimized language models designed for resource-constrained environments, also known as compressed or distilled LLMs. These models are alternatively referred to as TinyLLMs or SmallLLMs.",
+  "simple_explanation": "Imagine having a powerful language translation app on your smartphone that can understand and respond to voice commands without needing a constant internet connection - this is made possible by LiteLLM, which is like a slimmed-down version of a large language model that can run on smaller devices. It's designed to be faster and more efficient while still maintaining a good level of accuracy. This allows for more widespread adoption of AI-powered language processing in everyday devices.",
+  "technical_explanation": "Under the hood, LiteLLM achieves its efficiency through various techniques such as model pruning, knowledge distillation, and quantization, which reduce the computational requirements and memory footprint of the model. These mechanisms enable LiteLLM to make trade-offs between model size, inference speed, and accuracy, allowing engineers to deploy AI models in resource-constrained environments like edge devices or mobile apps. By optimizing these trade-offs, LiteLLM facilitates the orchestration of AI workflows in scenarios where traditional large language models would be impractical due to their size and computational demands.",
   "investor_explanation": "Robust configuration of LiteLLM directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized LiteLLM in our AI Engineering pipeline to improve performance.",

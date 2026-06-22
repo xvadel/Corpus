@@ -5,9 +5,9 @@
   "category": "Transformers",
   "term": "Positional Encoding",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Positional Encoding.",
-  "simple_explanation": "Think of Positional Encoding as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Positional Encoding plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Positional encoding, also known as position encoding or PE, is a technique used in transformer-based deep learning models to preserve the order of input sequences by adding a fixed vector to the input embeddings. This technique is essential in transformers as they do not inherently capture the sequential nature of the input data.",
+  "simple_explanation": "Imagine you're trying to describe a sentence to someone, but you can only say the words one at a time, without any context of what came before or after - that's kind of like what transformers face without positional encoding. To solve this, positional encoding adds a special set of coordinates to each word, like a map, so the model knows where each word is in the sentence. This helps the model understand the relationships between words based on their position.",
+  "technical_explanation": "Positional encoding works by adding a vector, whose values are determined by a fixed function based on the position of the input element, to the input embedding at each position. The most common method uses a combination of sine and cosine functions of different frequencies to generate these vectors, allowing the model to capture both short-range and long-range dependencies in the input sequence. This encoding scheme allows transformers to effectively process sequential data, such as text or time series data, despite the lack of recurrent connections.",
   "investor_explanation": "Robust configuration of Positional Encoding directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Positional Encoding in our Deep Learning Foundations pipeline to improve performance.",

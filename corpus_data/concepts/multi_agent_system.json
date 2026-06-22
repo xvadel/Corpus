@@ -5,9 +5,9 @@
   "category": "Core Concepts",
   "term": "Multi-Agent System",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Multi-Agent System.",
-  "simple_explanation": "Think of Multi-Agent System as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
-  "technical_explanation": "In production Agentic AI systems, Multi-Agent System plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Multi-Agent System (MAS) is a computational framework that consists of multiple autonomous agents interacting with each other and their environment to achieve individual or collective goals, also known as Distributed Problem Solving or Agent-Based Modeling. It is a key concept in Agentic AI, where multiple agents collaborate, coordinate, or compete to solve complex problems.",
+  "simple_explanation": "Imagine a team of robots working together to build a house, where each robot has its own role and responsibilities, but they all communicate and coordinate to achieve the common goal of completing the house. In a Multi-Agent System, these robots are like individual agents that interact with each other and their environment to achieve their objectives. This concept is similar to how humans work together in teams to accomplish complex tasks.",
+  "technical_explanation": "Under the hood, a Multi-Agent System works by utilizing various mechanisms such as agent communication languages, coordination protocols, and distributed problem-solving algorithms to enable agents to interact, negotiate, and make decisions. The system's performance is influenced by engineering trade-offs such as agent autonomy, communication overhead, and conflict resolution, which must be carefully balanced to achieve efficient and effective collective behavior. Key challenges in designing MAS include ensuring scalability, handling partial observability, and managing the complexity of agent interactions.",
   "investor_explanation": "Robust configuration of Multi-Agent System directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Multi-Agent System in our Agentic AI pipeline to improve performance.",

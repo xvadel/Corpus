@@ -5,9 +5,9 @@
   "category": "Prompt Engineering",
   "term": "Role Prompting",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Role Prompting.",
-  "simple_explanation": "Think of Role Prompting as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
-  "technical_explanation": "In production Agentic AI systems, Role Prompting plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Role Prompting, also known as Role-Based Prompting, is a technique in Agentic AI where a model is given a specific role or persona to adopt when generating text or making decisions, allowing for more controlled and context-dependent behavior. It is a subset of Prompt Engineering, which involves designing and optimizing text prompts to elicit desired responses from AI models.",
+  "simple_explanation": "Imagine you're talking to a chatbot, and you want it to respond as a customer support agent would - Role Prompting is like giving the chatbot a name tag that says 'Customer Support' so it knows how to behave and respond to your questions. This technique helps AI models understand the context and tone they should use when generating text, making their responses more relevant and useful. By adopting a specific role, the model can provide more accurate and helpful information.",
+  "technical_explanation": "Role Prompting works by incorporating role-specific keywords, phrases, or personas into the input prompt, which are then used by the model to generate text or make decisions. The model's internal mechanisms, such as attention and language generation algorithms, are influenced by the role prompt, allowing it to adapt its behavior and output to fit the specified role. However, engineering trade-offs, such as balancing role-specific behavior with general knowledge and avoiding overfitting to specific roles, must be carefully considered when implementing Role Prompting techniques.",
   "investor_explanation": "Robust configuration of Role Prompting directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Role Prompting in our Agentic AI pipeline to improve performance.",

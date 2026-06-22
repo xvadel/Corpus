@@ -2,7 +2,7 @@
 
 [app]
 name = "Corpus"
-version = "1.0.0"
+version = "1.1.0"
 environment = "development"
 description = "Domain-specific language learning for high-stakes professional communication."
 
@@ -12,9 +12,9 @@ default_target_language = "en"  # Language to learn (e.g. English for investor p
 supported_languages = ["en", "es", "de", "fr", "ar"]
 
 [ai_coach]
-provider = "gemini"             # Default AI provider (gemini, openai)
-model = "gemini-1.5-pro"        # Model used for roleplay and grammar evaluation
-temperature = 0.7
+provider = "groq"               # Default AI provider (groq, gemini, openai)
+model = "llama-3.3-70b-versatile" # Model used for roleplay and grammar evaluation
+temperature = 0.3
 max_tokens = 1000
 
 # Professional and Technical Career Tracks
@@ -38,6 +38,13 @@ name = "Business & Product Management"
 description = "Communicate effectively with cross-functional teams, stakeholders, and clients."
 difficulty_levels = ["Intermediate", "Advanced"]
 focus_areas = ["Stakeholder Alignment", "Product Discovery", "Metrics & KPI Reporting"]
+
+[[tracks]]
+id = "ai_engineering"
+name = "AI Engineering"
+description = "Master communication about agentic workflows, chunking strategies, vector search, and RAG architectures."
+difficulty_levels = ["Intermediate", "Advanced"]
+focus_areas = ["Retrieval-Augmented Generation", "Agentic Workflows", "Vector Databases & Latency"]
 
 [features]
 enable_ai_chat = true           # Interactive roleplay chat with AI investors/colleagues

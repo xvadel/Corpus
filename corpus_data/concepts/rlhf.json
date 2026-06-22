@@ -5,9 +5,9 @@
   "category": "Model Adaptation",
   "term": "RLHF",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing RLHF.",
-  "simple_explanation": "Think of RLHF as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
-  "technical_explanation": "In production Agentic AI systems, RLHF plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "RLHF (Reinforcement Learning from Human Feedback) is a technique used in Agentic AI for model adaptation, also known as human-in-the-loop reinforcement learning. It involves fine-tuning a pre-trained model using human feedback in the form of rewards or preferences to align the model's behavior with human values and goals.",
+  "simple_explanation": "Imagine you're teaching a child to make breakfast, and you provide feedback on their actions, such as 'good job cracking the egg' or 'be careful with the hot pan'. RLHF works similarly, where a human provides feedback to an AI model on its actions, helping the model learn what is desirable and undesirable behavior. This process enables the model to adapt and improve its performance over time.",
+  "technical_explanation": "RLHF works by using a pre-trained model as a starting point and fine-tuning it using a reinforcement learning algorithm, such as proximal policy optimization (PPO) or soft actor-critic (SAC), with human feedback as the reward signal. The key mechanism involves collecting human feedback in the form of preferences or ratings, which are then used to update the model's policy and value functions to maximize the cumulative reward. However, this approach requires careful consideration of engineering trade-offs, such as balancing exploration and exploitation, handling noisy or biased human feedback, and ensuring the model's adaptability and robustness to changing environments and objectives.",
   "investor_explanation": "Robust configuration of RLHF directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized RLHF in our Agentic AI pipeline to improve performance.",

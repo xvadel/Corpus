@@ -5,9 +5,9 @@
   "category": "LLMs",
   "term": "Context Window",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Context Window.",
-  "simple_explanation": "Think of Context Window as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
-  "technical_explanation": "In production Natural Language Processing systems, Context Window plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Context Window, also known as a sliding window or attention window, refers to the fixed-size sequence of tokens or words that a language model considers when generating text or making predictions. It is a crucial component in many Natural Language Processing (NLP) architectures, particularly in Large Language Models (LLMs).",
+  "simple_explanation": "Imagine you're trying to understand a sentence, but you can only see a few words at a time - that's basically what a Context Window does, it limits the amount of text a language model looks at when making decisions, like a small flashlight shining on a specific part of the text. This helps the model focus on the most relevant information and make more accurate predictions. For example, if the Context Window is 5 words, the model will only consider the current word and the 4 words immediately surrounding it.",
+  "technical_explanation": "Under the hood, a Context Window works by truncating the input sequence to a fixed length, typically using a combination of padding and masking techniques to handle variable-length sequences. The model then uses self-attention mechanisms to weigh the importance of each token within the Context Window, allowing it to capture complex contextual relationships and dependencies. However, the choice of Context Window size involves a trade-off between computational efficiency and contextual understanding, with larger windows providing more context but increasing computational costs.",
   "investor_explanation": "Robust configuration of Context Window directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Context Window in our Natural Language Processing pipeline to improve performance.",

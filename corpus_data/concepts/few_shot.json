@@ -5,9 +5,9 @@
   "category": "Prompt Engineering",
   "term": "Few-Shot",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Few-Shot.",
-  "simple_explanation": "Think of Few-Shot as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
-  "technical_explanation": "In production Agentic AI systems, Few-Shot plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Few-Shot learning, also known as Low-Shot or Meta-Learning, refers to a machine learning approach where a model is trained to perform a task with only a limited number of examples, typically fewer than 10. This approach is particularly useful in Agentic AI and Prompt Engineering, where models need to adapt to new tasks or prompts with minimal training data.",
+  "simple_explanation": "Imagine you're trying to teach a child to recognize different types of animals, but you only have a few pictures to show them. Few-Shot learning is like this, where the model learns to recognize patterns and make predictions based on just a few examples, rather than requiring a large dataset. This approach enables models to learn quickly and adapt to new situations, much like how humans can learn from a few examples and apply that knowledge to new situations.",
+  "technical_explanation": "Few-Shot learning works by leveraging meta-learning algorithms, such as Model-Agnostic Meta-Learning (MAML) or Reptile, which train a model to learn a set of tasks and then fine-tune it on a new task with only a few examples. This approach involves optimizing the model's weights to be a good starting point for a variety of tasks, and then updating those weights based on the limited examples available for the new task, allowing the model to adapt quickly and make accurate predictions. The key engineering trade-off in Few-Shot learning is balancing the model's ability to generalize across tasks with its ability to adapt to the specific examples provided for the new task.",
   "investor_explanation": "Robust configuration of Few-Shot directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Few-Shot in our Agentic AI pipeline to improve performance.",

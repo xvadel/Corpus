@@ -5,9 +5,9 @@
   "category": "Evaluation",
   "term": "Benchmarking",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in AI Engineering under Evaluation, representing Benchmarking.",
-  "simple_explanation": "Think of Benchmarking as an essential building block of AI Engineering. It is commonly used within Evaluation.",
-  "technical_explanation": "In production AI Engineering systems, Benchmarking plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Benchmarking refers to the process of evaluating and comparing the performance of artificial intelligence (AI) and machine learning (ML) models or systems against a standard set of metrics, datasets, or tasks, also known as benchmarks. It is also referred to as model benchmarking or performance benchmarking.",
+  "simple_explanation": "Imagine you're buying a new car and you want to know how fast it can go - you'd take it to a racing track and compare its speed to other cars, that's basically what benchmarking does for AI models, it tests their performance on a specific task or dataset and compares it to others. This helps engineers understand how well their model is doing and where it needs improvement. By using benchmarking, engineers can identify areas for optimization and make data-driven decisions.",
+  "technical_explanation": "Under the hood, benchmarking involves selecting a relevant dataset or task, preparing the model or system for evaluation, and then executing a series of tests to measure performance metrics such as accuracy, precision, recall, or F1 score. The results are then compared to a baseline or other models to identify strengths and weaknesses, and engineering trade-offs such as model complexity, computational resources, and training time are considered to optimize performance. Key mechanisms include data preprocessing, model selection, and hyperparameter tuning to ensure fair and accurate comparisons.",
   "investor_explanation": "Robust configuration of Benchmarking directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Benchmarking in our AI Engineering pipeline to improve performance.",

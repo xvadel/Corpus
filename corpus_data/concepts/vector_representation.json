@@ -5,9 +5,9 @@
   "category": "Embeddings",
   "term": "Vector Representation",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Embeddings, representing Vector Representation.",
-  "simple_explanation": "Think of Vector Representation as an essential building block of Retrieval Augmented Generation. It is commonly used within Embeddings.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Vector Representation plays a key role within Embeddings. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Vector representation, also known as vector embedding or distributed representation, refers to a mathematical technique used to represent complex data, such as words, images, or objects, as dense vectors in a high-dimensional space. This technique is a crucial component of various AI models, including those used in Retrieval Augmented Generation.",
+  "simple_explanation": "Imagine a library where each book is represented by a unique set of coordinates on a map, allowing you to find similar books by looking at their proximity on the map. Similarly, vector representation maps complex data to vectors in a high-dimensional space, enabling the capture of semantic relationships and similarities between data points. This allows AI models to perform tasks like text classification, image recognition, and recommendation systems.",
+  "technical_explanation": "Under the hood, vector representation relies on neural network architectures, such as feed-forward networks, to learn the mapping between input data and their corresponding vector representations. The key mechanism involves training the network to minimize a loss function, such as cosine similarity or triplet loss, which encourages the model to preserve semantic relationships between data points in the vector space. Engineering trade-offs include balancing the dimensionality of the vector space, the choice of loss function, and the selection of hyperparameters to optimize the performance of the vector representation model.",
   "investor_explanation": "Robust configuration of Vector Representation directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Vector Representation in our Retrieval Augmented Generation pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Top-K Retrieval",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Top-K Retrieval.",
-  "simple_explanation": "Think of Top-K Retrieval as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Top-K Retrieval plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Top-K Retrieval, also known as Top-K Search or K-Nearest Neighbors (KNN) Search, is a technique used in information retrieval and similarity search to retrieve the top K most relevant or similar items from a large dataset. It is a fundamental component of Retrieval Augmented Generation systems, where K is a hyperparameter that controls the number of retrieved items.",
+  "simple_explanation": "Imagine you're searching for a specific book in a vast library, and you want to find the top 5 most similar books based on their content or author. Top-K Retrieval is like a librarian who finds these 5 books for you by ranking all the books in the library according to their similarity to your search query. This technique helps narrow down the search space to the most relevant items, making it easier to find what you're looking for.",
+  "technical_explanation": "Under the hood, Top-K Retrieval works by computing the similarity scores between the query and each item in the dataset using a distance metric, such as cosine similarity or Euclidean distance. The items are then ranked in descending order of their similarity scores, and the top K items are returned as the result. The choice of K and the distance metric used can significantly impact the performance and accuracy of the retrieval system, requiring careful tuning and optimization to achieve the desired trade-off between precision, recall, and computational efficiency.",
   "investor_explanation": "Robust configuration of Top-K Retrieval directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Top-K Retrieval in our Retrieval Augmented Generation pipeline to improve performance.",

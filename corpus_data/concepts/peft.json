@@ -5,9 +5,9 @@
   "category": "Model Adaptation",
   "term": "Parameter-Efficient Fine-Tuning",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing Parameter-Efficient Fine-Tuning.",
-  "simple_explanation": "Think of Parameter-Efficient Fine-Tuning as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
-  "technical_explanation": "In production Agentic AI systems, Parameter-Efficient Fine-Tuning plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Parameter-Efficient Fine-Tuning, also known as PEF or adapter-based fine-tuning, refers to a set of techniques that enable the efficient adaptation of pre-trained models to new tasks or domains by modifying only a small subset of the model's parameters. This approach is particularly useful in Agentic AI, where models need to adapt to changing environments or learn new skills.",
+  "simple_explanation": "Imagine you have a highly skilled engineer who has learned to build houses, but now you want them to build bridges. Instead of retraining them from scratch, you provide them with a set of specialized tools and blueprints that allow them to adapt their existing skills to the new task. Parameter-Efficient Fine-Tuning works in a similar way, by adding a small set of 'adapter' parameters to a pre-trained model, allowing it to learn new tasks without forgetting its existing knowledge.",
+  "technical_explanation": "Parameter-Efficient Fine-Tuning works by adding a set of low-rank adapter matrices or modules to the pre-trained model, which are trained to adapt the model's outputs to the new task or domain. This approach reduces the number of parameters that need to be updated during fine-tuning, making it more efficient and reducing the risk of overfitting. The key mechanism underlying PEF is the use of low-rank approximations, such as LoRA (Low-Rank Adaptation), which allow the model to capture task-specific information while minimizing the number of updated parameters.",
   "investor_explanation": "Robust configuration of Parameter-Efficient Fine-Tuning directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Parameter-Efficient Fine-Tuning in our Agentic AI pipeline to improve performance.",

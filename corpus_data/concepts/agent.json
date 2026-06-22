@@ -5,9 +5,9 @@
   "category": "Core Concepts",
   "term": "Agent",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Agent.",
-  "simple_explanation": "Think of Agent as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
-  "technical_explanation": "In production Agentic AI systems, Agent plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "An agent refers to an autonomous entity, also known as an intelligent agent or autonomous agent, that perceives its environment and takes actions to achieve specific goals. Alternative names include autonomous systems or decision-making agents.",
+  "simple_explanation": "Think of an agent like a robot that can sense its surroundings, make decisions based on what it senses, and perform actions to achieve its objectives, similar to how a self-driving car navigates through traffic to reach its destination. This robot can learn from its experiences and adapt to new situations, allowing it to improve its performance over time. For example, a smart thermostat can be considered an agent that adjusts the temperature based on the user's schedule and preferences.",
+  "technical_explanation": "Under the hood, an agent operates by using a combination of perception, reasoning, and action mechanisms, which involve processing sensory inputs, updating its internal state, and selecting actions based on its goals and preferences. The agent's decision-making process often relies on machine learning algorithms, such as reinforcement learning or planning, to balance exploration and exploitation trade-offs. Key engineering considerations include designing the agent's architecture, selecting suitable algorithms, and tuning parameters to optimize performance in complex, dynamic environments.",
   "investor_explanation": "Robust configuration of Agent directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Agent in our Agentic AI pipeline to improve performance.",

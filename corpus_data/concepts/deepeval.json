@@ -5,9 +5,9 @@
   "category": "Evaluation",
   "term": "DeepEval",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in AI Engineering under Evaluation, representing DeepEval.",
-  "simple_explanation": "Think of DeepEval as an essential building block of AI Engineering. It is commonly used within Evaluation.",
-  "technical_explanation": "In production AI Engineering systems, DeepEval plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "DeepEval is a framework for evaluating the faithfulness of deep learning models, also known as Deep Model Evaluation, which assesses how well a model's explanations align with its internal decision-making process. It is a crucial component of AI Engineering, enabling the development of more transparent and trustworthy AI systems.",
+  "simple_explanation": "Imagine you have a complex black-box machine learning model that makes predictions, but you're not sure why it's making those predictions. DeepEval is like a debugger that helps you understand how the model is arriving at its decisions, by analyzing the model's internal workings and identifying potential flaws or biases. This is similar to how a doctor might use medical imaging to understand what's going on inside a patient's body.",
+  "technical_explanation": "DeepEval works by using a combination of techniques such as saliency maps, feature importance, and model interpretability methods to analyze the model's internal representations and identify the most relevant input features that contribute to its predictions. The framework also involves benchmarking the model against a set of predefined metrics, such as faithfulness and robustness, to evaluate its performance and identify potential weaknesses. By leveraging these techniques, DeepEval provides a comprehensive evaluation of the model's decision-making process, enabling engineers to refine and improve the model's performance and reliability.",
   "investor_explanation": "Robust configuration of DeepEval directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized DeepEval in our AI Engineering pipeline to improve performance.",

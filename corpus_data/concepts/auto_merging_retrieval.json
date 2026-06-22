@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Auto-Merging Retrieval",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Auto-Merging Retrieval.",
-  "simple_explanation": "Think of Auto-Merging Retrieval as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Auto-Merging Retrieval plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Auto-Merging Retrieval, also known as AMR, is a technique used in Retrieval Augmented Generation that involves automatically merging retrieved chunks of text to generate coherent and contextually relevant responses. It is a key component of Retrieval Augmented Generation systems, enabling the efficient retrieval and combination of relevant information from large databases or knowledge graphs.",
+  "simple_explanation": "Imagine you're trying to write a story, and you have a huge library of books to draw inspiration from. Auto-Merging Retrieval is like having a super-smart librarian who can quickly find the most relevant sentences or paragraphs from those books and stitch them together to help you create a cohesive narrative. This technique helps generate more accurate and informative responses by leveraging the power of retrieval and merging.",
+  "technical_explanation": "Under the hood, Auto-Merging Retrieval relies on chunking, Top-K Retrieval, and reranking mechanisms to identify the most relevant chunks of text, which are then merged using techniques such as sequence-to-sequence models or graph-based methods. The engineering trade-offs involve balancing the recall and precision of the retrieval process, as well as optimizing the merging strategy to minimize errors and maximize coherence, all while considering computational efficiency and scalability constraints.",
   "investor_explanation": "Robust configuration of Auto-Merging Retrieval directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Auto-Merging Retrieval in our Retrieval Augmented Generation pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Core Concepts",
   "term": "Tool Use",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Tool Use.",
-  "simple_explanation": "Think of Tool Use as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
-  "technical_explanation": "In production Agentic AI systems, Tool Use plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Tool Use refers to the ability of an intelligent agent to utilize external tools, instruments, or software to achieve its goals, also known as Instrumental Reasoning or Tool Manipulation. It is a fundamental concept in Agentic AI, enabling agents to extend their capabilities and interact with their environment more effectively.",
+  "simple_explanation": "Think of Tool Use like a human using a hammer to drive nails - the hammer is a tool that helps achieve a specific goal, and the human must learn how to use it effectively. In Agentic AI, Tool Use works similarly, where an agent learns to use external tools, like software or instruments, to accomplish tasks or solve problems. This allows agents to adapt to new situations and overcome limitations.",
+  "technical_explanation": "Under the hood, Tool Use involves complex decision-making processes, such as planning, reasoning, and problem-solving, which enable an agent to select and utilize the most suitable tool for a given task. Key mechanisms include function calling, API integration, and instrumental reasoning, which require careful engineering trade-offs between flexibility, efficiency, and reliability to ensure effective Tool Use. By leveraging these mechanisms, Agentic AI systems can significantly enhance their autonomy and capabilities.",
   "investor_explanation": "Robust configuration of Tool Use directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Tool Use in our Agentic AI pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Reciprocal Rank Fusion",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Reciprocal Rank Fusion.",
-  "simple_explanation": "Think of Reciprocal Rank Fusion as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Reciprocal Rank Fusion plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Reciprocal Rank Fusion (RRF) is a technique used in information retrieval and ranking tasks, also known as Reciprocal Rank Fusion or RR algorithm, which combines the rankings of multiple retrieval systems to produce a single, improved ranking. It is particularly useful in Retrieval Augmented Generation tasks where multiple retrieval systems are employed.",
+  "simple_explanation": "Imagine you're searching for a restaurant and you ask two friends for recommendations, each giving you a list of their top picks. Reciprocal Rank Fusion is like a method that takes these two lists and merges them into one, considering not just the ranking each friend gave, but how the rankings from one list affect the items in the other, to give you a single, more reliable list of recommendations. This approach helps in identifying the most relevant items by cross-referencing the rankings from multiple sources.",
+  "technical_explanation": "Under the hood, Reciprocal Rank Fusion works by calculating a new score for each item based on its rank in each of the input lists, taking into account the reciprocal rank of the item in the other lists. This process involves iterating through the rankings, updating scores based on the reciprocal ranks, and then sorting the items by their final scores to produce the fused ranking. The key engineering trade-off in implementing RRF involves balancing the computational cost of the iterative process with the improvement in ranking accuracy it provides over simpler fusion methods.",
   "investor_explanation": "Robust configuration of Reciprocal Rank Fusion directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Reciprocal Rank Fusion in our Retrieval Augmented Generation pipeline to improve performance.",

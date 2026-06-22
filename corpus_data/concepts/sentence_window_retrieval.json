@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Sentence Window Retrieval",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Sentence Window Retrieval.",
-  "simple_explanation": "Think of Sentence Window Retrieval as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Sentence Window Retrieval plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Sentence Window Retrieval, also known as SWR, is a technique used in Retrieval Augmented Generation to retrieve relevant sentences or chunks of text from a large corpus based on a given input prompt or query. It is a key component of various natural language processing and generation tasks, including question answering, text summarization, and language translation.",
+  "simple_explanation": "Imagine you're trying to write a research paper and you need to find relevant sentences from a large library of books to support your arguments. Sentence Window Retrieval is like a librarian that helps you find the most relevant sentences from the library, but instead of searching the entire book, it looks at small windows of text, such as individual sentences or paragraphs, to quickly identify the most useful information. This approach allows for efficient and effective retrieval of relevant text chunks.",
+  "technical_explanation": "Under the hood, Sentence Window Retrieval relies on chunking the input text into smaller segments, such as sentences or fixed-size windows, and then using embedding models or other similarity metrics to compare these chunks to the input query. The system then applies Top-K Retrieval algorithms to rank and select the most relevant chunks, balancing trade-offs between retrieval accuracy, computational efficiency, and memory usage. By optimizing these parameters, engineers can fine-tune the Sentence Window Retrieval system to achieve high-performance retrieval results in various downstream natural language processing tasks.",
   "investor_explanation": "Robust configuration of Sentence Window Retrieval directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Sentence Window Retrieval in our Retrieval Augmented Generation pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Core Concepts",
   "term": "Workflow Orchestration",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Workflow Orchestration.",
-  "simple_explanation": "Think of Workflow Orchestration as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
-  "technical_explanation": "In production Agentic AI systems, Workflow Orchestration plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Workflow Orchestration, also known as Workflow Management or WFM, refers to the process of designing, executing, and monitoring a series of automated tasks or workflows, often involving multiple agents or systems, to achieve a specific business or technical goal. It is a crucial concept in Agentic AI, enabling the coordination of complex tasks and interactions between autonomous agents.",
+  "simple_explanation": "Imagine a conductor leading an orchestra, where each musician represents a different task or agent, and the conductor ensures they all work together in harmony to produce a beautiful symphony. Similarly, Workflow Orchestration coordinates the execution of multiple tasks, ensuring they are completed in the right order, at the right time, and with the right inputs, to achieve a desired outcome. This enables efficient and scalable automation of complex processes.",
+  "technical_explanation": "Under the hood, Workflow Orchestration typically involves a centralized or decentralized architecture, where a workflow engine or orchestrator manages the execution of tasks, handles dependencies and exceptions, and monitors progress. Key mechanisms include task queues, state machines, and communication protocols, which enable the orchestrator to interact with agents and systems, while engineering trade-offs involve balancing factors like scalability, reliability, and flexibility, to ensure the workflow can adapt to changing conditions and requirements.",
   "investor_explanation": "Robust configuration of Workflow Orchestration directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Workflow Orchestration in our Agentic AI pipeline to improve performance.",

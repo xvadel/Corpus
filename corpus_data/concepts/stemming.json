@@ -5,9 +5,9 @@
   "category": "Text Processing",
   "term": "Stemming",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Natural Language Processing under Text Processing, representing Stemming.",
-  "simple_explanation": "Think of Stemming as an essential building block of Natural Language Processing. It is commonly used within Text Processing.",
-  "technical_explanation": "In production Natural Language Processing systems, Stemming plays a key role within Text Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Stemming, also known as Stemming Algorithm or Stemmer, is a technique in Natural Language Processing (NLP) used to reduce words to their base or root form, known as the stem. It is a simplified alternative to Lemmatization, which uses a dictionary-based approach to achieve a similar goal.",
+  "simple_explanation": "Imagine you have a collection of words like 'running', 'runs', and 'runner', and you want to treat them as the same word because they all come from the same root 'run'. Stemming is like a process that chops off the endings of words to get them back to their simplest form, so 'running' and 'runs' would both become 'run', making it easier to compare and analyze them. This helps in text processing by reducing the number of unique words to deal with.",
+  "technical_explanation": "Under the hood, stemming algorithms work by applying a set of predefined rules to strip away suffixes from words, such as removing '-ing' or '-ed' endings. The most common stemming algorithm is the Porter Stemmer, which uses a series of rules to reduce words to their stem, but it can sometimes produce incorrect results due to its simplistic approach, highlighting the trade-off between simplicity and accuracy in stemming versus more complex techniques like lemmatization.",
   "investor_explanation": "Robust configuration of Stemming directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Stemming in our Natural Language Processing pipeline to improve performance.",

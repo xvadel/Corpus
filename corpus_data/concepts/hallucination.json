@@ -5,9 +5,9 @@
   "category": "LLMs",
   "term": "Hallucination",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Hallucination.",
-  "simple_explanation": "Think of Hallucination as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
-  "technical_explanation": "In production Natural Language Processing systems, Hallucination plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Hallucination, also known as confabulation, refers to a phenomenon in Natural Language Processing (NLP) where a language model, particularly Large Language Models (LLMs), generates text that is not based on any actual input or context, but rather on the model's own biases, patterns, or learned associations. This can result in the model producing inaccurate, fabricated, or nonsensical information.",
+  "simple_explanation": "Imagine you're having a conversation with a chatbot, and you ask it a question that it's not entirely sure about - instead of saying 'I don't know', the chatbot might make something up, providing an answer that sounds plausible but is actually incorrect. This is similar to what happens when a language model hallucinates, where it fills in gaps in its knowledge with fabricated information, rather than admitting uncertainty or a lack of knowledge.",
+  "technical_explanation": "Hallucination in LLMs occurs due to the model's tendency to overfit its training data, learning to recognize patterns and generate text based on statistical associations rather than actual semantic meaning. As a result, the model may rely on its own internal representations and biases to generate text, rather than relying on the input context or external knowledge, leading to the production of inaccurate or fabricated information. This can be mitigated through techniques such as data augmentation, regularization, and uncertainty estimation, which help to improve the model's robustness and ability to recognize its own limitations.",
   "investor_explanation": "Robust configuration of Hallucination directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Hallucination in our Natural Language Processing pipeline to improve performance.",

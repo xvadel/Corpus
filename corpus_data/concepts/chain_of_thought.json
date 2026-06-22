@@ -5,9 +5,9 @@
   "category": "LLMs",
   "term": "Chain of Thought",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Chain of Thought.",
-  "simple_explanation": "Think of Chain of Thought as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
-  "technical_explanation": "In production Natural Language Processing systems, Chain of Thought plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Chain of Thought (CoT) refers to a prompting technique used in Large Language Models (LLMs) that involves generating a series of intermediate reasoning steps to produce a final answer, also known as step-by-step reasoning or intermediate reasoning. This approach is also sometimes referred to as CoT prompting or iterative reasoning.",
+  "simple_explanation": "Imagine you're trying to solve a complex math problem, and instead of just giving the final answer, you show all the steps you took to get there - this is similar to how Chain of Thought works, where the model breaks down its reasoning into smaller, more manageable parts, making it easier to understand and trust its responses. By generating these intermediate steps, the model provides a clear and transparent thought process, allowing users to follow along and verify its logic. This approach can be particularly helpful for complex, multi-step problems or tasks that require careful consideration.",
+  "technical_explanation": "Under the hood, Chain of Thought works by using a combination of natural language processing (NLP) and machine learning algorithms to generate a sequence of intermediate reasoning steps, which are then used to produce a final answer. The model uses techniques such as attention mechanisms and transformer architectures to weigh the importance of different input elements and generate coherent, step-by-step reasoning. By optimizing the model's architecture and training objectives, engineers can trade off between factors such as response accuracy, latency, and interpretability, allowing them to fine-tune the CoT approach for specific applications and use cases.",
   "investor_explanation": "Robust configuration of Chain of Thought directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Chain of Thought in our Natural Language Processing pipeline to improve performance.",

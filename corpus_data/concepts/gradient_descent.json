@@ -5,9 +5,9 @@
   "category": "Neural Networks",
   "term": "Gradient Descent",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Deep Learning Foundations under Neural Networks, representing Gradient Descent.",
-  "simple_explanation": "Think of Gradient Descent as an essential building block of Deep Learning Foundations. It is commonly used within Neural Networks.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Gradient Descent plays a key role within Neural Networks. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Gradient Descent (GD) is an optimization algorithm used to minimize the loss function in various machine learning algorithms, also known as Stochastic Gradient Descent (SGD) when applied to individual data points. It is a first-order optimization algorithm that iteratively adjusts the model's parameters to reduce the difference between predicted and actual outputs.",
+  "simple_explanation": "Imagine you're hiking down a mountain in the dark, and you want to reach the bottom, which represents the minimum loss or error. With each step, you feel the ground and take a step in the direction that feels like it's going downhill, which is similar to how Gradient Descent works, by taking small steps in the direction that reduces the loss. As you take more steps, you get closer to the bottom of the mountain, or in this case, the optimal solution.",
+  "technical_explanation": "Gradient Descent works by computing the gradient of the loss function with respect to the model's parameters, which represents the direction of the steepest ascent, and then updating the parameters in the opposite direction to minimize the loss. The learning rate, a hyperparameter, controls the step size of each update, and engineering trade-offs include choosing the optimal learning rate, batch size, and regularization techniques to avoid overfitting and ensure convergence to the optimal solution.",
   "investor_explanation": "Robust configuration of Gradient Descent directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Gradient Descent in our Deep Learning Foundations pipeline to improve performance.",

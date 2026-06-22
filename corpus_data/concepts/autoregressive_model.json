@@ -5,9 +5,9 @@
   "category": "Language Modeling",
   "term": "Autoregressive Model",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Natural Language Processing under Language Modeling, representing Autoregressive Model.",
-  "simple_explanation": "Think of Autoregressive Model as an essential building block of Natural Language Processing. It is commonly used within Language Modeling.",
-  "technical_explanation": "In production Natural Language Processing systems, Autoregressive Model plays a key role within Language Modeling. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "An autoregressive model, also known as an AR model or autoregressive language model, is a type of statistical model that predicts the next value in a sequence based on past values, commonly used in natural language processing for language modeling tasks. Alternative names include causal language models or unidirectional language models.",
+  "simple_explanation": "Imagine you're writing a story, and after each sentence, you try to predict the next sentence based on what you've written so far - that's roughly how an autoregressive model works, by using the context of previous words to predict the next word in a sequence, one word at a time. This process is repeated to generate coherent and natural-sounding text, like a conversation or an article.",
+  "technical_explanation": "Under the hood, autoregressive models rely on a self-attention mechanism and a feed-forward neural network to predict the next token in a sequence, using the previously generated tokens as input, with key engineering trade-offs including balancing model complexity, computational efficiency, and the risk of exposure bias during training, which can lead to suboptimal performance on real-world tasks.",
   "investor_explanation": "Robust configuration of Autoregressive Model directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Autoregressive Model in our Natural Language Processing pipeline to improve performance.",

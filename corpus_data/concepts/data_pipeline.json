@@ -5,9 +5,9 @@
   "category": "Data Management",
   "term": "Data Pipeline",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in MLOps under Data Management, representing Data Pipeline.",
-  "simple_explanation": "Think of Data Pipeline as an essential building block of MLOps. It is commonly used within Data Management.",
-  "technical_explanation": "In production MLOps systems, Data Pipeline plays a key role within Data Management. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Data Pipeline, also known as a Data Workflow or ETL (Extract, Transform, Load) pipeline, is a series of processes that extract data from multiple sources, transform it into a standardized format, and load it into a target system for analysis or processing. It is a critical component of MLOps, enabling the efficient management of data for machine learning model development and deployment.",
+  "simple_explanation": "Imagine a factory assembly line where raw materials are extracted, processed, and assembled into a final product. A Data Pipeline works similarly, where data is extracted from various sources, transformed into a usable format, and loaded into a system for analysis or modeling, such as a machine learning model. This process ensures that data is consistent, reliable, and ready for use.",
+  "technical_explanation": "Under the hood, a Data Pipeline typically involves a series of interconnected components, including data ingestion tools, data processing frameworks, and data storage systems. The pipeline is often designed to handle large volumes of data, and engineers must consider trade-offs between data freshness, processing latency, and computational resources when designing and optimizing the pipeline. Key mechanisms, such as data validation, data quality checks, and error handling, are also crucial to ensure the pipeline's reliability and efficiency.",
   "investor_explanation": "Robust configuration of Data Pipeline directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Data Pipeline in our MLOps pipeline to improve performance.",

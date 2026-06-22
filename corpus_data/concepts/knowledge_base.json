@@ -5,9 +5,9 @@
   "category": "Data Processing",
   "term": "Knowledge Base",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Data Processing, representing Knowledge Base.",
-  "simple_explanation": "Think of Knowledge Base as an essential building block of Retrieval Augmented Generation. It is commonly used within Data Processing.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Knowledge Base plays a key role within Data Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Knowledge Base (KB) is a centralized repository that stores and manages knowledge in a structured and organized manner, also known as a knowledge graph or knowledge repository. It can be used to support various applications, including question answering, decision support systems, and retrieval augmented generation.",
+  "simple_explanation": "Think of a Knowledge Base like a vast library where information is stored in a way that makes it easily accessible and retrievable, similar to how a search engine indexes web pages to provide relevant results. Just as a librarian helps you find the right book, a Knowledge Base helps AI systems find the right information to answer questions or generate text. This library is constantly updated with new information, allowing the AI to learn and improve over time.",
+  "technical_explanation": "Under the hood, a Knowledge Base typically consists of a graph database that stores entities, relationships, and concepts, which are often represented as embeddings or vectors in a high-dimensional space. The key mechanisms involve entity disambiguation, relationship extraction, and semantic search, which enable efficient retrieval of relevant information. Engineering trade-offs include balancing the complexity of the knowledge graph with the need for scalable and efficient querying, as well as ensuring data quality and consistency to support reliable downstream applications.",
   "investor_explanation": "Robust configuration of Knowledge Base directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Knowledge Base in our Retrieval Augmented Generation pipeline to improve performance.",

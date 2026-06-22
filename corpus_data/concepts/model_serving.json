@@ -5,9 +5,9 @@
   "category": "System Design",
   "term": "Model Serving",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in AI Engineering under System Design, representing Model Serving.",
-  "simple_explanation": "Think of Model Serving as an essential building block of AI Engineering. It is commonly used within System Design.",
-  "technical_explanation": "In production AI Engineering systems, Model Serving plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Model serving, also known as model deployment or model inference, refers to the process of deploying and managing trained machine learning models in a production-ready environment, making them accessible to users and applications through APIs or other interfaces. Alternative names include Model Inference Serving and MLS (Machine Learning Serving).",
+  "simple_explanation": "Model serving is like setting up a restaurant where the chef (machine learning engineer) has already prepared a recipe (trained model), and now the waiters (APIs) need to serve the dish (predictions) to the customers (users) quickly and efficiently, ensuring a good experience. The restaurant (model serving system) must handle many customers, manage orders, and keep the food fresh (update models) to maintain quality and satisfaction.",
+  "technical_explanation": "Model serving works by using specialized software frameworks, such as TensorFlow Serving, AWS SageMaker, or Azure Machine Learning, to manage the lifecycle of machine learning models, including loading, updating, and querying models, while optimizing for latency, throughput, and scalability. Key mechanisms include model versioning, caching, batching, and autoscaling, which require careful engineering trade-offs between memory usage, computational resources, and response times to ensure reliable and performant model serving.",
   "investor_explanation": "Robust configuration of Model Serving directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Model Serving in our AI Engineering pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Transformers",
   "term": "Multi-Head Attention",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Multi-Head Attention.",
-  "simple_explanation": "Think of Multi-Head Attention as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Multi-Head Attention plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Multi-Head Attention, also known as MHA, is a neural network component that extends the self-attention mechanism by applying it multiple times in parallel, allowing the model to jointly attend to information from different representation subspaces. It is a key component of Transformer architectures.",
+  "simple_explanation": "Imagine you're trying to understand a conversation between multiple people, and you need to focus on different aspects of the conversation simultaneously, like the topic, the tone, and the relationships between speakers. Multi-Head Attention works similarly, allowing a model to focus on different parts of the input data in parallel, using multiple 'attention heads' to capture various types of relationships. This helps the model to better understand the context and make more accurate predictions.",
+  "technical_explanation": "Under the hood, Multi-Head Attention works by applying self-attention mechanisms in parallel, using multiple attention heads that are essentially independent self-attention mechanisms. Each attention head computes a weighted sum of the input elements, where the weights are learned based on the input data, and the outputs from all attention heads are concatenated and linearly transformed to produce the final output. This allows the model to capture a richer set of contextual relationships in the input data, but also increases the computational cost and requires careful tuning of hyperparameters such as the number of attention heads.",
   "investor_explanation": "Robust configuration of Multi-Head Attention directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Multi-Head Attention in our Deep Learning Foundations pipeline to improve performance.",

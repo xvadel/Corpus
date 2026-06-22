@@ -5,9 +5,9 @@
   "category": "Data Processing",
   "term": "Chunking",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Data Processing, representing Chunking.",
-  "simple_explanation": "Think of Chunking as an essential building block of Retrieval Augmented Generation. It is commonly used within Data Processing.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Chunking plays a key role within Data Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Chunking, also known as text chunking or shallow parsing, refers to the process of breaking down text into smaller, meaningful units called chunks, which can be phrases, clauses, or sentences. It is a fundamental step in natural language processing (NLP) and information retrieval, particularly in retrieval augmented generation.",
+  "simple_explanation": "Imagine you're trying to understand a long sentence - chunking is like breaking it down into smaller, manageable pieces, like phrases or clauses, to make it easier to comprehend. For example, the sentence 'The cat, who was very hungry, ate the mouse' can be chunked into 'The cat', 'who was very hungry', and 'ate the mouse'. This helps computers process and generate human-like text more effectively.",
+  "technical_explanation": "Under the hood, chunking typically involves tokenization, part-of-speech tagging, and syntactic parsing to identify the boundaries of chunks. The process relies on machine learning models, such as conditional random fields or recurrent neural networks, to learn the patterns and relationships between tokens and chunks. The choice of chunking algorithm and model architecture depends on the specific application and trade-offs between accuracy, efficiency, and interpretability.",
   "investor_explanation": "Robust configuration of Chunking directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Chunking in our Retrieval Augmented Generation pipeline to improve performance.",

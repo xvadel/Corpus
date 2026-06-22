@@ -5,9 +5,9 @@
   "category": "Transformers",
   "term": "Attention",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Attention.",
-  "simple_explanation": "Think of Attention as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Attention plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Attention, also known as Attention Mechanism, is a neural network component that allows the model to focus on specific parts of the input data when generating output, enabling the model to selectively concentrate on certain aspects of the data. It is a key component of Transformer architectures, often abbreviated as Att or Attn.",
+  "simple_explanation": "Imagine you're trying to understand a conversation between multiple people, but you can only listen to one person at a time - attention works similarly, where the model 'listens' to specific parts of the input data, like certain words or phrases, to better understand the context and generate more accurate output. This is especially useful in natural language processing tasks, like language translation or text summarization, where the model needs to selectively focus on certain words or phrases to produce coherent output.",
+  "technical_explanation": "Under the hood, attention works by computing attention weights, which represent the relative importance of each input element, using mechanisms like Query-Key-Value (QKV) attention or self-attention, where the model computes the attention weights based on the similarity between the query and key vectors. The attention weights are then used to compute a weighted sum of the input elements, allowing the model to selectively focus on certain parts of the input data. The key engineering trade-off in attention mechanisms is balancing the computational cost of computing attention weights with the benefits of improved model performance and interpretability.",
   "investor_explanation": "Robust configuration of Attention directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Attention in our Deep Learning Foundations pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Tools",
   "term": "MLflow",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in MLOps under Tools, representing MLflow.",
-  "simple_explanation": "Think of MLflow as an essential building block of MLOps. It is commonly used within Tools.",
-  "technical_explanation": "In production MLOps systems, MLflow plays a key role within Tools. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "MLflow is an open-source platform designed to manage the end-to-end machine learning lifecycle, focusing on experimentation, reproducibility, deployment, and a centralized model registry. It provides a standardized interface and set of APIs to track parameters, code versions, metrics, and output files during model training and deployment.",
+  "simple_explanation": "Think of MLflow as a combination of Git and a highly detailed laboratory notebook for your machine learning experiments. When you train a model, MLflow automatically logs your configuration, datasets, and resulting performance metrics to a central dashboard. This allows you to easily compare hundreds of historical training runs and deploy the winning model with a single click.",
+  "technical_explanation": "Architecturally, MLflow operates as a client-server system where client-side SDKs send tracking data via REST or gRPC APIs to a central Tracking Server. Under the hood, it decouples lightweight metadata (such as metrics, hyperparameters, and run tags, stored in a relational database like PostgreSQL) from heavy artifacts (such as model weights and plots, stored in object storage like AWS S3 or GCS). This separation allows for highly scalable querying and model versioning, though engineers must manage the consistency and access controls across these distinct storage layers.",
   "investor_explanation": "Robust configuration of MLflow directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized MLflow in our MLOps pipeline to improve performance.",

@@ -12,7 +12,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 from typing import Dict, Any, List
 
-from backend.providers.gemini import GeminiProvider
+from backend.providers import get_provider
 from backend.prompts.registry import PromptRegistry
 
 router = APIRouter(prefix="/chat", tags=["Chat & Roleplay"])
@@ -146,7 +146,7 @@ async def send_message(body: ChatMessage) -> ChatResponse:
 
     # 2. Attempt LLM generation
     try:
-        provider = GeminiProvider()
+        provider = get_provider()
         
         # Format history as text for prompt
         history_text = "\n".join(

@@ -5,9 +5,9 @@
   "category": "Model Lifecycle",
   "term": "Drift Detection",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in MLOps under Model Lifecycle, representing Drift Detection.",
-  "simple_explanation": "Think of Drift Detection as an essential building block of MLOps. It is commonly used within Model Lifecycle.",
-  "technical_explanation": "In production MLOps systems, Drift Detection plays a key role within Model Lifecycle. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Drift detection, also known as concept drift detection, refers to the process of identifying changes in the underlying data distribution of a system, which can affect the performance and accuracy of a machine learning model over time. It is a critical component of MLOps and model lifecycle management.",
+  "simple_explanation": "Imagine you've built a model to predict customer behavior based on their purchase history, but suddenly a new trend emerges, and people start buying different products - that's drift. Drift detection is like having a sensor that alerts you when the underlying conditions of your model have changed, so you can retrain or update it to maintain its accuracy. This is crucial in maintaining the reliability of your model.",
+  "technical_explanation": "Drift detection works by continuously monitoring the input data and comparing its statistical properties to a baseline or reference distribution, using techniques such as statistical process control, distance metrics, or machine learning algorithms. Key mechanisms include tracking changes in data distributions, identifying anomalies, and triggering retraining or model updates when drift is detected, which requires careful engineering trade-offs between detection sensitivity, false alarm rates, and computational resources.",
   "investor_explanation": "Robust configuration of Drift Detection directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Drift Detection in our MLOps pipeline to improve performance.",

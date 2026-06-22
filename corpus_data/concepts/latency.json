@@ -5,9 +5,9 @@
   "category": "Evaluation",
   "term": "Latency",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in AI Engineering under Evaluation, representing Latency.",
-  "simple_explanation": "Think of Latency as an essential building block of AI Engineering. It is commonly used within Evaluation.",
-  "technical_explanation": "In production AI Engineering systems, Latency plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Latency, also known as delay or response time, refers to the time it takes for a system to respond to a request or input, typically measured in milliseconds or seconds. It is a critical performance metric in AI engineering, often abbreviated as RTT (Round-Trip Time) or TTL (Time-To-Live).",
+  "simple_explanation": "Imagine you're having a conversation with a friend - latency is like the time it takes for your friend to respond to what you just said. If the latency is high, it feels like there's a long pause before your friend responds, making the conversation feel slow or unresponsive. In AI systems, high latency can make applications feel sluggish or unresponsive to user input.",
+  "technical_explanation": "Under the hood, latency is influenced by factors such as network transmission time, server processing time, and database query time, among others. AI engineers must balance latency with other performance metrics, such as throughput and accuracy, to optimize system design and ensure responsive user experiences. This often involves trade-offs, like caching frequently accessed data or using parallel processing to reduce computation time, to minimize latency and improve overall system performance.",
   "investor_explanation": "Robust configuration of Latency directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Latency in our AI Engineering pipeline to improve performance.",

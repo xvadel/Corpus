@@ -5,9 +5,9 @@
   "category": "LLMs",
   "term": "Function Calling",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Function Calling.",
-  "simple_explanation": "Think of Function Calling as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
-  "technical_explanation": "In production Natural Language Processing systems, Function Calling plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Function calling, also known as subroutine calling or method invocation, refers to the process by which a program invokes a specific block of code, known as a function or subroutine, to perform a particular task. In the context of Natural Language Processing (NLP) and Large Language Models (LLMs), function calling enables the reuse of code and modularity in complex language processing pipelines.",
+  "simple_explanation": "Think of function calling like ordering food at a restaurant - you give the waiter (the main program) a request (the function call), and they go to the kitchen (the function) to prepare your food (perform the task), then bring it back to you (return the result). This way, the kitchen (function) can be used by many waiters (programs) without having to duplicate the kitchen (code). In NLP, this allows different parts of a language model to be reused and combined to perform various tasks.",
+  "technical_explanation": "Under the hood, function calling involves the use of call stacks, where the current state of the program is saved, and a new stack frame is created for the called function, allowing it to execute and return control to the caller. In LLMs, function calling enables the modularization of complex language processing tasks, such as text encoding, decoding, and attention mechanisms, which can be optimized and reused across different models and applications, facilitating scalability, maintainability, and code reuse.",
   "investor_explanation": "Robust configuration of Function Calling directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Function Calling in our Natural Language Processing pipeline to improve performance.",

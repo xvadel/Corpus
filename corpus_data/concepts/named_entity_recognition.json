@@ -5,9 +5,9 @@
   "category": "Text Processing",
   "term": "Named Entity Recognition",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Natural Language Processing under Text Processing, representing Named Entity Recognition.",
-  "simple_explanation": "Think of Named Entity Recognition as an essential building block of Natural Language Processing. It is commonly used within Text Processing.",
-  "technical_explanation": "In production Natural Language Processing systems, Named Entity Recognition plays a key role within Text Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Named Entity Recognition (NER), also known as Named Entity Identification or Entity Extraction, is a subtask of Natural Language Processing (NLP) that involves identifying and categorizing named entities in unstructured text into predefined categories. NER is a fundamental component of many NLP applications, including information extraction, sentiment analysis, and question answering.",
+  "simple_explanation": "Imagine you're reading a news article and you want to extract the names of people, organizations, and locations mentioned in the text - that's essentially what Named Entity Recognition does, it helps identify and label these specific entities in a piece of text, like highlighting the names of 'John Smith' as a person or 'New York' as a location, making it easier to understand the context and meaning of the text.",
+  "technical_explanation": "Under the hood, NER typically works by using a combination of machine learning algorithms, such as Conditional Random Fields (CRFs) or Recurrent Neural Networks (RNNs), and linguistic features, like part-of-speech tagging and dependency parsing, to analyze the input text and predict the entity labels, with key engineering trade-offs involving the choice of model architecture, feature engineering, and optimization of hyperparameters to balance accuracy, efficiency, and scalability.",
   "investor_explanation": "Robust configuration of Named Entity Recognition directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Named Entity Recognition in our Natural Language Processing pipeline to improve performance.",

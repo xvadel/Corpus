@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Bi-Encoder",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Bi-Encoder.",
-  "simple_explanation": "Think of Bi-Encoder as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Bi-Encoder plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Bi-Encoder is a type of neural network architecture that consists of two separate encoders, often referred to as a dual-encoder or twin-encoder, which are trained to learn compact and informative representations of two different input types, such as text and images. It is commonly used in Retrieval Augmented Generation (RAG) tasks, where one encoder processes the input query and the other encoder processes the candidate passages or documents.",
+  "simple_explanation": "Imagine you're trying to find a specific book in a library, and you have a description of the book in your mind. A Bi-Encoder works like a librarian who understands both your description and the book titles, and uses this understanding to find the most relevant book for you. The two encoders in the Bi-Encoder learn to 'speak' the same language, allowing them to effectively match your query with the relevant information.",
+  "technical_explanation": "Under the hood, a Bi-Encoder uses a contrastive loss function to train the two encoders to produce similar representations for semantically similar inputs, and dissimilar representations for semantically dissimilar inputs. The key mechanism is the use of a shared embedding space, where the encoders project their inputs, allowing for efficient similarity search and retrieval. The engineering trade-off lies in balancing the complexity of the encoders, the dimensionality of the embedding space, and the choice of loss function to achieve optimal performance in the downstream RAG task.",
   "investor_explanation": "Robust configuration of Bi-Encoder directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Bi-Encoder in our Retrieval Augmented Generation pipeline to improve performance.",

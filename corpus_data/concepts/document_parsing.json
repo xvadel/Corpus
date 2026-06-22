@@ -5,9 +5,9 @@
   "category": "Data Processing",
   "term": "Document Parsing",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Data Processing, representing Document Parsing.",
-  "simple_explanation": "Think of Document Parsing as an essential building block of Retrieval Augmented Generation. It is commonly used within Data Processing.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Document Parsing plays a key role within Data Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Document parsing, also known as document analysis or text parsing, refers to the process of extracting meaningful information from unstructured or semi-structured documents, such as text files, PDFs, or HTML pages. It is a crucial step in Retrieval Augmented Generation (RAG) and other natural language processing (NLP) applications.",
+  "simple_explanation": "Imagine you have a large library with millions of books, and you want to find a specific sentence or paragraph in one of them. Document parsing is like having a librarian who can quickly read through the book, identify the important parts, and extract the relevant information for you. This process helps computers understand the structure and content of documents, making it easier to search, retrieve, and generate text.",
+  "technical_explanation": "Under the hood, document parsing involves a series of complex algorithms and techniques, including tokenization, named entity recognition, part-of-speech tagging, and dependency parsing. These mechanisms work together to identify the syntactic and semantic structure of the document, allowing the system to extract relevant information, such as entities, relationships, and concepts. The engineering trade-offs in document parsing include balancing the level of granularity, handling ambiguity and uncertainty, and optimizing performance for large-scale document collections.",
   "investor_explanation": "Robust configuration of Document Parsing directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Document Parsing in our Retrieval Augmented Generation pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Data Management",
   "term": "Dataset Versioning",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in MLOps under Data Management, representing Dataset Versioning.",
-  "simple_explanation": "Think of Dataset Versioning as an essential building block of MLOps. It is commonly used within Data Management.",
-  "technical_explanation": "In production MLOps systems, Dataset Versioning plays a key role within Data Management. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Dataset Versioning, also known as Data Versioning or Dataset Tracking, refers to the process of managing and tracking changes to datasets used in machine learning model development, ensuring reproducibility and auditability of data-driven projects. It involves assigning unique identifiers to different versions of a dataset, allowing for efficient comparison and rollback to previous versions.",
+  "simple_explanation": "Imagine you're working on a document with multiple collaborators, and you want to keep track of all the changes made to the document over time. Dataset Versioning works similarly, but for datasets, allowing you to track changes, compare different versions, and even revert to a previous version if needed, just like using version control for code. This ensures that your machine learning models are trained on consistent and reliable data.",
+  "technical_explanation": "Under the hood, Dataset Versioning typically involves using a combination of hashing algorithms, checksums, and metadata storage to create a unique digital fingerprint for each dataset version, enabling efficient comparison and tracking of changes. Key mechanisms include data deduplication, compression, and storage solutions like object stores or databases, which help optimize storage and query performance. Engineering trade-offs involve balancing storage costs, query performance, and data freshness to ensure seamless integration with MLOps pipelines.",
   "investor_explanation": "Robust configuration of Dataset Versioning directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Dataset Versioning in our MLOps pipeline to improve performance.",

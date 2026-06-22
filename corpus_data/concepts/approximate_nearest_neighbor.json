@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Approximate Nearest Neighbor",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Approximate Nearest Neighbor.",
-  "simple_explanation": "Think of Approximate Nearest Neighbor as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Approximate Nearest Neighbor plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Approximate Nearest Neighbor (ANN) search, also known as Approximate Nearest Neighbors or Nearest Neighbor Search, is a technique used to find the most similar items in a large dataset by approximating the nearest neighbors to a query item based on a similarity metric, such as cosine similarity. ANN is often used as an optimization over exact nearest neighbor search, which can be computationally expensive for large datasets.",
+  "simple_explanation": "Imagine you're at a music festival and you want to find people who like the same music as you - you wouldn't ask every single person at the festival, instead, you'd ask a few people around you and see if they like the same music, and if they do, you'd ask their friends, this way you can quickly find people with similar interests without having to ask everyone, this is similar to how ANN works, it quickly finds similar items by approximating the search space.",
+  "technical_explanation": "Under the hood, ANN search typically uses indexing techniques such as k-d trees, ball trees, or hash tables to efficiently partition the search space and reduce the number of distance calculations required, this allows for fast and scalable search, but may sacrifice some accuracy, the key engineering trade-off is between the accuracy of the search results and the computational resources required to perform the search, with techniques like quantization and pruning used to further optimize performance.",
   "investor_explanation": "Robust configuration of Approximate Nearest Neighbor directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Approximate Nearest Neighbor in our Retrieval Augmented Generation pipeline to improve performance.",

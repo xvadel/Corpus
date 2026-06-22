@@ -5,9 +5,9 @@
   "category": "Transformers",
   "term": "Transformer",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Transformer.",
-  "simple_explanation": "Think of Transformer as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Transformer plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "The Transformer is a type of neural network architecture, also known as a Transformer model, that relies on self-attention mechanisms to process input sequences, particularly in natural language processing tasks. It is often abbreviated as TF or referred to as the Transformer architecture.",
+  "simple_explanation": "Imagine you're trying to understand a sentence, and you need to consider the relationships between all the words to grasp its meaning. The Transformer works similarly, using a mechanism called self-attention to weigh the importance of different input elements, like words in a sentence, relative to each other, allowing it to capture complex contextual relationships. This process helps the model focus on the most relevant elements when generating output.",
+  "technical_explanation": "Under the hood, the Transformer architecture consists of an encoder and a decoder, each composed of a stack of identical layers, which utilize multi-head self-attention and feed-forward neural networks to process input sequences. The self-attention mechanism allows the model to attend to all positions in the input sequence simultaneously and weigh their importance, enabling the capture of long-range dependencies and parallelization of sequential computations. This design enables the Transformer to efficiently handle variable-length input sequences and achieve state-of-the-art results in various deep learning tasks, particularly in machine translation and text generation.",
   "investor_explanation": "Robust configuration of Transformer directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Transformer in our Deep Learning Foundations pipeline to improve performance.",

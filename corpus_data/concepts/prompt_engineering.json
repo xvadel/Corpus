@@ -5,9 +5,9 @@
   "category": "LLMs",
   "term": "Prompt Engineering",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Prompt Engineering.",
-  "simple_explanation": "Think of Prompt Engineering as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
-  "technical_explanation": "In production Natural Language Processing systems, Prompt Engineering plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Prompt Engineering, also known as Prompt Design or Prompt Crafting, refers to the process of designing and optimizing text prompts to elicit specific, accurate, and relevant responses from Large Language Models (LLMs). It involves carefully crafting the input text to guide the model's output and improve its performance on a given task.",
+  "simple_explanation": "Imagine you're asking a very knowledgeable but somewhat unpredictable friend for information - you need to ask the question in just the right way to get the answer you're looking for. Prompt Engineering is similar, where you design the 'question' or input text to get the desired 'answer' from a language model. By tweaking the wording, structure, and context of the prompt, you can significantly improve the model's response.",
+  "technical_explanation": "Under the hood, Prompt Engineering works by leveraging the language model's ability to learn patterns and relationships between input and output text. By carefully designing the prompt, engineers can influence the model's attention mechanisms, embedding spaces, and decoding processes to produce more accurate and relevant responses. Key engineering trade-offs involve balancing prompt complexity, specificity, and ambiguity to optimize the model's performance on a given task, while minimizing the risk of overfitting or underfitting.",
   "investor_explanation": "Robust configuration of Prompt Engineering directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Prompt Engineering in our Natural Language Processing pipeline to improve performance.",

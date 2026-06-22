@@ -2,7 +2,7 @@
 
 Welcome! We are excited that you want to help build **Corpus**, the AI-powered language platform for high-stakes professional communication. 
 
-This document provides a comprehensive guide for developers, product managers, and UI designers to understand our clean architecture, set up their systems, configure their IDEs correctly, and follow standardized development workflows.
+This document provides a comprehensive guide for developers, AI engineers, and UI designers to understand our clean architecture, set up their systems, configure their IDEs correctly, and follow standardized development workflows.
 
 ---
 
@@ -10,34 +10,37 @@ This document provides a comprehensive guide for developers, product managers, a
 
 Corpus uses a simplified monorepo architecture designed for low-overhead self-hosting:
 
-```
-d:\Lantest
+```text
+d:\Corpus
 ├── backend/               # FastAPI Python Server
 │   ├── api/               # API Router and Endpoints (REST)
 │   │   ├── __init__.py    # Central API Router Aggregator
 │   │   ├── health.py      # Health Route
 │   │   ├── projects.py    # Project upload/analysis routes
 │   │   ├── vocabulary.py  # Terminology list tracks/custom routes
-│   │   ├── chat.py        # Coach response & highlight routes
-│   │   └── auth.py        # User authentication stub
+│   │   └── chat.py        # Coach response & highlight routes
 │   ├── auth/              # JWT Handling and Security Utilities
+│   ├── curriculum/        # Curriculum Engine (GapAnalyzer, topological sorting)
 │   ├── database/          # Connection Pools (SQLAlchemy models/engine)
+│   ├── evaluation/        # Benchmark Runner, queries, and metrics
 │   ├── models/            # SQLAlchemy database tables
-│   ├── prompts/           # LLM Prompt Templates
-│   ├── services/          # External Integrations (Gemini API, RAG, etc.)
+│   ├── prompts/           # Prompt templates and PromptRegistry
+│   ├── providers/         # LLM Provider Abstractions (Gemini, Groq, OpenAI)
+│   ├── retrieval/         # VectorRetriever & CrossEncoderReranker
 │   ├── static/            # Compiled static assets (created during build)
+│   ├── user_model/        # SQLite UserSkillModel with EMA mastery tracking
 │   └── main.py            # FastAPI App initialization & route mounting
 ├── frontend/              # Svelte + Vite Client Application (TS + Tailwind)
 │   ├── src/
 │   │   ├── lib/           # UI Components (Splash, Onboarding, Chat, etc.)
 │   │   │   └── tracks.js  # Static Track & Vocabulary configurations
 │   │   ├── App.svelte     # State-based navigation router
-│   │   ├── app.css        # Premium dark glassmorphic styling tokens (includes Tailwind directives)
+│   │   ├── app.css        # Premium dark glassmorphic styling tokens
 │   │   └── main.ts        # Main Svelte mounting entry point
 │   ├── package.json       # Node package configurations
 │   ├── tsconfig.json      # TypeScript compiler configuration
 │   └── vite.config.ts     # Vite compiler configuration with Tailwind plugin
-├── corpus_data/           # Static terminology database files (.json)
+├── corpus_data/           # Static terminology & concepts database files (.json)
 ├── config.toml            # Application settings and tracks configuration
 ├── infrastructure/        # Project installation, hosting, & contribution guides
 │   └── setup/
@@ -48,7 +51,9 @@ d:\Lantest
 ├── Dockerfile             # Multi-stage Docker deployment definition
 ├── docker-compose.yml     # Container services configuration
 ├── requirements.txt       # Python environment packages listing
-└── Makefile               # Commands for local development and Docker
+├── Makefile               # Commands for local development and Docker
+├── tests/                 # Full unit and integration test suite
+└── scripts/               # Utility scripts (indexing, ontology graph, enrichment)
 ```
 
 ---
@@ -137,11 +142,52 @@ Follow these quick steps to register the virtual environment inside your IDE:
 
 ### 2. PyCharm
 1. Open **Settings** (`Ctrl + Alt + S` or `Cmd + ,` on macOS).
-2. Go to **Project: Lantest** -> **Python Interpreter**.
+2. Go to **Project: Corpus** -> **Python Interpreter**.
 3. Click the gear icon or **Add Interpreter** -> **Add Local Interpreter...**
 4. Select **Existing Environment** and point the path to:
    - Windows: `venv/Scripts/python.exe`
    - macOS/Linux: `venv/bin/python`
+
+---
+
+## 🔬 Core RAG & Knowledge Layer Architecture
+
+Corpus is an evaluation-driven platform built on a strict, modular knowledge-first structure:
+
+### 1. The Concepts Database
+All 108 concepts in Deep Learning, RAG, NLP, Fine-Tuning, and AI Engineering reside in `corpus_data/concepts/*.json`. Each file contains details like prereqs, related terms, definitions, and explanations.
+
+### 2. Two-Stage Retrieval
+*   **Stage 1: Bi-Encoder Recall**: Under `backend/retrieval/retriever.py`, `VectorRetriever` queries a local `ChromaDB` instance using `BAAI/bge-small-en-v1.5` embeddings (which are query-prefixed with search instructions).
+*   **Stage 2: Cross-Encoder Precision**: Candidates are reranked using `CrossEncoderReranker` running `BAAI/bge-reranker-base`.
+
+### 3. User Skill & Curriculum Engine
+*   **UserSkillModel**: Stores concept interaction outcomes (success/fail) in a SQLite database and computes an Exponential Moving Average (EMA) mastery score (mastery threshold = `0.80`).
+*   **Curriculum Engine**: Uses topological sorting to recommend learning paths, comparing concepts the user has already mastered (`GapAnalyzer`) with overall prerequisites.
+
+---
+
+## 🧪 Testing and CI
+
+Always run local validation before creating a pull request:
+
+### 1. Run Unit Tests
+Use Pytest to assert correctness of retrieval, curriculum, schemas, and user skill model tracking:
+```bash
+venv\Scripts\pytest tests/
+```
+
+### 2. Re-Build Knowledge Graph
+Ensure that dependencies don't form a cyclic loop:
+```bash
+venv\Scripts\python.exe scripts/build_knowledge_graph.py
+```
+
+### 3. Run Benchmark Runner
+Run standard precision and recall evaluations on your retrieval changes:
+```bash
+venv\Scripts\python.exe backend/evaluation/benchmark_runner.py
+```
 
 ---
 
@@ -171,34 +217,9 @@ All UI components must adhere to the premium **dark glassmorphic** theme. Use th
 
 ---
 
-## 🚀 How to Extend the Application
-
-### 1. Adding a New Language Track
-To add a new professional path:
-1. Update `config.toml` by appending a track dictionary:
-   ```toml
-   [[tracks]]
-   id = "finance_analyst"
-   name = "Investment Banking"
-   description = "Pitch financial valuations, explain M&A models, and structure deals."
-   focus_areas = ["Valuations", "Deal Structuring", "Market Reports"]
-   ```
-2. Update the static Javascript track configuration inside `frontend/src/lib/tracks.js` to append the corresponding visual details, icons, and vocabulary words.
-
-### 2. Integrating a Real AI Coach (LLM Chat Integration)
-Currently, the Pitch Simulator responses are simulated locally. To integrate a live LLM coach:
-1. **Backend Route**: Define a chat endpoint in `backend/api/chat.py` utilizing the Google Gemini API (already installed via `google-generativeai`).
-2. **Frontend Connection**: Modify `Chat.svelte` to make an async fetch call to `/api/chat/message` inside the message handler instead of relying on the local state-based responses.
-
----
-
 ## 🤝 Community & Contribution Workflow
 
-1. **Issue Triaging**: Before writing code, open or assign yourself an issue on GitHub.
-   - `good first issue`: Ideal for new contributors looking to get familiar with Svelte/FastAPI.
-   - `bug`: Used for tracking syntax or runtime failures.
-   - `feature request`: Reserved for Phase 2/3 roadmap tasks.
-2. **Pull Requests**:
-   - Create your branch off `develop` (e.g. `feature/live-chat-support`).
-   - Run local lint checks and confirm your application compiles with `npm run build`.
-   - Submit your PR with a clean title and describe what changed. Every PR requires at least one reviewer approval.
+1. **Pull Requests**:
+   - Create your branch off `main`/`master` (e.g., `feature/live-chat-support`).
+   - Run local unit tests and confirm your application compiles with `npm run build`.
+   - Submit your PR with a clean title and describe what changed. Every PR triggers the GitHub Actions CI pipeline in `.github/workflows/ci.yml`.

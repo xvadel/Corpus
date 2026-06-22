@@ -5,9 +5,9 @@
   "category": "Model Adaptation",
   "term": "Instruction Tuning",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing Instruction Tuning.",
-  "simple_explanation": "Think of Instruction Tuning as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
-  "technical_explanation": "In production Agentic AI systems, Instruction Tuning plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Instruction Tuning, also known as IT, is a model adaptation technique that involves fine-tuning a pre-trained language model to follow instructions or prompts, enabling it to generate more accurate and relevant responses. It is a key component of Agentic AI, which focuses on developing AI systems that can understand and execute tasks based on natural language instructions.",
+  "simple_explanation": "Imagine you have a highly skilled chef who can prepare a wide range of dishes, but you want them to cook a specific meal according to your recipe. Instruction Tuning is like training the chef to follow your recipe precisely, so they can produce the desired dish. By doing so, the chef becomes more adept at preparing meals based on specific instructions, rather than just relying on their general cooking skills.",
+  "technical_explanation": "Under the hood, Instruction Tuning works by adding a new objective function to the pre-trained model's loss function, which encourages the model to generate outputs that align with the given instructions. This process involves adjusting the model's weights and biases to minimize the difference between its predictions and the desired outcomes, resulting in a more instruction-following capable model. The key engineering trade-off in Instruction Tuning is balancing the degree of adaptation to the specific instructions with the risk of overfitting to the training data, which can compromise the model's generalizability to new, unseen instructions.",
   "investor_explanation": "Robust configuration of Instruction Tuning directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Instruction Tuning in our Agentic AI pipeline to improve performance.",

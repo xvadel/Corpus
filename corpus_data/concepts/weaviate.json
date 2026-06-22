@@ -5,9 +5,9 @@
   "category": "Vector Databases",
   "term": "Weaviate",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Vector Databases, representing Weaviate.",
-  "simple_explanation": "Think of Weaviate as an essential building block of Retrieval Augmented Generation. It is commonly used within Vector Databases.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Weaviate plays a key role within Vector Databases. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Weaviate is an open-source, cloud-native, vector database management system, also referred to as a neural database, designed to store, manage, and query large datasets of dense vectors, particularly in the context of Retrieval Augmented Generation. It is alternatively known as a vector search engine or vector database.",
+  "simple_explanation": "Imagine a library where books are represented not by their titles or authors, but by a unique set of numbers that capture their meaning and content, allowing you to find similar books even if they don't share the same keywords. Weaviate works in a similar way, but for complex data like images, text, or audio, using these numerical representations, or vectors, to enable efficient and accurate similarity searches. This enables applications like semantic search, recommendation systems, and generative models to find relevant information based on the meaning and context of the data.",
+  "technical_explanation": "Under the hood, Weaviate utilizes various indexing techniques, such as HNSW (Hierarchical Navigable Small World) and inverted indexes, to efficiently store and query dense vectors in high-dimensional space. It also supports filtering, aggregation, and ranking, making it suitable for a wide range of applications, from simple similarity searches to complex data analytics and machine learning workflows, all while balancing trade-offs between query performance, storage efficiency, and scalability.",
   "investor_explanation": "Robust configuration of Weaviate directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Weaviate in our Retrieval Augmented Generation pipeline to improve performance.",

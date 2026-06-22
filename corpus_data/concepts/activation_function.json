@@ -5,9 +5,9 @@
   "category": "Neural Networks",
   "term": "Activation Function",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Deep Learning Foundations under Neural Networks, representing Activation Function.",
-  "simple_explanation": "Think of Activation Function as an essential building block of Deep Learning Foundations. It is commonly used within Neural Networks.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Activation Function plays a key role within Neural Networks. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "An activation function, also known as a transfer function, is a mathematical function that introduces non-linearity into a neural network, enabling it to learn and represent more complex relationships between inputs and outputs. Alternative names include transfer functions or threshold functions.",
+  "simple_explanation": "Think of an activation function like a light switch - it takes the output of a neuron and decides whether to 'turn it on' or 'turn it off' based on a threshold, allowing the network to make decisions and learn from data, just like how a light switch controls the flow of electricity to a light bulb. This process helps the network to learn non-linear relationships, such as recognizing images or understanding speech.",
+  "technical_explanation": "Under the hood, activation functions work by applying a non-linear transformation to the weighted sum of inputs to a neuron, allowing the network to learn and represent complex, non-linear relationships between inputs and outputs. Key mechanisms include the introduction of non-linearity, which enables the network to learn from data, and engineering trade-offs, such as choosing between sigmoid, ReLU, or tanh functions, each with their own strengths and weaknesses in terms of computational efficiency and representational capacity.",
   "investor_explanation": "Robust configuration of Activation Function directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Activation Function in our Deep Learning Foundations pipeline to improve performance.",

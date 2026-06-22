@@ -5,9 +5,9 @@
   "category": "Evaluation",
   "term": "Faithfulness",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in AI Engineering under Evaluation, representing Faithfulness.",
-  "simple_explanation": "Think of Faithfulness as an essential building block of AI Engineering. It is commonly used within Evaluation.",
-  "technical_explanation": "In production AI Engineering systems, Faithfulness plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Faithfulness, also known as Factuality, refers to the degree to which a generated text or output accurately reflects the information present in the source material or context, without introducing inconsistencies or inaccuracies. It is a crucial evaluation metric in AI Engineering, particularly in Retrieval Augmented Generation and Grounding applications.",
+  "simple_explanation": "Imagine you're asking a virtual assistant to summarize a news article, and it introduces a completely made-up fact - that's a lack of faithfulness. Faithfulness is like a fact-checker, ensuring the generated text stays true to the original information, much like a faithful translation preserves the original message. In AI, faithfulness measures how well the model sticks to the facts.",
+  "technical_explanation": "Faithfulness is achieved through a combination of natural language processing (NLP) and information retrieval techniques, which enable the model to accurately identify and represent the source material's semantic content. Under the hood, faithfulness evaluation involves comparing the generated output against the source context using metrics such as ROUGE score, BLEU score, or factual consistency checks, requiring careful engineering trade-offs between accuracy, fluency, and coherence to ensure the model remains faithful to the original information.",
   "investor_explanation": "Robust configuration of Faithfulness directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Faithfulness in our AI Engineering pipeline to improve performance.",

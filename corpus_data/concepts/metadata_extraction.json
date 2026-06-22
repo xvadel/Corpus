@@ -5,9 +5,9 @@
   "category": "Data Processing",
   "term": "Metadata Extraction",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Data Processing, representing Metadata Extraction.",
-  "simple_explanation": "Think of Metadata Extraction as an essential building block of Retrieval Augmented Generation. It is commonly used within Data Processing.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Metadata Extraction plays a key role within Data Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Metadata extraction, also known as metadata harvesting or metadata scraping, refers to the process of automatically extracting descriptive information, such as titles, authors, and keywords, from digital documents or other data sources. This process is a crucial step in Retrieval Augmented Generation and other data processing pipelines.",
+  "simple_explanation": "Imagine you have a large library with millions of books, and you want to create a catalog that describes each book, including its title, author, and summary. Metadata extraction is like a robot that goes through each book, reads the relevant information, and adds it to the catalog, making it easier to search and find specific books. This process helps software engineers to organize and make sense of large amounts of data.",
+  "technical_explanation": "Under the hood, metadata extraction typically involves natural language processing (NLP) and machine learning algorithms that analyze the structure and content of digital documents, such as PDFs, HTML pages, or text files, to identify and extract relevant metadata fields. The extracted metadata is then stored in a structured format, such as JSON or XML, and can be used to support various applications, including search, recommendation systems, and data analytics, with trade-offs between accuracy, efficiency, and scalability depending on the specific implementation and use case.",
   "investor_explanation": "Robust configuration of Metadata Extraction directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Metadata Extraction in our Retrieval Augmented Generation pipeline to improve performance.",

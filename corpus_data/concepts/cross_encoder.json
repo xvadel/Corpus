@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Cross-Encoder",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Cross-Encoder.",
-  "simple_explanation": "Think of Cross-Encoder as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Cross-Encoder plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Cross-Encoder is a type of neural network architecture that jointly encodes two input sequences, such as a query and a passage, into a shared latent space, also known as a Cross-Encoder or CE. It is often used in Retrieval Augmented Generation tasks, where it is used to compute relevance scores between a query and a set of candidate passages.",
+  "simple_explanation": "Imagine you're trying to find a specific book in a library, and you have a description of the book you're looking for. A Cross-Encoder is like a librarian who reads both the description and the book titles, and then tells you how well each book matches the description. This helps you find the most relevant books quickly, by comparing the description and the book titles in a way that captures their similarities and differences.",
+  "technical_explanation": "Under the hood, a Cross-Encoder works by using a single neural network to encode both the query and the passage, and then computing a similarity score between the two encoded representations. This is in contrast to a Bi-Encoder, which uses two separate neural networks to encode the query and the passage independently. The Cross-Encoder approach allows for more nuanced and context-dependent matching, but can be computationally more expensive and may require more training data to achieve good results.",
   "investor_explanation": "Robust configuration of Cross-Encoder directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Cross-Encoder in our Retrieval Augmented Generation pipeline to improve performance.",

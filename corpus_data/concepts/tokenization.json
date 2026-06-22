@@ -5,9 +5,9 @@
   "category": "Text Processing",
   "term": "Tokenization",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Natural Language Processing under Text Processing, representing Tokenization.",
-  "simple_explanation": "Think of Tokenization as an essential building block of Natural Language Processing. It is commonly used within Text Processing.",
-  "technical_explanation": "In production Natural Language Processing systems, Tokenization plays a key role within Text Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Tokenization, also known as word segmentation or token splitting, is the process of breaking down text into individual words or tokens, which are the basic units of analysis in Natural Language Processing (NLP). It is a fundamental step in text processing that enables further analysis, such as part-of-speech tagging, named entity recognition, and sentiment analysis.",
+  "simple_explanation": "Imagine you're reading a sentence and you want to understand what each word means - tokenization is like splitting that sentence into individual words, so you can analyze each one separately. For example, the sentence 'I love machine learning' would be split into tokens like 'I', 'love', 'machine', 'learning', and punctuation marks. This helps a computer understand the individual components of the text, just like how we do when we read.",
+  "technical_explanation": "Tokenization works by using algorithms that identify word boundaries, such as spaces, punctuation marks, and special characters, to split the text into individual tokens. The process involves trade-offs between accuracy and efficiency, as different tokenization techniques, such as rule-based or machine learning-based approaches, can be used to handle complexities like out-of-vocabulary words, abbreviations, and non-standard language use. The resulting tokens are then used as input for downstream NLP tasks, such as text classification, sentiment analysis, or language modeling.",
   "investor_explanation": "Robust configuration of Tokenization directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Tokenization in our Natural Language Processing pipeline to improve performance.",

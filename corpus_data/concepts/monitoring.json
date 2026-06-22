@@ -5,9 +5,9 @@
   "category": "Model Lifecycle",
   "term": "Monitoring",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in MLOps under Model Lifecycle, representing Monitoring.",
-  "simple_explanation": "Think of Monitoring as an essential building block of MLOps. It is commonly used within Model Lifecycle.",
-  "technical_explanation": "In production MLOps systems, Monitoring plays a key role within Model Lifecycle. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Monitoring in MLOps refers to the process of systematically tracking and evaluating the performance and behavior of deployed machine learning models, also known as Model Monitoring or Model Observability. It involves collecting and analyzing data on model inputs, outputs, and other relevant metrics to ensure the model is operating as expected.",
+  "simple_explanation": "Imagine you've built a self-driving car using machine learning, and you need to make sure it's driving safely and efficiently after you've put it on the road. Monitoring is like having a team of observers who constantly check the car's performance, such as its speed, route, and response to traffic, to ensure it's working correctly and make adjustments as needed. This helps you identify and fix any issues before they become major problems.",
+  "technical_explanation": "Under the hood, monitoring involves implementing data pipelines to collect model metrics, such as prediction accuracy, latency, and data drift, and storing them in a database or data warehouse for analysis. Key mechanisms include setting up alerts and notifications for anomalies or performance degradation, as well as using techniques like statistical process control to detect changes in model behavior, allowing engineers to make data-driven decisions and trade-offs between model performance, latency, and resource utilization.",
   "investor_explanation": "Robust configuration of Monitoring directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Monitoring in our MLOps pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Evaluation",
   "term": "RAGAS",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in AI Engineering under Evaluation, representing RAGAS.",
-  "simple_explanation": "Think of RAGAS as an essential building block of AI Engineering. It is commonly used within Evaluation.",
-  "technical_explanation": "In production AI Engineering systems, RAGAS plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "RAGAS (Retrieval Augmented Generation Augmented with Self-Consistency) is a framework for evaluating the faithfulness of retrieval augmented generation models, also known as RAG models. It is an alternative approach to assessing the consistency and reliability of generated text based on retrieved information.",
+  "simple_explanation": "Imagine you're having a conversation with a chatbot that uses external knowledge to answer your questions. RAGAS is like a quality control check that ensures the chatbot's responses are not only accurate but also consistent with the information it retrieved, making it more trustworthy and reliable. This is done by verifying if the generated text aligns with the retrieved context.",
+  "technical_explanation": "RAGAS works by leveraging self-consistency as a signal to evaluate the faithfulness of generated text, which is achieved through a combination of retrieval and generation mechanisms. The framework assesses the consistency between the generated text and the retrieved context, allowing engineers to identify potential flaws in the model's ability to accurately incorporate external knowledge. By optimizing for self-consistency, RAGAS enables the development of more reliable and trustworthy retrieval augmented generation models.",
   "investor_explanation": "Robust configuration of RAGAS directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized RAGAS in our AI Engineering pipeline to improve performance.",

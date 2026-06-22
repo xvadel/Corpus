@@ -5,9 +5,9 @@
   "category": "Evaluation",
   "term": "Accuracy",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in AI Engineering under Evaluation, representing Accuracy.",
-  "simple_explanation": "Think of Accuracy as an essential building block of AI Engineering. It is commonly used within Evaluation.",
-  "technical_explanation": "In production AI Engineering systems, Accuracy plays a key role within Evaluation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Accuracy, often referred to as classification accuracy, is the ratio of correctly predicted observations to the total observations, mathematically defined as (True Positives + True Negatives) divided by the sum of all predictions.",
+  "simple_explanation": "Think of accuracy like grading a spelling test: if a student spells 90 out of 100 words correctly, their score is 90%. However, if the test has 99 easy words and only 1 hard word, a student who only studied easy words gets a high grade without actually mastering spelling. Similarly, a high accuracy score can be highly misleading if your dataset is heavily biased toward one outcome.",
+  "technical_explanation": "While computationally straightforward, accuracy suffers from the 'accuracy paradox' because it treats all classification errors equally, failing to reflect class imbalance in validation datasets. In production, optimizing for accuracy can lead to severe system failures if the cost of a False Negative (such as missing a rare security exploit) is orders of magnitude higher than a False Positive. Consequently, engineers must often trade off general accuracy for target-specific metrics like Precision, Recall, or the F1-Score depending on the asymmetric costs of errors.",
   "investor_explanation": "Robust configuration of Accuracy directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Accuracy in our AI Engineering pipeline to improve performance.",

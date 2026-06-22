@@ -1,79 +1,71 @@
 # Corpus API Reference
 
-> **Interactive docs:** Run the server and visit [`http://localhost:8000/api/docs`](http://localhost:8000/api/docs) for the live Swagger UI, or [`http://localhost:8000/api/redoc`](http://localhost:8000/api/redoc) for ReDoc.
->
-> **Postman:** Import [`docs/corpus_api.postman_collection.json`](./corpus_api.postman_collection.json) into Postman to test all endpoints instantly.
+This document provides a comprehensive REST API specification for **Corpus**, the domain-specific language learning platform.
+
+*   **Interactive Swagger UI**: Start the server and navigate to [http://localhost:8000/api/docs](http://localhost:8000/api/docs)
+*   **Alternative ReDoc Interface**: Start the server and navigate to [http://localhost:8000/api/redoc](http://localhost:8000/api/redoc)
+*   **Postman Collection**: Import [`docs/corpus_api.postman_collection.json`](./corpus_api.postman_collection.json) to quickly test endpoints.
 
 ---
 
 ## Base URL
 
-| Environment | URL |
-|---|---|
-| Local development | `http://localhost:8000` |
-| Docker self-hosted | `http://localhost:8000` |
-| Production | Your deployed domain |
+| Environment | Base URL |
+| :--- | :--- |
+| **Local Development** | `http://localhost:8000` |
+| **Docker Self-Hosted** | `http://localhost:8000` |
+| **Production** | Deployed Domain |
 
 ---
 
-## Route File Structure
+## Router Module Structure
 
-Each domain has its own file inside `backend/api/`:
+All backend route endpoints are defined in `backend/api/`:
 
-```
+```text
 backend/api/
-├── __init__.py       ← Aggregates all routers → imported by main.py
-├── health.py         ← GET  /api/health
-├── projects.py       ← POST /api/projects/upload
-├── vocabulary.py     ← GET  /api/vocabulary/tracks
-│                        GET  /api/vocabulary/{track_id}
-│                        POST /api/vocabulary/custom       [Phase 2]
-├── chat.py           ← GET  /api/chat/personas
-│                        POST /api/chat/message
-├── auth.py           ← POST /api/auth/register            [Phase 2]
-│                        POST /api/auth/login              [Phase 2]
-│                        GET  /api/auth/me                 [Phase 2]
-└── routes.py         ← DEPRECATED shim (do not add routes here)
+├── __init__.py       ← Aggregates routers and mounts under prefix /api
+├── auth.py           ← Authentication stubs (register, login, me)
+├── chat.py           ← LLM-backed simulator routes (message, personas)
+├── health.py         ← Service health and liveness checks
+├── projects.py       ← Workspace file parsing and uploads
+└── vocabulary.py     ← Static and dynamic vocabulary query routes
 ```
 
 ---
 
-## Endpoints
+## API Endpoints
 
-### 🏥 Health
+### 1. Health & Status
 
 #### `GET /api/health`
-Liveness check used by Docker healthcheck, load balancers, and uptime monitors.
+Performs service liveness and container health checks.
 
-**Response `200 OK`**
+**Response (`200 OK`)**
 ```json
 {
   "status": "ok",
   "service": "Corpus API",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
 ```
 
 ---
 
-### 📂 Projects
+### 2. File Analysis & Projects
 
 #### `POST /api/projects/upload`
-Upload a Markdown file describing your project. Returns extracted domain, subdomains, and skills.
+Upload a markdown files representing engineering context. Parses and extracts keywords, subdomains, and required competencies.
 
-> **Phase 1:** Returns a simulated response. **Phase 2:** Calls Gemini API.
+*   **Request Format**: `multipart/form-data`
+*   **Parameters**:
+    *   `file` (File, Required): A `.md` file to analyze.
 
-**Request** — `multipart/form-data`
-
-| Field | Type | Required | Description |
-|---|---|---|---|
-| `file` | `File` | ✅ | A `.md` Markdown file |
-
-**Response `200 OK`**
+**Response (`200 OK`)**
 ```json
 {
   "status": "success",
-  "filename": "my_project.md",
+  "filename": "my_system_design.md",
   "analysis": {
     "domain": "Artificial Intelligence",
     "subdomains": [
@@ -87,21 +79,18 @@ Upload a Markdown file describing your project. Returns extracted domain, subdom
 }
 ```
 
-**Error Responses**
-
-| Code | Reason |
-|---|---|
-| `400` | File is not a `.md` file |
-| `500` | File could not be read or decoded |
+**Common Error Responses**:
+*   `400 Bad Request`: If the file extension is not `.md`.
+*   `500 Internal Server Error`: If file decoding fails.
 
 ---
 
-### 📚 Vocabulary
+### 3. Vocabulary Tracks
 
 #### `GET /api/vocabulary/tracks`
-Returns a summary list of all available learning tracks (without vocabulary terms).
+Returns lists of available language/terminology tracks.
 
-**Response `200 OK`**
+**Response (`200 OK`)**
 ```json
 [
   {
@@ -121,63 +110,51 @@ Returns a summary list of all available learning tracks (without vocabulary term
     "name": "Business & Product Management",
     "accent_color": "#AB6CFF",
     "term_count": 8
+  },
+  {
+    "id": "ai_engineering",
+    "name": "AI Engineering",
+    "accent_color": "#10B981",
+    "term_count": 8
   }
 ]
 ```
 
----
-
 #### `GET /api/vocabulary/{track_id}`
-Returns the full vocabulary term list for a specific track.
+Returns all terminology vocabulary details associated with a track ID.
 
-**Path Parameters**
+*   **Path Parameters**:
+    *   `track_id` (String, Required): `startup_pitching`, `software_engineering`, `business_product`, or `ai_engineering`.
 
-| Parameter | Type | Valid Values |
-|---|---|---|
-| `track_id` | `string` | `startup_pitching`, `software_engineering`, `business_product` |
-
-**Response `200 OK`**
+**Response (`200 OK`)**
 ```json
 {
-  "id": "startup_pitching",
-  "name": "Startup & Venture Capital",
-  "accent_color": "#FF6B6B",
+  "id": "software_engineering",
+  "name": "Software Engineering & Tech",
+  "accent_color": "#4FC3F7",
   "terms": [
     {
-      "term": "Burn Rate",
-      "definition": "The rate at which a startup spends capital before positive cash flow.",
-      "category": "Finance"
+      "term": "Latency",
+      "definition": "The time delay between a client request and server response.",
+      "category": "Performance"
     },
     {
-      "term": "Runway",
-      "definition": "How long a company can operate before running out of money.",
-      "category": "Finance"
+      "term": "Scalability",
+      "definition": "The ability of a system to handle increased load by adding resources.",
+      "category": "Architecture"
     }
   ]
 }
 ```
 
-**Error Responses**
-
-| Code | Reason |
-|---|---|
-| `404` | `track_id` does not exist |
-
 ---
 
-#### `POST /api/vocabulary/custom` ⚠️ Phase 2
-Add a user-defined term to a personal vocabulary list. Requires authentication.
-
-**Returns `501 Not Implemented` until Phase 2.**
-
----
-
-### 💬 Chat & Roleplay
+### 4. Chat & LLM Coach Roleplay
 
 #### `GET /api/chat/personas`
-Returns the AI coach persona name and title for each available track.
+Retrieves details of AI Coach identities and domains.
 
-**Response `200 OK`**
+**Response (`200 OK`)**
 ```json
 {
   "startup_pitching": {
@@ -191,129 +168,50 @@ Returns the AI coach persona name and title for each available track.
   "business_product": {
     "name": "Michael Vance",
     "title": "Managing Director, Global Tech"
+  },
+  "ai_engineering": {
+    "name": "Dr. Evelyn Vance",
+    "title": "Lead AI Architect"
   }
 }
 ```
 
----
-
 #### `POST /api/chat/message`
-Send a user message and receive an AI coach reply with vocabulary term highlighting.
+Submit a message to the AI coach. Returns a tailored response using the configured LLM provider, matching key vocabulary terms.
 
-> **Phase 1:** Returns scripted responses in sequence. **Phase 2:** Calls Gemini API with full conversation context.
-
-**Request Body** — `application/json`
-
-| Field | Type | Required | Description |
-|---|---|---|---|
-| `track_id` | `string` | ✅ | One of the valid track IDs |
-| `user_message` | `string` | ✅ | The learner's message text |
-| `history_length` | `integer` | ❌ | Number of previous turns (used in Phase 2) |
+*   **Request Body (`application/json`)**:
+    *   `track_id` (String, Required): The track ID.
+    *   `user_message` (String, Required): The user response.
+    *   `history_length` (Integer, Optional): Number of previous exchanges to parse context.
 
 **Example Request**
 ```json
 {
   "track_id": "startup_pitching",
-  "user_message": "Our burn rate is $50K/month and we have 18 months of runway.",
-  "history_length": 0
+  "user_message": "Our burn rate is 50k and runway is 12 months.",
+  "history_length": 1
 }
 ```
 
-**Response `200 OK`**
+**Response (`200 OK`)**
 ```json
 {
-  "reply": "Interesting. What's your plan to reduce burn rate? With our investment, what runway does that give you?",
+  "reply": "Slowing down your burn rate seems like a priority. With 12 months of runway, when do you plan to raise your next round?",
   "coach_name": "Alex Mercer",
   "coach_title": "Partner, Apex Ventures",
   "highlighted_terms": ["Burn Rate", "Runway"]
 }
 ```
 
-**Error Responses**
-
-| Code | Reason |
-|---|---|
-| `404` | `track_id` does not match any known persona |
-| `422` | Request body failed validation |
-
 ---
 
-### 🔐 Authentication — Phase 2
+### 5. Authentication (Under Active Development)
 
-> All auth endpoints currently return `501 Not Implemented`.
-> See `backend/api/auth.py` for the full implementation plan and TODOs.
+#### `POST /api/auth/register`
+Create a new user account.
 
-#### `POST /api/auth/register` ⚠️ Phase 2
+#### `POST /api/auth/login`
+Authenticate email/password and obtain a secure JWT token.
 
-**Request Body**
-```json
-{
-  "email": "user@example.com",
-  "password": "SecurePass123!",
-  "full_name": "Jane Doe"
-}
-```
-
----
-
-#### `POST /api/auth/login` ⚠️ Phase 2
-
-**Request Body**
-```json
-{
-  "email": "user@example.com",
-  "password": "SecurePass123!"
-}
-```
-
-**Expected Response (Phase 2)**
-```json
-{
-  "access_token": "<jwt-token>",
-  "token_type": "bearer"
-}
-```
-
----
-
-#### `GET /api/auth/me` ⚠️ Phase 2
-
-**Headers**
-```
-Authorization: Bearer <access_token>
-```
-
----
-
-## Error Format
-
-All errors follow FastAPI's standard error schema:
-
-```json
-{
-  "detail": "Human-readable error message here."
-}
-```
-
----
-
-## Testing with Swagger UI
-
-1. Start the backend:
-   ```bash
-   uvicorn backend.main:app --reload --port 8000
-   ```
-
-2. Open [http://localhost:8000/api/docs](http://localhost:8000/api/docs) in your browser.
-
-3. Click any endpoint → **Try it out** → **Execute**.
-
-4. For file upload endpoints, use the file picker to select a `.md` file.
-
----
-
-## Testing with Postman
-
-1. Open Postman → **Import** → select `docs/corpus_api.postman_collection.json`.
-2. The collection sets `{{baseUrl}}` to `http://localhost:8000` automatically.
-3. For Phase 2 auth endpoints, set the `{{authToken}}` variable after a successful login.
+#### `GET /api/auth/me`
+Retrieve profile attributes of the authenticated user session.

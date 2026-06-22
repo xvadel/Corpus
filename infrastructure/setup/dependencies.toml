@@ -6,14 +6,14 @@
 
 [project]
 name = "Corpus"
-version = "1.0.0"
-description = "Domain-specific language learning platform for professionals"
-backend_framework = "FastAPI (Python 3.10+)"
+version = "1.1.0"
+description = "Domain-specific language learning platform for professionals with Knowledge-First RAG"
+backend_framework = "FastAPI (Python 3.11+)"
 frontend_framework = "Svelte + Vite (Node 20+)"
 database_engine = "SQLite (Local) / SQLAlchemy"
 
 [system_requirements]
-python = ">=3.10"
+python = ">=3.11"
 node = ">=20.0.0"
 npm = ">=9.0.0"
 docker = ">=20.10"
@@ -40,12 +40,12 @@ bcrypt = ">=4.0.1"             # Hashing library for secure passwords
 [dependencies.backend_ai_rag]
 google-generativeai = ">=0.8.0" # Google Gemini API Python SDK
 chromadb = ">=0.4.0"            # Vector database for RAG context storage
-sentence-transformers = ">=2.2" # Text embeddings generation
+sentence-transformers = ">=2.2" # Text embeddings generation (Bi-Encoder & Cross-Encoder Reranker)
 
 # Frontend JavaScript Dependencies (defined in frontend/package.json)
 [dependencies.frontend_core]
-svelte = "^5.55.5"             # Svelte component framework
-vite = "^8.0.12"               # Asset compilation, bundling, and hot dev server
+svelte = "^5.0.0"              # Svelte component framework
+vite = "^6.0.0"                # Asset compilation, bundling, and hot dev server
 typescript = "^5.0.0"          # Type safety
 tailwindcss = "^4.0.0"         # Utility-first CSS styling
 lucide-svelte = "^0.300.0"     # Elegant vector icon pack

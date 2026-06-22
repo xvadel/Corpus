@@ -5,9 +5,9 @@
   "category": "Neural Networks",
   "term": "Feed Forward Network",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Deep Learning Foundations under Neural Networks, representing Feed Forward Network.",
-  "simple_explanation": "Think of Feed Forward Network as an essential building block of Deep Learning Foundations. It is commonly used within Neural Networks.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Feed Forward Network plays a key role within Neural Networks. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Feed Forward Network (FFN), also known as a Feedforward Neural Network (FNN), is a type of artificial neural network where the data flows only in one direction, from input layer to output layer, without any feedback loops. It is a fundamental component of Deep Learning Foundations, alternatively referred to as a Multi-Layer Perceptron (MLP).",
+  "simple_explanation": "Imagine a series of filters that process an image, where each filter looks at the output of the previous one, but not the other way around, allowing the network to learn and represent increasingly complex features. This one-way flow of information is similar to how a factory assembly line works, where each station adds or modifies the product without sending it back to the previous station. This process enables the network to learn and make predictions on the input data.",
+  "technical_explanation": "Under the hood, a Feed Forward Network consists of multiple layers of perceptrons, where each layer applies a linear transformation followed by an activation function, allowing the network to learn non-linear relationships between the input and output data. The key mechanisms involve forward propagation, where the input data flows through the network, and backpropagation, where the error is computed and used to update the model's parameters, involving trade-offs between the number of layers, the number of units in each layer, and the choice of activation and loss functions.",
   "investor_explanation": "Robust configuration of Feed Forward Network directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Feed Forward Network in our Deep Learning Foundations pipeline to improve performance.",

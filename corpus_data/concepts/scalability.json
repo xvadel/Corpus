@@ -5,9 +5,9 @@
   "category": "System Design",
   "term": "Scalability",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in AI Engineering under System Design, representing Scalability.",
-  "simple_explanation": "Think of Scalability as an essential building block of AI Engineering. It is commonly used within System Design.",
-  "technical_explanation": "In production AI Engineering systems, Scalability plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Scalability, also referred to as horizontal or vertical scaling, is the ability of a system, network, or process to handle increased load, usage, or demand without compromising performance. It can be achieved through various means, including load balancing, distributed computing, and cloud computing.",
+  "simple_explanation": "Think of scalability like a restaurant that can efficiently serve more customers by adding more tables, hiring more staff, or even opening new locations, all while maintaining the same quality of service. In software engineering, this means designing systems that can handle growing amounts of data, traffic, or user activity without slowing down. For example, a scalable e-commerce platform can handle a surge in orders during holiday seasons without crashing.",
+  "technical_explanation": "Under the hood, scalability is achieved through mechanisms such as load balancing algorithms, distributed databases, and auto-scaling cloud services, which allow systems to dynamically adjust their resources to match changing demand. This involves engineering trade-offs between factors like latency, throughput, and cost, as well as careful consideration of system architecture, data partitioning, and network topology to ensure seamless scaling. By leveraging technologies like containerization, orchestration tools, and serverless computing, developers can design scalable systems that efficiently utilize resources and provide a high-quality user experience.",
   "investor_explanation": "Robust configuration of Scalability directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Scalability in our AI Engineering pipeline to improve performance.",

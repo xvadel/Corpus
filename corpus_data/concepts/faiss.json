@@ -5,9 +5,9 @@
   "category": "Vector Databases",
   "term": "FAISS",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Vector Databases, representing FAISS.",
-  "simple_explanation": "Think of FAISS as an essential building block of Retrieval Augmented Generation. It is commonly used within Vector Databases.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, FAISS plays a key role within Vector Databases. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "FAISS (Facebook AI Similarity Search) is an open-source library for efficient similarity search and clustering of dense vectors, also known as Approximate Nearest Neighbor (ANN) search. It is a key component in various AI applications, including Retrieval Augmented Generation.",
+  "simple_explanation": "Imagine you have a huge library with millions of books, and you want to find the books that are most similar to a specific book you're interested in. FAISS is like a super-efficient librarian that can quickly scan the library and find the most similar books, even if the library is enormous. It does this by using clever algorithms to quickly narrow down the search space and find the closest matches.",
+  "technical_explanation": "Under the hood, FAISS uses a combination of indexing techniques, such as quantization, hashing, and graph-based methods, to efficiently search for similar vectors in high-dimensional spaces. The library provides a range of indexing algorithms, including Flat, IVF, and HNSW, each with its own trade-offs between search speed, memory usage, and accuracy. By leveraging these indexing techniques, FAISS can achieve significant speedups over exhaustive search methods, making it a crucial component in many AI applications, including Retrieval Augmented Generation.",
   "investor_explanation": "Robust configuration of FAISS directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized FAISS in our Retrieval Augmented Generation pipeline to improve performance.",

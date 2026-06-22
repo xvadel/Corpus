@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Similarity Search",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Similarity Search.",
-  "simple_explanation": "Think of Similarity Search as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Similarity Search plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Similarity Search, also known as Nearest Neighbor Search or Approximate Nearest Neighbor Search (ANNS), is a technique used to find the most similar items to a given query item in a large dataset. It is a fundamental component of Retrieval Augmented Generation systems, enabling efficient retrieval of relevant data from vector databases.",
+  "simple_explanation": "Imagine you're looking for a movie similar to your favorite film - Similarity Search is like a highly efficient librarian who can quickly scan through millions of movies and recommend the top few that match your favorite movie's themes, genres, and tone. This is achieved by representing movies as vectors in a high-dimensional space, where similar movies are closer together. By searching for nearby vectors, the system can identify the most similar movies.",
+  "technical_explanation": "Under the hood, Similarity Search relies on vector embeddings and indexing algorithms, such as Faiss or Annoy, to efficiently search for nearest neighbors in high-dimensional vector spaces. The key mechanisms involve quantization, indexing, and approximation techniques, which enable fast and scalable search, but may introduce trade-offs between search accuracy, index size, and query latency, requiring careful engineering and optimization to achieve the desired balance.",
   "investor_explanation": "Robust configuration of Similarity Search directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Similarity Search in our Retrieval Augmented Generation pipeline to improve performance.",

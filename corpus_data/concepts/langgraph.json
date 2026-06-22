@@ -5,9 +5,9 @@
   "category": "Orchestration",
   "term": "LangGraph",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in AI Engineering under Orchestration, representing LangGraph.",
-  "simple_explanation": "Think of LangGraph as an essential building block of AI Engineering. It is commonly used within Orchestration.",
-  "technical_explanation": "In production AI Engineering systems, LangGraph plays a key role within Orchestration. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A LangGraph, also known as a Language Model Graph, is a computational graph that represents the workflow of language models and their interactions, enabling the orchestration of complex AI pipelines. It is closely related to LangChain, a framework for building and managing language model-based applications.",
+  "simple_explanation": "Imagine a flowchart that connects different language models and tasks, such as text generation, question-answering, and sentiment analysis, to create a cohesive workflow. A LangGraph is like this flowchart, but for AI models, allowing engineers to design, execute, and manage complex AI workflows in a visual and intuitive way. This enables the creation of powerful AI applications by combining multiple models and tasks in a single graph.",
+  "technical_explanation": "Under the hood, a LangGraph is a directed graph data structure that represents the dependencies and interactions between language models, tasks, and data sources. The graph is executed by a workflow engine, which manages the data flow, model inference, and task execution, while also handling errors, retries, and optimization of the workflow. The engineering trade-offs in designing a LangGraph involve balancing factors such as model complexity, data throughput, and computational resources to achieve optimal performance, scalability, and reliability.",
   "investor_explanation": "Robust configuration of LangGraph directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized LangGraph in our AI Engineering pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Prompt Engineering",
   "term": "Structured Prompting",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Structured Prompting.",
-  "simple_explanation": "Think of Structured Prompting as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
-  "technical_explanation": "In production Agentic AI systems, Structured Prompting plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Structured Prompting, also known as SP, refers to a technique in Prompt Engineering where a well-defined, structured input is provided to a language model or other AI system to elicit a specific, desired response. It involves using a combination of natural language and formal constraints to guide the model's output.",
+  "simple_explanation": "Imagine you're asking a friend to write a story, but instead of just giving them a vague idea, you provide a detailed outline with characters, plot points, and a specific tone - this is similar to Structured Prompting, where you give the AI a clear, structured input to produce a specific output. By doing so, you increase the chances of getting a relevant and accurate response. This approach helps to reduce ambiguity and improves the overall quality of the generated text.",
+  "technical_explanation": "Under the hood, Structured Prompting relies on the use of formal languages, such as JSON or XML, to define the input structure and constraints, which are then used to condition the language model's output. The key mechanism involves using this structured input to modulate the model's attention and generation processes, allowing for more precise control over the generated text. However, this approach requires careful engineering of the input structure and constraints, as well as consideration of trade-offs between specificity, flexibility, and computational complexity.",
   "investor_explanation": "Robust configuration of Structured Prompting directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Structured Prompting in our Agentic AI pipeline to improve performance.",

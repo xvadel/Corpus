@@ -5,9 +5,9 @@
   "category": "Embeddings",
   "term": "Embedding",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Embeddings, representing Embedding.",
-  "simple_explanation": "Think of Embedding as an essential building block of Retrieval Augmented Generation. It is commonly used within Embeddings.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Embedding plays a key role within Embeddings. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "An embedding, also known as a vector representation or vector embedding, is a dense vector that represents a word, phrase, or other type of data in a high-dimensional space, allowing for semantic relationships and similarities to be captured. Alternative names include vector embeddings, word embeddings, or token embeddings.",
+  "simple_explanation": "Imagine a library where each book is represented by a unique set of coordinates on a map, allowing you to find similar books by their proximity on the map. In a similar way, embeddings represent words or phrases as points in a high-dimensional space, enabling the model to understand their semantic meaning and relationships. For example, the embeddings for 'dog' and 'cat' would be closer together than the embedding for 'car'.",
+  "technical_explanation": "Under the hood, embeddings are typically learned during the training process of a neural network, such as a Transformer, using techniques like self-supervised learning or masked language modeling. The key mechanism involves mapping input data, like words or tokens, to a fixed-size vector space using an embedding matrix, which is optimized to capture semantic relationships and minimize loss functions. Engineering trade-offs include balancing the dimensionality of the embedding space, the choice of optimization algorithms, and the selection of hyperparameters to achieve efficient and effective representation learning.",
   "investor_explanation": "Robust configuration of Embedding directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Embedding in our Retrieval Augmented Generation pipeline to improve performance.",

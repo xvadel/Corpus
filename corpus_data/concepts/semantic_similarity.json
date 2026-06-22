@@ -5,9 +5,9 @@
   "category": "Embeddings",
   "term": "Semantic Similarity",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Embeddings, representing Semantic Similarity.",
-  "simple_explanation": "Think of Semantic Similarity as an essential building block of Retrieval Augmented Generation. It is commonly used within Embeddings.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Semantic Similarity plays a key role within Embeddings. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Semantic similarity refers to the degree of similarity in meaning between two pieces of text, images, or other data, often measured using techniques such as cosine similarity or embedding-based methods, also known as semantic relatedness or semantic equivalence. It is a crucial concept in natural language processing (NLP) and information retrieval, particularly in applications like retrieval augmented generation.",
+  "simple_explanation": "Imagine you're searching for a recipe online and you type in 'chicken parmesan', but the search results show you a recipe for 'breaded chicken cutlets' - while the names are different, the recipes are essentially the same, illustrating semantic similarity. This concept helps algorithms understand that two things can be similar in meaning even if they don't look exactly the same. It's like finding synonyms or related ideas in a vast library of information.",
+  "technical_explanation": "Under the hood, semantic similarity is often calculated using embedding models like word2vec or BERT, which map words or phrases to dense vectors in a high-dimensional space, allowing for the computation of cosine similarity or other distance metrics between these vectors. The key mechanism involves training these models on large datasets to learn representations that capture semantic relationships, and engineering trade-offs involve balancing the complexity of the model with the computational resources available. Effective semantic similarity measurement enables accurate information retrieval, text classification, and generation tasks.",
   "investor_explanation": "Robust configuration of Semantic Similarity directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Semantic Similarity in our Retrieval Augmented Generation pipeline to improve performance.",

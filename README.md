@@ -1,239 +1,148 @@
 # Corpus 🗣️💼
 
-> **Domain-specific language learning for professionals.**
-> Master the vocabulary, pitch confidently, and communicate like an expert in your field.
-
-An AI-powered, self-hostable platform that bridges the gap between technical skill and professional communication. Unlike general language apps (Duolingo, Babbel), **Corpus** targets the specialized vocabulary and conversational patterns required in high-stakes professional environments — investor pitches, system design interviews, and executive stakeholder meetings.
+> **Domain-specific language learning for high-stakes professional communication.**
+> Master specialized vocabulary, pitch with confidence, and communicate like an expert in your field.
 
 ---
 
-## 🎯 The Problem We Solve
-
-Many skilled professionals face a career bottleneck due to:
-
-- **Jargon & Terminology Gaps** — Can't explain system architecture or financial models using standard industry language.
-- **High-Stakes Speaking Anxiety** — No structured practice for pitching to investors or presenting to boards.
-- **Generalist Language Apps** — Existing tools teach ordering food, not explaining burn rate or API design.
+**Corpus** is an AI-powered, self-hostable learning platform designed to bridge the gap between technical mastery and professional communication. Unlike generic language platforms, Corpus targets the specialized vocabulary, architectural concepts, and conversational patterns needed in high-stakes professional environments—investor pitches, technical design reviews, system design interviews, and executive business alignment meetings.
 
 ---
 
-## ✨ Features
+## 🎯 Core Problem We Solve
 
-| Feature | Status |
-|---|---|
-| Domain-specific learning tracks (Startup, Tech, Business) | ✅ Live |
-| Interactive flashcard vocabulary deck | ✅ Live |
-| AI coach roleplay / pitch simulator | ✅ Live (scripted) |
-| Vocabulary term highlighting in chat | ✅ Live |
-| REST API with Swagger UI | ✅ Live |
-| Gemini AI-powered chat responses | 🔜 Phase 2 |
-| User accounts & saved progress | 🔜 Phase 2 |
-| Custom vocabulary bank | 🔜 Phase 2 |
-| Grammar evaluation engine | 🔜 Phase 3 |
-| Spaced Repetition (SRS) analytics | 🔜 Phase 4 |
+*   **Terminology Gaps**: Technical practitioners often struggle to explain system design concepts or financial structures using correct, professional terms.
+*   **High-Stakes Speaking Anxiety**: Learners lack sandbox environments to practice roleplaying critical, interactive scenarios with real-time domain vocabulary reinforcement.
+*   **Generalist Scope**: Traditional language apps focus on standard conversational situations rather than domain-specific professional scenarios.
 
 ---
 
-## 🏗️ Tech Stack
+## ✨ Features & Architecture Highlights
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | Svelte + Vite → compiled to static files (`index.html` + minimal JS/CSS) |
-| **Backend** | FastAPI (Python 3.11) |
-| **AI Engine** | Google Gemini API (Phase 2) |
-| **Database** | SQLite (dev) / PostgreSQL (production) via SQLAlchemy |
-| **Container** | Docker + Docker Compose (multi-stage build) |
-| **Docs** | Swagger UI (`/api/docs`), ReDoc (`/api/redoc`), Postman collection |
+### 1. Knowledge-First RAG Pipeline
+Built on a deep, prerequisites-aware Ontology database of **108 concepts** across Deep Learning, NLP, RAG, Fine-Tuning, and AI Engineering. 
+*   **Stage 1 Retrieval (Bi-Encoder Recall)**: Uses `BAAI/bge-small-en-v1.5` text embeddings (automatically query-prefixed for asymmetric search) to fetch the top candidate concepts from a local `ChromaDB` instance.
+*   **Stage 2 Precision (Cross-Encoder Rerank)**: Reranks candidate vectors using the `BAAI/bge-reranker-base` model.
+
+### 2. User Skill Tracking & Curriculum
+*   **SQLite UserSkillModel**: Persists user interactions (success/failure) and calculates dynamic mastery levels via an **Exponential Moving Average (EMA)** algorithm.
+*   **GapAnalyzer Curriculum Engine**: Performs topological sorting over prerequisite concepts to generate personalized learning paths based on the gaps in the user's active skill model.
+
+### 3. AI Coach Simulator
+Provides interactive domain-specific roleplay coaches:
+*   **Alex Mercer** (Startup & VC Partner): Financial pitches, runway, and valuations.
+*   **Sarah Connor** (Principal Software Architect): Low-latency designs, scaling, and technical debt.
+*   **Dr. Evelyn Vance** (Lead AI Architect): Document chunking, embeddings, and RAG architectures.
+*   **Michael Vance** (Product Management Director): KPI alignment, Q3 roadmap, and churn rate.
 
 ---
 
-## 🗂️ Project Structure & Setup Index
+## 📊 Retrieval Performance Metrics
 
-Corpus groups all contributing, developer setup, and self-hosting documentation/scripts into the [infrastructure/setup/](file:///d:/Lantest/infrastructure/setup) folder to keep the root directory clean and highly organized.
+Our evaluation benchmark (evaluating 60 complex queries across Easy, Medium, and Hard tiers) shows a massive retrieval recall and precision uplift:
 
-### ⚙️ Setup & Contributing Folder Index
+| Metric | Vector Only | Vector + Cross-Encoder Rerank | Delta |
+| :--- | :---: | :---: | :---: |
+| **Recall@1** | 56.7% | **70.0%** | **+13.3%** |
+| **Recall@3** | 68.3% | **83.3%** | **+15.0%** |
+| **Recall@5** | 75.0% | **86.7%** | **+11.7%** |
+| **Mean Reciprocal Rank (MRR)** | 0.6411 | **0.7659** | **+0.1248** |
 
-Each of these files is located inside the [infrastructure/setup/](file:///d:/Lantest/infrastructure/setup) directory:
+---
 
-1. **[CONTRIBUTING.md](file:///d:/Lantest/infrastructure/setup/CONTRIBUTING.md)**
-   - Detailed guide for setting up local python environment, frontend svelte dev server, IDE python interpreter path integration (VS Code, Cursor, PyCharm), code standards, and database structure.
-2. **[dependencies.toml](file:///d:/Lantest/infrastructure/setup/dependencies.toml)**
-   - Modernized developer manifest defining backend Python dependencies (FastAPI, SQLAlchemy, etc.) and frontend packages (Svelte, Vite, Lucide icons) along with target IDE tools.
-3. **[setup_venv.ps1](file:///d:/Lantest/infrastructure/setup/setup_venv.ps1)**
-   - PowerShell script that automates creating an isolated virtual environment (`venv`), upgrading pip, and installing all package requirements on **Windows**.
-4. **[setup_venv.sh](file:///d:/Lantest/infrastructure/setup/setup_venv.sh)**
-   - Bash script that automates creating an isolated virtual environment (`venv`), upgrading pip, and installing all package requirements on **macOS/Linux**.
+## 🏗️ Technical Stack
 
-### 🐳 Self-Hosting & Root Assets
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | Svelte 5 + TypeScript + Vite + Tailwind CSS |
+| **Backend** | FastAPI (Python 3.11+) + Uvicorn |
+| **Database** | SQLite + ChromaDB (Vector Store) |
+| **AI Models** | Groq (Llama 3.3 70B), SentenceTransformers (`bge-small-en-v1.5` & `bge-reranker-base`) |
+| **Testing** | Pytest |
+| **Containerization** | Docker + Docker Compose |
 
-These files reside in the root directory for standard operations:
+---
 
-1. **[Dockerfile](file:///d:/Lantest/Dockerfile)**
-   - Multi-stage image build instructions compiling the Svelte frontend into static assets and packaging them into the Python runtime container.
-2. **[docker-compose.yml](file:///d:/Lantest/docker-compose.yml)**
-   - Container orchestration config managing environment variables, volumes, ports, and healthchecks.
-3. **[.env.example](file:///d:/Lantest/.env.example)**
-   - Configuration template mapping database URL, secrets, and AI keys. Copy to `.env` to configure.
-4. **[Makefile](file:///d:/Lantest/Makefile)**
-   - Developer helper commands for building, starting services, and lint checks.
-5. **[requirements.txt](file:///d:/Lantest/requirements.txt)**
-   - Lockfile containing python packages list.
+## 📁 Repository Structure & Setup Guides
+
+*   **[infrastructure/setup/CONTRIBUTING.md](file:///d:/Corpus/infrastructure/setup/CONTRIBUTING.md)**: Developer guide mapping python interpreter configurations, code standards, and PR workflows.
+*   **[infrastructure/setup/dependencies.toml](file:///d:/Corpus/infrastructure/setup/dependencies.toml)**: System dependencies manifest for Python backend and Svelte frontend.
+*   **[docs/API.md](file:///d:/Corpus/docs/API.md)**: Standard REST API specifications.
+*   **[docs/concept_schema.md](file:///d:/Corpus/docs/concept_schema.md)**: Ontology JSON document schemas.
 
 ---
 
 ## 🚀 Quick Start
 
-### Option A — Docker (Recommended for Self-Hosting)
-Requires only Docker installed. No Node.js or Python environments required locally.
+### Option A: Running via Docker (Recommended for Self-Hosting)
+Requires only Docker and Docker Compose installed.
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/Corpus.git
+# 1. Clone the repository
+git clone https://github.com/your-username/Corpus.git
 cd Corpus
 
-# 2. Copy and configure environment
+# 2. Configure environment variables
 cp .env.example .env
-# Edit .env and set your GEMINI_API_KEY and SECRET_KEY
+# Edit .env and supply your GROQ_API_KEY (and optionally GEMINI_API_KEY)
 
-# 3. Build and run
+# 3. Spin up the containers
 docker compose up --build
-
-# 4. Open http://localhost:8000
+# Open http://localhost:8000
 ```
 
-### Option B — Local Development & Contributors
-To resolve any import warning or path detection issue, **always run within an isolated and activated Python virtual environment**.
+### Option B: Local Development (For Contributors)
 
-#### 1. Automated Setup (Recommended)
-Run the setup script corresponding to your operating system to automatically initialize, activate, and configure your virtual environment:
+#### 1. Backend Environment Setup
+Create and configure an isolated virtual environment (`venv`) to resolve import pathways:
 
-- **Windows (PowerShell):**
-  ```powershell
-  powershell -ExecutionPolicy Bypass -File infrastructure/setup/setup_venv.ps1
-  ```
-- **macOS / Linux (Bash):**
-  ```bash
-  chmod +x infrastructure/setup/setup_venv.sh
-  ./infrastructure/setup/setup_venv.sh
-  ```
+*   **Windows (PowerShell)**:
+    ```powershell
+    powershell -ExecutionPolicy Bypass -File infrastructure/setup/setup_venv.ps1
+    ```
+*   **macOS / Linux (Terminal)**:
+    ```bash
+    chmod +x infrastructure/setup/setup_venv.sh
+    ./infrastructure/setup/setup_venv.sh
+    ```
 
-#### 2. Manual Setup
-If you prefer configuring packages step-by-step:
-```bash
-# Create and activate python virtual environment
-python -m venv venv
-venv\Scripts\Activate.ps1       # Windows PowerShell
-source venv/bin/activate        # Linux / macOS
+#### 2. Run the Servers
+*   **Activate Environment and Start FastAPI Backend**:
+    ```bash
+    # Windows
+    venv\Scripts\Activate.ps1
+    # Unix
+    source venv/bin/activate
 
-# Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# Start backend server
-uvicorn backend.main:app --reload
-
-# Start Svelte frontend (in a separate terminal)
-cd frontend
-npm install
-npm run dev
-```
-
-> [!IMPORTANT]
-> **IDE Setup**: After setting up your virtual environment, verify that your IDE (VS Code, Cursor, PyCharm) is set to use the environment's Python interpreter path (`venv/Scripts/python.exe` on Windows or `venv/bin/python` on Unix). This resolves any "Cannot find module" linter and path configuration warnings. See the **[CONTRIBUTING.md](file:///d:/Lantest/infrastructure/setup/CONTRIBUTING.md)** instructions for full IDE screenshots and details.
+    uvicorn backend.main:app --reload --port 8000
+    ```
+*   **Start the Frontend Svelte Dev Server**:
+    ```bash
+    cd frontend
+    npm install
+    npm run dev
+    ```
+    Open [http://localhost:5173/](http://localhost:5173/) to see your hot-reloaded changes.
 
 ---
 
-## 📡 API Documentation
+## 🔬 Testing & Validation
 
-The backend exposes a fully documented REST API.
-
-| Method | Endpoint | Description | Status |
-|---|---|---|---|
-| `GET` | `/api/health` | Service liveness check | ✅ Live |
-| `POST` | `/api/projects/upload` | Upload `.md` file for domain analysis | ✅ Live |
-| `GET` | `/api/vocabulary/tracks` | List all learning tracks | ✅ Live |
-| `GET` | `/api/vocabulary/{track_id}` | Get vocabulary for a track | ✅ Live |
-| `POST` | `/api/vocabulary/custom` | Add a custom term | 🔜 Phase 2 |
-| `GET` | `/api/chat/personas` | List AI coach personas | ✅ Live |
-| `POST` | `/api/chat/message` | Send message, get coach reply | ✅ Live |
-| `POST` | `/api/auth/register` | Create an account | 🔜 Phase 2 |
-| `POST` | `/api/auth/login` | Log in, get JWT token | 🔜 Phase 2 |
-| `GET` | `/api/auth/me` | Get current user profile | 🔜 Phase 2 |
-
-### Interactive Testing
-- **Swagger UI**: [http://localhost:8000/api/docs](http://localhost:8000/api/docs)
-- **ReDoc**: [http://localhost:8000/api/redoc](http://localhost:8000/api/redoc)
-- **Postman**: Import `docs/corpus_api.postman_collection.json`
-- **Full Reference**: See [`docs/API.md`](./docs/API.md)
-
----
-
-## 🐳 Self-Hosting
-
-The multi-stage Dockerfile builds the Svelte frontend (Node) and bundles it directly into the Python image — users only need Docker, **no Node.js required at runtime**.
+Run unit tests and verify code compliance:
 
 ```bash
-docker compose up --build -d
+# Run backend unit tests
+venv\Scripts\pytest tests/
+
+# Re-build and validate ontology graphs
+python scripts/build_knowledge_graph.py
+
+# Run retrieval benchmark metrics
+python backend/evaluation/benchmark_runner.py
 ```
-
-### Environment Variables
-
-| Variable | Default | Description |
-|---|---|---|
-| `DATABASE_URL` | `sqlite:///./corpus_dev.db` | DB connection string |
-| `SECRET_KEY` | *(change this!)* | JWT signing secret |
-| `GEMINI_API_KEY` | *(empty)* | Google Gemini API key ([get one free](https://aistudio.google.com/app/apikey)) |
-
-### Cloud Deployment
-
-Works on any host that supports Python or Docker:
-- **Railway / Render** — connect repo, set env vars, deploy
-- **DigitalOcean App Platform** — Docker-based deploy
-- **AWS / GCP / Azure** — use the `Dockerfile` directly
-
-Ensure port `8000` is exposed and `DATABASE_URL` points to your production PostgreSQL instance.
-
----
-
-## 🍴 Contributing
-
-We welcome all contributions! Detailed workflows are documented in **[setup/CONTRIBUTING.md](file:///d:/Lantest/infrastructure/setup/CONTRIBUTING.md)**:
-- Local setup guide
-- Code architecture deep-dive
-- How to add a new learning track
-- Phase 2 implementation checklist
-- PR and commit guidelines
-
----
-
-## 📅 Roadmap
-
-### ✅ Phase 1 — Foundation (Current)
-- [x] Svelte + Vite static frontend with glassmorphic dark UI
-- [x] FastAPI backend serving SPA + REST API
-- [x] Flashcard vocabulary deck (Startup, Tech, Business)
-- [x] AI coach roleplay simulator (scripted responses)
-- [x] Swagger UI + ReDoc + Postman collection
-- [x] Docker multi-stage self-hosting build
-- [x] Modular backend route structure
-
-### 🔜 Phase 2 — AI & Auth
-- [ ] Gemini API integration for real chat replies
-- [ ] JWT-based user authentication
-- [ ] User progress persistence in database
-- [ ] Custom vocabulary bank
-
-### 🔜 Phase 3 — Grammar Coach
-- [ ] Real-time grammar evaluation engine
-- [ ] Writing correction and synonym suggestions
-
-### 🔜 Phase 4 — Analytics & SRS
-- [ ] Spaced Repetition Schedule (SRS) algorithm
-- [ ] Speaking confidence analytics dashboard
-- [ ] Performance reports and certificates
 
 ---
 
 ## 📄 License
 
-MIT — free to use, fork, and self-host.
+Corpus is open-source software licensed under the [MIT License](LICENSE).

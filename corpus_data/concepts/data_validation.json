@@ -5,9 +5,9 @@
   "category": "Data Management",
   "term": "Data Validation",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in MLOps under Data Management, representing Data Validation.",
-  "simple_explanation": "Think of Data Validation as an essential building block of MLOps. It is commonly used within Data Management.",
-  "technical_explanation": "In production MLOps systems, Data Validation plays a key role within Data Management. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Data validation, also known as data verification or data quality check, refers to the process of ensuring that the data used in machine learning models or other applications is accurate, complete, and consistent, adhering to predefined rules and constraints. It is a critical step in the data pipeline, often abbreviated as DV.",
+  "simple_explanation": "Data validation is like checking the quality of ingredients before baking a cake, ensuring they are fresh, not expired, and in the right quantities, to guarantee the cake turns out as expected. In the context of data, this means verifying that the information is correct, not missing, and follows the required format, so that it can be reliably used for analysis or modeling. For instance, validating a date field to ensure it follows the correct format, such as YYYY-MM-DD.",
+  "technical_explanation": "Under the hood, data validation involves applying a set of predefined rules, constraints, and data quality checks to the data, which can include format checks, range checks, and consistency checks across multiple fields. This process can be implemented using various techniques, such as data profiling, data cleansing, and data transformation, and may leverage tools like Apache Beam, Pandas, or Great Expectations, which provide efficient and scalable ways to validate large datasets. The choice of validation approach depends on the specific use case, data complexity, and performance requirements, requiring careful trade-offs between accuracy, speed, and computational resources.",
   "investor_explanation": "Robust configuration of Data Validation directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Data Validation in our MLOps pipeline to improve performance.",

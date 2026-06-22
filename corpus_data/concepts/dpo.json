@@ -5,9 +5,9 @@
   "category": "Model Adaptation",
   "term": "Direct Preference Optimization",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing Direct Preference Optimization.",
-  "simple_explanation": "Think of Direct Preference Optimization as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
-  "technical_explanation": "In production Agentic AI systems, Direct Preference Optimization plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Direct Preference Optimization (DPO) is a model adaptation technique in Agentic AI that involves optimizing a model's parameters to directly maximize a user's or agent's preferences, also known as Reward Learning or Preference-based Reinforcement Learning. It is closely related to Reinforcement Learning from Human Feedback (RLHF) and fine-tuning techniques.",
+  "simple_explanation": "Imagine you're trying to teach a robot to make your favorite coffee, and instead of telling it exactly how to do it, you simply give it a thumbs up or down after it tries, so it can learn what you like through trial and error. Direct Preference Optimization works in a similar way, where the model learns to make decisions based on direct feedback about what's good or bad, rather than being explicitly programmed. This allows the model to adapt to complex and nuanced preferences that might be hard to define explicitly.",
+  "technical_explanation": "Under the hood, DPO works by using preference-based reinforcement learning algorithms, such as pairwise ranking or preference-based Q-learning, to update the model's parameters based on the user's or agent's preferences. The key mechanism involves learning a preference model that captures the user's or agent's preferences, and then using this model to guide the optimization of the main model's parameters. The engineering trade-offs involve balancing the complexity of the preference model with the need for efficient optimization and generalization to new situations.",
   "investor_explanation": "Robust configuration of Direct Preference Optimization directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Direct Preference Optimization in our Agentic AI pipeline to improve performance.",

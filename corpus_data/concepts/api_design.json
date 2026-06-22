@@ -5,9 +5,9 @@
   "category": "System Design",
   "term": "API Design",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in AI Engineering under System Design, representing API Design.",
-  "simple_explanation": "Think of API Design as an essential building block of AI Engineering. It is commonly used within System Design.",
-  "technical_explanation": "In production AI Engineering systems, API Design plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "API Design refers to the process of creating and defining the architecture of an Application Programming Interface (API), which enables different software systems to communicate with each other. It is also known as API Architecture or API Development.",
+  "simple_explanation": "Think of API Design like designing a restaurant's menu and ordering system. The menu represents the services the restaurant offers, and the ordering system represents how customers can request those services. In API Design, you define what services your system offers and how other systems can request them, making it easy for different systems to work together.",
+  "technical_explanation": "Under the hood, API Design involves defining the API's endpoints, request and response formats, authentication mechanisms, and error handling protocols. Key mechanisms include RESTful APIs, API gateways, and service discovery, which enable scalable, secure, and maintainable API architectures. Engineering trade-offs in API Design involve balancing factors like performance, security, and usability to create an efficient and reliable interface for system integration.",
   "investor_explanation": "Robust configuration of API Design directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized API Design in our AI Engineering pipeline to improve performance.",

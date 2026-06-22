@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "Reranking",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Reranking.",
-  "simple_explanation": "Think of Reranking as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Reranking plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Reranking, also known as re-scoring, is a technique used in information retrieval and natural language processing to reorder a set of retrieved documents or candidates based on their relevance to a query. It is often used as a post-processing step to improve the accuracy of retrieval models, particularly in Retrieval Augmented Generation (RAG) systems.",
+  "simple_explanation": "Imagine you're searching for a specific book in a library, and the catalog system returns a list of 10 books that might match what you're looking for. Reranking is like having a librarian review that list and rearrange it so the most relevant books are at the top, making it easier for you to find what you need. This process helps to refine the search results and provide more accurate information.",
+  "technical_explanation": "Under the hood, reranking typically involves using a more complex or nuanced model, such as a cross-encoder, to re-score the initial set of retrieved candidates. This model can capture more subtle aspects of relevance and context, allowing it to reorder the candidates in a way that better reflects their true relevance to the query. The trade-off is that reranking can be computationally expensive, so engineers must balance the benefits of improved accuracy against the potential costs in terms of latency and resource usage.",
   "investor_explanation": "Robust configuration of Reranking directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Reranking in our Retrieval Augmented Generation pipeline to improve performance.",

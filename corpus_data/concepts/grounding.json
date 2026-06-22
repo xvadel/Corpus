@@ -5,9 +5,9 @@
   "category": "Generation",
   "term": "Grounding",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Generation, representing Grounding.",
-  "simple_explanation": "Think of Grounding as an essential building block of Retrieval Augmented Generation. It is commonly used within Generation.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Grounding plays a key role within Generation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Grounding, also known as retrieval-augmented grounding, refers to the process of connecting generated text to relevant external knowledge or context, ensuring that the generated output is informed and accurate. It is a crucial component of Retrieval Augmented Generation (RAG) systems.",
+  "simple_explanation": "Imagine you're having a conversation with a chatbot, and you ask it to tell you a story about a historical event. Grounding is like the chatbot doing research on that event before telling you the story, so it can provide accurate and relevant details. This helps the chatbot stay on topic and provide a more engaging and informative story.",
+  "technical_explanation": "Under the hood, grounding involves using retrieval mechanisms, such as dense passage retrievers or lexical search, to fetch relevant context or knowledge from external sources, which is then used to condition the generation process. This process helps to mitigate hallucination and improve the overall coherence and accuracy of the generated text, but it also introduces engineering trade-offs, such as increased latency and computational overhead, which must be carefully managed.",
   "investor_explanation": "Robust configuration of Grounding directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Grounding in our Retrieval Augmented Generation pipeline to improve performance.",

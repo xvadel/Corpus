@@ -5,9 +5,9 @@
   "category": "Core Concepts",
   "term": "ReAct Pattern",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing ReAct Pattern.",
-  "simple_explanation": "Think of ReAct Pattern as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
-  "technical_explanation": "In production Agentic AI systems, ReAct Pattern plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "The ReAct pattern, also known as the React pattern, is a design pattern used in Agentic AI to manage the interaction between an agent's internal state and its external environment, enabling the agent to react to changing circumstances. It is a core concept in Agentic AI that facilitates the development of autonomous systems.",
+  "simple_explanation": "Imagine a robot that needs to navigate through a dynamic environment, such as a warehouse with moving objects. The ReAct pattern is like a continuous loop that allows the robot to perceive its surroundings, reason about the situation, and act accordingly, adjusting its behavior in real-time to achieve its goals. This pattern enables the robot to be more responsive and adaptive to changing conditions.",
+  "technical_explanation": "Under the hood, the ReAct pattern works by integrating perception, reasoning, and action components, using feedback loops to continuously update the agent's internal state and adjust its behavior. Key mechanisms include sensorimotor integration, planning, and execution, which involve trade-offs between reactivity, proactivity, and efficiency, requiring careful engineering to balance responsiveness, adaptability, and performance.",
   "investor_explanation": "Robust configuration of ReAct Pattern directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized ReAct Pattern in our Agentic AI pipeline to improve performance.",

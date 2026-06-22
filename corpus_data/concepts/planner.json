@@ -5,9 +5,9 @@
   "category": "Core Concepts",
   "term": "Planner",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Planner.",
-  "simple_explanation": "Think of Planner as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
-  "technical_explanation": "In production Agentic AI systems, Planner plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Planner, also known as a Planning Agent or Decision-Making System, is a software component that generates a sequence of actions to achieve a specific goal or set of goals. It is a core concept in Agentic AI, where it is used to enable autonomous decision-making and problem-solving.",
+  "simple_explanation": "Think of a Planner like a personal assistant who helps you plan a road trip, breaking down the journey into smaller, manageable tasks like booking flights, renting a car, and making hotel reservations. The Planner takes into account your goals, resources, and constraints to create a step-by-step plan, ensuring you reach your destination efficiently. Just like a GPS navigation system, a Planner provides turn-by-turn directions to achieve a desired outcome.",
+  "technical_explanation": "Under the hood, a Planner works by using algorithms such as graph search, planning domain definition language (PDDL), or model-based reinforcement learning to generate a plan, which is a sequence of actions that transform the current state into a goal state. The Planner must balance trade-offs between plan optimality, computational complexity, and uncertainty, often using techniques like heuristic search, planning under uncertainty, and plan repair to handle real-world complexities and dynamic environments.",
   "investor_explanation": "Robust configuration of Planner directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Planner in our Agentic AI pipeline to improve performance.",

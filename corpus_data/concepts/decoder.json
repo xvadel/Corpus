@@ -5,9 +5,9 @@
   "category": "Transformers",
   "term": "Decoder",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Decoder.",
-  "simple_explanation": "Think of Decoder as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Decoder plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A decoder, also known as a decoding layer, is a component of a transformer model responsible for generating output sequences from input sequences, typically used in natural language processing and machine translation tasks. It is often abbreviated as 'dec' in architectural diagrams and research papers.",
+  "simple_explanation": "Think of a decoder like a translator who takes a secret message (input sequence) and converts it into a readable message (output sequence) that makes sense to the recipient, using context and prior knowledge to fill in gaps and make predictions. Just as a human translator uses their understanding of language to generate coherent text, a decoder uses its training data to generate coherent output sequences. This process happens one step at a time, with the decoder building on its previous outputs to create the next part of the sequence.",
+  "technical_explanation": "Under the hood, a decoder consists of a stack of identical layers, each comprising three main sub-layers: masked multi-head attention, encoder-decoder attention, and position-wise fully connected feed-forward networks. The decoder uses the output of the encoder, along with its own previous outputs, to compute the next output in the sequence, leveraging mechanisms like self-attention and positional encoding to capture complex dependencies and relationships between input and output elements. The choice of decoder architecture and hyperparameters involves trade-offs between factors like sequence length, computational complexity, and model capacity, requiring careful tuning to achieve optimal performance on specific tasks.",
   "investor_explanation": "Robust configuration of Decoder directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Decoder in our Deep Learning Foundations pipeline to improve performance.",

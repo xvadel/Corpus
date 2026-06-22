@@ -5,9 +5,9 @@
   "category": "Vector Databases",
   "term": "ChromaDB",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Vector Databases, representing ChromaDB.",
-  "simple_explanation": "Think of ChromaDB as an essential building block of Retrieval Augmented Generation. It is commonly used within Vector Databases.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, ChromaDB plays a key role within Vector Databases. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "ChromaDB is a vector database specifically designed for Retrieval Augmented Generation tasks, also known as a vector search engine or similarity search database. It is optimized for efficient storage and querying of high-dimensional vector embeddings.",
+  "simple_explanation": "Imagine a library where each book is represented by a unique set of numbers, and you want to find all books that are similar to a specific book. ChromaDB is like a super-efficient librarian that can quickly find these similar books by comparing their numerical representations, allowing for fast and accurate retrieval of relevant information. This enables applications like text generation and question-answering to produce more accurate and informative results.",
+  "technical_explanation": "Under the hood, ChromaDB utilizes indexing techniques such as quantization, graph-based indexing, or tree-based indexing to reduce the computational cost of similarity searches, enabling fast querying and retrieval of vector embeddings. The database also employs approximation algorithms and caching mechanisms to further optimize performance, making trade-offs between memory usage, query speed, and accuracy. By leveraging these optimizations, ChromaDB can efficiently handle large-scale vector datasets and support a wide range of Retrieval Augmented Generation applications.",
   "investor_explanation": "Robust configuration of ChromaDB directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized ChromaDB in our Retrieval Augmented Generation pipeline to improve performance.",

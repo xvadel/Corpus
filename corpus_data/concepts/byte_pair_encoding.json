@@ -5,9 +5,9 @@
   "category": "Text Processing",
   "term": "Byte Pair Encoding",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Natural Language Processing under Text Processing, representing Byte Pair Encoding.",
-  "simple_explanation": "Think of Byte Pair Encoding as an essential building block of Natural Language Processing. It is commonly used within Text Processing.",
-  "technical_explanation": "In production Natural Language Processing systems, Byte Pair Encoding plays a key role within Text Processing. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Byte Pair Encoding (BPE) is a lossless text encoding technique that replaces frequently occurring pairs of bytes in a dataset with a single, unique byte, also known as a subword. It is also referred to as WordPiece or SentencePiece in certain NLP frameworks.",
+  "simple_explanation": "Imagine you're trying to compress a large book by replacing common pairs of letters with a single symbol, like replacing 'th' with 'þ', this way you reduce the overall size of the book while still being able to read it, BPE works in a similar way but with bytes of text data. This technique helps in reducing the vocabulary size and improving the efficiency of natural language processing models. By doing so, it enables the model to handle out-of-vocabulary words and rare words more effectively.",
+  "technical_explanation": "Under the hood, BPE works by iteratively merging the most frequent pairs of bytes or characters in a dataset until a predefined vocabulary size is reached, this process involves calculating the frequency of each pair and selecting the most frequent one to merge. The resulting subwords are then used to represent the text data, allowing for more efficient processing and representation of rare or out-of-vocabulary words. The key engineering trade-off in BPE is balancing the vocabulary size with the complexity of the resulting subword representations, as larger vocabularies can lead to more accurate models but also increase computational costs.",
   "investor_explanation": "Robust configuration of Byte Pair Encoding directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Byte Pair Encoding in our Natural Language Processing pipeline to improve performance.",

@@ -5,9 +5,9 @@
   "category": "Neural Networks",
   "term": "Perceptron",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Deep Learning Foundations under Neural Networks, representing Perceptron.",
-  "simple_explanation": "Think of Perceptron as an essential building block of Deep Learning Foundations. It is commonly used within Neural Networks.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Perceptron plays a key role within Neural Networks. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Perceptron, also known as a Multilayer Perceptron (MLP) or Artificial Neuron, is a type of feedforward neural network and a fundamental component of deep learning models. It is a supervised learning algorithm used for binary classification problems.",
+  "simple_explanation": "Imagine a Perceptron as a simple decision-making unit that takes in multiple inputs, weighs their importance, and produces an output based on a threshold - similar to a coin toss where the outcome depends on the combined weight of factors like heads or tails, with the Perceptron learning to adjust these weights to make accurate predictions. This process allows the Perceptron to learn from data and make decisions. The Perceptron is the building block of more complex neural networks, enabling them to learn and represent more intricate relationships.",
+  "technical_explanation": "Under the hood, a Perceptron works by using a linear combination of its inputs, multiplied by learned weights and added to a bias term, to produce an output that is then passed through an activation function - typically a sigmoid or ReLU function - to introduce non-linearity. The Perceptron learning algorithm adjusts these weights to minimize the error between predicted and actual outputs, often using gradient descent optimization. Key engineering trade-offs involve selecting the appropriate activation function, learning rate, and regularization techniques to prevent overfitting and ensure the Perceptron generalizes well to new, unseen data.",
   "investor_explanation": "Robust configuration of Perceptron directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Perceptron in our Deep Learning Foundations pipeline to improve performance.",

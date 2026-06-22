@@ -5,9 +5,9 @@
   "category": "Model Lifecycle",
   "term": "Training",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in MLOps under Model Lifecycle, representing Training.",
-  "simple_explanation": "Think of Training as an essential building block of MLOps. It is commonly used within Model Lifecycle.",
-  "technical_explanation": "In production MLOps systems, Training plays a key role within Model Lifecycle. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Training refers to the process of adjusting the parameters of a machine learning model to minimize the difference between its predictions and actual outcomes, also known as model fitting or learning. It is a crucial step in the model lifecycle, often abbreviated as 'train' or 'model training'.",
+  "simple_explanation": "Think of training like teaching a child to recognize objects: you show them many examples, and they learn to make connections between features and labels. In machine learning, training involves feeding a model a large dataset of labeled examples, allowing it to learn patterns and relationships. As the model sees more examples, it becomes better at making predictions.",
+  "technical_explanation": "Under the hood, training involves optimizing the model's parameters to minimize a loss function, such as mean squared error or cross-entropy, using algorithms like gradient descent or its variants. The process iteratively updates the model's weights and biases based on the calculated gradients, which represent the direction of the steepest descent. Engineering trade-offs include choosing the optimal hyperparameters, such as learning rate and batch size, to balance convergence speed and model accuracy.",
   "investor_explanation": "Robust configuration of Training directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Training in our MLOps pipeline to improve performance.",

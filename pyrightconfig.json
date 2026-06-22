@@ -1,0 +1,7 @@
+{
+  "venvPath": ".",
+  "venv": "venv",
+  "pythonVersion": "3.13",
+  "include": ["backend", "scripts", "tests", "rag"],
+  "exclude": ["venv", "corpus_data", "scratch", "__pyrefly_virtual__"]
+}

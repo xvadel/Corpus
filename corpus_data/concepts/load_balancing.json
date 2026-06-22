@@ -5,9 +5,9 @@
   "category": "System Design",
   "term": "Load Balancing",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in AI Engineering under System Design, representing Load Balancing.",
-  "simple_explanation": "Think of Load Balancing as an essential building block of AI Engineering. It is commonly used within System Design.",
-  "technical_explanation": "In production AI Engineering systems, Load Balancing plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Load balancing, also known as LB, refers to the process of distributing workload or incoming network traffic across multiple servers to improve responsiveness, reliability, and scalability of applications. It is a critical component of system design, ensuring that no single server becomes a bottleneck or point of failure.",
+  "simple_explanation": "Imagine a popular restaurant with multiple waiters, where each waiter can take only a certain number of orders at a time. Load balancing works similarly, directing incoming requests to available 'waiters' (servers) to ensure that no single server is overwhelmed, and customers (users) receive prompt service. This approach helps to prevent any single server from becoming a bottleneck, allowing the system to handle a large volume of requests efficiently.",
+  "technical_explanation": "Under the hood, load balancing involves using algorithms such as round-robin, least connections, or IP hashing to distribute incoming traffic across a cluster of servers. Key mechanisms include session persistence, which ensures that subsequent requests from a client are directed to the same server, and health checks, which monitor server availability and remove unhealthy servers from the rotation. Engineering trade-offs involve balancing factors such as latency, throughput, and fault tolerance to optimize system performance and reliability.",
   "investor_explanation": "Robust configuration of Load Balancing directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Load Balancing in our AI Engineering pipeline to improve performance.",

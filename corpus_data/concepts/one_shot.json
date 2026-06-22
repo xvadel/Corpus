@@ -5,9 +5,9 @@
   "category": "Prompt Engineering",
   "term": "One-Shot",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing One-Shot.",
-  "simple_explanation": "Think of One-Shot as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
-  "technical_explanation": "In production Agentic AI systems, One-Shot plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "One-Shot, also known as One-Shot Learning, refers to a machine learning approach where a model is trained to make predictions or take actions based on a single example or a very limited number of examples. It is a key concept in Agentic AI, where models are designed to learn from minimal data and adapt to new situations.",
+  "simple_explanation": "Imagine you're trying to teach a child to recognize a new animal, and you only have one picture to show them - after seeing that one picture, they should be able to recognize the animal when they see it again. One-Shot learning is similar, where a model learns to recognize patterns or make decisions based on just one or a few examples. This approach is useful when there's limited data available or when the model needs to adapt quickly to new situations.",
+  "technical_explanation": "One-Shot learning works by using techniques such as meta-learning, transfer learning, and few-shot learning, which enable models to learn generalizable patterns and adapt to new tasks with minimal training data. Under the hood, models use mechanisms like attention, memory-augmented neural networks, and episodic training to learn from limited examples and make predictions or take actions. However, this approach often requires careful engineering trade-offs, such as balancing model complexity with data efficiency and robustness to overfitting.",
   "investor_explanation": "Robust configuration of One-Shot directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized One-Shot in our Agentic AI pipeline to improve performance.",

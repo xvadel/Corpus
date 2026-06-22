@@ -5,9 +5,9 @@
   "category": "Model Adaptation",
   "term": "Proximal Policy Optimization",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing Proximal Policy Optimization.",
-  "simple_explanation": "Think of Proximal Policy Optimization as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
-  "technical_explanation": "In production Agentic AI systems, Proximal Policy Optimization plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Proximal Policy Optimization (PPO) is a model-free, on-policy reinforcement learning algorithm that is also known as Trust Region Policy Optimization. It is a type of policy gradient method that is used to optimize policies in complex, high-dimensional action spaces.",
+  "simple_explanation": "Imagine you're trying to learn how to ride a bike, and you want to improve your balance. PPO is like having a coach who gives you feedback on your actions, but instead of telling you exactly what to do, they guide you to make small adjustments to your current behavior, so you can learn to balance better without falling off. This way, you can gradually improve your riding skills without making drastic changes.",
+  "technical_explanation": "PPO works by optimizing the policy using trust region optimization, which ensures that the new policy is close to the old policy, thereby preventing large updates that can lead to performance degradation. The key mechanism is the clipping objective, which limits the probability ratio of the new policy to the old policy, preventing large updates and promoting stable learning. This approach allows PPO to balance exploration and exploitation, making it a popular choice for many agentic AI applications.",
   "investor_explanation": "Robust configuration of Proximal Policy Optimization directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Proximal Policy Optimization in our Agentic AI pipeline to improve performance.",

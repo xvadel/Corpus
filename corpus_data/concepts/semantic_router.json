@@ -5,9 +5,9 @@
   "category": "System Design",
   "term": "Semantic Router",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in AI Engineering under System Design, representing Semantic Router.",
-  "simple_explanation": "Think of Semantic Router as an essential building block of AI Engineering. It is commonly used within System Design.",
-  "technical_explanation": "In production AI Engineering systems, Semantic Router plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Semantic Router, also known as a Semantic Search Router or SSR, is a software component that routes incoming queries to the most relevant index or database based on their semantic meaning. It is a crucial component in AI Engineering, particularly in large-scale information retrieval and question answering systems.",
+  "simple_explanation": "Imagine a librarian who directs you to the right bookshelf based on the topic you're interested in, rather than just searching the entire library. A Semantic Router works similarly, by analyzing the meaning of a query and sending it to the specific part of the system that is most likely to have the answer, making search more efficient and accurate. This is especially useful in systems with vast amounts of data and multiple indexes or databases.",
+  "technical_explanation": "Under the hood, a Semantic Router uses embedding models, such as sentence transformers or language models, to convert incoming queries into dense vectors that capture their semantic meaning. These vectors are then compared to pre-computed embeddings of the indexes or databases using similarity search algorithms, such as cosine similarity or faiss, to determine the most relevant destination for the query. The router must balance trade-offs between accuracy, latency, and computational resources to ensure efficient and effective query routing.",
   "investor_explanation": "Robust configuration of Semantic Router directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Semantic Router in our AI Engineering pipeline to improve performance.",

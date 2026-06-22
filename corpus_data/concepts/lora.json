@@ -5,9 +5,9 @@
   "category": "Model Adaptation",
   "term": "LoRA",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing LoRA.",
-  "simple_explanation": "Think of LoRA as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
-  "technical_explanation": "In production Agentic AI systems, LoRA plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "LoRA (Low-Rank Adaptation) is a model adaptation technique used in Agentic AI, also known as Low-Rank Adaptation of Weights, which enables efficient fine-tuning of pre-trained models for specific tasks. It is an alternative to traditional fine-tuning methods, allowing for more flexible and efficient model adaptation.",
+  "simple_explanation": "Imagine you have a pre-trained model that's really good at recognizing general objects, but you want it to specialize in recognizing specific types of cars. LoRA is like giving the model a special pair of glasses that helps it focus on the specific features of cars, without having to relearn everything from scratch. This way, the model can adapt to the new task quickly and efficiently, without forgetting its general knowledge.",
+  "technical_explanation": "Under the hood, LoRA works by updating the weights of the pre-trained model using low-rank matrices, which reduces the number of parameters that need to be updated during fine-tuning. This approach allows for a trade-off between model capacity and adaptation efficiency, enabling the model to adapt to new tasks with fewer updates and less computational resources. By leveraging the low-rank structure of the weight updates, LoRA can achieve significant reductions in memory and computational requirements, making it a valuable technique for model adaptation in Agentic AI applications.",
   "investor_explanation": "Robust configuration of LoRA directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized LoRA in our Agentic AI pipeline to improve performance.",

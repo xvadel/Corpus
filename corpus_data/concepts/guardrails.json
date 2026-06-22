@@ -5,9 +5,9 @@
   "category": "System Design",
   "term": "Guardrails",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in AI Engineering under System Design, representing Guardrails.",
-  "simple_explanation": "Think of Guardrails as an essential building block of AI Engineering. It is commonly used within System Design.",
-  "technical_explanation": "In production AI Engineering systems, Guardrails plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Guardrails refer to the design patterns, constraints, and safeguards implemented in AI systems to prevent undesirable behavior, ensure reliability, and maintain performance, also known as AI Safety Mechanisms or Model Guardrails. These mechanisms are crucial in AI Engineering to mitigate potential risks and errors.",
+  "simple_explanation": "Imagine you're driving a car on a highway, and guardrails are the barriers that prevent you from veering off the road. In AI systems, guardrails serve a similar purpose, acting as protective barriers that keep the model on track, preventing it from producing harmful or unexpected outputs, and ensuring it stays within predefined boundaries. This helps maintain the overall safety and reliability of the system.",
+  "technical_explanation": "Guardrails in AI systems work by implementing constraints and checks at various levels, such as input validation, model monitoring, and output filtering, to detect and prevent potential errors or undesirable behavior. These mechanisms often involve techniques like anomaly detection, robustness testing, and uncertainty quantification, which help identify and mitigate potential risks, and engineering trade-offs are made to balance factors like model performance, reliability, and interpretability.",
   "investor_explanation": "Robust configuration of Guardrails directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Guardrails in our AI Engineering pipeline to improve performance.",

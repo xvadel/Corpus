@@ -5,9 +5,9 @@
   "category": "Prompt Engineering",
   "term": "Zero-Shot",
   "difficulty": "Beginner",
-  "definition": "A fundamental concept in Agentic AI under Prompt Engineering, representing Zero-Shot.",
-  "simple_explanation": "Think of Zero-Shot as an essential building block of Agentic AI. It is commonly used within Prompt Engineering.",
-  "technical_explanation": "In production Agentic AI systems, Zero-Shot plays a key role within Prompt Engineering. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Zero-Shot refers to a type of learning or inference in artificial intelligence where a model is able to perform a task without any prior training examples or data, also known as Zero-Shot Learning (ZSL). This concept is closely related to Agentic AI and Prompt Engineering, where models are designed to reason and generate responses based on minimal input.",
+  "simple_explanation": "Imagine you're asking a smart assistant to write a poem about a topic it has never heard of before, and it's still able to generate a coherent and relevant poem. This is similar to Zero-Shot, where a model can generate output for a task it has never seen or been trained on, using its understanding of language and context to fill in the gaps. This allows models to be more flexible and adaptable to new situations.",
+  "technical_explanation": "Under the hood, Zero-Shot relies on the model's ability to recognize patterns and relationships in the input data, and use this understanding to generate output for unseen tasks. This is often achieved through the use of attention mechanisms, transformer architectures, and large-scale pre-training on diverse datasets, which enables the model to develop a broad understanding of language and context. However, this approach can be computationally expensive and requires careful tuning of hyperparameters to balance performance and efficiency.",
   "investor_explanation": "Robust configuration of Zero-Shot directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Zero-Shot in our Agentic AI pipeline to improve performance.",

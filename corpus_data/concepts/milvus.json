@@ -5,9 +5,9 @@
   "category": "Vector Databases",
   "term": "Milvus",
   "difficulty": "Advanced",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Vector Databases, representing Milvus.",
-  "simple_explanation": "Think of Milvus as an essential building block of Retrieval Augmented Generation. It is commonly used within Vector Databases.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Milvus plays a key role within Vector Databases. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Milvus is an open-source vector database, also known as a similarity search engine, designed to efficiently store, index, and manage large-scale vector data, particularly in the context of artificial intelligence and machine learning applications. It is often used in Retrieval Augmented Generation tasks to enable efficient similarity searches.",
+  "simple_explanation": "Imagine you have a vast library with an infinite number of books, each represented by a unique set of keywords. Milvus is like a super-smart librarian that can quickly find books with similar keywords, even if they're not exactly the same, allowing you to efficiently search and retrieve relevant information from your vast collection of data. This is particularly useful in applications like image and text search, where you need to find similar items.",
+  "technical_explanation": "Under the hood, Milvus utilizes indexing techniques such as Quantization, HNSW (Hierarchical Navigable Small World), and IVF (Inverted File) to enable fast and accurate similarity searches, allowing it to efficiently manage and query large-scale vector data. It also supports various distance metrics, such as Euclidean, Inner Product, and IP (Inner Product), to accommodate different use cases and applications. By leveraging these mechanisms, Milvus achieves a balance between search accuracy, query performance, and storage efficiency, making it a popular choice for vector database applications.",
   "investor_explanation": "Robust configuration of Milvus directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Milvus in our Retrieval Augmented Generation pipeline to improve performance.",

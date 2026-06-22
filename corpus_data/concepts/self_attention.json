@@ -5,9 +5,9 @@
   "category": "Transformers",
   "term": "Self-Attention",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Self-Attention.",
-  "simple_explanation": "Think of Self-Attention as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Self-Attention plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Self-Attention, also known as intra-attention, is a neural network mechanism that allows a model to attend to different positions of its own input sequence simultaneously and weigh their importance. It is a key component of Transformer architectures, enabling the model to capture long-range dependencies and contextual relationships within the input data.",
+  "simple_explanation": "Imagine you're trying to understand a sentence, and you need to consider how each word relates to every other word to grasp the overall meaning. Self-Attention works similarly, where the model looks at each element of the input sequence and determines how much attention to pay to every other element, helping it to focus on the most relevant information. This process is like a spotlight that shines on different parts of the input, highlighting their importance.",
+  "technical_explanation": "Self-Attention operates by computing attention weights based on the query, key, and value vectors derived from the input sequence, using mechanisms such as dot-product attention or multi-head attention. The attention weights are then used to compute a weighted sum of the value vectors, allowing the model to capture complex contextual relationships and dependencies within the input data. The use of self-attention enables parallelization and reduces the need for recurrent neural network (RNN) architectures, making it a crucial component of efficient and effective deep learning models like Transformers.",
   "investor_explanation": "Robust configuration of Self-Attention directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Self-Attention in our Deep Learning Foundations pipeline to improve performance.",

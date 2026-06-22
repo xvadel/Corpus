@@ -5,9 +5,9 @@
   "category": "Retrieval",
   "term": "BM25",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing BM25.",
-  "simple_explanation": "Think of BM25 as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, BM25 plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "BM25 (Best Match 25) is a ranking function used in information retrieval to estimate the relevance of a document to a given search query, also known as Okapi BM25. It is a bag-of-words retrieval function that ranks a set of documents based on the query terms appearing in each document.",
+  "simple_explanation": "Imagine you're searching for a book in a library, and you want to find the most relevant books based on your search terms. BM25 works like a librarian who checks each book's index to see how often your search terms appear, and then ranks the books based on how well the terms match, taking into account the book's length and the rarity of the terms. This helps to prioritize books that are most likely to be relevant to your search.",
+  "technical_explanation": "Under the hood, BM25 uses a combination of term frequency (TF) and inverse document frequency (IDF) to calculate a score for each document, which is then used to rank the documents. The TF component calculates the frequency of the query terms in the document, while the IDF component calculates the rarity of the terms across the entire corpus, allowing BM25 to balance precision and recall. The BM25 algorithm also includes parameters such as k1 and b, which control the impact of term frequency and document length on the ranking score, and can be tuned for specific use cases.",
   "investor_explanation": "Robust configuration of BM25 directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized BM25 in our Retrieval Augmented Generation pipeline to improve performance.",

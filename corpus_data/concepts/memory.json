@@ -5,9 +5,9 @@
   "category": "Core Concepts",
   "term": "Memory",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Agentic AI under Core Concepts, representing Memory.",
-  "simple_explanation": "Think of Memory as an essential building block of Agentic AI. It is commonly used within Core Concepts.",
-  "technical_explanation": "In production Agentic AI systems, Memory plays a key role within Core Concepts. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Memory refers to the component of an Agentic AI system responsible for storing and retrieving information, also known as working memory or episodic memory. It is a crucial aspect of artificial intelligence, enabling agents to learn from experiences and adapt to new situations.",
+  "simple_explanation": "Think of memory like a filing cabinet where an AI agent stores important documents, such as past conversations, actions, and their outcomes, allowing it to recall and use this information to make informed decisions in the future. Just as a human remembers past events to learn from them, an AI's memory helps it to improve its performance over time. This stored information can be used to recognize patterns, make predictions, and take actions.",
+  "technical_explanation": "Under the hood, memory in Agentic AI systems typically involves a combination of short-term and long-term storage mechanisms, such as RAM and disk storage, to manage the vast amounts of data generated during interactions. Key mechanisms include attention-based retrieval, where the agent focuses on specific parts of its memory to recall relevant information, and consolidation, which involves transferring information from short-term to long-term storage for later use, with engineering trade-offs involving balancing memory capacity, retrieval speed, and computational resources.",
   "investor_explanation": "Robust configuration of Memory directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Memory in our Agentic AI pipeline to improve performance.",

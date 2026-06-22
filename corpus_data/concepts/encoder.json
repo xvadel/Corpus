@@ -5,9 +5,9 @@
   "category": "Transformers",
   "term": "Encoder",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Deep Learning Foundations under Transformers, representing Encoder.",
-  "simple_explanation": "Think of Encoder as an essential building block of Deep Learning Foundations. It is commonly used within Transformers.",
-  "technical_explanation": "In production Deep Learning Foundations systems, Encoder plays a key role within Transformers. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "An encoder is a component of a transformer model, also known as an encoder network, that takes in a sequence of tokens (e.g., words or characters) and outputs a continuous representation of the input sequence, often denoted as E or Encoder. It is a crucial part of the transformer architecture, responsible for generating contextualized representations of the input data.",
+  "simple_explanation": "Think of an encoder like a translator that converts a sentence into a set of meaningful numbers that a computer can understand. Just as a human translator conveys the meaning and context of a sentence, an encoder captures the nuances and relationships within the input sequence, allowing the model to make informed decisions. This process enables the model to 'understand' the input data in a way that's useful for tasks like language translation or text classification.",
+  "technical_explanation": "Under the hood, an encoder consists of a stack of identical layers, each comprising two sub-layers: multi-head self-attention and position-wise fully connected feed-forward networks. The self-attention mechanism allows the encoder to weigh the importance of different input elements relative to each other, while the feed-forward networks transform the output of the attention mechanism to generate higher-level representations. The encoder's output is a sequence of vectors, where each vector represents the input element in a higher-dimensional space, capturing its contextual relationships with other elements in the sequence.",
   "investor_explanation": "Robust configuration of Encoder directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Encoder in our Deep Learning Foundations pipeline to improve performance.",

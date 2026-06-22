@@ -5,9 +5,9 @@
   "category": "Language Modeling",
   "term": "Masked Language Model",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Natural Language Processing under Language Modeling, representing Masked Language Model.",
-  "simple_explanation": "Think of Masked Language Model as an essential building block of Natural Language Processing. It is commonly used within Language Modeling.",
-  "technical_explanation": "In production Natural Language Processing systems, Masked Language Model plays a key role within Language Modeling. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "A Masked Language Model (MLM) is a type of language model that predicts a masked token in a sequence of text, also known as a denoising autoencoder. It's alternatively referred to as a Masked Word Model or BERT-style language model.",
+  "simple_explanation": "Imagine you're trying to fill in the blanks of a sentence with a missing word, like 'I love to eat _______ for breakfast'. A Masked Language Model is trained to predict the missing word based on the context of the sentence, allowing it to learn the relationships between words and generate coherent text. This process helps the model learn to understand the nuances of language and make predictions about missing information.",
+  "technical_explanation": "Under the hood, a Masked Language Model works by randomly replacing some of the input tokens with a special [MASK] token, then training the model to predict the original token based on the surrounding context. This process relies on the self-attention mechanism of the Transformer architecture to weigh the importance of different input tokens and generate predictions. The model's performance is typically evaluated using metrics like perplexity and accuracy, which balance the trade-off between model complexity and predictive power.",
   "investor_explanation": "Robust configuration of Masked Language Model directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Masked Language Model in our Natural Language Processing pipeline to improve performance.",

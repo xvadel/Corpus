@@ -5,9 +5,9 @@
   "category": "Generation",
   "term": "Answer Synthesis",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Retrieval Augmented Generation under Generation, representing Answer Synthesis.",
-  "simple_explanation": "Think of Answer Synthesis as an essential building block of Retrieval Augmented Generation. It is commonly used within Generation.",
-  "technical_explanation": "In production Retrieval Augmented Generation systems, Answer Synthesis plays a key role within Generation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Answer Synthesis, also known as Retrieval-Augmented Generation, is a technique in natural language processing that involves generating answers to user queries by combining the results of a retrieval step with a generation step. It is a key concept in the subdomain of Retrieval Augmented Generation, closely related to Generation and relying on prerequisites such as Grounding and Language Model.",
+  "simple_explanation": "Imagine you're trying to answer a question, and you have a huge library of books to search through - Answer Synthesis is like using a librarian to find the most relevant books, and then using a writer to create a concise answer based on the information found in those books. This process helps to provide more accurate and informative responses to user queries, by leveraging both the retrieval of relevant information and the generation of human-like text.",
+  "technical_explanation": "Under the hood, Answer Synthesis works by first using a retrieval mechanism, such as a search engine or a knowledge graph, to identify the most relevant pieces of information related to the user's query. The retrieved information is then passed to a generation model, typically a large language model, which uses this context to generate a coherent and accurate answer. The engineering trade-offs in Answer Synthesis involve balancing the precision of the retrieval step with the fluency and coherence of the generated text, while also managing the computational resources required for both steps.",
   "investor_explanation": "Robust configuration of Answer Synthesis directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Answer Synthesis in our Retrieval Augmented Generation pipeline to improve performance.",

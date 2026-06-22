@@ -5,9 +5,9 @@
   "category": "LLMs",
   "term": "Tool Calling",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in Natural Language Processing under LLMs, representing Tool Calling.",
-  "simple_explanation": "Think of Tool Calling as an essential building block of Natural Language Processing. It is commonly used within LLMs.",
-  "technical_explanation": "In production Natural Language Processing systems, Tool Calling plays a key role within LLMs. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Tool Calling, also known as Function Calling or API Invocation, refers to the process of a Large Language Model (LLM) invoking external tools, services, or APIs to retrieve information, perform computations, or execute specific tasks. It is a key mechanism for extending the capabilities of LLMs beyond their native language understanding and generation capabilities.",
+  "simple_explanation": "Imagine you're having a conversation with a virtual assistant, and you ask it to book a flight for you. The assistant can't directly access the airline's database, so it calls a separate tool, like a travel booking API, to get the job done. This is similar to how Tool Calling works, where the LLM calls upon other tools to help it complete a task or provide more accurate information.",
+  "technical_explanation": "Under the hood, Tool Calling involves the LLM generating a specific input or prompt that is passed to the external tool or API, which then processes the request and returns the result. The LLM must be designed to handle the tool's output, parse the response, and integrate it into its own response or workflow. This requires careful engineering to ensure seamless integration, error handling, and optimization of the tool calling process to minimize latency and maximize overall performance.",
   "investor_explanation": "Robust configuration of Tool Calling directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Tool Calling in our Natural Language Processing pipeline to improve performance.",

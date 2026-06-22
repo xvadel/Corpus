@@ -5,9 +5,9 @@
   "category": "System Design",
   "term": "Caching",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in AI Engineering under System Design, representing Caching.",
-  "simple_explanation": "Think of Caching as an essential building block of AI Engineering. It is commonly used within System Design.",
-  "technical_explanation": "In production AI Engineering systems, Caching plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Caching, also known as cache memory or buffer caching, refers to the process of storing frequently accessed data in a faster, more accessible location, such as RAM, to reduce the time it takes to retrieve or compute the data. Alternative names include cache buffering or memory caching.",
+  "simple_explanation": "Think of caching like a librarian who keeps frequently borrowed books on a special shelf near the desk, so they can be retrieved quickly instead of having to search the entire library. This way, when someone asks for a popular book, the librarian can grab it from the shelf and hand it over immediately, saving time and effort. In software engineering, caching works similarly, storing frequently accessed data in an easily accessible location to speed up retrieval.",
+  "technical_explanation": "Under the hood, caching works by storing a copy of frequently accessed data in a cache layer, which can be implemented using various mechanisms such as hash tables, least recently used (LRU) eviction policies, or time-to-live (TTL) expiration. The cache layer acts as an intermediary between the application and the underlying data storage, checking if the requested data is available in the cache before querying the slower storage, and updating the cache when new data is written or updated, thus reducing latency and improving system performance by minimizing the number of requests made to slower storage systems.",
   "investor_explanation": "Robust configuration of Caching directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Caching in our AI Engineering pipeline to improve performance.",

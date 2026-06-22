@@ -5,9 +5,9 @@
   "category": "Model Lifecycle",
   "term": "Deployment",
   "difficulty": "Intermediate",
-  "definition": "A fundamental concept in MLOps under Model Lifecycle, representing Deployment.",
-  "simple_explanation": "Think of Deployment as an essential building block of MLOps. It is commonly used within Model Lifecycle.",
-  "technical_explanation": "In production MLOps systems, Deployment plays a key role within Model Lifecycle. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "definition": "Deployment refers to the process of putting a trained machine learning model into production, making it available for use by end-users, also known as model deployment or MLOps deployment. It involves moving the model from a development environment to a production environment where it can receive input data and generate predictions.",
+  "simple_explanation": "Think of deployment like launching a new restaurant - you've perfected your recipe (trained model) and now you need to set up a kitchen (production environment) where you can serve food (generate predictions) to customers (end-users). Just as a restaurant needs to manage orders, ingredients, and staff, deployment involves managing model updates, data inputs, and computational resources. This ensures your model can handle a high volume of requests and provide accurate results.",
+  "technical_explanation": "Under the hood, deployment involves containerization (e.g., Docker), orchestration (e.g., Kubernetes), and model serving (e.g., TensorFlow Serving) to manage the model's lifecycle, including updates, rollbacks, and monitoring. Key mechanisms include load balancing, autoscaling, and logging to ensure the model can handle varying workloads and provide insights into its performance. Engineering trade-offs involve balancing latency, throughput, and resource utilization to optimize the deployment for specific use cases and requirements.",
   "investor_explanation": "Robust configuration of Deployment directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
   "examples": [
     "We optimized Deployment in our MLOps pipeline to improve performance.",
