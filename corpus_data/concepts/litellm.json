@@ -20,8 +20,8 @@
     "Orchestration"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Orchestration"
+    "API Design",
+    "Model Serving"
   ],
   "interview_questions": [
     "How does LiteLLM fit into standard AI Engineering architectures?",

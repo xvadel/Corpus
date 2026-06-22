@@ -20,8 +20,12 @@
     "Core Concepts"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Core Concepts"
+    "Embedding",
+    "Vector Database",
+    "Chunking",
+    "Similarity Search",
+    "Context Injection",
+    "Language Model"
   ],
   "interview_questions": [
     "How does Retrieval Augmented Generation fit into standard Retrieval Augmented Generation architectures?",

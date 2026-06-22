@@ -20,8 +20,8 @@
     "Evaluation"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Evaluation"
+    "Faithfulness",
+    "Retrieval Augmented Generation"
   ],
   "interview_questions": [
     "How does RAGAS fit into standard AI Engineering architectures?",

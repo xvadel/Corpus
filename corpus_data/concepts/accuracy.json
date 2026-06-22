@@ -19,10 +19,7 @@
     "AI Engineering",
     "Evaluation"
   ],
-  "prerequisites": [
-    "AI Engineering",
-    "Evaluation"
-  ],
+  "prerequisites": [],
   "interview_questions": [
     "How does Accuracy fit into standard AI Engineering architectures?",
     "What are the major engineering trade-offs when implementing Accuracy?",

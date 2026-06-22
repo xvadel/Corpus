@@ -20,8 +20,7 @@
     "Data Processing"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Data Processing"
+    "Tokenization"
   ],
   "interview_questions": [
     "How does Document Parsing fit into standard Retrieval Augmented Generation architectures?",

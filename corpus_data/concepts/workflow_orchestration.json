@@ -20,8 +20,7 @@
     "Core Concepts"
   ],
   "prerequisites": [
-    "Agentic AI",
-    "Core Concepts"
+    "Multi-Agent System"
   ],
   "interview_questions": [
     "How does Workflow Orchestration fit into standard Agentic AI architectures?",

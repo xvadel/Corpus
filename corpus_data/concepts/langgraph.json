@@ -20,8 +20,8 @@
     "Orchestration"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Orchestration"
+    "LangChain",
+    "Workflow Orchestration"
   ],
   "interview_questions": [
     "How does LangGraph fit into standard AI Engineering architectures?",

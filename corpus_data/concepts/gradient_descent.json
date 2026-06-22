@@ -20,8 +20,7 @@
     "Neural Networks"
   ],
   "prerequisites": [
-    "Deep Learning Foundations",
-    "Neural Networks"
+    "Loss Function"
   ],
   "interview_questions": [
     "How does Gradient Descent fit into standard Deep Learning Foundations architectures?",

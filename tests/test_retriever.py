@@ -37,6 +37,16 @@ def test_vector_retriever():
         print(f"  - {r['id']} (subdomain: {r['metadata']['subdomain']})")
         assert r["metadata"]["subdomain"] == "Agentic AI"
 
+    # Test reranking
+    print("\nTesting reranking...")
+    reranked_results = retriever.retrieve("What is RAG?", limit=3, rerank=True)
+    assert len(reranked_results) > 0
+    print("Reranked results:")
+    for r in reranked_results:
+        print(f"  - {r['id']} (rerank score: {r.get('rerank_score'):.4f})")
+        assert "rerank_score" in r
+
 if __name__ == "__main__":
     test_vector_retriever()
     print("\nAll retriever tests passed!")
+

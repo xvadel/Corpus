@@ -20,8 +20,8 @@
     "Model Lifecycle"
   ],
   "prerequisites": [
-    "MLOps",
-    "Model Lifecycle"
+    "Loss Function",
+    "Gradient Descent"
   ],
   "interview_questions": [
     "How does Training fit into standard MLOps architectures?",

@@ -20,8 +20,8 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Tokenization",
+    "Stop Words"
   ],
   "interview_questions": [
     "How does BM25 fit into standard Retrieval Augmented Generation architectures?",

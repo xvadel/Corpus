@@ -20,8 +20,8 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Similarity Search",
+    "Cross-Encoder"
   ],
   "interview_questions": [
     "How does Reranking fit into standard Retrieval Augmented Generation architectures?",

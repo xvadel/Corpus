@@ -19,10 +19,7 @@
     "Deep Learning Foundations",
     "Neural Networks"
   ],
-  "prerequisites": [
-    "Deep Learning Foundations",
-    "Neural Networks"
-  ],
+  "prerequisites": [],
   "interview_questions": [
     "How does Perceptron fit into standard Deep Learning Foundations architectures?",
     "What are the major engineering trade-offs when implementing Perceptron?",

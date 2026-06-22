@@ -20,8 +20,8 @@
     "Orchestration"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Orchestration"
+    "Retrieval Augmented Generation",
+    "Agent"
   ],
   "interview_questions": [
     "How does LangChain fit into standard AI Engineering architectures?",

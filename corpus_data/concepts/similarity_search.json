@@ -20,8 +20,8 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Embedding",
+    "Vector Database"
   ],
   "interview_questions": [
     "How does Similarity Search fit into standard Retrieval Augmented Generation architectures?",

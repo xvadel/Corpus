@@ -20,8 +20,7 @@
     "Model Lifecycle"
   ],
   "prerequisites": [
-    "MLOps",
-    "Model Lifecycle"
+    "Monitoring"
   ],
   "interview_questions": [
     "How does Drift Detection fit into standard MLOps architectures?",

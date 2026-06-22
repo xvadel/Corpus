@@ -20,8 +20,7 @@
     "Evaluation"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Evaluation"
+    "Accuracy"
   ],
   "interview_questions": [
     "How does Benchmarking fit into standard AI Engineering architectures?",

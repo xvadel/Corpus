@@ -20,8 +20,8 @@
     "Generation"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Generation"
+    "Prompt Engineering",
+    "Top-K Retrieval"
   ],
   "interview_questions": [
     "How does Context Injection fit into standard Retrieval Augmented Generation architectures?",

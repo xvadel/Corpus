@@ -20,8 +20,8 @@
     "Neural Networks"
   ],
   "prerequisites": [
-    "Deep Learning Foundations",
-    "Neural Networks"
+    "Gradient Descent",
+    "Activation Function"
   ],
   "interview_questions": [
     "How does Backpropagation fit into standard Deep Learning Foundations architectures?",

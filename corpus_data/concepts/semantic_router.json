@@ -20,8 +20,8 @@
     "System Design"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "System Design"
+    "Embedding",
+    "Similarity Search"
   ],
   "references": [],
   "interview_questions": [

@@ -17,7 +17,7 @@ def compute_reciprocal_rank(retrieved_ids: List[str], ground_truth_id: str) -> f
         return 1.0 / rank
     return 0.0
 
-def evaluate_retrieval_dataset(retriever, dataset: List[Dict[str, str]], k: int = 5) -> Dict[str, float]:
+def evaluate_retrieval_dataset(retriever, dataset: List[Dict[str, str]], k: int = 5, **kwargs) -> Dict[str, float]:
     """
     Evaluates a list of {"query": str, "ground_truth_id": str} query pairs.
     Returns average Recall@K and average MRR.
@@ -34,7 +34,7 @@ def evaluate_retrieval_dataset(retriever, dataset: List[Dict[str, str]], k: int 
         gt_id = item["ground_truth_id"]
         
         # Retrieve n_results up to k (or more to compute MRR beyond k)
-        results = retriever.retrieve(query, limit=max(k, 10))
+        results = retriever.retrieve(query, limit=max(k, 10), **kwargs)
         retrieved_ids = [r["id"] for r in results]
         
         recall_sum += compute_recall_at_k(retrieved_ids, gt_id, k)
@@ -44,3 +44,4 @@ def evaluate_retrieval_dataset(retriever, dataset: List[Dict[str, str]], k: int 
         "recall_at_k": recall_sum / total,
         "mrr": rr_sum / total
     }
+

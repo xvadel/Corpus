@@ -1,9 +1,19 @@
-import os
+import re
 from pathlib import Path
 from typing import List, Dict, Any
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CHROMA_DIR = PROJECT_ROOT / "corpus_data" / "chromadb"
+
+# BGE instruction prefix for asymmetric search queries (required for bge-small-en-v1.5)
+BGE_QUERY_INSTRUCTION = "Represent this sentence for searching relevant passages: "
+
+def _normalize_query(query: str) -> str:
+    """Normalize query text: strip punctuation, lowercase, remove extra spaces."""
+    query = query.strip()
+    query = re.sub(r'[^\w\s\-]', '', query)  # strip non-word chars except hyphens
+    query = re.sub(r'\s+', ' ', query)
+    return query.lower()
 
 class VectorRetriever:
     def __init__(self, path: str = str(CHROMA_DIR), collection_name: str = "concepts"):
@@ -18,12 +28,35 @@ class VectorRetriever:
         )
         self.model = SentenceTransformer('BAAI/bge-small-en-v1.5')
 
-    def retrieve(self, query: str, limit: int = 5, where: dict = None) -> List[Dict[str, Any]]:
+    def retrieve(
+        self,
+        query: str,
+        limit: int = 5,
+        where: dict = None,
+        rerank: bool = False
+    ) -> List[Dict[str, Any]]:
         """
-        Embeds the query and retrieves similar concepts from ChromaDB.
+        Embeds the query (with BGE instruction prefix) and retrieves similar concepts from ChromaDB.
         Optional metadata filtering can be passed via the `where` parameter.
+        If `rerank` is True, performs a two-stage retrieval using a Cross-Encoder to re-score
+        a larger pool of candidates.
         """
-        query_vector = self.model.encode(query).tolist()
+        if rerank:
+            # Stage 1: Fetch a larger candidate set using vector retrieval
+            candidate_limit = max(limit * 3, 15)
+            candidates = self.retrieve(query, limit=candidate_limit, where=where, rerank=False)
+            
+            # Stage 2: Rerank the candidates
+            if not hasattr(self, "_reranker") or self._reranker is None:
+                from backend.retrieval.reranker import CrossEncoderReranker
+                self._reranker = CrossEncoderReranker()
+            
+            return self._reranker.rerank(query, candidates, top_k=limit)
+
+        # Apply instruction prefix required by BAAI/bge-small-en-v1.5 for query encoding
+        normalized = _normalize_query(query)
+        prefixed_query = BGE_QUERY_INSTRUCTION + normalized
+        query_vector = self.model.encode(prefixed_query, normalize_embeddings=True).tolist()
         
         results = self.collection.query(
             query_embeddings=[query_vector],
@@ -46,3 +79,4 @@ class VectorRetriever:
                     "distance": distances[i]
                 })
         return retrieved
+

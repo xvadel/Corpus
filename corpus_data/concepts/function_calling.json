@@ -20,8 +20,8 @@
     "LLMs"
   ],
   "prerequisites": [
-    "Natural Language Processing",
-    "LLMs"
+    "Language Model",
+    "Tool Calling"
   ],
   "interview_questions": [
     "How does Function Calling fit into standard Natural Language Processing architectures?",

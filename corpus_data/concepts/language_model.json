@@ -20,8 +20,8 @@
     "Language Modeling"
   ],
   "prerequisites": [
-    "Natural Language Processing",
-    "Language Modeling"
+    "Tokenization",
+    "Transformer"
   ],
   "interview_questions": [
     "How does Language Model fit into standard Natural Language Processing architectures?",

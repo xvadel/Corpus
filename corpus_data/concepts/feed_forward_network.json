@@ -20,8 +20,9 @@
     "Neural Networks"
   ],
   "prerequisites": [
-    "Deep Learning Foundations",
-    "Neural Networks"
+    "Perceptron",
+    "Activation Function",
+    "Loss Function"
   ],
   "interview_questions": [
     "How does Feed Forward Network fit into standard Deep Learning Foundations architectures?",

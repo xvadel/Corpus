@@ -20,8 +20,8 @@
     "Generation"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Generation"
+    "Context Injection",
+    "Hallucination"
   ],
   "interview_questions": [
     "How does Grounding fit into standard Retrieval Augmented Generation architectures?",

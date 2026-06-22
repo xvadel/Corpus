@@ -4,10 +4,7 @@
       "term": "Accuracy",
       "difficulty": "Beginner",
       "subdomain": "AI Engineering",
-      "prerequisites": [
-        "scalability",
-        "benchmarking"
-      ],
+      "prerequisites": [],
       "related_terms": [
         "scalability",
         "benchmarking"
@@ -28,7 +25,11 @@
       "term": "Agent",
       "difficulty": "Beginner",
       "subdomain": "Agentic AI",
-      "prerequisites": [],
+      "prerequisites": [
+        "planner",
+        "memory",
+        "tool_use"
+      ],
       "related_terms": []
     },
     "answer_synthesis": {
@@ -36,8 +37,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "context_injection"
+        "grounding",
+        "language_model"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -58,8 +59,8 @@
       "difficulty": "Advanced",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "embedding",
+        "cosine_similarity"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -71,8 +72,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron",
-        "transformer"
+        "feed_forward_network"
       ],
       "related_terms": [
         "perceptron",
@@ -84,7 +84,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model"
+        "language_model",
+        "transformer"
       ],
       "related_terms": [
         "language_model"
@@ -95,8 +96,9 @@
       "difficulty": "Advanced",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "chunking",
+        "top_k_retrieval",
+        "reranking"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -108,7 +110,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron"
+        "gradient_descent",
+        "activation_function"
       ],
       "related_terms": [
         "perceptron"
@@ -119,7 +122,7 @@
       "difficulty": "Beginner",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability"
+        "accuracy"
       ],
       "related_terms": [
         "scalability"
@@ -130,7 +133,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
+        "embedding",
         "similarity_search"
       ],
       "related_terms": [
@@ -143,8 +146,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "tokenization",
+        "stop_words"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -156,7 +159,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
         "tokenization"
       ],
       "related_terms": [
@@ -169,8 +171,8 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "api_design"
+        "api_design",
+        "latency"
       ],
       "related_terms": [
         "scalability",
@@ -182,7 +184,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
         "prompt_engineering"
       ],
       "related_terms": [
@@ -195,7 +196,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "vector_database"
       ],
       "related_terms": [
@@ -208,7 +208,7 @@
       "difficulty": "Beginner",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation"
+        "tokenization"
       ],
       "related_terms": [
         "retrieval_augmented_generation"
@@ -219,7 +219,8 @@
       "difficulty": "Beginner",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation"
+        "prompt_engineering",
+        "top_k_retrieval"
       ],
       "related_terms": [
         "retrieval_augmented_generation"
@@ -230,8 +231,7 @@
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
-        "prompt_engineering"
+        "language_model"
       ],
       "related_terms": [
         "language_model",
@@ -243,7 +243,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "embedding"
       ],
       "related_terms": [
@@ -256,8 +255,7 @@
       "difficulty": "Advanced",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "litellm"
+        "multi_agent_system"
       ],
       "related_terms": [
         "scalability",
@@ -269,8 +267,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "bi_encoder",
+        "embedding"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -281,9 +279,7 @@
       "term": "Dataset Versioning",
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
-      "prerequisites": [
-        "training"
-      ],
+      "prerequisites": [],
       "related_terms": [
         "training"
       ]
@@ -293,7 +289,6 @@
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
       "prerequisites": [
-        "training",
         "dataset_versioning"
       ],
       "related_terms": [
@@ -306,8 +301,7 @@
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
       "prerequisites": [
-        "training",
-        "dataset_versioning"
+        "data_pipeline"
       ],
       "related_terms": [
         "training",
@@ -319,8 +313,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron",
-        "transformer"
+        "multi_head_attention",
+        "positional_encoding"
       ],
       "related_terms": [
         "perceptron",
@@ -332,7 +326,7 @@
       "difficulty": "Advanced",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
+        "faithfulness",
         "benchmarking"
       ],
       "related_terms": [
@@ -345,7 +339,7 @@
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
       "prerequisites": [
-        "training"
+        "model_serving"
       ],
       "related_terms": [
         "training"
@@ -356,8 +350,7 @@
       "difficulty": "Beginner",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "chunking"
+        "tokenization"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -369,7 +362,7 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
+        "rlhf",
         "fine_tuning"
       ],
       "related_terms": [
@@ -382,7 +375,7 @@
       "difficulty": "Advanced",
       "subdomain": "MLOps",
       "prerequisites": [
-        "training"
+        "monitoring"
       ],
       "related_terms": [
         "training"
@@ -393,7 +386,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation"
+        "vector_representation",
+        "transformer"
       ],
       "related_terms": [
         "retrieval_augmented_generation"
@@ -404,8 +398,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron",
-        "transformer"
+        "multi_head_attention",
+        "positional_encoding"
       ],
       "related_terms": [
         "perceptron",
@@ -417,8 +411,8 @@
       "difficulty": "Advanced",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "vector_database"
+        "vector_database",
+        "approximate_nearest_neighbor"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -430,8 +424,8 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "benchmarking"
+        "retrieval_augmented_generation",
+        "grounding"
       ],
       "related_terms": [
         "scalability",
@@ -443,7 +437,9 @@
       "difficulty": "Beginner",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron"
+        "perceptron",
+        "activation_function",
+        "loss_function"
       ],
       "related_terms": [
         "perceptron"
@@ -454,7 +450,6 @@
       "difficulty": "Beginner",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
         "prompt_engineering"
       ],
       "related_terms": [
@@ -467,7 +462,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
         "prompt_engineering"
       ],
       "related_terms": [
@@ -480,7 +474,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent"
+        "training",
+        "language_model"
       ],
       "related_terms": [
         "agent"
@@ -492,7 +487,7 @@
       "subdomain": "Natural Language Processing",
       "prerequisites": [
         "language_model",
-        "prompt_engineering"
+        "tool_calling"
       ],
       "related_terms": [
         "language_model",
@@ -504,7 +499,7 @@
       "difficulty": "Beginner",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron"
+        "loss_function"
       ],
       "related_terms": [
         "perceptron"
@@ -515,8 +510,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "context_injection"
+        "context_injection",
+        "hallucination"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -528,8 +523,8 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "api_design"
+        "language_model",
+        "prompt_engineering"
       ],
       "related_terms": [
         "scalability",
@@ -541,8 +536,7 @@
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
-        "prompt_engineering"
+        "language_model"
       ],
       "related_terms": [
         "language_model",
@@ -554,8 +548,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "similarity_search",
+        "bm25"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -567,7 +561,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
         "fine_tuning"
       ],
       "related_terms": [
@@ -580,8 +573,8 @@
       "difficulty": "Beginner",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "chunking"
+        "document_parsing",
+        "embedding"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -593,8 +586,8 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "litellm"
+        "retrieval_augmented_generation",
+        "agent"
       ],
       "related_terms": [
         "scalability",
@@ -606,8 +599,8 @@
       "difficulty": "Advanced",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "litellm"
+        "langchain",
+        "workflow_orchestration"
       ],
       "related_terms": [
         "scalability",
@@ -618,7 +611,10 @@
       "term": "Language Model",
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
-      "prerequisites": [],
+      "prerequisites": [
+        "tokenization",
+        "transformer"
+      ],
       "related_terms": []
     },
     "latency": {
@@ -626,8 +622,7 @@
       "difficulty": "Beginner",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "benchmarking"
+        "api_design"
       ],
       "related_terms": [
         "scalability",
@@ -639,7 +634,6 @@
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
         "tokenization"
       ],
       "related_terms": [
@@ -652,7 +646,8 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability"
+        "api_design",
+        "model_serving"
       ],
       "related_terms": [
         "scalability"
@@ -663,8 +658,8 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "litellm"
+        "retrieval_augmented_generation",
+        "embedding"
       ],
       "related_terms": [
         "scalability",
@@ -676,8 +671,8 @@
       "difficulty": "Advanced",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "api_design"
+        "api_design",
+        "scalability"
       ],
       "related_terms": [
         "scalability",
@@ -689,7 +684,6 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
         "fine_tuning"
       ],
       "related_terms": [
@@ -713,7 +707,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model"
+        "language_model",
+        "transformer"
       ],
       "related_terms": [
         "language_model"
@@ -724,7 +719,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent"
+        "language_model"
       ],
       "related_terms": [
         "agent"
@@ -735,8 +730,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "chunking"
+        "document_parsing"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -748,7 +742,6 @@
       "difficulty": "Advanced",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "vector_database"
       ],
       "related_terms": [
@@ -761,7 +754,8 @@
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
       "prerequisites": [
-        "training"
+        "training",
+        "deployment"
       ],
       "related_terms": [
         "training"
@@ -772,8 +766,9 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
+        "api_design",
         "scalability",
-        "api_design"
+        "latency"
       ],
       "related_terms": [
         "scalability",
@@ -785,7 +780,7 @@
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
       "prerequisites": [
-        "training"
+        "deployment"
       ],
       "related_terms": [
         "training"
@@ -807,8 +802,7 @@
       "difficulty": "Advanced",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron",
-        "transformer"
+        "self_attention"
       ],
       "related_terms": [
         "perceptron",
@@ -820,8 +814,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
-        "tokenization"
+        "tokenization",
+        "language_model"
       ],
       "related_terms": [
         "language_model",
@@ -833,7 +827,8 @@
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model"
+        "autoregressive_model",
+        "tokenization"
       ],
       "related_terms": [
         "language_model"
@@ -844,7 +839,6 @@
       "difficulty": "Beginner",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
         "prompt_engineering"
       ],
       "related_terms": [
@@ -857,8 +851,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
-        "fine_tuning"
+        "fine_tuning",
+        "lora"
       ],
       "related_terms": [
         "agent",
@@ -877,7 +871,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "vector_database"
       ],
       "related_terms": [
@@ -890,7 +883,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent"
+        "chain_of_thought",
+        "language_model"
       ],
       "related_terms": [
         "agent"
@@ -901,8 +895,7 @@
       "difficulty": "Advanced",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron",
-        "transformer"
+        "attention"
       ],
       "related_terms": [
         "perceptron",
@@ -914,8 +907,7 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
-        "fine_tuning"
+        "rlhf"
       ],
       "related_terms": [
         "agent",
@@ -938,8 +930,7 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
-        "fine_tuning"
+        "lora"
       ],
       "related_terms": [
         "agent",
@@ -951,8 +942,8 @@
       "difficulty": "Advanced",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "benchmarking"
+        "faithfulness",
+        "retrieval_augmented_generation"
       ],
       "related_terms": [
         "scalability",
@@ -964,7 +955,8 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent"
+        "planner",
+        "tool_use"
       ],
       "related_terms": [
         "agent"
@@ -975,8 +967,8 @@
       "difficulty": "Advanced",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "hybrid_search",
+        "reranking"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -988,8 +980,8 @@
       "difficulty": "Advanced",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "similarity_search",
+        "cross_encoder"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -1001,7 +993,12 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "agent"
+        "embedding",
+        "vector_database",
+        "chunking",
+        "similarity_search",
+        "context_injection",
+        "language_model"
       ],
       "related_terms": [
         "agent"
@@ -1012,8 +1009,8 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
-        "fine_tuning"
+        "rlhf",
+        "dpo"
       ],
       "related_terms": [
         "agent",
@@ -1025,8 +1022,8 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
-        "fine_tuning"
+        "fine_tuning",
+        "training"
       ],
       "related_terms": [
         "agent",
@@ -1038,7 +1035,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
         "prompt_engineering"
       ],
       "related_terms": [
@@ -1062,8 +1058,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron",
-        "transformer"
+        "attention"
       ],
       "related_terms": [
         "perceptron",
@@ -1075,8 +1070,8 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "scalability",
-        "api_design"
+        "embedding",
+        "similarity_search"
       ],
       "related_terms": [
         "scalability",
@@ -1088,7 +1083,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
+        "cosine_similarity",
         "embedding"
       ],
       "related_terms": [
@@ -1101,8 +1096,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "chunking",
+        "top_k_retrieval"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -1114,7 +1109,8 @@
       "difficulty": "Beginner",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation"
+        "embedding",
+        "vector_database"
       ],
       "related_terms": [
         "retrieval_augmented_generation"
@@ -1125,7 +1121,6 @@
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
         "tokenization"
       ],
       "related_terms": [
@@ -1138,7 +1133,6 @@
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
         "tokenization"
       ],
       "related_terms": [
@@ -1151,7 +1145,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
         "prompt_engineering"
       ],
       "related_terms": [
@@ -1163,9 +1156,7 @@
       "term": "Tokenization",
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
-      "prerequisites": [
-        "language_model"
-      ],
+      "prerequisites": [],
       "related_terms": [
         "language_model"
       ]
@@ -1175,8 +1166,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
       "prerequisites": [
-        "language_model",
-        "prompt_engineering"
+        "language_model"
       ],
       "related_terms": [
         "language_model",
@@ -1188,7 +1178,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent"
+        "function_calling"
       ],
       "related_terms": [
         "agent"
@@ -1199,7 +1189,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "similarity_search"
       ],
       "related_terms": [
@@ -1211,7 +1200,10 @@
       "term": "Training",
       "difficulty": "Beginner",
       "subdomain": "MLOps",
-      "prerequisites": [],
+      "prerequisites": [
+        "loss_function",
+        "gradient_descent"
+      ],
       "related_terms": []
     },
     "transfer_learning": {
@@ -1219,7 +1211,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron"
+        "feed_forward_network",
+        "training"
       ],
       "related_terms": [
         "perceptron"
@@ -1230,7 +1223,8 @@
       "difficulty": "Intermediate",
       "subdomain": "Deep Learning Foundations",
       "prerequisites": [
-        "perceptron"
+        "encoder",
+        "decoder"
       ],
       "related_terms": [
         "perceptron"
@@ -1241,7 +1235,8 @@
       "difficulty": "Beginner",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation"
+        "embedding",
+        "approximate_nearest_neighbor"
       ],
       "related_terms": [
         "retrieval_augmented_generation"
@@ -1252,8 +1247,7 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
-        "embedding"
+        "feed_forward_network"
       ],
       "related_terms": [
         "retrieval_augmented_generation",
@@ -1265,7 +1259,6 @@
       "difficulty": "Intermediate",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "vector_database"
       ],
       "related_terms": [
@@ -1278,8 +1271,7 @@
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
       "prerequisites": [
-        "training",
-        "mlflow"
+        "training"
       ],
       "related_terms": [
         "training",
@@ -1291,7 +1283,7 @@
       "difficulty": "Advanced",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent"
+        "multi_agent_system"
       ],
       "related_terms": [
         "agent"
@@ -1302,7 +1294,6 @@
       "difficulty": "Beginner",
       "subdomain": "Agentic AI",
       "prerequisites": [
-        "agent",
         "prompt_engineering"
       ],
       "related_terms": [

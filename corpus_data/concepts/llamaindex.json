@@ -20,8 +20,8 @@
     "Orchestration"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Orchestration"
+    "Retrieval Augmented Generation",
+    "Embedding"
   ],
   "interview_questions": [
     "How does LlamaIndex fit into standard AI Engineering architectures?",

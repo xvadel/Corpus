@@ -20,8 +20,8 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Bi-Encoder",
+    "Embedding"
   ],
   "references": [],
   "interview_questions": [

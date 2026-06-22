@@ -20,8 +20,8 @@
     "Evaluation"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Evaluation"
+    "Faithfulness",
+    "Benchmarking"
   ],
   "interview_questions": [
     "How does DeepEval fit into standard AI Engineering architectures?",

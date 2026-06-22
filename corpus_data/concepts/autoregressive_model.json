@@ -20,8 +20,8 @@
     "Language Modeling"
   ],
   "prerequisites": [
-    "Natural Language Processing",
-    "Language Modeling"
+    "Language Model",
+    "Transformer"
   ],
   "interview_questions": [
     "How does Autoregressive Model fit into standard Natural Language Processing architectures?",

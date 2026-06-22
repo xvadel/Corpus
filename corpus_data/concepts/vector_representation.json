@@ -20,8 +20,7 @@
     "Embeddings"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Embeddings"
+    "Feed Forward Network"
   ],
   "interview_questions": [
     "How does Vector Representation fit into standard Retrieval Augmented Generation architectures?",

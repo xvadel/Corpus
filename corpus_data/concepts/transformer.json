@@ -20,8 +20,8 @@
     "Transformers"
   ],
   "prerequisites": [
-    "Deep Learning Foundations",
-    "Transformers"
+    "Encoder",
+    "Decoder"
   ],
   "interview_questions": [
     "How does Transformer fit into standard Deep Learning Foundations architectures?",

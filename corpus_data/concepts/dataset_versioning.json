@@ -19,10 +19,7 @@
     "MLOps",
     "Data Management"
   ],
-  "prerequisites": [
-    "MLOps",
-    "Data Management"
-  ],
+  "prerequisites": [],
   "interview_questions": [
     "How does Dataset Versioning fit into standard MLOps architectures?",
     "What are the major engineering trade-offs when implementing Dataset Versioning?",

@@ -20,8 +20,7 @@
     "Model Lifecycle"
   ],
   "prerequisites": [
-    "MLOps",
-    "Model Lifecycle"
+    "Deployment"
   ],
   "interview_questions": [
     "How does Monitoring fit into standard MLOps architectures?",

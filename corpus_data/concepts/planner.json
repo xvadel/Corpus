@@ -20,8 +20,8 @@
     "Core Concepts"
   ],
   "prerequisites": [
-    "Agentic AI",
-    "Core Concepts"
+    "Chain of Thought",
+    "Language Model"
   ],
   "interview_questions": [
     "How does Planner fit into standard Agentic AI architectures?",

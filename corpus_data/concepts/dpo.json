@@ -20,8 +20,8 @@
     "Model Adaptation"
   ],
   "prerequisites": [
-    "Agentic AI",
-    "Model Adaptation"
+    "RLHF",
+    "Fine-Tuning"
   ],
   "references": [],
   "interview_questions": [

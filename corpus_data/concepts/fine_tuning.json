@@ -20,8 +20,8 @@
     "Model Adaptation"
   ],
   "prerequisites": [
-    "Agentic AI",
-    "Model Adaptation"
+    "Training",
+    "Language Model"
   ],
   "interview_questions": [
     "How does Fine-Tuning fit into standard Agentic AI architectures?",

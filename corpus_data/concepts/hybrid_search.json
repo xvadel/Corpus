@@ -20,8 +20,8 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Similarity Search",
+    "BM25"
   ],
   "interview_questions": [
     "How does Hybrid Search fit into standard Retrieval Augmented Generation architectures?",

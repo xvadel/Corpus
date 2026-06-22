@@ -20,8 +20,7 @@
     "Orchestration"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "Orchestration"
+    "Multi-Agent System"
   ],
   "interview_questions": [
     "How does CrewAI fit into standard AI Engineering architectures?",

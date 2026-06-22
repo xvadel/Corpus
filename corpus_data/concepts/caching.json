@@ -20,8 +20,8 @@
     "System Design"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "System Design"
+    "API Design",
+    "Latency"
   ],
   "interview_questions": [
     "How does Caching fit into standard AI Engineering architectures?",

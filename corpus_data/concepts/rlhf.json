@@ -20,8 +20,8 @@
     "Model Adaptation"
   ],
   "prerequisites": [
-    "Agentic AI",
-    "Model Adaptation"
+    "Fine-Tuning",
+    "Training"
   ],
   "interview_questions": [
     "How does RLHF fit into standard Agentic AI architectures?",

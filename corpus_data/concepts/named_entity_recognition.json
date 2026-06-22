@@ -20,8 +20,8 @@
     "Text Processing"
   ],
   "prerequisites": [
-    "Natural Language Processing",
-    "Text Processing"
+    "Tokenization",
+    "Language Model"
   ],
   "interview_questions": [
     "How does Named Entity Recognition fit into standard Natural Language Processing architectures?",

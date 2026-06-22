@@ -20,8 +20,7 @@
     "LLMs"
   ],
   "prerequisites": [
-    "Natural Language Processing",
-    "LLMs"
+    "Language Model"
   ],
   "interview_questions": [
     "How does Context Window fit into standard Natural Language Processing architectures?",

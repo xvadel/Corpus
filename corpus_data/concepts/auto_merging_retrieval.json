@@ -20,8 +20,9 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Chunking",
+    "Top-K Retrieval",
+    "Reranking"
   ],
   "references": [],
   "interview_questions": [

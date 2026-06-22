@@ -20,8 +20,7 @@
     "Neural Networks"
   ],
   "prerequisites": [
-    "Deep Learning Foundations",
-    "Neural Networks"
+    "Perceptron"
   ],
   "interview_questions": [
     "How does Loss Function fit into standard Deep Learning Foundations architectures?",

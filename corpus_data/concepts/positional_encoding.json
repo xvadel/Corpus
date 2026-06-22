@@ -20,8 +20,7 @@
     "Transformers"
   ],
   "prerequisites": [
-    "Deep Learning Foundations",
-    "Transformers"
+    "Attention"
   ],
   "interview_questions": [
     "How does Positional Encoding fit into standard Deep Learning Foundations architectures?",

@@ -20,8 +20,7 @@
     "Text Processing"
   ],
   "prerequisites": [
-    "Natural Language Processing",
-    "Text Processing"
+    "Tokenization"
   ],
   "interview_questions": [
     "How does Stop Words fit into standard Natural Language Processing architectures?",

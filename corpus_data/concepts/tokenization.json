@@ -19,10 +19,7 @@
     "Natural Language Processing",
     "Text Processing"
   ],
-  "prerequisites": [
-    "Natural Language Processing",
-    "Text Processing"
-  ],
+  "prerequisites": [],
   "interview_questions": [
     "How does Tokenization fit into standard Natural Language Processing architectures?",
     "What are the major engineering trade-offs when implementing Tokenization?",

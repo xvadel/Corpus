@@ -19,10 +19,7 @@
     "AI Engineering",
     "System Design"
   ],
-  "prerequisites": [
-    "AI Engineering",
-    "System Design"
-  ],
+  "prerequisites": [],
   "interview_questions": [
     "How does API Design fit into standard AI Engineering architectures?",
     "What are the major engineering trade-offs when implementing API Design?",

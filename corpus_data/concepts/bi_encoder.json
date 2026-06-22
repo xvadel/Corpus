@@ -20,8 +20,8 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Embedding",
+    "Similarity Search"
   ],
   "references": [],
   "interview_questions": [

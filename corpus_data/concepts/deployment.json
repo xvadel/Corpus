@@ -20,8 +20,7 @@
     "Model Lifecycle"
   ],
   "prerequisites": [
-    "MLOps",
-    "Model Lifecycle"
+    "Model Serving"
   ],
   "interview_questions": [
     "How does Deployment fit into standard MLOps architectures?",

@@ -20,8 +20,7 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Similarity Search"
   ],
   "interview_questions": [
     "How does Top-K Retrieval fit into standard Retrieval Augmented Generation architectures?",

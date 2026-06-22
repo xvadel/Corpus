@@ -20,8 +20,8 @@
     "Retrieval"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Retrieval"
+    "Embedding",
+    "Cosine Similarity"
   ],
   "interview_questions": [
     "How does Approximate Nearest Neighbor fit into standard Retrieval Augmented Generation architectures?",

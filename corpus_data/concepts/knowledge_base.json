@@ -20,8 +20,8 @@
     "Data Processing"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Data Processing"
+    "Document Parsing",
+    "Embedding"
   ],
   "interview_questions": [
     "How does Knowledge Base fit into standard Retrieval Augmented Generation architectures?",

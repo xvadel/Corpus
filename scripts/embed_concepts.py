@@ -58,14 +58,25 @@ def embed_all_concepts():
                 print(f"Skipping {file_path.name} due to parse error: {e}")
                 continue
                 
-        # Construct the text representation to embed
+        # Construct the text representation to embed — lead with term name for BGE alignment
         term = data.get("term", "")
         definition = data.get("definition", "")
-        tech_exp = data.get("technical_explanation", "")
         simple_exp = data.get("simple_explanation", "")
+        subdomain = data.get("subdomain", "")
+        related = ", ".join(data.get("related_terms", [])[:4])  # top 4 related terms
+        prereqs = ", ".join(data.get("prerequisites", [])[:4])
         
-        # Combining fields for a richer semantic embedding
-        doc_text = f"Concept: {term}\nDefinition: {definition}\nTechnical Explanation: {tech_exp}\nSimple Explanation: {simple_exp}"
+        # BGE passage-side text: term + subdomain + definition + simple explanation
+        doc_text = (
+            f"{term}. "
+            f"Subdomain: {subdomain}. "
+            f"Definition: {definition} "
+            f"Explanation: {simple_exp}"
+        )
+        if prereqs:
+            doc_text += f" Prerequisites: {prereqs}."
+        if related:
+            doc_text += f" Related concepts: {related}."
         
         # Serialize list metadata fields as comma-separated strings to avoid schema errors across ChromaDB versions
         prereqs = ",".join(data.get("prerequisites", []))
@@ -84,9 +95,9 @@ def embed_all_concepts():
         ids.append(data["id"])
         metadatas.append(metadata)
         
-    # 5. Generate embeddings in batches
+    # 5. Generate embeddings in batches with normalization
     print(f"Generating embeddings for {len(documents)} concepts...")
-    embeddings = model.encode(documents, show_progress_bar=True)
+    embeddings = model.encode(documents, show_progress_bar=True, normalize_embeddings=True)
     
     # Convert embeddings from numpy array to list for ChromaDB
     embeddings_list = [emb.tolist() for emb in embeddings]

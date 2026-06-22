@@ -20,8 +20,7 @@
     "Model Adaptation"
   ],
   "prerequisites": [
-    "Agentic AI",
-    "Model Adaptation"
+    "LoRA"
   ],
   "interview_questions": [
     "How does QLoRA fit into standard Agentic AI architectures?",

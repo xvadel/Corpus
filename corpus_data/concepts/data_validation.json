@@ -20,8 +20,7 @@
     "Data Management"
   ],
   "prerequisites": [
-    "MLOps",
-    "Data Management"
+    "Data Pipeline"
   ],
   "interview_questions": [
     "How does Data Validation fit into standard MLOps architectures?",

@@ -20,8 +20,7 @@
     "Tools"
   ],
   "prerequisites": [
-    "MLOps",
-    "Tools"
+    "Training"
   ],
   "interview_questions": [
     "How does Weights & Biases fit into standard MLOps architectures?",

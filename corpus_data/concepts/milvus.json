@@ -20,8 +20,7 @@
     "Vector Databases"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Vector Databases"
+    "Vector Database"
   ],
   "interview_questions": [
     "How does Milvus fit into standard Retrieval Augmented Generation architectures?",

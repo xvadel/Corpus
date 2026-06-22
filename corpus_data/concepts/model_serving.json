@@ -20,8 +20,9 @@
     "System Design"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "System Design"
+    "API Design",
+    "Scalability",
+    "Latency"
   ],
   "interview_questions": [
     "How does Model Serving fit into standard AI Engineering architectures?",

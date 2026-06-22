@@ -20,8 +20,8 @@
     "Embeddings"
   ],
   "prerequisites": [
-    "Retrieval Augmented Generation",
-    "Embeddings"
+    "Vector Representation",
+    "Transformer"
   ],
   "interview_questions": [
     "How does Embedding fit into standard Retrieval Augmented Generation architectures?",

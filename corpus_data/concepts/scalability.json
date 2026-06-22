@@ -20,8 +20,7 @@
     "System Design"
   ],
   "prerequisites": [
-    "AI Engineering",
-    "System Design"
+    "API Design"
   ],
   "interview_questions": [
     "How does Scalability fit into standard AI Engineering architectures?",

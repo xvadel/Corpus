@@ -20,8 +20,8 @@
     "Neural Networks"
   ],
   "prerequisites": [
-    "Deep Learning Foundations",
-    "Neural Networks"
+    "Feed Forward Network",
+    "Training"
   ],
   "interview_questions": [
     "How does Transfer Learning fit into standard Deep Learning Foundations architectures?",
