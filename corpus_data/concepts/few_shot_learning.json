@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for Few-Shot Learning, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Few-Shot Learning."
-  ]
+  ],
+  "references": []
 }

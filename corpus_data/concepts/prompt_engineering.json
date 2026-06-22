@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for Prompt Engineering, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Prompt Engineering."
-  ]
+  ],
+  "references": []
 }

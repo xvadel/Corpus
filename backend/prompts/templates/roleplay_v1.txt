@@ -1,0 +1,7 @@
+{system_prompt}
+
+Conversation so far:
+{history_text}
+
+Continue the conversation as {persona_name} ({persona_title}).
+Respond with a single, in-character reply. Do not break character. Keep response to 2-3 sentences.

@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for Multi-Agent System, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Multi-Agent System."
-  ]
+  ],
+  "references": []
 }

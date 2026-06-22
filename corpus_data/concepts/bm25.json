@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for BM25, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of BM25."
-  ]
+  ],
+  "references": []
 }

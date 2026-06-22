@@ -1,0 +1,36 @@
+{
+  "id": "auto_merging_retrieval",
+  "domain": "AI",
+  "subdomain": "Retrieval Augmented Generation",
+  "category": "Retrieval",
+  "term": "Auto-Merging Retrieval",
+  "difficulty": "Advanced",
+  "definition": "A fundamental concept in Retrieval Augmented Generation under Retrieval, representing Auto-Merging Retrieval.",
+  "simple_explanation": "Think of Auto-Merging Retrieval as an essential building block of Retrieval Augmented Generation. It is commonly used within Retrieval.",
+  "technical_explanation": "In production Retrieval Augmented Generation systems, Auto-Merging Retrieval plays a key role within Retrieval. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Auto-Merging Retrieval directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Auto-Merging Retrieval in our Retrieval Augmented Generation pipeline to improve performance.",
+    "Our team discussed the differences between Auto-Merging Retrieval and alternative solutions.",
+    "Understanding Auto-Merging Retrieval is highly beneficial when scaling our Retrieval capabilities."
+  ],
+  "related_terms": [
+    "Auto-Merging Retrieval",
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "prerequisites": [
+    "Retrieval Augmented Generation",
+    "Retrieval"
+  ],
+  "references": [],
+  "interview_questions": [
+    "How does Auto-Merging Retrieval fit into standard Retrieval Augmented Generation architectures?",
+    "What are the major engineering trade-offs when implementing Auto-Merging Retrieval?",
+    "How do you debug common failure modes associated with Auto-Merging Retrieval?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Auto-Merging Retrieval, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Auto-Merging Retrieval."
+  ]
+}

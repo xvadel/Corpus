@@ -1,0 +1,36 @@
+{
+  "id": "peft",
+  "domain": "AI",
+  "subdomain": "Agentic AI",
+  "category": "Model Adaptation",
+  "term": "Parameter-Efficient Fine-Tuning",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in Agentic AI under Model Adaptation, representing Parameter-Efficient Fine-Tuning.",
+  "simple_explanation": "Think of Parameter-Efficient Fine-Tuning as an essential building block of Agentic AI. It is commonly used within Model Adaptation.",
+  "technical_explanation": "In production Agentic AI systems, Parameter-Efficient Fine-Tuning plays a key role within Model Adaptation. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Parameter-Efficient Fine-Tuning directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Parameter-Efficient Fine-Tuning in our Agentic AI pipeline to improve performance.",
+    "Our team discussed the differences between Parameter-Efficient Fine-Tuning and alternative solutions.",
+    "Understanding Parameter-Efficient Fine-Tuning is highly beneficial when scaling our Model Adaptation capabilities."
+  ],
+  "related_terms": [
+    "Parameter-Efficient Fine-Tuning",
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "prerequisites": [
+    "Agentic AI",
+    "Model Adaptation"
+  ],
+  "references": [],
+  "interview_questions": [
+    "How does Parameter-Efficient Fine-Tuning fit into standard Agentic AI architectures?",
+    "What are the major engineering trade-offs when implementing Parameter-Efficient Fine-Tuning?",
+    "How do you debug common failure modes associated with Parameter-Efficient Fine-Tuning?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Parameter-Efficient Fine-Tuning, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Parameter-Efficient Fine-Tuning."
+  ]
+}

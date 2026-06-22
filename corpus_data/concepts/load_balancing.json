@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for Load Balancing, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Load Balancing."
-  ]
+  ],
+  "references": []
 }

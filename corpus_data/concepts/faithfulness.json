@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for Faithfulness, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Faithfulness."
-  ]
+  ],
+  "references": []
 }

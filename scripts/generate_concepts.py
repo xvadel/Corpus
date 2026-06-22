@@ -100,6 +100,7 @@ CONCEPT_SCHEMA_EXAMPLE = {
     ],
     "related_terms": ["term1", "term2", "term3"],
     "prerequisites": ["prereq1", "prereq2"],
+    "references": ["https://arxiv.org/abs/..."],
     "interview_questions": [
         "Likely interview question 1?",
         "Likely interview question 2?",
@@ -139,6 +140,7 @@ Rules:
 - `examples`: 3 realistic sentences an AI engineer might say in a technical interview or design review.
 - `related_terms`: 3-6 closely related concept names (strings only).
 - `prerequisites`: 2-4 concepts someone should understand first.
+- `references`: 1-3 scientific reference URLs or papers (arXiv/docs) for further reading.
 - `interview_questions`: 3 real interview questions that test understanding of this concept.
 - `common_mistakes`: 2-3 misconceptions or errors practitioners frequently make.
 - Output ONLY the raw JSON object. No explanation, no markdown.
@@ -216,6 +218,7 @@ def generate_mock_concept(concept: dict) -> dict:
         ],
         "related_terms": [term, subdomain, category],
         "prerequisites": [subdomain, category],
+        "references": [],
         "interview_questions": [
             f"How does {term} fit into standard {subdomain} architectures?",
             f"What are the major engineering trade-offs when implementing {term}?",

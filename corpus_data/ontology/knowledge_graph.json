@@ -1,0 +1,1314 @@
+{
+  "concepts": {
+    "accuracy": {
+      "term": "Accuracy",
+      "difficulty": "Beginner",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "benchmarking"
+      ],
+      "related_terms": [
+        "scalability",
+        "benchmarking"
+      ]
+    },
+    "activation_function": {
+      "term": "Activation Function",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron"
+      ],
+      "related_terms": [
+        "perceptron"
+      ]
+    },
+    "agent": {
+      "term": "Agent",
+      "difficulty": "Beginner",
+      "subdomain": "Agentic AI",
+      "prerequisites": [],
+      "related_terms": []
+    },
+    "answer_synthesis": {
+      "term": "Answer Synthesis",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "context_injection"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "context_injection"
+      ]
+    },
+    "api_design": {
+      "term": "API Design",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [],
+      "related_terms": [
+        "scalability"
+      ]
+    },
+    "approximate_nearest_neighbor": {
+      "term": "Approximate Nearest Neighbor",
+      "difficulty": "Advanced",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "attention": {
+      "term": "Attention",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron",
+        "transformer"
+      ],
+      "related_terms": [
+        "perceptron",
+        "transformer"
+      ]
+    },
+    "autoregressive_model": {
+      "term": "Autoregressive Model",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model"
+      ],
+      "related_terms": [
+        "language_model"
+      ]
+    },
+    "auto_merging_retrieval": {
+      "term": "Auto-Merging Retrieval",
+      "difficulty": "Advanced",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "backpropagation": {
+      "term": "Backpropagation",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron"
+      ],
+      "related_terms": [
+        "perceptron"
+      ]
+    },
+    "benchmarking": {
+      "term": "Benchmarking",
+      "difficulty": "Beginner",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability"
+      ],
+      "related_terms": [
+        "scalability"
+      ]
+    },
+    "bi_encoder": {
+      "term": "Bi-Encoder",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "bm25": {
+      "term": "BM25",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "byte_pair_encoding": {
+      "term": "Byte Pair Encoding",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "tokenization"
+      ],
+      "related_terms": [
+        "language_model",
+        "tokenization"
+      ]
+    },
+    "caching": {
+      "term": "Caching",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "api_design"
+      ],
+      "related_terms": [
+        "scalability",
+        "api_design"
+      ]
+    },
+    "chain_of_thought": {
+      "term": "Chain of Thought",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "language_model",
+        "prompt_engineering"
+      ]
+    },
+    "chromadb": {
+      "term": "ChromaDB",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ]
+    },
+    "chunking": {
+      "term": "Chunking",
+      "difficulty": "Beginner",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation"
+      ]
+    },
+    "context_injection": {
+      "term": "Context Injection",
+      "difficulty": "Beginner",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation"
+      ]
+    },
+    "context_window": {
+      "term": "Context Window",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "language_model",
+        "prompt_engineering"
+      ]
+    },
+    "cosine_similarity": {
+      "term": "Cosine Similarity",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "embedding"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "embedding"
+      ]
+    },
+    "crewai": {
+      "term": "CrewAI",
+      "difficulty": "Advanced",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "litellm"
+      ],
+      "related_terms": [
+        "scalability",
+        "litellm"
+      ]
+    },
+    "cross_encoder": {
+      "term": "Cross-Encoder",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "dataset_versioning": {
+      "term": "Dataset Versioning",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training"
+      ],
+      "related_terms": [
+        "training"
+      ]
+    },
+    "data_pipeline": {
+      "term": "Data Pipeline",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training",
+        "dataset_versioning"
+      ],
+      "related_terms": [
+        "training",
+        "dataset_versioning"
+      ]
+    },
+    "data_validation": {
+      "term": "Data Validation",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training",
+        "dataset_versioning"
+      ],
+      "related_terms": [
+        "training",
+        "dataset_versioning"
+      ]
+    },
+    "decoder": {
+      "term": "Decoder",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron",
+        "transformer"
+      ],
+      "related_terms": [
+        "perceptron",
+        "transformer"
+      ]
+    },
+    "deepeval": {
+      "term": "DeepEval",
+      "difficulty": "Advanced",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "benchmarking"
+      ],
+      "related_terms": [
+        "scalability",
+        "benchmarking"
+      ]
+    },
+    "deployment": {
+      "term": "Deployment",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training"
+      ],
+      "related_terms": [
+        "training"
+      ]
+    },
+    "document_parsing": {
+      "term": "Document Parsing",
+      "difficulty": "Beginner",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "chunking"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "chunking"
+      ]
+    },
+    "dpo": {
+      "term": "Direct Preference Optimization",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "drift_detection": {
+      "term": "Drift Detection",
+      "difficulty": "Advanced",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training"
+      ],
+      "related_terms": [
+        "training"
+      ]
+    },
+    "embedding": {
+      "term": "Embedding",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation"
+      ]
+    },
+    "encoder": {
+      "term": "Encoder",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron",
+        "transformer"
+      ],
+      "related_terms": [
+        "perceptron",
+        "transformer"
+      ]
+    },
+    "faiss": {
+      "term": "FAISS",
+      "difficulty": "Advanced",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ]
+    },
+    "faithfulness": {
+      "term": "Faithfulness",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "benchmarking"
+      ],
+      "related_terms": [
+        "scalability",
+        "benchmarking"
+      ]
+    },
+    "feed_forward_network": {
+      "term": "Feed Forward Network",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron"
+      ],
+      "related_terms": [
+        "perceptron"
+      ]
+    },
+    "few_shot": {
+      "term": "Few-Shot",
+      "difficulty": "Beginner",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "agent",
+        "prompt_engineering"
+      ]
+    },
+    "few_shot_learning": {
+      "term": "Few-Shot Learning",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "language_model",
+        "prompt_engineering"
+      ]
+    },
+    "fine_tuning": {
+      "term": "Fine-Tuning",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "function_calling": {
+      "term": "Function Calling",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "language_model",
+        "prompt_engineering"
+      ]
+    },
+    "gradient_descent": {
+      "term": "Gradient Descent",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron"
+      ],
+      "related_terms": [
+        "perceptron"
+      ]
+    },
+    "grounding": {
+      "term": "Grounding",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "context_injection"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "context_injection"
+      ]
+    },
+    "guardrails": {
+      "term": "Guardrails",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "api_design"
+      ],
+      "related_terms": [
+        "scalability",
+        "api_design"
+      ]
+    },
+    "hallucination": {
+      "term": "Hallucination",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "language_model",
+        "prompt_engineering"
+      ]
+    },
+    "hybrid_search": {
+      "term": "Hybrid Search",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "instruction_tuning": {
+      "term": "Instruction Tuning",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "knowledge_base": {
+      "term": "Knowledge Base",
+      "difficulty": "Beginner",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "chunking"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "chunking"
+      ]
+    },
+    "langchain": {
+      "term": "LangChain",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "litellm"
+      ],
+      "related_terms": [
+        "scalability",
+        "litellm"
+      ]
+    },
+    "langgraph": {
+      "term": "LangGraph",
+      "difficulty": "Advanced",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "litellm"
+      ],
+      "related_terms": [
+        "scalability",
+        "litellm"
+      ]
+    },
+    "language_model": {
+      "term": "Language Model",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [],
+      "related_terms": []
+    },
+    "latency": {
+      "term": "Latency",
+      "difficulty": "Beginner",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "benchmarking"
+      ],
+      "related_terms": [
+        "scalability",
+        "benchmarking"
+      ]
+    },
+    "lemmatization": {
+      "term": "Lemmatization",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "tokenization"
+      ],
+      "related_terms": [
+        "language_model",
+        "tokenization"
+      ]
+    },
+    "litellm": {
+      "term": "LiteLLM",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability"
+      ],
+      "related_terms": [
+        "scalability"
+      ]
+    },
+    "llamaindex": {
+      "term": "LlamaIndex",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "litellm"
+      ],
+      "related_terms": [
+        "scalability",
+        "litellm"
+      ]
+    },
+    "load_balancing": {
+      "term": "Load Balancing",
+      "difficulty": "Advanced",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "api_design"
+      ],
+      "related_terms": [
+        "scalability",
+        "api_design"
+      ]
+    },
+    "lora": {
+      "term": "LoRA",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "loss_function": {
+      "term": "Loss Function",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron"
+      ],
+      "related_terms": [
+        "perceptron"
+      ]
+    },
+    "masked_language_model": {
+      "term": "Masked Language Model",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model"
+      ],
+      "related_terms": [
+        "language_model"
+      ]
+    },
+    "memory": {
+      "term": "Memory",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "metadata_extraction": {
+      "term": "Metadata Extraction",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "chunking"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "chunking"
+      ]
+    },
+    "milvus": {
+      "term": "Milvus",
+      "difficulty": "Advanced",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ]
+    },
+    "mlflow": {
+      "term": "MLflow",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training"
+      ],
+      "related_terms": [
+        "training"
+      ]
+    },
+    "model_serving": {
+      "term": "Model Serving",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "api_design"
+      ],
+      "related_terms": [
+        "scalability",
+        "api_design"
+      ]
+    },
+    "monitoring": {
+      "term": "Monitoring",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training"
+      ],
+      "related_terms": [
+        "training"
+      ]
+    },
+    "multi_agent_system": {
+      "term": "Multi-Agent System",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "multi_head_attention": {
+      "term": "Multi-Head Attention",
+      "difficulty": "Advanced",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron",
+        "transformer"
+      ],
+      "related_terms": [
+        "perceptron",
+        "transformer"
+      ]
+    },
+    "named_entity_recognition": {
+      "term": "Named Entity Recognition",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "tokenization"
+      ],
+      "related_terms": [
+        "language_model",
+        "tokenization"
+      ]
+    },
+    "next_token_prediction": {
+      "term": "Next Token Prediction",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model"
+      ],
+      "related_terms": [
+        "language_model"
+      ]
+    },
+    "one_shot": {
+      "term": "One-Shot",
+      "difficulty": "Beginner",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "agent",
+        "prompt_engineering"
+      ]
+    },
+    "peft": {
+      "term": "Parameter-Efficient Fine-Tuning",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "perceptron": {
+      "term": "Perceptron",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [],
+      "related_terms": []
+    },
+    "pinecone": {
+      "term": "Pinecone",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ]
+    },
+    "planner": {
+      "term": "Planner",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "positional_encoding": {
+      "term": "Positional Encoding",
+      "difficulty": "Advanced",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron",
+        "transformer"
+      ],
+      "related_terms": [
+        "perceptron",
+        "transformer"
+      ]
+    },
+    "ppo": {
+      "term": "Proximal Policy Optimization",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "prompt_engineering": {
+      "term": "Prompt Engineering",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model"
+      ],
+      "related_terms": [
+        "language_model"
+      ]
+    },
+    "qlora": {
+      "term": "QLoRA",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "ragas": {
+      "term": "RAGAS",
+      "difficulty": "Advanced",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "benchmarking"
+      ],
+      "related_terms": [
+        "scalability",
+        "benchmarking"
+      ]
+    },
+    "react_pattern": {
+      "term": "ReAct Pattern",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "reciprocal_rank_fusion": {
+      "term": "Reciprocal Rank Fusion",
+      "difficulty": "Advanced",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "reranking": {
+      "term": "Reranking",
+      "difficulty": "Advanced",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "retrieval_augmented_generation": {
+      "term": "Retrieval Augmented Generation",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "rlaif": {
+      "term": "Reinforcement Learning from AI Feedback",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "rlhf": {
+      "term": "RLHF",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "fine_tuning"
+      ],
+      "related_terms": [
+        "agent",
+        "fine_tuning"
+      ]
+    },
+    "role_prompting": {
+      "term": "Role Prompting",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "agent",
+        "prompt_engineering"
+      ]
+    },
+    "scalability": {
+      "term": "Scalability",
+      "difficulty": "Advanced",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "api_design"
+      ],
+      "related_terms": [
+        "api_design"
+      ]
+    },
+    "self_attention": {
+      "term": "Self-Attention",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron",
+        "transformer"
+      ],
+      "related_terms": [
+        "perceptron",
+        "transformer"
+      ]
+    },
+    "semantic_router": {
+      "term": "Semantic Router",
+      "difficulty": "Intermediate",
+      "subdomain": "AI Engineering",
+      "prerequisites": [
+        "scalability",
+        "api_design"
+      ],
+      "related_terms": [
+        "scalability",
+        "api_design"
+      ]
+    },
+    "semantic_similarity": {
+      "term": "Semantic Similarity",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "embedding"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "embedding"
+      ]
+    },
+    "sentence_window_retrieval": {
+      "term": "Sentence Window Retrieval",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "similarity_search": {
+      "term": "Similarity Search",
+      "difficulty": "Beginner",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation"
+      ]
+    },
+    "stemming": {
+      "term": "Stemming",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "tokenization"
+      ],
+      "related_terms": [
+        "language_model",
+        "tokenization"
+      ]
+    },
+    "stop_words": {
+      "term": "Stop Words",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "tokenization"
+      ],
+      "related_terms": [
+        "language_model",
+        "tokenization"
+      ]
+    },
+    "structured_prompting": {
+      "term": "Structured Prompting",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "agent",
+        "prompt_engineering"
+      ]
+    },
+    "tokenization": {
+      "term": "Tokenization",
+      "difficulty": "Beginner",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model"
+      ],
+      "related_terms": [
+        "language_model"
+      ]
+    },
+    "tool_calling": {
+      "term": "Tool Calling",
+      "difficulty": "Intermediate",
+      "subdomain": "Natural Language Processing",
+      "prerequisites": [
+        "language_model",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "language_model",
+        "prompt_engineering"
+      ]
+    },
+    "tool_use": {
+      "term": "Tool Use",
+      "difficulty": "Intermediate",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "top_k_retrieval": {
+      "term": "Top-K Retrieval",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "similarity_search"
+      ]
+    },
+    "training": {
+      "term": "Training",
+      "difficulty": "Beginner",
+      "subdomain": "MLOps",
+      "prerequisites": [],
+      "related_terms": []
+    },
+    "transfer_learning": {
+      "term": "Transfer Learning",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron"
+      ],
+      "related_terms": [
+        "perceptron"
+      ]
+    },
+    "transformer": {
+      "term": "Transformer",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning Foundations",
+      "prerequisites": [
+        "perceptron"
+      ],
+      "related_terms": [
+        "perceptron"
+      ]
+    },
+    "vector_database": {
+      "term": "Vector Database",
+      "difficulty": "Beginner",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation"
+      ]
+    },
+    "vector_representation": {
+      "term": "Vector Representation",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "embedding"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "embedding"
+      ]
+    },
+    "weaviate": {
+      "term": "Weaviate",
+      "difficulty": "Intermediate",
+      "subdomain": "Retrieval Augmented Generation",
+      "prerequisites": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ],
+      "related_terms": [
+        "retrieval_augmented_generation",
+        "vector_database"
+      ]
+    },
+    "weights_and_biases": {
+      "term": "Weights & Biases",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training",
+        "mlflow"
+      ],
+      "related_terms": [
+        "training",
+        "mlflow"
+      ]
+    },
+    "workflow_orchestration": {
+      "term": "Workflow Orchestration",
+      "difficulty": "Advanced",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent"
+      ],
+      "related_terms": [
+        "agent"
+      ]
+    },
+    "zero_shot": {
+      "term": "Zero-Shot",
+      "difficulty": "Beginner",
+      "subdomain": "Agentic AI",
+      "prerequisites": [
+        "agent",
+        "prompt_engineering"
+      ],
+      "related_terms": [
+        "agent",
+        "prompt_engineering"
+      ]
+    }
+  }
+}

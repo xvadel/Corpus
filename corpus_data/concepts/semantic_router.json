@@ -1,0 +1,36 @@
+{
+  "id": "semantic_router",
+  "domain": "AI",
+  "subdomain": "AI Engineering",
+  "category": "System Design",
+  "term": "Semantic Router",
+  "difficulty": "Intermediate",
+  "definition": "A fundamental concept in AI Engineering under System Design, representing Semantic Router.",
+  "simple_explanation": "Think of Semantic Router as an essential building block of AI Engineering. It is commonly used within System Design.",
+  "technical_explanation": "In production AI Engineering systems, Semantic Router plays a key role within System Design. Engineering implementations must account for scaling constraints and design trade-offs.",
+  "investor_explanation": "Robust configuration of Semantic Router directly affects system efficiency and business-critical accuracy metrics, driving cost savings and higher end-user retention.",
+  "examples": [
+    "We optimized Semantic Router in our AI Engineering pipeline to improve performance.",
+    "Our team discussed the differences between Semantic Router and alternative solutions.",
+    "Understanding Semantic Router is highly beneficial when scaling our System Design capabilities."
+  ],
+  "related_terms": [
+    "Semantic Router",
+    "AI Engineering",
+    "System Design"
+  ],
+  "prerequisites": [
+    "AI Engineering",
+    "System Design"
+  ],
+  "references": [],
+  "interview_questions": [
+    "How does Semantic Router fit into standard AI Engineering architectures?",
+    "What are the major engineering trade-offs when implementing Semantic Router?",
+    "How do you debug common failure modes associated with Semantic Router?"
+  ],
+  "common_mistakes": [
+    "Misconfiguring parameters for Semantic Router, resulting in degraded quality.",
+    "Underestimating the computational cost or memory footprint of Semantic Router."
+  ]
+}

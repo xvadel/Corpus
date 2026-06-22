@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for Top-K Retrieval, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Top-K Retrieval."
-  ]
+  ],
+  "references": []
 }

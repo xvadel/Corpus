@@ -1,0 +1,116 @@
+{
+  "version": "1.0.0",
+  "domain": "Artificial Intelligence",
+  "subdomains": [
+    {
+      "name": "Natural Language Processing",
+      "categories": [
+        {
+          "name": "Text Processing",
+          "concepts": ["Tokenization", "Stemming", "Lemmatization", "Stop Words", "Named Entity Recognition"]
+        },
+        {
+          "name": "Language Modeling",
+          "concepts": ["Language Model", "Masked Language Model", "Autoregressive Model", "Next Token Prediction"]
+        },
+        {
+          "name": "LLMs",
+          "concepts": ["Prompt Engineering", "Context Window", "Hallucination", "Few-Shot Learning", "Chain of Thought", "Function Calling", "Tool Calling"]
+        }
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "categories": [
+        {
+          "name": "Core Concepts",
+          "concepts": ["Retrieval Augmented Generation"]
+        },
+        {
+          "name": "Data Processing",
+          "concepts": ["Chunking", "Document Parsing", "Metadata Extraction", "Knowledge Base"]
+        },
+        {
+          "name": "Embeddings",
+          "concepts": ["Embedding", "Vector Representation", "Semantic Similarity", "Cosine Similarity"]
+        },
+        {
+          "name": "Vector Databases",
+          "concepts": ["Vector Database", "ChromaDB", "Pinecone", "Weaviate", "FAISS", "Milvus"]
+        },
+        {
+          "name": "Retrieval",
+          "concepts": ["Similarity Search", "Hybrid Search", "BM25", "Reranking", "Top-K Retrieval", "Approximate Nearest Neighbor"]
+        },
+        {
+          "name": "Generation",
+          "concepts": ["Context Injection", "Grounding", "Answer Synthesis"]
+        }
+      ]
+    },
+    {
+      "name": "Agentic AI",
+      "categories": [
+        {
+          "name": "Core Concepts",
+          "concepts": ["Agent", "Planner", "Memory", "Tool Use", "Multi-Agent System", "Workflow Orchestration"]
+        },
+        {
+          "name": "Prompt Engineering",
+          "concepts": ["Zero-Shot", "One-Shot", "Few-Shot", "Role Prompting", "Structured Prompting"]
+        },
+        {
+          "name": "Model Adaptation",
+          "concepts": ["Fine-Tuning", "LoRA", "QLoRA", "RLHF", "Instruction Tuning"]
+        }
+      ]
+    },
+    {
+      "name": "AI Engineering",
+      "categories": [
+        {
+          "name": "System Design",
+          "concepts": ["Model Serving", "API Design", "Caching", "Load Balancing", "Scalability"]
+        },
+        {
+          "name": "Evaluation",
+          "concepts": ["Benchmarking", "RAGAS", "DeepEval", "Latency", "Accuracy", "Faithfulness"]
+        },
+        {
+          "name": "Orchestration",
+          "concepts": ["LiteLLM", "LangChain", "LlamaIndex", "LangGraph", "CrewAI"]
+        }
+      ]
+    },
+    {
+      "name": "MLOps",
+      "categories": [
+        {
+          "name": "Data Management",
+          "concepts": ["Dataset Versioning", "Data Pipeline", "Data Validation"]
+        },
+        {
+          "name": "Model Lifecycle",
+          "concepts": ["Training", "Deployment", "Monitoring", "Drift Detection"]
+        },
+        {
+          "name": "Tools",
+          "concepts": ["MLflow", "Weights & Biases"]
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning Foundations",
+      "categories": [
+        {
+          "name": "Neural Networks",
+          "concepts": ["Perceptron", "Feed Forward Network", "Backpropagation", "Activation Function", "Loss Function", "Gradient Descent", "Transfer Learning"]
+        },
+        {
+          "name": "Transformers",
+          "concepts": ["Transformer", "Attention", "Self-Attention", "Multi-Head Attention", "Encoder", "Decoder", "Positional Encoding"]
+        }
+      ]
+    }
+  ]
+}

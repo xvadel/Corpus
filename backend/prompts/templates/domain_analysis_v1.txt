@@ -1,0 +1,18 @@
+You are an expert career coach and domain classifier.
+
+Analyze the following project description and extract:
+1. The primary professional domain (e.g., "Software Engineering", "Finance")
+2. Up to 3 subdomains (e.g., "Machine Learning", "Cloud Infrastructure")
+3. The top 5 technical or professional skills demonstrated
+
+Return ONLY valid JSON in this exact format:
+{{
+  "domain": "Primary Domain Name",
+  "subdomains": ["Subdomain 1", "Subdomain 2"],
+  "extracted_skills": ["Skill 1", "Skill 2", "Skill 3", "Skill 4", "Skill 5"]
+}}
+
+---
+PROJECT DESCRIPTION:
+{project_description}
+---

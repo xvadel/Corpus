@@ -94,3 +94,17 @@ Vector Database,vector_database,AI,Retrieval Augmented Generation,Vector Databas
 Approximate Nearest Neighbor,approximate_nearest_neighbor,AI,Retrieval Augmented Generation,Retrieval,Advanced
 Cosine Similarity,cosine_similarity,AI,Retrieval Augmented Generation,Embeddings,Intermediate
 Transformer,transformer,AI,Deep Learning Foundations,Transformers,Intermediate
+Direct Preference Optimization,dpo,AI,Agentic AI,Model Adaptation,Advanced
+Proximal Policy Optimization,ppo,AI,Agentic AI,Model Adaptation,Advanced
+Reinforcement Learning from AI Feedback,rlaif,AI,Agentic AI,Model Adaptation,Advanced
+Parameter-Efficient Fine-Tuning,peft,AI,Agentic AI,Model Adaptation,Intermediate
+ReAct Pattern,react_pattern,AI,Agentic AI,Core Concepts,Advanced
+Semantic Router,semantic_router,AI,AI Engineering,System Design,Intermediate
+Guardrails,guardrails,AI,AI Engineering,System Design,Intermediate
+Byte Pair Encoding,byte_pair_encoding,AI,Natural Language Processing,Text Processing,Intermediate
+Cross-Encoder,cross_encoder,AI,Retrieval Augmented Generation,Retrieval,Intermediate
+Bi-Encoder,bi_encoder,AI,Retrieval Augmented Generation,Retrieval,Intermediate
+Reciprocal Rank Fusion,reciprocal_rank_fusion,AI,Retrieval Augmented Generation,Retrieval,Advanced
+Sentence Window Retrieval,sentence_window_retrieval,AI,Retrieval Augmented Generation,Retrieval,Intermediate
+Auto-Merging Retrieval,auto_merging_retrieval,AI,Retrieval Augmented Generation,Retrieval,Advanced
+

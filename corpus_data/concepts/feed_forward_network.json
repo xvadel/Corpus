@@ -31,5 +31,6 @@
   "common_mistakes": [
     "Misconfiguring parameters for Feed Forward Network, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Feed Forward Network."
-  ]
+  ],
+  "references": []
 }
