@@ -32,6 +32,10 @@ jobs:
         run: |
           python scripts/build_knowledge_graph.py
 
+      - name: Index Concepts in ChromaDB
+        run: |
+          python scripts/embed_concepts.py
+
       - name: Run Unit Tests
         run: |
           python -m pytest tests/

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <rect width="100" height="100" rx="22" fill="#0A0E21"/>
+  <!-- Open Book Pages (White) -->
+  <path d="M 50 78 C 38 77 24 72 20 68 C 19 67 19 45 22 36 C 24 30 40 28 50 38 Z" fill="#FFFFFF"/>
+  <path d="M 50 78 C 62 77 76 72 80 68 C 81 67 81 45 78 36 C 76 30 60 28 50 38 Z" fill="#FFFFFF"/>
+  <!-- Under-page cover shadows/lines (White) -->
+  <path d="M 50 82 C 34 81 18 75 14 70 C 13 69 13 58 14 55 M 14 62 C 14 68 34 76 50 77" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 50 82 C 66 81 82 75 86 70 C 87 69 87 58 86 55 M 86 62 C 86 68 66 76 50 77" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Rising data pixels/squares (White) -->
+  <rect x="47" y="27" width="6" height="6" rx="1" fill="#FFFFFF"/>
+  <rect x="55" y="18" width="6" height="6" rx="1" fill="#FFFFFF"/>
+  <rect x="63" y="10" width="6" height="6" rx="1" fill="#FFFFFF"/>
+  <rect x="71" y="3" width="6" height="6" rx="1" fill="#FFFFFF"/>
+</svg>
