@@ -1,11 +1,136 @@
 # Corpus
 
 [![Status](https://img.shields.io/badge/Status-Alpha-orange.svg)](https://github.com/xvadel/Corpus)
-[![Python Version](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-June%202026-brightgreen.svg)](https://github.com/xvadel/Corpus)
 
-> **Corpus** is an AI-powered educational platform that transforms software projects and technical concepts into personalized learning experiences using Knowledge-First RAG, curriculum generation, and adaptive AI tutoring.
+> **Corpus** – an AI‑powered educational platform that turns software projects and technical concepts into personalized learning experiences using a Knowledge‑First Retrieval‑Augmented Generation architecture.
+
+---
+
+## Table of Contents
+- [Project Vision](#project-vision)
+- [Key Features](#key-features)
+- [Architecture Overview](#architecture-overview)
+- [Repository Structure](#repository-structure)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Current Development Status](#current-development-status)
+- [Technology Stack](#technology-stack)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Project Vision
+Corpus bridges the gap between deep technical mastery and professional communication. It provides an interactive sandbox where developers converse with AI‑driven persona coaches to refine terminology, design explanations, and build confidence.
+
+---
+
+## Key Features
+- **Knowledge Layer** – curated ontology, rich JSON concept schemas, and a directed knowledge graph.
+- **Retrieval Engine** – ChromaDB vector store + cross‑encoder re‑ranking for precise context.
+- **Curriculum Engine** – prerequisite‑aware learning paths and skill‑gap analysis.
+- **Evaluation Suite** – automated Recall@K, nDCG, MRR benchmarks.
+
+---
+
+## Architecture Overview
+```mermaid
+graph TD
+    User-->Retriever[Retriever / ChromaDB]
+    Retriever-->KB[Knowledge Repository]
+    KB-->Builder[Context Builder]
+    Builder-->Prompt[Prompt Assembly]
+    Prompt-->LLM[LLM Provider]
+    LLM-->Response[Persona Response]
+```
+
+---
+
+## Repository Structure
+```
+.
+├─ backend/          # FastAPI API & business logic
+├─ corpus_data/       # Concepts & ChromaDB index
+├─ docs/              # API reference & schema docs
+├─ frontend/          # Svelte 5 SPA (WIP)
+├─ infrastructure/     # Dev‑ops configs
+├─ scripts/           # Build, embed, enrich utilities
+└─ tests/             # Unit & integration tests
+```
+
+---
+
+## Installation
+```bash
+# Clone
+git clone https://github.com/xvadel/Corpus.git
+cd Corpus
+# Virtual env (Windows)
+python -m venv venv
+venv\Scripts\activate
+# Dependencies
+pip install -r requirements.txt
+# Environment variables
+cp .env.example .env
+# Edit .env with your Groq/Gemini API key
+```
+
+---
+
+## Quick Start
+```bash
+# Build knowledge graph and embeddings
+python scripts/build_knowledge_graph.py
+python scripts/embed_concepts.py
+# Run API server
+uvicorn backend.main:app --port 8000
+```
+Visit `http://localhost:8000/docs` for interactive API docs.
+
+---
+
+## Current Development Status
+- ✅ Knowledge Layer (ontology, 149 concepts)
+- ✅ Knowledge Graph (topological sort, validation)
+- ✅ Retrieval (ChromaDB + cross‑encoder)
+- ✅ Evaluation (benchmark suite)
+- ✅ Curriculum Engine (prerequisite resolution)
+- 🚧 Frontend dashboard (Svelte 5)
+- 🚧 Conversational coach agents
+
+---
+
+## Technology Stack
+- **Backend**: FastAPI, Uvicorn, Python 3.11+
+- **Vector Store**: ChromaDB
+- **Embeddings**: BAAI/bge‑small‑en‑v1.5
+- **Reranker**: BAAI/bge‑reranker‑base
+- **LLM**: Groq / Gemini providers
+- **Frontend**: Svelte 5 (in progress)
+
+---
+
+## Documentation
+- [API Reference](docs/API.md)
+- [Concept Schema](docs/concept_schema.md)
+
+---
+
+## Contributing
+1. Fork the repo
+2. Create a feature branch
+3. Write clear commits
+4. Open a PR against `main`
+5. Ensure all tests pass: `pytest tests/`
+
+---
+
+## License
+MIT © xvadel. See [LICENSE](LICENSE) for details.
 
 ---
 
