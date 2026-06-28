@@ -14,11 +14,7 @@
     "Our team discussed the differences between Prompt Engineering and alternative solutions.",
     "Understanding Prompt Engineering is highly beneficial when scaling our LLMs capabilities."
   ],
-  "related_terms": [
-    "Prompt Engineering",
-    "Natural Language Processing",
-    "LLMs"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Language Model"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Prompt Engineering, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Prompt Engineering."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2302.11382"
+  ]
 }

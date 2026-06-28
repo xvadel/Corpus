@@ -14,11 +14,7 @@
     "Our team discussed the differences between Retrieval Augmented Generation and alternative solutions.",
     "Understanding Retrieval Augmented Generation is highly beneficial when scaling our Core Concepts capabilities."
   ],
-  "related_terms": [
-    "Retrieval Augmented Generation",
-    "Retrieval Augmented Generation",
-    "Core Concepts"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Embedding",
     "Vector Database",
@@ -36,5 +32,7 @@
     "Misconfiguring parameters for Retrieval Augmented Generation, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Retrieval Augmented Generation."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.11401"
+  ]
 }

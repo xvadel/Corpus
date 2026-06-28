@@ -14,11 +14,7 @@
     "Our team discussed the differences between Tokenization and alternative solutions.",
     "Understanding Tokenization is highly beneficial when scaling our Text Processing capabilities."
   ],
-  "related_terms": [
-    "Tokenization",
-    "Natural Language Processing",
-    "Text Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [],
   "interview_questions": [
     "How does Tokenization fit into standard Natural Language Processing architectures?",
@@ -29,5 +25,7 @@
     "Misconfiguring parameters for Tokenization, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Tokenization."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1508.07909"
+  ]
 }

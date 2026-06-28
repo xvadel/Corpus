@@ -1,0 +1,36 @@
+{
+  "id": "lstm",
+  "domain": "AI",
+  "subdomain": "Deep Learning",
+  "category": "RNN",
+  "term": "LSTM",
+  "difficulty": "Intermediate",
+  "definition": "Long Short-Term Memory (LSTM) is a type of Recurrent Neural Network (RNN) architecture designed to handle the vanishing gradient problem in traditional RNNs.",
+  "simple_explanation": "LSTM is a way for computers to remember things over time, like a person remembering a story. It's especially good at understanding sequences of data, like speech or text. This helps computers make predictions or take actions based on what happened before.",
+  "technical_explanation": "LSTM networks introduce memory cells and gates to control the flow of information, allowing the network to learn long-term dependencies in data. The memory cell acts as a internal memory that captures information over long sequences, while the gates regulate the flow of information into and out of the cell. This architecture enables LSTMs to effectively learn from sequential data, such as time series data or natural language processing tasks.",
+  "investor_explanation": "LSTM technology has the potential to revolutionize industries that rely on sequential data, such as speech recognition, natural language processing, and time series forecasting. By enabling computers to learn from and make predictions based on complex sequences of data, LSTMs can drive significant improvements in areas like customer service chatbots, language translation, and predictive maintenance. This can lead to increased efficiency, reduced costs, and enhanced customer experiences, making it an attractive investment opportunity.",
+  "examples": [
+    "We used an LSTM network to predict stock prices based on historical market data.",
+    "The LSTM model we trained on speech data achieved state-of-the-art results in speech recognition.",
+    "Our team implemented an LSTM-based chatbot that can understand and respond to customer inquiries."
+  ],
+  "related_terms": [
+    "GRU",
+    "Sequence-to-Sequence"
+  ],
+  "prerequisites": [
+    "Sequence Modeling"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1706.03762"
+  ],
+  "interview_questions": [
+    "How does an LSTM handle the vanishing gradient problem?",
+    "Can you explain the difference between an LSTM and a traditional RNN?",
+    "How would you implement an LSTM network in a real-world application?"
+  ],
+  "common_mistakes": [
+    "Not properly initializing the LSTM's memory cells and gates.",
+    "Failing to consider the impact of sequence length on LSTM performance."
+  ]
+}

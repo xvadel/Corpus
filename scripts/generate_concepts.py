@@ -47,36 +47,64 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ---------------------------------------------------------------------------
-# Gemini client
+# LLM provider (Groq default, Gemini fallback)
 # ---------------------------------------------------------------------------
-def _get_model():
-    """Initialise and return a Gemini GenerativeModel instance."""
-    try:
-        import google.generativeai as genai
-    except ImportError:
-        print("WARNING: google-generativeai is not installed.")
-        print("Falling back to simulated/mock concept generation.")
-        return None
+class _GroqAdapter:
+    """Wraps GroqProvider to expose a generate_content(prompt) interface."""
+    def __init__(self):
+        sys.path.insert(0, str(PROJECT_ROOT))
+        from backend.providers.groq_provider import GroqProvider
+        self._provider = GroqProvider()
 
+    def generate_content(self, prompt: str):
+        class _Resp:
+            def __init__(self, text): self.text = text
+        return _Resp(self._provider.generate(prompt))
+
+
+class _GeminiAdapter:
+    """Wraps google.generativeai GenerativeModel."""
+    def __init__(self):
+        import google.generativeai as genai
+        try:
+            import dotenv
+            dotenv.load_dotenv(PROJECT_ROOT / ".env")
+        except ImportError:
+            pass
+        api_key = os.getenv("GEMINI_API_KEY", "")
+        if not api_key or api_key == "your_gemini_api_key_here":
+            raise ValueError("GEMINI_API_KEY not set.")
+        genai.configure(api_key=api_key)
+        self._model = genai.GenerativeModel("gemini-2.0-flash")
+
+    def generate_content(self, prompt: str):
+        return self._model.generate_content(prompt)
+
+
+def _get_model(provider_name: str = "groq"):
+    """Return the appropriate LLM adapter, or None to fall back to mock."""
     try:
         import dotenv
         dotenv.load_dotenv(PROJECT_ROOT / ".env")
     except ImportError:
         pass
 
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key or api_key == "your_gemini_api_key_here":
-        print("WARNING: GEMINI_API_KEY is not set or is placeholder.")
-        print("Falling back to simulated/mock concept generation.")
-        return None
-
-    try:
-        genai.configure(api_key=api_key)
-        return genai.GenerativeModel("gemini-1.5-flash")
-    except Exception as e:
-        print(f"WARNING: Failed to configure Gemini client: {e}")
-        print("Falling back to simulated/mock concept generation.")
-        return None
+    if provider_name == "groq":
+        try:
+            adapter = _GroqAdapter()
+            print("Using GroqProvider (llama-3.3-70b-versatile).")
+            return adapter
+        except Exception as e:
+            print(f"WARNING: Groq init failed: {e}. Falling back to mock.")
+            return None
+    else:  # gemini
+        try:
+            adapter = _GeminiAdapter()
+            print("Using GeminiAdapter (gemini-2.0-flash).")
+            return adapter
+        except Exception as e:
+            print(f"WARNING: Gemini init failed: {e}. Falling back to mock.")
+            return None
 
 
 # ---------------------------------------------------------------------------
@@ -163,7 +191,7 @@ def load_seed(subdomain_filter: str | None = None) -> list[dict]:
 
 
 def generate_concept(model, concept: dict, retries: int = 3) -> dict:
-    """Call Gemini and parse the returned JSON. Retries on failure."""
+    """Call the LLM provider and parse the returned JSON. Retries on failure."""
     prompt = build_prompt(concept)
 
     for attempt in range(1, retries + 1):
@@ -249,6 +277,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--subdomain",     type=str, default=None, help="Filter to a single subdomain")
     parser.add_argument("--limit",         type=int, default=None, help="Maximum number of concepts to process")
     parser.add_argument("--delay",         type=float, default=1.5, help="Seconds to wait between API calls (default: 1.5)")
+    parser.add_argument("--provider",      type=str, default="groq", choices=["groq", "gemini"], help="LLM provider to use (default: groq)")
     return parser.parse_args()
 
 
@@ -268,8 +297,8 @@ def main() -> None:
     print(f"  Skip existing: {args.skip_existing}")
     print()
 
-    # Load Gemini model (skip in dry-run)
-    model = None if args.dry_run else _get_model()
+    # Load LLM model (skip in dry-run)
+    model = None if args.dry_run else _get_model(args.provider)
 
     ok, skipped, failed = 0, 0, 0
 

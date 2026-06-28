@@ -14,14 +14,8 @@
     "Our team discussed the differences between Role Prompting and alternative solutions.",
     "Understanding Role Prompting is highly beneficial when scaling our Prompt Engineering capabilities."
   ],
-  "related_terms": [
-    "Role Prompting",
-    "Agentic AI",
-    "Prompt Engineering"
-  ],
-  "prerequisites": [
-    "Prompt Engineering"
-  ],
+  "related_terms": [],
+  "prerequisites": [],
   "interview_questions": [
     "How does Role Prompting fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing Role Prompting?",
@@ -31,5 +25,7 @@
     "Misconfiguring parameters for Role Prompting, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Role Prompting."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2302.11382"
+  ]
 }

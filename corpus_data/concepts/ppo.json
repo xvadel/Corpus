@@ -14,15 +14,13 @@
     "Our team discussed the differences between Proximal Policy Optimization and alternative solutions.",
     "Understanding Proximal Policy Optimization is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "Proximal Policy Optimization",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "RLHF"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/1707.06347"
+  ],
   "interview_questions": [
     "How does Proximal Policy Optimization fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing Proximal Policy Optimization?",

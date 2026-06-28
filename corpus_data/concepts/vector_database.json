@@ -14,11 +14,7 @@
     "Our team discussed the differences between Vector Database and alternative solutions.",
     "Understanding Vector Database is highly beneficial when scaling our Vector Databases capabilities."
   ],
-  "related_terms": [
-    "Vector Database",
-    "Retrieval Augmented Generation",
-    "Vector Databases"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Embedding",
     "Approximate Nearest Neighbor"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Vector Database, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Vector Database."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2309.07990"
+  ]
 }

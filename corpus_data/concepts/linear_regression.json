@@ -1,0 +1,35 @@
+{
+  "id": "linear_regression",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "Linear Regression",
+  "difficulty": "Beginner",
+  "definition": "Linear regression is a supervised learning algorithm that models the relationship between a dependent variable and one or more independent variables by fitting a linear equation to the observed data.",
+  "simple_explanation": "Linear regression is a way to predict a continuous value based on one or more input features. It works by drawing a straight line that best fits the data points. This line can then be used to make predictions for new, unseen data.",
+  "technical_explanation": "Linear regression is a parametric model that assumes a linear relationship between the independent variables and the dependent variable. It uses ordinary least squares to estimate the model parameters, which are then used to make predictions. The model can be extended to multiple linear regression by including more than one independent variable. Regularization techniques, such as L1 and L2 regularization, can be used to prevent overfitting.",
+  "investor_explanation": "Linear regression is a fundamental algorithm in machine learning that has numerous commercial applications, including predictive modeling, forecasting, and data analysis. It can be used to predict customer behavior, forecast sales, and optimize business processes. By leveraging linear regression, companies can gain valuable insights from their data and make informed decisions to drive business growth.",
+  "examples": [
+    "We used linear regression to predict house prices based on features such as number of bedrooms and square footage.",
+    "The marketing team applied linear regression to forecast sales based on historical data and seasonal trends.",
+    "Our data science team built a linear regression model to predict energy consumption based on weather patterns and usage trends."
+  ],
+  "related_terms": [
+    "Logistic Regression",
+    "Decision Trees",
+    "Random Forest"
+  ],
+  "prerequisites": [],
+  "references": [
+    "https://arxiv.org/abs/1411.2738"
+  ],
+  "interview_questions": [
+    "How would you implement linear regression from scratch in Python?",
+    "What are the assumptions of linear regression, and how do you check them?",
+    "How do you handle multicollinearity in a linear regression model?"
+  ],
+  "common_mistakes": [
+    "Not checking the assumptions of linear regression, such as linearity and homoscedasticity.",
+    "Not handling missing values and outliers in the data, which can lead to biased models."
+  ]
+}

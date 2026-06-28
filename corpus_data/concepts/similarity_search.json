@@ -14,11 +14,7 @@
     "Our team discussed the differences between Similarity Search and alternative solutions.",
     "Understanding Similarity Search is highly beneficial when scaling our Retrieval capabilities."
   ],
-  "related_terms": [
-    "Similarity Search",
-    "Retrieval Augmented Generation",
-    "Retrieval"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Embedding",
     "Vector Database"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Similarity Search, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Similarity Search."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1702.08734"
+  ]
 }

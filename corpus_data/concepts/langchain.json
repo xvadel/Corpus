@@ -14,13 +14,8 @@
     "Our team discussed the differences between LangChain and alternative solutions.",
     "Understanding LangChain is highly beneficial when scaling our Orchestration capabilities."
   ],
-  "related_terms": [
-    "LangChain",
-    "AI Engineering",
-    "Orchestration"
-  ],
+  "related_terms": [],
   "prerequisites": [
-    "Retrieval Augmented Generation",
     "Agent"
   ],
   "interview_questions": [
@@ -32,5 +27,7 @@
     "Misconfiguring parameters for LangChain, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of LangChain."
   ],
-  "references": []
+  "references": [
+    "https://python.langchain.com/docs/get_started/introduction"
+  ]
 }

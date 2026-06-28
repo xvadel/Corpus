@@ -14,13 +14,8 @@
     "Our team discussed the differences between LlamaIndex and alternative solutions.",
     "Understanding LlamaIndex is highly beneficial when scaling our Orchestration capabilities."
   ],
-  "related_terms": [
-    "LlamaIndex",
-    "AI Engineering",
-    "Orchestration"
-  ],
+  "related_terms": [],
   "prerequisites": [
-    "Retrieval Augmented Generation",
     "Embedding"
   ],
   "interview_questions": [
@@ -32,5 +27,7 @@
     "Misconfiguring parameters for LlamaIndex, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of LlamaIndex."
   ],
-  "references": []
+  "references": [
+    "https://docs.llamaindex.ai/"
+  ]
 }

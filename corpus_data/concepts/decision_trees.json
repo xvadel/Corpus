@@ -1,0 +1,35 @@
+{
+  "id": "decision_trees",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "Decision Trees",
+  "difficulty": "Beginner",
+  "definition": "A decision tree is a tree-like model where each internal node represents a feature or attribute, each branch represents a decision or test, and each leaf node represents a class label or prediction.",
+  "simple_explanation": "Imagine you're trying to decide what game to play at a party. You ask yourself a series of questions like 'Do I like board games?' or 'Do I like games that need a lot of people?' and based on your answers, you narrow down your options until you choose a game. A decision tree works in a similar way, but with data. It asks questions about the data and makes decisions based on the answers to predict an outcome. This process helps in making accurate predictions or classifications.",
+  "technical_explanation": "Decision trees are a type of supervised learning algorithm that can be used for both classification and regression tasks. They work by recursively partitioning the data into smaller subsets based on the values of the input features. The tree is constructed by selecting the feature that best splits the data at each node, with the goal of minimizing impurity or maximizing information gain. The process continues until a stopping criterion is met, such as when all instances in a node belong to the same class. Decision trees can be prone to overfitting, but techniques like pruning and ensemble methods can be used to mitigate this issue.",
+  "investor_explanation": "Decision trees matter commercially because they provide a simple, yet powerful way to make predictions or classifications based on complex data. This can be particularly useful in applications like credit risk assessment, medical diagnosis, and customer segmentation. By using decision trees, businesses can make more informed decisions, reduce costs, and improve customer experiences. Additionally, decision trees can be combined with other machine learning algorithms to create even more powerful models, making them a valuable tool for any organization looking to leverage the power of data-driven insights.",
+  "examples": [
+    "We used a decision tree to classify customers based on their purchase history and demographic data.",
+    "The decision tree model we built was able to predict the likelihood of a loan being repaid with high accuracy.",
+    "By using a decision tree, we were able to identify the most important features contributing to customer churn."
+  ],
+  "related_terms": [
+    "Random Forests",
+    "Gradient Boosting",
+    "Support Vector Machines"
+  ],
+  "prerequisites": [],
+  "references": [
+    "https://arxiv.org/abs/1407.1123"
+  ],
+  "interview_questions": [
+    "How do you handle overfitting in a decision tree model?",
+    "What are the advantages and disadvantages of using decision trees compared to other machine learning algorithms?",
+    "How do you select the optimal depth for a decision tree?"
+  ],
+  "common_mistakes": [
+    "Not handling missing values or outliers in the data",
+    "Not tuning hyperparameters, such as the maximum depth of the tree"
+  ]
+}

@@ -14,11 +14,7 @@
     "Our team discussed the differences between Lemmatization and alternative solutions.",
     "Understanding Lemmatization is highly beneficial when scaling our Text Processing capabilities."
   ],
-  "related_terms": [
-    "Lemmatization",
-    "Natural Language Processing",
-    "Text Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Tokenization"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Lemmatization, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Lemmatization."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Lemmatisation"
+  ]
 }

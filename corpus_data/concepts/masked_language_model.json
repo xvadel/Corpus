@@ -14,11 +14,7 @@
     "Our team discussed the differences between Masked Language Model and alternative solutions.",
     "Understanding Masked Language Model is highly beneficial when scaling our Language Modeling capabilities."
   ],
-  "related_terms": [
-    "Masked Language Model",
-    "Natural Language Processing",
-    "Language Modeling"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Language Model",
     "Transformer"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Masked Language Model, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Masked Language Model."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1810.04805"
+  ]
 }

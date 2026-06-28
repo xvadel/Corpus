@@ -14,11 +14,7 @@
     "Our team discussed the differences between Deployment and alternative solutions.",
     "Understanding Deployment is highly beneficial when scaling our Model Lifecycle capabilities."
   ],
-  "related_terms": [
-    "Deployment",
-    "MLOps",
-    "Model Lifecycle"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Model Serving"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Deployment, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Deployment."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Software_deployment"
+  ]
 }

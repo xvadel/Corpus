@@ -14,11 +14,7 @@
     "Our team discussed the differences between Vector Representation and alternative solutions.",
     "Understanding Vector Representation is highly beneficial when scaling our Embeddings capabilities."
   ],
-  "related_terms": [
-    "Vector Representation",
-    "Retrieval Augmented Generation",
-    "Embeddings"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Feed Forward Network"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Vector Representation, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Vector Representation."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1301.3666"
+  ]
 }

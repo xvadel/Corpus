@@ -14,11 +14,7 @@
     "Our team discussed the differences between Training and alternative solutions.",
     "Understanding Training is highly beneficial when scaling our Model Lifecycle capabilities."
   ],
-  "related_terms": [
-    "Training",
-    "MLOps",
-    "Model Lifecycle"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Loss Function",
     "Gradient Descent"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Training, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Training."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets"
+  ]
 }

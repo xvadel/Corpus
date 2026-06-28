@@ -14,11 +14,7 @@
     "Our team discussed the differences between Feed Forward Network and alternative solutions.",
     "Understanding Feed Forward Network is highly beneficial when scaling our Neural Networks capabilities."
   ],
-  "related_terms": [
-    "Feed Forward Network",
-    "Deep Learning Foundations",
-    "Neural Networks"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Perceptron",
     "Activation Function",
@@ -33,5 +29,7 @@
     "Misconfiguring parameters for Feed Forward Network, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Feed Forward Network."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Feedforward_neural_network"
+  ]
 }

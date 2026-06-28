@@ -14,16 +14,14 @@
     "Our team discussed the differences between Reinforcement Learning from AI Feedback and alternative solutions.",
     "Understanding Reinforcement Learning from AI Feedback is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "Reinforcement Learning from AI Feedback",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "RLHF",
     "Direct Preference Optimization"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/2309.00267"
+  ],
   "interview_questions": [
     "How does Reinforcement Learning from AI Feedback fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing Reinforcement Learning from AI Feedback?",

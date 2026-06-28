@@ -14,11 +14,7 @@
     "Our team discussed the differences between Metadata Extraction and alternative solutions.",
     "Understanding Metadata Extraction is highly beneficial when scaling our Data Processing capabilities."
   ],
-  "related_terms": [
-    "Metadata Extraction",
-    "Retrieval Augmented Generation",
-    "Data Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Document Parsing"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Metadata Extraction, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Metadata Extraction."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2408.09869"
+  ]
 }

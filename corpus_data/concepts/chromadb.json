@@ -14,11 +14,7 @@
     "Our team discussed the differences between ChromaDB and alternative solutions.",
     "Understanding ChromaDB is highly beneficial when scaling our Vector Databases capabilities."
   ],
-  "related_terms": [
-    "ChromaDB",
-    "Retrieval Augmented Generation",
-    "Vector Databases"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Vector Database"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for ChromaDB, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of ChromaDB."
   ],
-  "references": []
+  "references": [
+    "https://docs.trychroma.com/"
+  ]
 }

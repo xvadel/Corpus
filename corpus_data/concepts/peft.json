@@ -14,16 +14,15 @@
     "Our team discussed the differences between Parameter-Efficient Fine-Tuning and alternative solutions.",
     "Understanding Parameter-Efficient Fine-Tuning is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "Parameter-Efficient Fine-Tuning",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Fine-Tuning",
     "LoRA"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/2106.09685",
+    "https://github.com/huggingface/peft"
+  ],
   "interview_questions": [
     "How does Parameter-Efficient Fine-Tuning fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing Parameter-Efficient Fine-Tuning?",

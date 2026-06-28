@@ -14,11 +14,7 @@
     "Our team discussed the differences between Reranking and alternative solutions.",
     "Understanding Reranking is highly beneficial when scaling our Retrieval capabilities."
   ],
-  "related_terms": [
-    "Reranking",
-    "Retrieval Augmented Generation",
-    "Retrieval"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Similarity Search",
     "Cross-Encoder"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Reranking, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Reranking."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1910.14424"
+  ]
 }

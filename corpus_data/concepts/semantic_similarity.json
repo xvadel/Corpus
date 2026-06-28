@@ -14,11 +14,7 @@
     "Our team discussed the differences between Semantic Similarity and alternative solutions.",
     "Understanding Semantic Similarity is highly beneficial when scaling our Embeddings capabilities."
   ],
-  "related_terms": [
-    "Semantic Similarity",
-    "Retrieval Augmented Generation",
-    "Embeddings"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Cosine Similarity",
     "Embedding"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Semantic Similarity, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Semantic Similarity."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1908.10084"
+  ]
 }

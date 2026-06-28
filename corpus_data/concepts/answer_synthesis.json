@@ -14,11 +14,7 @@
     "Our team discussed the differences between Answer Synthesis and alternative solutions.",
     "Understanding Answer Synthesis is highly beneficial when scaling our Generation capabilities."
   ],
-  "related_terms": [
-    "Answer Synthesis",
-    "Retrieval Augmented Generation",
-    "Generation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Grounding",
     "Language Model"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Answer Synthesis, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Answer Synthesis."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.11401"
+  ]
 }

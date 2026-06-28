@@ -14,16 +14,14 @@
     "Our team discussed the differences between ReAct Pattern and alternative solutions.",
     "Understanding ReAct Pattern is highly beneficial when scaling our Core Concepts capabilities."
   ],
-  "related_terms": [
-    "ReAct Pattern",
-    "Agentic AI",
-    "Core Concepts"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Planner",
     "Tool Use"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/2210.03629"
+  ],
   "interview_questions": [
     "How does ReAct Pattern fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing ReAct Pattern?",

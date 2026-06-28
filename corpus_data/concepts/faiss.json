@@ -14,11 +14,7 @@
     "Our team discussed the differences between FAISS and alternative solutions.",
     "Understanding FAISS is highly beneficial when scaling our Vector Databases capabilities."
   ],
-  "related_terms": [
-    "FAISS",
-    "Retrieval Augmented Generation",
-    "Vector Databases"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Vector Database",
     "Approximate Nearest Neighbor"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for FAISS, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of FAISS."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1702.08734"
+  ]
 }

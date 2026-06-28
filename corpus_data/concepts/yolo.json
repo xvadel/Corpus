@@ -1,0 +1,36 @@
+{
+  "id": "yolo",
+  "domain": "AI",
+  "subdomain": "Computer Vision",
+  "category": "Models",
+  "term": "YOLO",
+  "difficulty": "Advanced",
+  "definition": "YOLO (You Only Look Once) is a real-time object detection algorithm that detects objects in one pass without requiring region proposal networks or post-processing.",
+  "simple_explanation": "YOLO is a way for computers to quickly find objects in pictures or videos, like cars, people, or animals, by looking at the whole image at once. It's fast and efficient, making it useful for applications like self-driving cars or security cameras. YOLO can detect many objects in a single image, which is really useful for understanding what's happening in a scene.",
+  "technical_explanation": "YOLO is a convolutional neural network (CNN) based object detection algorithm that uses a single neural network to predict bounding boxes and class probabilities directly from full images. It divides the image into a grid of cells, each of which predicts a set of bounding boxes and class probabilities. The network is trained to optimize a loss function that combines the errors in the bounding box coordinates, objectness score, and class probabilities. YOLO's key innovation is its ability to detect objects in one pass, without the need for region proposal networks or post-processing, making it much faster than other object detection algorithms.",
+  "investor_explanation": "YOLO is a game-changer for computer vision applications, enabling fast and accurate object detection in real-time. This has significant implications for industries like autonomous vehicles, security, and robotics, where the ability to quickly and accurately detect objects is critical. With YOLO, companies can build more efficient and effective computer vision systems, unlocking new use cases and revenue streams. As the demand for computer vision technology continues to grow, YOLO is poised to play a key role in shaping the future of this market.",
+  "examples": [
+    "We used YOLO to detect pedestrians and cars in our self-driving car's camera feed, allowing us to build a more robust and accurate perception system.",
+    "The YOLO algorithm was able to detect objects in our security camera footage with high accuracy, even in low-light conditions.",
+    "By integrating YOLO into our drone's computer vision system, we were able to build a more efficient and effective object tracking system."
+  ],
+  "related_terms": [
+    "Object Detection",
+    "Convolutional Neural Networks"
+  ],
+  "prerequisites": [
+    "Object Detection"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1506.02640"
+  ],
+  "interview_questions": [
+    "How does YOLO's architecture differ from other object detection algorithms like R-CNN?",
+    "What are some of the key advantages and disadvantages of using YOLO for object detection?",
+    "How would you optimize YOLO's performance for a specific use case, such as detecting small objects in a crowded scene?"
+  ],
+  "common_mistakes": [
+    "Not properly tuning YOLO's hyperparameters for the specific use case, leading to suboptimal performance.",
+    "Not considering the trade-off between speed and accuracy when deploying YOLO in a real-world application."
+  ]
+}

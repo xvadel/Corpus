@@ -14,14 +14,8 @@
     "Our team discussed the differences between One-Shot and alternative solutions.",
     "Understanding One-Shot is highly beneficial when scaling our Prompt Engineering capabilities."
   ],
-  "related_terms": [
-    "One-Shot",
-    "Agentic AI",
-    "Prompt Engineering"
-  ],
-  "prerequisites": [
-    "Prompt Engineering"
-  ],
+  "related_terms": [],
+  "prerequisites": [],
   "interview_questions": [
     "How does One-Shot fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing One-Shot?",
@@ -31,5 +25,7 @@
     "Misconfiguring parameters for One-Shot, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of One-Shot."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.14165"
+  ]
 }

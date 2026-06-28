@@ -1,0 +1,37 @@
+{
+  "id": "pca",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Unsupervised Learning",
+  "term": "PCA",
+  "difficulty": "Intermediate",
+  "definition": "Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms high-dimensional data into a lower-dimensional representation by projecting it onto orthogonal components that capture the most variance.",
+  "simple_explanation": "Imagine you have a lot of data with many features, but most of it is redundant or correlated. PCA helps simplify this data by finding the most important features and using only those to represent the data. This makes it easier to visualize and analyze the data.",
+  "technical_explanation": "PCA is a linear transformation method that uses eigendecomposition to identify the principal components of a dataset. It works by computing the covariance matrix of the data, then finding the eigenvectors and eigenvalues of this matrix. The eigenvectors corresponding to the largest eigenvalues are the principal components, which capture the most variance in the data. By projecting the data onto these components, PCA reduces the dimensionality of the data while retaining most of the information.",
+  "investor_explanation": "PCA is a crucial technique in machine learning that enables businesses to extract insights from complex, high-dimensional data. By reducing the dimensionality of the data, PCA makes it possible to visualize and analyze the data more effectively, leading to better decision-making and improved business outcomes. This is particularly important in applications such as customer segmentation, fraud detection, and predictive maintenance, where high-dimensional data is common.",
+  "examples": [
+    "We used PCA to reduce the dimensionality of our customer demographic data from 50 features to 5, which improved the performance of our clustering algorithm.",
+    "PCA helped us identify the most important variables in our dataset, which we then used to build a more accurate predictive model.",
+    "By applying PCA to our image data, we were able to reduce the number of features from 1000 to 100, which sped up our image classification algorithm without sacrificing accuracy."
+  ],
+  "related_terms": [
+    "Dimensionality Reduction",
+    "Eigendecomposition",
+    "Singular Value Decomposition"
+  ],
+  "prerequisites": [
+    "Dimensionality Reduction"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1404.1100"
+  ],
+  "interview_questions": [
+    "How does PCA handle correlated features in a dataset?",
+    "What are the advantages and disadvantages of using PCA for dimensionality reduction?",
+    "How would you determine the optimal number of principal components to retain in a PCA transformation?"
+  ],
+  "common_mistakes": [
+    "Assuming that PCA is a supervised learning technique, when in fact it is unsupervised.",
+    "Not standardizing the data before applying PCA, which can lead to features with large ranges dominating the principal components."
+  ]
+}

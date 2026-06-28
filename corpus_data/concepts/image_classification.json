@@ -1,0 +1,39 @@
+{
+  "id": "image_classification",
+  "domain": "AI",
+  "subdomain": "Deep Learning",
+  "category": "CNN",
+  "term": "Image Classification",
+  "difficulty": "Beginner",
+  "definition": "Image classification is a deep learning technique used to predict a label or category that an image belongs to based on its visual features.",
+  "simple_explanation": "Image classification is a way for computers to automatically identify what's in a picture, like a dog or a car, by looking at the image's features. It's like teaching a child to recognize different objects. Computers use special algorithms to learn from many examples and make predictions on new images.",
+  "technical_explanation": "Image classification is a fundamental problem in computer vision that involves training a convolutional neural network (CNN) to map an input image to a probability distribution over a predefined set of classes. The CNN learns to extract relevant features from the image, such as edges, textures, and shapes, and uses these features to make a prediction. The process typically involves data preprocessing, model training, and evaluation using metrics such as accuracy and precision.",
+  "investor_explanation": "Image classification has numerous commercial applications, including self-driving cars, facial recognition, and medical diagnosis. By accurately identifying objects and patterns in images, businesses can automate tasks, improve decision-making, and create new products and services. For instance, image classification can be used in retail to automatically categorize products, or in healthcare to detect diseases from medical images, leading to increased efficiency and revenue.",
+  "examples": [
+    "We used image classification to develop a self-driving car system that can detect pedestrians and road signs.",
+    "Our team applied image classification to a medical imaging dataset to diagnose diseases more accurately.",
+    "The image classification model we trained can recognize products in a retail store and automatically categorize them."
+  ],
+  "related_terms": [
+    "Object Detection",
+    "Segmentation",
+    "Convolutional Neural Networks"
+  ],
+  "prerequisites": [
+    "Convolution",
+    "Pooling",
+    "Feed Forward Network"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1512.03385"
+  ],
+  "interview_questions": [
+    "How would you approach an image classification problem with a large number of classes?",
+    "What are some common techniques used to improve the performance of an image classification model?",
+    "How do you handle class imbalance in an image classification dataset?"
+  ],
+  "common_mistakes": [
+    "Not preprocessing the data properly, leading to poor model performance.",
+    "Not using data augmentation techniques to increase the size of the training dataset."
+  ]
+}

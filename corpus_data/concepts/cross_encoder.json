@@ -14,16 +14,14 @@
     "Our team discussed the differences between Cross-Encoder and alternative solutions.",
     "Understanding Cross-Encoder is highly beneficial when scaling our Retrieval capabilities."
   ],
-  "related_terms": [
-    "Cross-Encoder",
-    "Retrieval Augmented Generation",
-    "Retrieval"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Bi-Encoder",
     "Embedding"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/1910.14424"
+  ],
   "interview_questions": [
     "How does Cross-Encoder fit into standard Retrieval Augmented Generation architectures?",
     "What are the major engineering trade-offs when implementing Cross-Encoder?",

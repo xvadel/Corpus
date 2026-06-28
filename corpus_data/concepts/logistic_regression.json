@@ -1,0 +1,38 @@
+{
+  "id": "logistic_regression",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "Logistic Regression",
+  "difficulty": "Beginner",
+  "definition": "Logistic regression is a statistical method for analyzing a dataset in which there are one or more independent variables that determine an outcome, and the outcome is a binary variable.",
+  "simple_explanation": "Logistic regression is a way to predict whether something will happen or not, like whether it will rain tomorrow or whether a customer will buy a product. It uses math to figure out how likely something is to happen based on certain factors. This helps us make informed decisions.",
+  "technical_explanation": "Logistic regression is a supervised learning algorithm used for binary classification problems, where the target variable is categorical. It uses a logistic function, also known as the sigmoid function, to model the probability of the positive class. The algorithm learns the weights and biases of the model by maximizing the likelihood of the training data, and it can handle both linear and non-linear relationships between the features and the target variable. Logistic regression is widely used in many applications, including credit risk assessment, medical diagnosis, and customer churn prediction.",
+  "investor_explanation": "Logistic regression is a crucial tool for businesses to make data-driven decisions, especially in areas like customer acquisition and retention. By analyzing historical data and identifying key factors that influence customer behavior, companies can use logistic regression to predict the likelihood of a customer buying a product or churning. This insight can inform marketing strategies, resource allocation, and product development, ultimately driving revenue growth and competitive advantage. With the increasing availability of data, logistic regression has become a vital component of many business intelligence and analytics platforms.",
+  "examples": [
+    "We used logistic regression to predict the likelihood of a customer responding to a promotional email based on their purchase history and demographic data.",
+    "The logistic regression model we built was able to accurately classify customers as high or low risk for credit default, allowing us to tailor our marketing efforts accordingly.",
+    "By applying logistic regression to our website traffic data, we were able to identify the most important factors influencing conversion rates and optimize our user experience to improve sales."
+  ],
+  "related_terms": [
+    "Linear Regression",
+    "Decision Trees",
+    "Random Forest",
+    "Support Vector Machines"
+  ],
+  "prerequisites": [
+    "Linear Regression"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1505.02810"
+  ],
+  "interview_questions": [
+    "How does logistic regression differ from linear regression, and when would you use each?",
+    "Can you explain the concept of odds and odds ratios in logistic regression, and how they relate to the logistic function?",
+    "How would you handle class imbalance in a logistic regression model, and what are some common techniques for addressing this issue?"
+  ],
+  "common_mistakes": [
+    "Assuming that the relationship between the features and the target variable is linear, when in fact it may be non-linear.",
+    "Not checking for multicollinearity between features, which can lead to unstable estimates of the model coefficients."
+  ]
+}

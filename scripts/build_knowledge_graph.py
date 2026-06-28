@@ -34,7 +34,18 @@ SUBDOMAIN_CAT_MAP = {
     "tools": "mlflow",
     "deep learning foundations": "perceptron",
     "neural networks": "perceptron",
-    "transformers": "transformer"
+    "transformers": "transformer",
+    # New branches
+    "machine learning": "linear_regression",
+    "supervised learning": "linear_regression",
+    "unsupervised learning": "clustering",
+    "reinforcement learning": "markov_decision_process",
+    "deep learning": "convolution",
+    "cnn": "convolution",
+    "rnn": "lstm",
+    "computer vision": "image_classification",
+    "image processing": "feature_extraction",
+    "models": "resnet",
 }
 
 def load_ontology() -> dict:

@@ -14,11 +14,7 @@
     "Our team discussed the differences between Weaviate and alternative solutions.",
     "Understanding Weaviate is highly beneficial when scaling our Vector Databases capabilities."
   ],
-  "related_terms": [
-    "Weaviate",
-    "Retrieval Augmented Generation",
-    "Vector Databases"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Vector Database"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Weaviate, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Weaviate."
   ],
-  "references": []
+  "references": [
+    "https://weaviate.io/developers/weaviate"
+  ]
 }

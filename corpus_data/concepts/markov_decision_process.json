@@ -1,0 +1,36 @@
+{
+  "id": "markov_decision_process",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Reinforcement Learning",
+  "term": "Markov Decision Process",
+  "difficulty": "Intermediate",
+  "definition": "A Markov Decision Process is a mathematical framework used to model decision-making problems in situations where outcomes are partially random and partially under the control of a decision-maker.",
+  "simple_explanation": "Imagine you're playing a game where you make choices, and each choice leads to a different outcome, but some of those outcomes are based on chance. A Markov Decision Process is a way to think about and solve these kinds of problems. It helps figure out the best choices to make to achieve a goal, considering both the actions you take and the randomness of the outcomes.",
+  "technical_explanation": "A Markov Decision Process (MDP) is defined by a set of states, a set of actions, a transition model that specifies the next state and reward given the current state and action, and a reward function that defines the reward for each state-action pair. The goal in an MDP is to find a policy that maps states to actions in a way that maximizes the expected cumulative reward over time. MDPs are used in reinforcement learning to model complex decision-making problems and to develop algorithms that can learn optimal policies through trial and error. Solving an MDP involves computing the value function or the action-value function, which can be done using various methods such as value iteration or policy iteration.",
+  "investor_explanation": "Markov Decision Processes are crucial for developing intelligent systems that can make decisions autonomously, such as self-driving cars, personalized recommendation systems, and autonomous robots. By leveraging MDPs, companies can create systems that learn from experience and adapt to new situations, leading to improved efficiency, safety, and customer satisfaction. Investing in research and development of MDP-based technologies can provide a significant competitive advantage in various industries, from healthcare to finance, and can lead to the creation of new products and services that transform the way businesses operate.",
+  "examples": [
+    "We used a Markov Decision Process to model the behavior of users in our app and developed a personalized recommendation system that maximizes engagement.",
+    "The self-driving car's navigation system is based on an MDP that balances the need to reach the destination quickly with the need to avoid accidents.",
+    "Our company developed an MDP-based algorithm for optimizing inventory management, which has led to a significant reduction in costs and improvement in customer satisfaction."
+  ],
+  "related_terms": [
+    "Dynamic Programming",
+    "Partial Observable Markov Decision Process"
+  ],
+  "prerequisites": [
+    "Reward Function"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1801.00101"
+  ],
+  "interview_questions": [
+    "How would you model a complex decision-making problem using a Markov Decision Process?",
+    "What are the key differences between a Markov Decision Process and a Partial Observable Markov Decision Process?",
+    "Can you explain how to solve an MDP using value iteration, and what are the advantages and disadvantages of this approach?"
+  ],
+  "common_mistakes": [
+    "Assuming that the transition model is deterministic, when in fact it is stochastic.",
+    "Not considering the exploration-exploitation trade-off when developing an MDP-based algorithm."
+  ]
+}

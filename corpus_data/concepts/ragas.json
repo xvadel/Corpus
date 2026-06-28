@@ -14,14 +14,9 @@
     "Our team discussed the differences between RAGAS and alternative solutions.",
     "Understanding RAGAS is highly beneficial when scaling our Evaluation capabilities."
   ],
-  "related_terms": [
-    "RAGAS",
-    "AI Engineering",
-    "Evaluation"
-  ],
+  "related_terms": [],
   "prerequisites": [
-    "Faithfulness",
-    "Retrieval Augmented Generation"
+    "Faithfulness"
   ],
   "interview_questions": [
     "How does RAGAS fit into standard AI Engineering architectures?",
@@ -32,5 +27,7 @@
     "Misconfiguring parameters for RAGAS, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of RAGAS."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2309.15217"
+  ]
 }

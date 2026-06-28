@@ -14,11 +14,7 @@
     "Our team discussed the differences between LiteLLM and alternative solutions.",
     "Understanding LiteLLM is highly beneficial when scaling our Orchestration capabilities."
   ],
-  "related_terms": [
-    "LiteLLM",
-    "AI Engineering",
-    "Orchestration"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "API Design",
     "Model Serving"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for LiteLLM, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of LiteLLM."
   ],
-  "references": []
+  "references": [
+    "https://docs.litellm.ai/"
+  ]
 }

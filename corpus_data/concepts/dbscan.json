@@ -1,0 +1,37 @@
+{
+  "id": "dbscan",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Unsupervised Learning",
+  "term": "DBSCAN",
+  "difficulty": "Intermediate",
+  "definition": "DBSCAN is a density-based clustering algorithm that groups data points into clusters based on their density and proximity to each other.",
+  "simple_explanation": "DBSCAN is a way to group similar things together based on how close they are to each other and how many similar things are around them. It's like finding friends in a crowd - if there are a lot of people standing together, they're probably friends. If someone is standing alone, they might not be part of the group. DBSCAN helps computers do this with data points.",
+  "technical_explanation": "DBSCAN is a popular unsupervised learning algorithm that clusters data points based on their density and proximity to each other. It works by identifying core points, which are points with a high density of neighboring points, and then connecting these core points to form clusters. The algorithm also identifies noise points, which are points that don't belong to any cluster. DBSCAN is robust to noise and can handle clusters of varying densities and shapes. It's particularly useful for clustering large datasets with complex structures.",
+  "investor_explanation": "DBSCAN is a crucial technology for companies that need to analyze and understand complex data sets, such as customer behavior, network traffic, or sensor readings. By identifying patterns and clusters in the data, DBSCAN can help businesses gain valuable insights and make informed decisions. For example, a company can use DBSCAN to identify customer segments with similar buying behavior, or to detect anomalies in network traffic that may indicate a security threat. With DBSCAN, companies can unlock the full potential of their data and drive business growth.",
+  "examples": [
+    "We used DBSCAN to cluster customer data based on their purchase history and demographic information.",
+    "DBSCAN helped us identify patterns in network traffic that indicated a potential security threat.",
+    "The DBSCAN algorithm was able to group similar images together based on their visual features."
+  ],
+  "related_terms": [
+    "K-Means",
+    "Hierarchical Clustering",
+    "Density-Based Clustering"
+  ],
+  "prerequisites": [
+    "Clustering"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1403.2193"
+  ],
+  "interview_questions": [
+    "How does DBSCAN handle noise in the data?",
+    "What are the advantages of using DBSCAN over other clustering algorithms?",
+    "Can you explain how DBSCAN works with an example?"
+  ],
+  "common_mistakes": [
+    "Not properly tuning the epsilon and min_samples parameters",
+    "Not handling edge cases, such as clusters with varying densities"
+  ]
+}

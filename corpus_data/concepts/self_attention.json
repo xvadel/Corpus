@@ -14,11 +14,7 @@
     "Our team discussed the differences between Self-Attention and alternative solutions.",
     "Understanding Self-Attention is highly beneficial when scaling our Transformers capabilities."
   ],
-  "related_terms": [
-    "Self-Attention",
-    "Deep Learning Foundations",
-    "Transformers"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Attention"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Self-Attention, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Self-Attention."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1706.03762"
+  ]
 }

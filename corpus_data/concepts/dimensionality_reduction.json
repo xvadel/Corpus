@@ -1,0 +1,37 @@
+{
+  "id": "dimensionality_reduction",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Unsupervised Learning",
+  "term": "Dimensionality Reduction",
+  "difficulty": "Intermediate",
+  "definition": "Dimensionality reduction is a process of transforming high-dimensional data into a lower-dimensional representation while retaining most of the information in the data.",
+  "simple_explanation": "Imagine you have a lot of features about something, like a picture, and you want to describe it in a simpler way without losing the important details. Dimensionality reduction helps do that with data. It's like summarizing a long story into a shorter one while keeping the key points.",
+  "technical_explanation": "Dimensionality reduction techniques, such as Principal Component Analysis (PCA) and t-SNE, are used to reduce the number of features in a dataset while preserving the most important information. This is crucial for visualizing high-dimensional data and for improving the performance of machine learning models by reducing the curse of dimensionality. The choice of technique depends on the nature of the data and the specific goals of the analysis.",
+  "investor_explanation": "Dimensionality reduction is a critical component in many AI and machine learning applications, enabling the efficient analysis and visualization of complex datasets. By reducing data dimensionality, companies can improve model performance, reduce computational costs, and gain deeper insights into their data, leading to better decision-making and competitive advantage. This technology has numerous applications across industries, including customer segmentation, image recognition, and predictive maintenance.",
+  "examples": [
+    "We used PCA to reduce the dimensionality of our customer dataset from 100 features to 5, which significantly improved the performance of our clustering model.",
+    "To visualize the high-dimensional embeddings of our neural network, we applied t-SNE to reduce the dimensionality to 2D.",
+    "Dimensionality reduction via autoencoders helped us detect anomalies in the sensor data from our manufacturing equipment."
+  ],
+  "related_terms": [
+    "Principal Component Analysis",
+    "t-SNE",
+    "Autoencoders"
+  ],
+  "prerequisites": [
+    "Embedding"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1905.10292"
+  ],
+  "interview_questions": [
+    "How would you decide which dimensionality reduction technique to use for a given dataset?",
+    "What are the advantages and disadvantages of using PCA for dimensionality reduction?",
+    "Can you explain how t-SNE works and its applications in data visualization?"
+  ],
+  "common_mistakes": [
+    "Not evaluating the impact of dimensionality reduction on the model's performance",
+    "Choosing a dimensionality reduction technique without considering the nature of the data and the analysis goals"
+  ]
+}

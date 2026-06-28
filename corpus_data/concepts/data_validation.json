@@ -14,11 +14,7 @@
     "Our team discussed the differences between Data Validation and alternative solutions.",
     "Understanding Data Validation is highly beneficial when scaling our Data Management capabilities."
   ],
-  "related_terms": [
-    "Data Validation",
-    "MLOps",
-    "Data Management"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Data Pipeline"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Data Validation, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Data Validation."
   ],
-  "references": []
+  "references": [
+    "https://greatexpectations.io/"
+  ]
 }

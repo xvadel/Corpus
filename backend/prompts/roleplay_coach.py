@@ -39,7 +39,21 @@ PERSONAS = {
             "Keep responses professional and concise."
         ),
     },
+    "ai_engineering": {
+        "name": "Dr. Evelyn Vance",
+        "title": "Lead AI Architect, Nexus AI Labs",
+        "system_prompt": (
+            "You are Dr. Evelyn Vance, a lead AI architect specializing in production RAG systems "
+            "and agentic workflows. Probe the engineer on their chunking strategy, embedding model "
+            "selection, reranking pipeline design, vector database trade-offs, latency budgets, "
+            "and hallucination mitigation. Use precise AI engineering vocabulary naturally — "
+            "bi-encoder recall, cross-encoder reranking, hybrid search, context injection, "
+            "grounding, RAGAS faithfulness scores. Keep responses incisive and concise (2-3 sentences). "
+            "Be technically rigorous but intellectually curious."
+        ),
+    },
 }
+
 
 
 def build_roleplay_prompt(track_id: str, conversation_history: list[dict]) -> str:

@@ -107,4 +107,45 @@ Bi-Encoder,bi_encoder,AI,Retrieval Augmented Generation,Retrieval,Intermediate
 Reciprocal Rank Fusion,reciprocal_rank_fusion,AI,Retrieval Augmented Generation,Retrieval,Advanced
 Sentence Window Retrieval,sentence_window_retrieval,AI,Retrieval Augmented Generation,Retrieval,Intermediate
 Auto-Merging Retrieval,auto_merging_retrieval,AI,Retrieval Augmented Generation,Retrieval,Advanced
+Linear Regression,linear_regression,AI,Machine Learning,Supervised Learning,Beginner
+Logistic Regression,logistic_regression,AI,Machine Learning,Supervised Learning,Beginner
+Decision Trees,decision_trees,AI,Machine Learning,Supervised Learning,Beginner
+Random Forest,random_forest,AI,Machine Learning,Supervised Learning,Intermediate
+Gradient Boosting,gradient_boosting,AI,Machine Learning,Supervised Learning,Intermediate
+XGBoost,xgboost,AI,Machine Learning,Supervised Learning,Intermediate
+Support Vector Machine,support_vector_machine,AI,Machine Learning,Supervised Learning,Intermediate
+K-Nearest Neighbors,k_nearest_neighbors,AI,Machine Learning,Supervised Learning,Beginner
+Clustering,clustering,AI,Machine Learning,Unsupervised Learning,Beginner
+K-Means,k_means,AI,Machine Learning,Unsupervised Learning,Beginner
+DBSCAN,dbscan,AI,Machine Learning,Unsupervised Learning,Intermediate
+Hierarchical Clustering,hierarchical_clustering,AI,Machine Learning,Unsupervised Learning,Intermediate
+Dimensionality Reduction,dimensionality_reduction,AI,Machine Learning,Unsupervised Learning,Intermediate
+PCA,pca,AI,Machine Learning,Unsupervised Learning,Intermediate
+t-SNE,t_sne,AI,Machine Learning,Unsupervised Learning,Advanced
+UMAP,umap,AI,Machine Learning,Unsupervised Learning,Advanced
+Markov Decision Process,markov_decision_process,AI,Machine Learning,Reinforcement Learning,Intermediate
+Q-Learning,q_learning,AI,Machine Learning,Reinforcement Learning,Intermediate
+Deep Q-Networks,deep_q_networks,AI,Machine Learning,Reinforcement Learning,Advanced
+Policy Gradient,policy_gradient,AI,Machine Learning,Reinforcement Learning,Advanced
+Actor-Critic,actor_critic,AI,Machine Learning,Reinforcement Learning,Advanced
+Reward Function,reward_function,AI,Machine Learning,Reinforcement Learning,Beginner
+Convolution,convolution,AI,Deep Learning,CNN,Beginner
+Pooling,pooling,AI,Deep Learning,CNN,Beginner
+Feature Maps,feature_maps,AI,Deep Learning,CNN,Intermediate
+Object Detection,object_detection,AI,Deep Learning,CNN,Intermediate
+Image Classification,image_classification,AI,Deep Learning,CNN,Beginner
+LSTM,lstm,AI,Deep Learning,RNN,Intermediate
+GRU,gru,AI,Deep Learning,RNN,Intermediate
+Sequence Modeling,sequence_modeling,AI,Deep Learning,RNN,Intermediate
+Image Segmentation,image_segmentation,AI,Computer Vision,Image Processing,Advanced
+Feature Extraction,feature_extraction,AI,Computer Vision,Image Processing,Intermediate
+YOLO,yolo,AI,Computer Vision,Models,Advanced
+ResNet,resnet,AI,Computer Vision,Models,Advanced
+EfficientNet,efficientnet,AI,Computer Vision,Models,Advanced
+Vision Transformer,vision_transformer,AI,Computer Vision,Models,Advanced
+Model Evaluation,model_evaluation,AI,MLOps,Model Lifecycle,Intermediate
+Kubeflow,kubeflow,AI,MLOps,Tools,Advanced
+Airflow,airflow,AI,MLOps,Tools,Intermediate
+Overfitting,overfitting,AI,Machine Learning,Supervised Learning,Beginner
+Regularization,regularization,AI,Machine Learning,Supervised Learning,Intermediate
 

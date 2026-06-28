@@ -14,11 +14,7 @@
     "Our team discussed the differences between Planner and alternative solutions.",
     "Understanding Planner is highly beneficial when scaling our Core Concepts capabilities."
   ],
-  "related_terms": [
-    "Planner",
-    "Agentic AI",
-    "Core Concepts"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Chain of Thought",
     "Language Model"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Planner, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Planner."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2210.03629"
+  ]
 }

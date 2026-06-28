@@ -14,16 +14,13 @@
     "Our team discussed the differences between Guardrails and alternative solutions.",
     "Understanding Guardrails is highly beneficial when scaling our System Design capabilities."
   ],
-  "related_terms": [
-    "Guardrails",
-    "AI Engineering",
-    "System Design"
-  ],
+  "related_terms": [],
   "prerequisites": [
-    "Language Model",
-    "Prompt Engineering"
+    "Language Model"
   ],
-  "references": [],
+  "references": [
+    "https://github.com/guardrails-ai/guardrails"
+  ],
   "interview_questions": [
     "How does Guardrails fit into standard AI Engineering architectures?",
     "What are the major engineering trade-offs when implementing Guardrails?",

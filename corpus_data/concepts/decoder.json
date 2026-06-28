@@ -14,11 +14,7 @@
     "Our team discussed the differences between Decoder and alternative solutions.",
     "Understanding Decoder is highly beneficial when scaling our Transformers capabilities."
   ],
-  "related_terms": [
-    "Decoder",
-    "Deep Learning Foundations",
-    "Transformers"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Multi-Head Attention",
     "Positional Encoding"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Decoder, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Decoder."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1706.03762"
+  ]
 }

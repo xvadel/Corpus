@@ -158,10 +158,63 @@ DEPENDENCIES = {
     "data_pipeline":         ["dataset_versioning"],
     "data_validation":       ["data_pipeline"],
     "deployment":            ["model_serving"],
+    "model_evaluation":      ["training", "accuracy", "benchmarking"],
     "monitoring":            ["deployment"],
     "drift_detection":       ["monitoring"],
     "mlflow":                ["training", "deployment"],
     "weights_and_biases":    ["training"],
+    "kubeflow":              ["deployment", "data_pipeline"],
+    "airflow":               ["data_pipeline"],
+
+    # ── Machine Learning — Supervised Learning ─────────────────────────────
+    "linear_regression":         [],
+    "logistic_regression":        ["linear_regression"],
+    "decision_trees":             [],
+    "random_forest":              ["decision_trees"],
+    "gradient_boosting":          ["decision_trees", "loss_function"],
+    "xgboost":                    ["gradient_boosting"],
+    "support_vector_machine":     ["linear_regression"],
+    "k_nearest_neighbors":        [],
+    "overfitting":                ["training", "loss_function"],
+    "regularization":             ["overfitting", "loss_function"],
+
+    # ── Machine Learning — Unsupervised Learning ───────────────────────────
+    "clustering":                 [],
+    "k_means":                    ["clustering"],
+    "dbscan":                     ["clustering"],
+    "hierarchical_clustering":    ["clustering"],
+    "dimensionality_reduction":   ["embedding"],
+    "pca":                        ["dimensionality_reduction"],
+    "t_sne":                      ["dimensionality_reduction", "embedding"],
+    "umap":                       ["dimensionality_reduction", "embedding"],
+
+    # ── Machine Learning — Reinforcement Learning ──────────────────────────
+    "reward_function":            [],
+    "markov_decision_process":    ["reward_function"],
+    "q_learning":                 ["markov_decision_process"],
+    "deep_q_networks":            ["q_learning", "feed_forward_network"],
+    "policy_gradient":            ["markov_decision_process", "reward_function"],
+    "actor_critic":               ["policy_gradient"],
+
+    # ── Deep Learning — CNN ────────────────────────────────────────────────
+    "convolution":                ["feed_forward_network"],
+    "pooling":                    ["convolution"],
+    "feature_maps":               ["convolution"],
+    "image_classification":       ["convolution", "pooling", "feed_forward_network"],
+    "object_detection":           ["image_classification"],
+
+    # ── Deep Learning — RNN ────────────────────────────────────────────────
+    "sequence_modeling":          ["feed_forward_network", "tokenization"],
+    "lstm":                       ["sequence_modeling"],
+    "gru":                        ["sequence_modeling"],
+
+    # ── Computer Vision ────────────────────────────────────────────────────
+    "feature_extraction":         ["convolution", "feed_forward_network"],
+    "image_segmentation":         ["object_detection", "image_classification"],
+    "resnet":                     ["image_classification", "convolution"],
+    "efficientnet":               ["resnet"],
+    "yolo":                       ["object_detection"],
+    "vision_transformer":         ["transformer", "image_classification"],
 }
 
 def enrich_dependencies():

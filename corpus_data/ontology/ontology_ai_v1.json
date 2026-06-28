@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "domain": "Artificial Intelligence",
   "subdomains": [
     {
@@ -7,7 +7,7 @@
       "categories": [
         {
           "name": "Text Processing",
-          "concepts": ["Tokenization", "Stemming", "Lemmatization", "Stop Words", "Named Entity Recognition"]
+          "concepts": ["Tokenization", "Stemming", "Lemmatization", "Stop Words", "Named Entity Recognition", "Byte Pair Encoding"]
         },
         {
           "name": "Language Modeling",
@@ -40,7 +40,7 @@
         },
         {
           "name": "Retrieval",
-          "concepts": ["Similarity Search", "Hybrid Search", "BM25", "Reranking", "Top-K Retrieval", "Approximate Nearest Neighbor"]
+          "concepts": ["Similarity Search", "Hybrid Search", "BM25", "Reranking", "Top-K Retrieval", "Approximate Nearest Neighbor", "Bi-Encoder", "Cross-Encoder", "Reciprocal Rank Fusion", "Sentence Window Retrieval", "Auto-Merging Retrieval"]
         },
         {
           "name": "Generation",
@@ -53,7 +53,7 @@
       "categories": [
         {
           "name": "Core Concepts",
-          "concepts": ["Agent", "Planner", "Memory", "Tool Use", "Multi-Agent System", "Workflow Orchestration"]
+          "concepts": ["Agent", "Planner", "Memory", "Tool Use", "Multi-Agent System", "Workflow Orchestration", "ReAct Pattern"]
         },
         {
           "name": "Prompt Engineering",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Model Adaptation",
-          "concepts": ["Fine-Tuning", "LoRA", "QLoRA", "RLHF", "Instruction Tuning"]
+          "concepts": ["Fine-Tuning", "LoRA", "QLoRA", "RLHF", "Instruction Tuning", "Direct Preference Optimization", "Proximal Policy Optimization", "Reinforcement Learning from AI Feedback", "Parameter-Efficient Fine-Tuning"]
         }
       ]
     },
@@ -70,7 +70,7 @@
       "categories": [
         {
           "name": "System Design",
-          "concepts": ["Model Serving", "API Design", "Caching", "Load Balancing", "Scalability"]
+          "concepts": ["Model Serving", "API Design", "Caching", "Load Balancing", "Scalability", "Semantic Router", "Guardrails"]
         },
         {
           "name": "Evaluation",
@@ -91,11 +91,11 @@
         },
         {
           "name": "Model Lifecycle",
-          "concepts": ["Training", "Deployment", "Monitoring", "Drift Detection"]
+          "concepts": ["Training", "Model Evaluation", "Deployment", "Monitoring", "Drift Detection"]
         },
         {
           "name": "Tools",
-          "concepts": ["MLflow", "Weights & Biases"]
+          "concepts": ["MLflow", "Weights & Biases", "Kubeflow", "Airflow"]
         }
       ]
     },
@@ -109,6 +109,44 @@
         {
           "name": "Transformers",
           "concepts": ["Transformer", "Attention", "Self-Attention", "Multi-Head Attention", "Encoder", "Decoder", "Positional Encoding"]
+        },
+        {
+          "name": "CNN",
+          "concepts": ["Convolution", "Pooling", "Feature Maps", "Object Detection", "Image Classification"]
+        },
+        {
+          "name": "RNN",
+          "concepts": ["LSTM", "GRU", "Sequence Modeling"]
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "categories": [
+        {
+          "name": "Supervised Learning",
+          "concepts": ["Linear Regression", "Logistic Regression", "Decision Trees", "Random Forest", "Gradient Boosting", "XGBoost", "Support Vector Machine", "K-Nearest Neighbors", "Overfitting", "Regularization"]
+        },
+        {
+          "name": "Unsupervised Learning",
+          "concepts": ["Clustering", "K-Means", "DBSCAN", "Hierarchical Clustering", "Dimensionality Reduction", "PCA", "t-SNE", "UMAP"]
+        },
+        {
+          "name": "Reinforcement Learning",
+          "concepts": ["Markov Decision Process", "Q-Learning", "Deep Q-Networks", "Policy Gradient", "Actor-Critic", "Reward Function"]
+        }
+      ]
+    },
+    {
+      "name": "Computer Vision",
+      "categories": [
+        {
+          "name": "Image Processing",
+          "concepts": ["Image Segmentation", "Feature Extraction"]
+        },
+        {
+          "name": "Models",
+          "concepts": ["YOLO", "ResNet", "EfficientNet", "Vision Transformer"]
         }
       ]
     }

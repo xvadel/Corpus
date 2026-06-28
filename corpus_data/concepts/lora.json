@@ -14,11 +14,7 @@
     "Our team discussed the differences between LoRA and alternative solutions.",
     "Understanding LoRA is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "LoRA",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Fine-Tuning"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for LoRA, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of LoRA."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2106.09685"
+  ]
 }

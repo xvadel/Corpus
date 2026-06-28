@@ -1,0 +1,36 @@
+{
+  "id": "actor_critic",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Reinforcement Learning",
+  "term": "Actor-Critic",
+  "difficulty": "Advanced",
+  "definition": "The Actor-Critic method is a type of reinforcement learning algorithm that combines policy-based and value-based methods to learn optimal policies in complex environments.",
+  "simple_explanation": "Imagine you're trying to learn how to play a game, and you have two friends helping you: one tells you what moves to make, and the other tells you how good or bad those moves are. The Actor-Critic method is like having both friends work together to help you learn the best way to play. It's a way for computers to learn how to make decisions in complex situations. This method helps computers learn from their actions and improve over time.",
+  "technical_explanation": "The Actor-Critic method leverages the strengths of both policy-based and value-based reinforcement learning approaches. The 'actor' refers to the policy-based component, which learns to select actions in a given state, while the 'critic' refers to the value-based component, which learns to estimate the expected return or value of taking those actions. By combining these two components, the Actor-Critic method can learn optimal policies in complex, high-dimensional environments, and it's particularly useful in situations where the reward signal is sparse or delayed. The Actor-Critic method can be further extended to use deep neural networks, allowing it to handle large state and action spaces. This approach has been successfully applied to a variety of domains, including robotics and game playing.",
+  "investor_explanation": "The Actor-Critic method has significant commercial potential, particularly in applications where autonomous decision-making is critical, such as robotics, self-driving cars, and personalized recommendation systems. By enabling computers to learn from their actions and adapt to complex environments, this method can help companies develop more sophisticated and effective AI systems, leading to improved efficiency, productivity, and customer experience. As the demand for autonomous systems continues to grow, the Actor-Critic method is poised to play a key role in driving innovation and growth in the AI industry.",
+  "examples": [
+    "We used the Actor-Critic method to train our robot to navigate through a complex warehouse environment.",
+    "The Actor-Critic algorithm allowed us to develop a personalized recommendation system that adapts to individual user preferences.",
+    "In our game-playing AI, we implemented an Actor-Critic approach to balance exploration and exploitation, leading to improved performance and faster learning."
+  ],
+  "related_terms": [
+    "Deep Q-Networks",
+    "Policy Gradient Methods"
+  ],
+  "prerequisites": [
+    "Policy Gradient"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1602.01783"
+  ],
+  "interview_questions": [
+    "Can you explain the difference between the 'actor' and 'critic' components in the Actor-Critic method?",
+    "How does the Actor-Critic method handle exploration-exploitation trade-offs in reinforcement learning?",
+    "What are some potential advantages and disadvantages of using the Actor-Critic method in a real-world application?"
+  ],
+  "common_mistakes": [
+    "Failing to properly balance the learning rates of the actor and critic components, leading to unstable or biased learning.",
+    "Not accounting for the potential bias in the critic's value estimates, which can affect the actor's policy updates."
+  ]
+}

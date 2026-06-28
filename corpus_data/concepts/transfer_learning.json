@@ -14,11 +14,7 @@
     "Our team discussed the differences between Transfer Learning and alternative solutions.",
     "Understanding Transfer Learning is highly beneficial when scaling our Neural Networks capabilities."
   ],
-  "related_terms": [
-    "Transfer Learning",
-    "Deep Learning Foundations",
-    "Neural Networks"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Feed Forward Network",
     "Training"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Transfer Learning, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Transfer Learning."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1411.1792"
+  ]
 }

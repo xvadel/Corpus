@@ -14,16 +14,14 @@
     "Our team discussed the differences between Direct Preference Optimization and alternative solutions.",
     "Understanding Direct Preference Optimization is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "Direct Preference Optimization",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "RLHF",
     "Fine-Tuning"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/2305.18290"
+  ],
   "interview_questions": [
     "How does Direct Preference Optimization fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing Direct Preference Optimization?",

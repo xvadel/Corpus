@@ -14,11 +14,7 @@
     "Our team discussed the differences between Monitoring and alternative solutions.",
     "Understanding Monitoring is highly beneficial when scaling our Model Lifecycle capabilities."
   ],
-  "related_terms": [
-    "Monitoring",
-    "MLOps",
-    "Model Lifecycle"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Deployment"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Monitoring, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Monitoring."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Application_performance_management"
+  ]
 }

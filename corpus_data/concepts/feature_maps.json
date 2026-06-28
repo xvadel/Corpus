@@ -1,0 +1,37 @@
+{
+  "id": "feature_maps",
+  "domain": "AI",
+  "subdomain": "Deep Learning",
+  "category": "CNN",
+  "term": "Feature Maps",
+  "difficulty": "Intermediate",
+  "definition": "Feature maps are the output of convolutional and pooling layers in a convolutional neural network, representing the presence of specific features in an input image.",
+  "simple_explanation": "Imagine you're looking at a picture and trying to find all the edges, lines, and shapes. Feature maps are like special layers that help a computer find these features in an image. They're created by applying filters that scan the image for specific patterns.",
+  "technical_explanation": "Feature maps are the result of applying a set of learnable filters to small regions of an input image, followed by an activation function. These filters are designed to capture specific features such as edges, lines, and textures. The output of each filter is a 2D map that represents the presence of that feature at different locations in the image. Multiple feature maps are stacked together to form a 3D tensor, which is then fed into subsequent layers for further processing. The number of feature maps and the size of the filters are hyperparameters that need to be tuned for optimal performance.",
+  "investor_explanation": "Feature maps are a critical component of convolutional neural networks, enabling them to efficiently process and analyze visual data. By leveraging feature maps, companies can develop more accurate and robust computer vision systems, which can be applied to a wide range of industries such as self-driving cars, medical imaging, and surveillance. This technology has the potential to revolutionize the way we interact with visual data and can provide a significant competitive advantage for companies that adopt it.",
+  "examples": [
+    "The feature maps from the convolutional layer are then fed into the pooling layer to reduce spatial dimensions.",
+    "We can visualize the feature maps to understand what features the network is learning from the input data.",
+    "The number of feature maps in the first convolutional layer is a hyperparameter that needs to be tuned for optimal performance."
+  ],
+  "related_terms": [
+    "Convolutional Neural Networks",
+    "Pooling Layers",
+    "Activation Functions"
+  ],
+  "prerequisites": [
+    "Convolution"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1512.03385"
+  ],
+  "interview_questions": [
+    "How do feature maps capture spatial hierarchies in an image?",
+    "What is the difference between a feature map and an activation map?",
+    "How do you visualize and interpret feature maps in a convolutional neural network?"
+  ],
+  "common_mistakes": [
+    "Confusing feature maps with activation maps, which are the output of the activation function applied to the feature maps.",
+    "Not properly tuning the number of feature maps and filter sizes, leading to suboptimal performance."
+  ]
+}

@@ -14,11 +14,7 @@
     "Our team discussed the differences between Gradient Descent and alternative solutions.",
     "Understanding Gradient Descent is highly beneficial when scaling our Neural Networks capabilities."
   ],
-  "related_terms": [
-    "Gradient Descent",
-    "Deep Learning Foundations",
-    "Neural Networks"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Loss Function"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Gradient Descent, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Gradient Descent."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1412.6980"
+  ]
 }

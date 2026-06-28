@@ -1,0 +1,38 @@
+{
+  "id": "overfitting",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "Overfitting",
+  "difficulty": "Beginner",
+  "definition": "Overfitting occurs when a machine learning model is too complex and performs well on the training data but poorly on new, unseen data.",
+  "simple_explanation": "Imagine you're trying to learn a new sport, but instead of practicing the basics, you focus on perfecting a single move that only works in one specific situation. That's kind of like what happens when a machine learning model overfits - it becomes too specialized to the training data and can't generalize well to new situations. This means it won't perform well when faced with real-world data that's slightly different from what it was trained on.",
+  "technical_explanation": "Overfitting is a fundamental problem in supervised learning where a model becomes too complex and starts to fit the noise in the training data, rather than the underlying patterns. This results in poor generalization performance on unseen data. Regularization techniques, such as L1 and L2 regularization, dropout, and early stopping, can be used to prevent overfitting by adding a penalty term to the loss function or reducing the model's capacity. Additionally, techniques like cross-validation and ensemble methods can help to identify and mitigate overfitting.",
+  "investor_explanation": "Overfitting is a critical issue in machine learning that can significantly impact the performance of AI models in real-world applications. If a model overfits, it may not generalize well to new data, leading to poor performance and potentially costly mistakes. By investing in techniques to prevent overfitting, such as regularization and cross-validation, companies can develop more robust and reliable AI models that drive business value. This is particularly important in high-stakes applications like healthcare, finance, and autonomous vehicles, where model performance can have significant consequences.",
+  "examples": [
+    "I noticed that our model is overfitting to the training data, so I'm going to try adding some L2 regularization to see if that improves its performance on the validation set.",
+    "We're experiencing overfitting in our image classification model, so we're going to use data augmentation to increase the size of the training dataset and reduce overfitting.",
+    "I'm concerned that our model is overfitting to the noise in the data, so I'm going to use cross-validation to evaluate its performance on unseen data and get a more accurate estimate of its generalization performance."
+  ],
+  "related_terms": [
+    "Underfitting",
+    "Regularization",
+    "Generalization"
+  ],
+  "prerequisites": [
+    "Training",
+    "Loss Function"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1611.03530"
+  ],
+  "interview_questions": [
+    "What is overfitting, and how can you prevent it in a machine learning model?",
+    "How do you diagnose overfitting in a model, and what techniques can you use to address it?",
+    "Can you explain the difference between overfitting and underfitting, and how you would approach each problem?"
+  ],
+  "common_mistakes": [
+    "Not using regularization or other techniques to prevent overfitting",
+    "Not evaluating the model's performance on unseen data using cross-validation or other methods"
+  ]
+}

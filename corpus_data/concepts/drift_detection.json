@@ -14,11 +14,7 @@
     "Our team discussed the differences between Drift Detection and alternative solutions.",
     "Understanding Drift Detection is highly beneficial when scaling our Model Lifecycle capabilities."
   ],
-  "related_terms": [
-    "Drift Detection",
-    "MLOps",
-    "Model Lifecycle"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Monitoring"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Drift Detection, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Drift Detection."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2204.09882"
+  ]
 }

@@ -14,11 +14,7 @@
     "Our team discussed the differences between Multi-Agent System and alternative solutions.",
     "Understanding Multi-Agent System is highly beneficial when scaling our Core Concepts capabilities."
   ],
-  "related_terms": [
-    "Multi-Agent System",
-    "Agentic AI",
-    "Core Concepts"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Agent"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Multi-Agent System, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Multi-Agent System."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2308.08155"
+  ]
 }

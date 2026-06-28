@@ -14,16 +14,14 @@
     "Our team discussed the differences between Semantic Router and alternative solutions.",
     "Understanding Semantic Router is highly beneficial when scaling our System Design capabilities."
   ],
-  "related_terms": [
-    "Semantic Router",
-    "AI Engineering",
-    "System Design"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Embedding",
     "Similarity Search"
   ],
-  "references": [],
+  "references": [
+    "https://github.com/aurelio-labs/semantic-router"
+  ],
   "interview_questions": [
     "How does Semantic Router fit into standard AI Engineering architectures?",
     "What are the major engineering trade-offs when implementing Semantic Router?",

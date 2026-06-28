@@ -14,11 +14,7 @@
     "Our team discussed the differences between Knowledge Base and alternative solutions.",
     "Understanding Knowledge Base is highly beneficial when scaling our Data Processing capabilities."
   ],
-  "related_terms": [
-    "Knowledge Base",
-    "Retrieval Augmented Generation",
-    "Data Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Document Parsing",
     "Embedding"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Knowledge Base, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Knowledge Base."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.11401"
+  ]
 }

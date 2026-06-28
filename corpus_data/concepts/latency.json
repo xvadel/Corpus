@@ -14,11 +14,7 @@
     "Our team discussed the differences between Latency and alternative solutions.",
     "Understanding Latency is highly beneficial when scaling our Evaluation capabilities."
   ],
-  "related_terms": [
-    "Latency",
-    "AI Engineering",
-    "Evaluation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "API Design"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Latency, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Latency."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Latency_(engineering)"
+  ]
 }

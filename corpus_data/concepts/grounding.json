@@ -14,11 +14,7 @@
     "Our team discussed the differences between Grounding and alternative solutions.",
     "Understanding Grounding is highly beneficial when scaling our Generation capabilities."
   ],
-  "related_terms": [
-    "Grounding",
-    "Retrieval Augmented Generation",
-    "Generation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Context Injection",
     "Hallucination"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Grounding, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Grounding."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.11401"
+  ]
 }

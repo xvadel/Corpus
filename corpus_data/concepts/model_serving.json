@@ -14,11 +14,7 @@
     "Our team discussed the differences between Model Serving and alternative solutions.",
     "Understanding Model Serving is highly beneficial when scaling our System Design capabilities."
   ],
-  "related_terms": [
-    "Model Serving",
-    "AI Engineering",
-    "System Design"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "API Design",
     "Scalability",
@@ -33,5 +29,7 @@
     "Misconfiguring parameters for Model Serving, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Model Serving."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1712.09355"
+  ]
 }

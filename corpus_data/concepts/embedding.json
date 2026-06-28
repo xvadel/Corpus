@@ -14,11 +14,7 @@
     "Our team discussed the differences between Embedding and alternative solutions.",
     "Understanding Embedding is highly beneficial when scaling our Embeddings capabilities."
   ],
-  "related_terms": [
-    "Embedding",
-    "Retrieval Augmented Generation",
-    "Embeddings"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Vector Representation",
     "Transformer"
@@ -32,5 +28,8 @@
     "Misconfiguring parameters for Embedding, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Embedding."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1301.3666",
+    "https://arxiv.org/abs/1706.03762"
+  ]
 }

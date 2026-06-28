@@ -14,11 +14,7 @@
     "Our team discussed the differences between Milvus and alternative solutions.",
     "Understanding Milvus is highly beneficial when scaling our Vector Databases capabilities."
   ],
-  "related_terms": [
-    "Milvus",
-    "Retrieval Augmented Generation",
-    "Vector Databases"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Vector Database"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Milvus, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Milvus."
   ],
-  "references": []
+  "references": [
+    "https://milvus.io/docs"
+  ]
 }

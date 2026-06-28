@@ -1,0 +1,38 @@
+{
+  "id": "feature_extraction",
+  "domain": "AI",
+  "subdomain": "Computer Vision",
+  "category": "Image Processing",
+  "term": "Feature Extraction",
+  "difficulty": "Intermediate",
+  "definition": "Feature extraction is a process in computer vision that involves selecting and transforming raw data into meaningful features that can be used by machine learning models to perform tasks such as image classification, object detection, and segmentation.",
+  "simple_explanation": "Imagine you're trying to recognize different types of cars in pictures. Feature extraction is like picking out the important parts of the car, such as the shape, color, and wheels, so that a computer can understand what makes a car a car. This helps the computer learn to recognize cars more accurately.",
+  "technical_explanation": "Feature extraction in computer vision typically involves applying various techniques such as convolutional neural networks, edge detection, and feature engineering to extract relevant features from images. These features can include edges, textures, shapes, and colors, which are then used as input to machine learning models. The choice of feature extraction technique depends on the specific application and the type of images being processed. For example, in image classification tasks, features such as convolutional neural network activations or local binary patterns may be used, while in object detection tasks, features such as region proposals or anchor boxes may be used.",
+  "investor_explanation": "Feature extraction is a critical component of many computer vision applications, including self-driving cars, facial recognition, and medical image analysis. By improving feature extraction techniques, companies can develop more accurate and efficient computer vision systems, which can lead to significant cost savings and revenue growth. For example, a self-driving car company that can develop more accurate feature extraction algorithms can reduce the number of sensors and computing power required, leading to lower costs and increased profitability.",
+  "examples": [
+    "We used feature extraction to identify the most relevant features in our image dataset, which improved the accuracy of our image classification model by 20%.",
+    "The feature extraction step in our object detection pipeline involves applying a convolutional neural network to extract features from the input images.",
+    "By using feature extraction to reduce the dimensionality of our image data, we were able to speed up our image processing pipeline by a factor of 5."
+  ],
+  "related_terms": [
+    "Convolutional Neural Networks",
+    "Edge Detection",
+    "Feature Engineering"
+  ],
+  "prerequisites": [
+    "Convolution",
+    "Feed Forward Network"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1603.07285"
+  ],
+  "interview_questions": [
+    "What are some common feature extraction techniques used in computer vision?",
+    "How do you choose the most relevant features to extract from an image?",
+    "Can you explain the difference between feature extraction and feature engineering?"
+  ],
+  "common_mistakes": [
+    "Using too many features, which can lead to overfitting and decreased model performance.",
+    "Not properly normalizing or scaling the extracted features, which can affect model performance."
+  ]
+}

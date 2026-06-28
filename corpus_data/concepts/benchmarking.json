@@ -14,11 +14,7 @@
     "Our team discussed the differences between Benchmarking and alternative solutions.",
     "Understanding Benchmarking is highly beneficial when scaling our Evaluation capabilities."
   ],
-  "related_terms": [
-    "Benchmarking",
-    "AI Engineering",
-    "Evaluation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Accuracy"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Benchmarking, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Benchmarking."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2009.03300"
+  ]
 }

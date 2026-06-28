@@ -14,11 +14,7 @@
     "Our team discussed the differences between Document Parsing and alternative solutions.",
     "Understanding Document Parsing is highly beneficial when scaling our Data Processing capabilities."
   ],
-  "related_terms": [
-    "Document Parsing",
-    "Retrieval Augmented Generation",
-    "Data Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Tokenization"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Document Parsing, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Document Parsing."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2408.09869"
+  ]
 }

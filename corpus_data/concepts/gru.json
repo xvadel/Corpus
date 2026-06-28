@@ -1,0 +1,36 @@
+{
+  "id": "gru",
+  "domain": "AI",
+  "subdomain": "Deep Learning",
+  "category": "RNN",
+  "term": "GRU",
+  "difficulty": "Intermediate",
+  "definition": "A Gated Recurrent Unit (GRU) is a type of recurrent neural network (RNN) cell that uses gating mechanisms to control the flow of information.",
+  "simple_explanation": "Imagine you're trying to understand a long story, but you can only remember a few important details at a time. A GRU is like a special kind of memory that helps computers understand long sequences of information, like stories or sentences, by deciding what's important to remember and what's not. It's a way for computers to focus on the most important parts of the information they're given.",
+  "technical_explanation": "A GRU is a variant of the Long Short-Term Memory (LSTM) network, but with fewer parameters and faster computation. It uses two main gates, the reset gate and the update gate, to control the flow of information into and out of the cell state. The reset gate determines how much of the previous state to forget, while the update gate determines how much of the new information to add to the state. This allows the GRU to capture long-term dependencies in sequential data, such as speech or text, and is particularly useful for tasks like language modeling and machine translation.",
+  "investor_explanation": "The Gated Recurrent Unit (GRU) is a crucial component in many natural language processing (NLP) and speech recognition applications, enabling computers to better understand and generate human-like language. By improving the efficiency and accuracy of these models, GRUs can help drive business value in areas like customer service chatbots, language translation software, and voice assistants. As the demand for NLP and speech recognition technology continues to grow, the development and refinement of GRUs will play an increasingly important role in shaping the future of human-computer interaction.",
+  "examples": [
+    "We used a GRU to model the sequential dependencies in our speech recognition dataset, which improved our model's accuracy by 15%.",
+    "The GRU in our language translation model allowed it to capture long-term contextual information and generate more coherent translations.",
+    "By using a GRU to process the input sequences, we were able to reduce the computational requirements of our model by 30%."
+  ],
+  "related_terms": [
+    "LSTM",
+    "Seq2Seq"
+  ],
+  "prerequisites": [
+    "Sequence Modeling"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1409.1259"
+  ],
+  "interview_questions": [
+    "How does a GRU differ from an LSTM, and when would you use each?",
+    "Can you explain the role of the reset gate and update gate in a GRU?",
+    "How would you implement a GRU in a deep learning framework like TensorFlow or PyTorch?"
+  ],
+  "common_mistakes": [
+    "Forgetting to initialize the GRU's hidden state properly, leading to inconsistent or poor performance.",
+    "Using a GRU without considering the vanishing gradient problem, which can lead to poor performance on long sequences."
+  ]
+}

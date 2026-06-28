@@ -1,0 +1,39 @@
+{
+  "id": "support_vector_machine",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "Support Vector Machine",
+  "difficulty": "Intermediate",
+  "definition": "A Support Vector Machine is a supervised learning algorithm that uses a hyperplane to maximize the margin between classes in a feature space.",
+  "simple_explanation": "Imagine you have a bunch of different colored balls, and you want to draw a line to separate them. A Support Vector Machine is like a super smart way to draw that line, so it's as far away from all the balls as possible. This helps the machine learn to tell the different colors apart.",
+  "technical_explanation": "A Support Vector Machine is a kernel-based algorithm that uses the concept of margin to find the optimal hyperplane that separates classes in a feature space. The goal is to maximize the margin, which is the distance between the hyperplane and the nearest data points, known as support vectors. This is achieved by solving a quadratic programming problem, and the resulting model can be used for classification or regression tasks. The use of kernels allows SVMs to operate in high-dimensional spaces and handle non-linearly separable data.",
+  "investor_explanation": "Support Vector Machines are a crucial technology for businesses that rely on accurate classification and regression models, such as image recognition, natural language processing, and predictive analytics. By using SVMs, companies can build more robust and efficient models that drive business value, from improving customer segmentation to enhancing product recommendation systems. With the increasing availability of large datasets and computational power, SVMs are becoming an essential tool for companies to stay competitive in the AI-driven economy.",
+  "examples": [
+    "We used a Support Vector Machine to classify customer feedback as positive or negative, and it achieved an accuracy of 90%.",
+    "The SVM model we trained on the image dataset was able to recognize objects with a high degree of precision, even when the images were noisy or distorted.",
+    "By using a non-linear kernel, we were able to train an SVM model that could handle the complex relationships between variables in our dataset."
+  ],
+  "related_terms": [
+    "Kernel Methods",
+    "Margin Maximization",
+    "Hyperplane",
+    "Classification",
+    "Regression"
+  ],
+  "prerequisites": [
+    "Linear Regression"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1301.3781"
+  ],
+  "interview_questions": [
+    "How would you explain the concept of margin in the context of Support Vector Machines?",
+    "What are the advantages and disadvantages of using a linear versus non-linear kernel in an SVM?",
+    "How would you handle overfitting in an SVM model, and what techniques would you use to regularize the model?"
+  ],
+  "common_mistakes": [
+    "Not properly scaling the data before training an SVM model, which can lead to poor performance.",
+    "Using a linear kernel when the data is non-linearly separable, which can result in poor accuracy."
+  ]
+}

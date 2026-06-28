@@ -14,11 +14,7 @@
     "Our team discussed the differences between Caching and alternative solutions.",
     "Understanding Caching is highly beneficial when scaling our System Design capabilities."
   ],
-  "related_terms": [
-    "Caching",
-    "AI Engineering",
-    "System Design"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "API Design",
     "Latency"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Caching, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Caching."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Cache_(computing)"
+  ]
 }

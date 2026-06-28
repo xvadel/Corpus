@@ -14,15 +14,13 @@
     "Our team discussed the differences between Byte Pair Encoding and alternative solutions.",
     "Understanding Byte Pair Encoding is highly beneficial when scaling our Text Processing capabilities."
   ],
-  "related_terms": [
-    "Byte Pair Encoding",
-    "Natural Language Processing",
-    "Text Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Tokenization"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/1508.07909"
+  ],
   "interview_questions": [
     "How does Byte Pair Encoding fit into standard Natural Language Processing architectures?",
     "What are the major engineering trade-offs when implementing Byte Pair Encoding?",

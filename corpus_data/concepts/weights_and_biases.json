@@ -14,11 +14,7 @@
     "Our team discussed the differences between Weights & Biases and alternative solutions.",
     "Understanding Weights & Biases is highly beneficial when scaling our Tools capabilities."
   ],
-  "related_terms": [
-    "Weights & Biases",
-    "MLOps",
-    "Tools"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Training"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Weights & Biases, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Weights & Biases."
   ],
-  "references": []
+  "references": [
+    "https://docs.wandb.ai/"
+  ]
 }

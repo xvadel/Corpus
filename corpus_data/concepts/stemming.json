@@ -14,11 +14,7 @@
     "Our team discussed the differences between Stemming and alternative solutions.",
     "Understanding Stemming is highly beneficial when scaling our Text Processing capabilities."
   ],
-  "related_terms": [
-    "Stemming",
-    "Natural Language Processing",
-    "Text Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Tokenization"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Stemming, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Stemming."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Stemming"
+  ]
 }

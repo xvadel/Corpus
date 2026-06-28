@@ -14,11 +14,7 @@
     "Our team discussed the differences between CrewAI and alternative solutions.",
     "Understanding CrewAI is highly beneficial when scaling our Orchestration capabilities."
   ],
-  "related_terms": [
-    "CrewAI",
-    "AI Engineering",
-    "Orchestration"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Multi-Agent System"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for CrewAI, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of CrewAI."
   ],
-  "references": []
+  "references": [
+    "https://docs.crewai.com/"
+  ]
 }

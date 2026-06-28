@@ -14,11 +14,7 @@
     "Our team discussed the differences between Tool Use and alternative solutions.",
     "Understanding Tool Use is highly beneficial when scaling our Core Concepts capabilities."
   ],
-  "related_terms": [
-    "Tool Use",
-    "Agentic AI",
-    "Core Concepts"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Function Calling"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Tool Use, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Tool Use."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2210.03629"
+  ]
 }

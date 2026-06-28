@@ -14,11 +14,7 @@
     "Our team discussed the differences between Multi-Head Attention and alternative solutions.",
     "Understanding Multi-Head Attention is highly beneficial when scaling our Transformers capabilities."
   ],
-  "related_terms": [
-    "Multi-Head Attention",
-    "Deep Learning Foundations",
-    "Transformers"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Self-Attention"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Multi-Head Attention, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Multi-Head Attention."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1706.03762"
+  ]
 }

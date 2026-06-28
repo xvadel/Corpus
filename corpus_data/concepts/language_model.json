@@ -14,11 +14,7 @@
     "Our team discussed the differences between Language Model and alternative solutions.",
     "Understanding Language Model is highly beneficial when scaling our Language Modeling capabilities."
   ],
-  "related_terms": [
-    "Language Model",
-    "Natural Language Processing",
-    "Language Modeling"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Tokenization",
     "Transformer"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Language Model, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Language Model."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.14165"
+  ]
 }

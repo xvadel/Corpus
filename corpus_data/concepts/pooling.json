@@ -1,0 +1,39 @@
+{
+  "id": "pooling",
+  "domain": "AI",
+  "subdomain": "Deep Learning",
+  "category": "CNN",
+  "term": "Pooling",
+  "difficulty": "Beginner",
+  "definition": "Pooling is a downsampling technique used in convolutional neural networks to reduce the spatial dimensions of feature maps while retaining important information.",
+  "simple_explanation": "Imagine you have a big picture and you want to make it smaller, but still keep the important parts. Pooling is a way to do that in artificial intelligence. It helps computers understand images better by focusing on the most important features.",
+  "technical_explanation": "Pooling, also known as subsampling or downsampling, is a crucial component in convolutional neural networks (CNNs) that reduces the spatial dimensions of feature maps, thereby decreasing the number of parameters and computations required. This process helps in extracting low-level features, such as edges and textures, and high-level features, like objects and patterns. There are two primary types of pooling: max pooling and average pooling, each with its own strengths and use cases.",
+  "investor_explanation": "Pooling is a key innovation in deep learning that enables convolutional neural networks to efficiently process and understand visual data. By reducing the dimensionality of feature maps, pooling helps mitigate the risk of overfitting, improves model generalizability, and accelerates training times. This technology has far-reaching implications for applications like image recognition, object detection, and autonomous vehicles, making it an attractive investment opportunity for companies developing AI-powered products.",
+  "examples": [
+    "We applied max pooling to the feature maps to reduce their spatial dimensions and retain the most important features.",
+    "The use of average pooling in our CNN architecture helped improve the model's robustness to small transformations.",
+    "By incorporating pooling layers into our network, we were able to significantly reduce the number of parameters and improve training efficiency."
+  ],
+  "related_terms": [
+    "Convolutional Neural Networks",
+    "Feature Maps",
+    "Max Pooling",
+    "Average Pooling",
+    "Downsampling"
+  ],
+  "prerequisites": [
+    "Convolution"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1603.07285"
+  ],
+  "interview_questions": [
+    "What is the primary purpose of pooling in convolutional neural networks?",
+    "How does max pooling differ from average pooling, and when would you use each?",
+    "Can you explain how pooling helps reduce overfitting in deep neural networks?"
+  ],
+  "common_mistakes": [
+    "Using pooling as a replacement for convolutional layers, rather than as a complementary technique.",
+    "Failing to consider the impact of pooling on the receptive field of the network."
+  ]
+}

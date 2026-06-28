@@ -1,0 +1,36 @@
+{
+  "id": "q_learning",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Reinforcement Learning",
+  "term": "Q-Learning",
+  "difficulty": "Intermediate",
+  "definition": "Q-Learning is a model-free reinforcement learning algorithm that learns to predict the expected return or utility of an action in a particular state.",
+  "simple_explanation": "Q-Learning is a way for computers to learn how to make decisions by trying different actions and seeing what happens. It's like trying different paths in a maze to find the shortest way out. The computer keeps track of what works and what doesn't, so it can make better decisions next time.",
+  "technical_explanation": "Q-Learning is a temporal-difference learning method that updates the action-value function, or Q-function, based on the difference between the predicted and actual returns. It uses an exploration-exploitation trade-off to balance discovering new actions and exploiting known good actions. Q-Learning can be used with both discrete and continuous action spaces, and it's often used in problems where the environment is fully or partially observable.",
+  "investor_explanation": "Q-Learning has significant commercial potential because it enables machines to learn from their environment and make decisions autonomously. This technology can be applied to a wide range of industries, from robotics and autonomous vehicles to healthcare and finance. By investing in Q-Learning research and development, companies can create more efficient and adaptive systems that can improve customer experience and drive business growth.",
+  "examples": [
+    "We used Q-Learning to train an agent to navigate a complex maze and find the shortest path to the goal.",
+    "In our robotics project, Q-Learning helped the robot learn to pick up objects and avoid obstacles.",
+    "Q-Learning was used to optimize the control policy for a autonomous vehicle, reducing the time it took to complete a lap around the track."
+  ],
+  "related_terms": [
+    "Deep Q-Networks",
+    "Markov Decision Processes"
+  ],
+  "prerequisites": [
+    "Markov Decision Process"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1312.5602"
+  ],
+  "interview_questions": [
+    "How does Q-Learning handle the exploration-exploitation trade-off?",
+    "What are the advantages and disadvantages of using Q-Learning compared to other reinforcement learning algorithms?",
+    "How would you implement Q-Learning in a real-world problem, such as training a robot to perform a task?"
+  ],
+  "common_mistakes": [
+    "Not properly handling the exploration-exploitation trade-off, leading to suboptimal convergence.",
+    "Failing to consider the curse of dimensionality when applying Q-Learning to high-dimensional state or action spaces."
+  ]
+}

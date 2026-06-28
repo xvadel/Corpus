@@ -14,11 +14,7 @@
     "Our team discussed the differences between MLflow and alternative solutions.",
     "Understanding MLflow is highly beneficial when scaling our Tools capabilities."
   ],
-  "related_terms": [
-    "MLflow",
-    "MLOps",
-    "Tools"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Training",
     "Deployment"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for MLflow, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of MLflow."
   ],
-  "references": []
+  "references": [
+    "https://mlflow.org/docs/latest/index.html"
+  ]
 }

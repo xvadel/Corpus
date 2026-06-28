@@ -14,11 +14,7 @@
     "Our team discussed the differences between Hallucination and alternative solutions.",
     "Understanding Hallucination is highly beneficial when scaling our LLMs capabilities."
   ],
-  "related_terms": [
-    "Hallucination",
-    "Natural Language Processing",
-    "LLMs"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Language Model"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Hallucination, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Hallucination."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2202.03629"
+  ]
 }

@@ -1,0 +1,35 @@
+{
+  "id": "k_nearest_neighbors",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "K-Nearest Neighbors",
+  "difficulty": "Beginner",
+  "definition": "K-Nearest Neighbors is a supervised learning algorithm that predicts the target variable for a new instance based on the values of its k nearest neighbors in the feature space.",
+  "simple_explanation": "Imagine you want to know what kind of music a new person likes, so you ask their closest friends, and based on what they like, you make a guess. This algorithm works in a similar way, looking at the closest examples it has to make a prediction. It's used for classification and regression tasks, like predicting if someone will buy a product or how much they will spend.",
+  "technical_explanation": "The K-Nearest Neighbors algorithm operates by first calculating the distance between the new instance and all existing instances in the training dataset, typically using Euclidean or Manhattan distance metrics. It then selects the k instances with the smallest distances, which are considered the nearest neighbors. For classification tasks, the algorithm predicts the class that is most common among these k neighbors, while for regression tasks, it predicts the average value of the target variable among the k neighbors. The choice of k is critical, as a small k can lead to overfitting, while a large k can result in underfitting.",
+  "investor_explanation": "K-Nearest Neighbors is a powerful algorithm for making predictions based on historical data, which can be applied to a wide range of commercial applications, such as customer segmentation, credit risk assessment, and product recommendation systems. By leveraging the collective behavior of similar instances, businesses can gain valuable insights into their customers' preferences and behaviors, enabling more targeted marketing and improved decision-making. As a result, K-Nearest Neighbors can drive significant revenue growth and competitive advantage for companies that effectively harness its potential.",
+  "examples": [
+    "We used K-Nearest Neighbors to build a recommender system that suggests products to customers based on their browsing history and purchase behavior.",
+    "The K-Nearest Neighbors algorithm was applied to our customer dataset to identify high-value customers and predict their likelihood of churn.",
+    "In our image classification project, we employed K-Nearest Neighbors to classify new images into predefined categories based on their visual features."
+  ],
+  "related_terms": [
+    "Regression",
+    "Classification",
+    "Overfitting"
+  ],
+  "prerequisites": [],
+  "references": [
+    "https://arxiv.org/abs/1803.04402"
+  ],
+  "interview_questions": [
+    "How would you choose the optimal value of k in a K-Nearest Neighbors algorithm?",
+    "What are the advantages and disadvantages of using K-Nearest Neighbors for classification tasks?",
+    "How would you handle missing values in the dataset when using K-Nearest Neighbors?"
+  ],
+  "common_mistakes": [
+    "Choosing a value of k that is too small, resulting in overfitting to the training data.",
+    "Failing to normalize or scale the feature values, leading to biased distance calculations."
+  ]
+}

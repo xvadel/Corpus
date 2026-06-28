@@ -14,11 +14,7 @@
     "Our team discussed the differences between Workflow Orchestration and alternative solutions.",
     "Understanding Workflow Orchestration is highly beneficial when scaling our Core Concepts capabilities."
   ],
-  "related_terms": [
-    "Workflow Orchestration",
-    "Agentic AI",
-    "Core Concepts"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Multi-Agent System"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Workflow Orchestration, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Workflow Orchestration."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2308.08155"
+  ]
 }

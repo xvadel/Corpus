@@ -14,11 +14,7 @@
     "Our team discussed the differences between DeepEval and alternative solutions.",
     "Understanding DeepEval is highly beneficial when scaling our Evaluation capabilities."
   ],
-  "related_terms": [
-    "DeepEval",
-    "AI Engineering",
-    "Evaluation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Faithfulness",
     "Benchmarking"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for DeepEval, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of DeepEval."
   ],
-  "references": []
+  "references": [
+    "https://github.com/confident-ai/deepeval"
+  ]
 }

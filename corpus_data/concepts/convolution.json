@@ -1,0 +1,37 @@
+{
+  "id": "convolution",
+  "domain": "AI",
+  "subdomain": "Deep Learning",
+  "category": "CNN",
+  "term": "Convolution",
+  "difficulty": "Beginner",
+  "definition": "Convolution is a mathematical operation that combines two functions by sliding one function over the other to produce a feature map that highlights the most important features of the input data.",
+  "simple_explanation": "Imagine you have a picture and you want to find all the edges in it, convolution is like using a special tool that slides over the picture to find those edges. It's a way computers can look at images or sounds and find patterns. This helps computers understand what they're looking at or listening to.",
+  "technical_explanation": "Convolution is a fundamental operation in deep learning, particularly in convolutional neural networks (CNNs), where it is used to extract features from input data by applying a set of learnable filters to small regions of the data. The convolution operation involves sliding a filter over the input data, performing a dot product at each position to generate a feature map. This process allows the network to capture spatial hierarchies of features and is crucial for image and signal processing tasks. The filters learned during training can be thought of as feature detectors that automatically and adaptively learn to extract relevant features from the input data.",
+  "investor_explanation": "Convolution is a key technology that enables computers to understand and interpret visual and audio data, which is crucial for applications such as self-driving cars, facial recognition, and voice assistants. By investing in convolutional neural networks, companies can develop more accurate and efficient AI systems that can analyze and respond to complex data, leading to significant commercial benefits and competitive advantages. This technology has the potential to disrupt various industries and create new business opportunities, making it an attractive investment opportunity for venture capitalists.",
+  "examples": [
+    "We used convolutional layers to extract features from the input images and then fed them into a fully connected layer for classification.",
+    "The convolution operation in our CNN architecture allowed us to reduce the spatial dimensions of the input data while retaining the most important features.",
+    "By applying convolution to the audio signal, we were able to extract meaningful features that improved the accuracy of our speech recognition model."
+  ],
+  "related_terms": [
+    "Convolutional Neural Network",
+    "Filter",
+    "Feature Map"
+  ],
+  "prerequisites": [
+    "Feed Forward Network"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1512.03385"
+  ],
+  "interview_questions": [
+    "How does the convolution operation differ from the pooling operation in a CNN?",
+    "What is the purpose of using multiple filters in a convolutional layer?",
+    "How does the size of the filter affect the output of the convolution operation?"
+  ],
+  "common_mistakes": [
+    "Confusing the convolution operation with the correlation operation",
+    "Not understanding the impact of filter size and stride on the output of the convolution operation"
+  ]
+}

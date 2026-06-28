@@ -14,11 +14,7 @@
     "Our team discussed the differences between Loss Function and alternative solutions.",
     "Understanding Loss Function is highly beneficial when scaling our Neural Networks capabilities."
   ],
-  "related_terms": [
-    "Loss Function",
-    "Deep Learning Foundations",
-    "Neural Networks"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Perceptron"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Loss Function, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Loss Function."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Loss_function"
+  ]
 }

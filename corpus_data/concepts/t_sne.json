@@ -1,0 +1,38 @@
+{
+  "id": "t_sne",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Unsupervised Learning",
+  "term": "t-SNE",
+  "difficulty": "Advanced",
+  "definition": "t-SNE (t-distributed Stochastic Neighbor Embedding) is a non-linear dimensionality reduction technique that maps high-dimensional data to a lower-dimensional space while preserving local relationships.",
+  "simple_explanation": "Imagine you have a lot of complex data points that are hard to visualize, t-SNE helps simplify this data into a more understandable format, like a 2D map, where similar points are close together. This makes it easier to see patterns and relationships in the data. It's like a tool that helps us see the big picture by simplifying the complex details.",
+  "technical_explanation": "t-SNE is a non-linear dimensionality reduction technique that uses a probabilistic approach to map high-dimensional data to a lower-dimensional space. It does this by modeling the high-dimensional data as a Gaussian distribution and then mapping it to a lower-dimensional space with a t-distribution, which allows for more flexible and accurate representations of the data. The result is a lower-dimensional representation of the data that preserves the local relationships between data points, making it useful for visualization and clustering tasks. The technique is particularly useful for high-dimensional data where traditional linear dimensionality reduction techniques like PCA may not be effective.",
+  "investor_explanation": "t-SNE is a critical tool for any company dealing with complex, high-dimensional data, as it enables the visualization and understanding of patterns and relationships that would be impossible to discern in higher dimensions. This has significant implications for fields like customer segmentation, product recommendation, and anomaly detection, where the ability to identify and understand complex patterns can drive significant business value. By leveraging t-SNE, companies can unlock new insights and drive business growth through data-driven decision making.",
+  "examples": [
+    "We used t-SNE to reduce the dimensionality of our customer data and identify distinct segments that we can target with personalized marketing campaigns.",
+    "t-SNE helped us visualize the high-dimensional feature space of our machine learning model, which allowed us to identify and address issues with the model's performance.",
+    "By applying t-SNE to our genomic data, we were able to identify patterns and relationships that led to new insights into the underlying biology of the disease."
+  ],
+  "related_terms": [
+    "PCA",
+    "Autoencoders",
+    "UMAP"
+  ],
+  "prerequisites": [
+    "Dimensionality Reduction",
+    "Embedding"
+  ],
+  "references": [
+    "https://arxiv.org/abs/0803.0476"
+  ],
+  "interview_questions": [
+    "How does t-SNE handle high-dimensional data with non-linear relationships?",
+    "What are the advantages and disadvantages of using t-SNE compared to other dimensionality reduction techniques?",
+    "How would you evaluate the quality of a t-SNE embedding and determine the optimal number of dimensions to use?"
+  ],
+  "common_mistakes": [
+    "Using t-SNE as a preprocessing step for supervised learning tasks without considering the impact on the model's performance.",
+    "Interpreting the t-SNE embedding as a direct representation of the underlying data, rather than a simplified visualization tool."
+  ]
+}

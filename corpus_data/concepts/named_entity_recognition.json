@@ -14,11 +14,7 @@
     "Our team discussed the differences between Named Entity Recognition and alternative solutions.",
     "Understanding Named Entity Recognition is highly beneficial when scaling our Text Processing capabilities."
   ],
-  "related_terms": [
-    "Named Entity Recognition",
-    "Natural Language Processing",
-    "Text Processing"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Tokenization",
     "Language Model"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Named Entity Recognition, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Named Entity Recognition."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1810.04805"
+  ]
 }

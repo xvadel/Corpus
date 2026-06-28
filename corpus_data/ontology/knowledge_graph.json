@@ -5,10 +5,7 @@
       "difficulty": "Beginner",
       "subdomain": "AI Engineering",
       "prerequisites": [],
-      "related_terms": [
-        "scalability",
-        "benchmarking"
-      ]
+      "related_terms": []
     },
     "activation_function": {
       "term": "Activation Function",
@@ -17,8 +14,17 @@
       "prerequisites": [
         "perceptron"
       ],
+      "related_terms": []
+    },
+    "actor_critic": {
+      "term": "Actor-Critic",
+      "difficulty": "Advanced",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "policy_gradient"
+      ],
       "related_terms": [
-        "perceptron"
+        "deep_q_networks"
       ]
     },
     "agent": {
@@ -32,6 +38,17 @@
       ],
       "related_terms": []
     },
+    "airflow": {
+      "term": "Airflow",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "data_pipeline"
+      ],
+      "related_terms": [
+        "kubeflow"
+      ]
+    },
     "answer_synthesis": {
       "term": "Answer Synthesis",
       "difficulty": "Intermediate",
@@ -40,19 +57,14 @@
         "grounding",
         "language_model"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "context_injection"
-      ]
+      "related_terms": []
     },
     "api_design": {
       "term": "API Design",
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [],
-      "related_terms": [
-        "scalability"
-      ]
+      "related_terms": []
     },
     "approximate_nearest_neighbor": {
       "term": "Approximate Nearest Neighbor",
@@ -62,10 +74,7 @@
         "embedding",
         "cosine_similarity"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
     },
     "attention": {
       "term": "Attention",
@@ -74,10 +83,7 @@
       "prerequisites": [
         "feed_forward_network"
       ],
-      "related_terms": [
-        "perceptron",
-        "transformer"
-      ]
+      "related_terms": []
     },
     "autoregressive_model": {
       "term": "Autoregressive Model",
@@ -87,9 +93,7 @@
         "language_model",
         "transformer"
       ],
-      "related_terms": [
-        "language_model"
-      ]
+      "related_terms": []
     },
     "auto_merging_retrieval": {
       "term": "Auto-Merging Retrieval",
@@ -100,10 +104,7 @@
         "top_k_retrieval",
         "reranking"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
     },
     "backpropagation": {
       "term": "Backpropagation",
@@ -113,9 +114,7 @@
         "gradient_descent",
         "activation_function"
       ],
-      "related_terms": [
-        "perceptron"
-      ]
+      "related_terms": []
     },
     "benchmarking": {
       "term": "Benchmarking",
@@ -124,9 +123,7 @@
       "prerequisites": [
         "accuracy"
       ],
-      "related_terms": [
-        "scalability"
-      ]
+      "related_terms": []
     },
     "bi_encoder": {
       "term": "Bi-Encoder",
@@ -136,10 +133,7 @@
         "embedding",
         "similarity_search"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
     },
     "bm25": {
       "term": "BM25",
@@ -149,10 +143,7 @@
         "tokenization",
         "stop_words"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
     },
     "byte_pair_encoding": {
       "term": "Byte Pair Encoding",
@@ -161,10 +152,7 @@
       "prerequisites": [
         "tokenization"
       ],
-      "related_terms": [
-        "language_model",
-        "tokenization"
-      ]
+      "related_terms": []
     },
     "caching": {
       "term": "Caching",
@@ -174,22 +162,14 @@
         "api_design",
         "latency"
       ],
-      "related_terms": [
-        "scalability",
-        "api_design"
-      ]
+      "related_terms": []
     },
     "chain_of_thought": {
       "term": "Chain of Thought",
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
-      "prerequisites": [
-        "prompt_engineering"
-      ],
-      "related_terms": [
-        "language_model",
-        "prompt_engineering"
-      ]
+      "prerequisites": [],
+      "related_terms": []
     },
     "chromadb": {
       "term": "ChromaDB",
@@ -198,10 +178,7 @@
       "prerequisites": [
         "vector_database"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "vector_database"
-      ]
+      "related_terms": []
     },
     "chunking": {
       "term": "Chunking",
@@ -210,8 +187,17 @@
       "prerequisites": [
         "tokenization"
       ],
+      "related_terms": []
+    },
+    "clustering": {
+      "term": "Clustering",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
+      "prerequisites": [],
       "related_terms": [
-        "retrieval_augmented_generation"
+        "k_means",
+        "hierarchical_clustering",
+        "dbscan"
       ]
     },
     "context_injection": {
@@ -219,12 +205,9 @@
       "difficulty": "Beginner",
       "subdomain": "Retrieval Augmented Generation",
       "prerequisites": [
-        "prompt_engineering",
         "top_k_retrieval"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation"
-      ]
+      "related_terms": []
     },
     "context_window": {
       "term": "Context Window",
@@ -233,10 +216,16 @@
       "prerequisites": [
         "language_model"
       ],
-      "related_terms": [
-        "language_model",
-        "prompt_engineering"
-      ]
+      "related_terms": []
+    },
+    "convolution": {
+      "term": "Convolution",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "feed_forward_network"
+      ],
+      "related_terms": []
     },
     "cosine_similarity": {
       "term": "Cosine Similarity",
@@ -245,10 +234,7 @@
       "prerequisites": [
         "embedding"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "embedding"
-      ]
+      "related_terms": []
     },
     "crewai": {
       "term": "CrewAI",
@@ -257,10 +243,7 @@
       "prerequisites": [
         "multi_agent_system"
       ],
-      "related_terms": [
-        "scalability",
-        "litellm"
-      ]
+      "related_terms": []
     },
     "cross_encoder": {
       "term": "Cross-Encoder",
@@ -270,19 +253,14 @@
         "bi_encoder",
         "embedding"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
     },
     "dataset_versioning": {
       "term": "Dataset Versioning",
       "difficulty": "Intermediate",
       "subdomain": "MLOps",
       "prerequisites": [],
-      "related_terms": [
-        "training"
-      ]
+      "related_terms": []
     },
     "data_pipeline": {
       "term": "Data Pipeline",
@@ -291,10 +269,7 @@
       "prerequisites": [
         "dataset_versioning"
       ],
-      "related_terms": [
-        "training",
-        "dataset_versioning"
-      ]
+      "related_terms": []
     },
     "data_validation": {
       "term": "Data Validation",
@@ -303,9 +278,27 @@
       "prerequisites": [
         "data_pipeline"
       ],
+      "related_terms": []
+    },
+    "dbscan": {
+      "term": "DBSCAN",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "clustering"
+      ],
       "related_terms": [
-        "training",
-        "dataset_versioning"
+        "k_means",
+        "hierarchical_clustering"
+      ]
+    },
+    "decision_trees": {
+      "term": "Decision Trees",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
+      "prerequisites": [],
+      "related_terms": [
+        "gradient_boosting"
       ]
     },
     "decoder": {
@@ -316,10 +309,7 @@
         "multi_head_attention",
         "positional_encoding"
       ],
-      "related_terms": [
-        "perceptron",
-        "transformer"
-      ]
+      "related_terms": []
     },
     "deepeval": {
       "term": "DeepEval",
@@ -329,9 +319,18 @@
         "faithfulness",
         "benchmarking"
       ],
+      "related_terms": []
+    },
+    "deep_q_networks": {
+      "term": "Deep Q-Networks",
+      "difficulty": "Advanced",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "q_learning",
+        "feed_forward_network"
+      ],
       "related_terms": [
-        "scalability",
-        "benchmarking"
+        "q_learning"
       ]
     },
     "deployment": {
@@ -341,8 +340,17 @@
       "prerequisites": [
         "model_serving"
       ],
+      "related_terms": []
+    },
+    "dimensionality_reduction": {
+      "term": "Dimensionality Reduction",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "embedding"
+      ],
       "related_terms": [
-        "training"
+        "t_sne"
       ]
     },
     "document_parsing": {
@@ -352,10 +360,7 @@
       "prerequisites": [
         "tokenization"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "chunking"
-      ]
+      "related_terms": []
     },
     "dpo": {
       "term": "Direct Preference Optimization",
@@ -365,10 +370,7 @@
         "rlhf",
         "fine_tuning"
       ],
-      "related_terms": [
-        "agent",
-        "fine_tuning"
-      ]
+      "related_terms": []
     },
     "drift_detection": {
       "term": "Drift Detection",
@@ -377,8 +379,19 @@
       "prerequisites": [
         "monitoring"
       ],
+      "related_terms": []
+    },
+    "efficientnet": {
+      "term": "EfficientNet",
+      "difficulty": "Advanced",
+      "subdomain": "Computer Vision",
+      "prerequisites": [
+        "resnet"
+      ],
       "related_terms": [
-        "training"
+        "image_classification",
+        "transfer_learning",
+        "resnet"
       ]
     },
     "embedding": {
@@ -389,9 +402,7 @@
         "vector_representation",
         "transformer"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation"
-      ]
+      "related_terms": []
     },
     "encoder": {
       "term": "Encoder",
@@ -401,10 +412,7 @@
         "multi_head_attention",
         "positional_encoding"
       ],
-      "related_terms": [
-        "perceptron",
-        "transformer"
-      ]
+      "related_terms": []
     },
     "faiss": {
       "term": "FAISS",
@@ -414,23 +422,35 @@
         "vector_database",
         "approximate_nearest_neighbor"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "vector_database"
-      ]
+      "related_terms": []
     },
     "faithfulness": {
       "term": "Faithfulness",
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "grounding"
       ],
-      "related_terms": [
-        "scalability",
-        "benchmarking"
-      ]
+      "related_terms": []
+    },
+    "feature_extraction": {
+      "term": "Feature Extraction",
+      "difficulty": "Intermediate",
+      "subdomain": "Computer Vision",
+      "prerequisites": [
+        "convolution",
+        "feed_forward_network"
+      ],
+      "related_terms": []
+    },
+    "feature_maps": {
+      "term": "Feature Maps",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "convolution"
+      ],
+      "related_terms": []
     },
     "feed_forward_network": {
       "term": "Feed Forward Network",
@@ -441,33 +461,21 @@
         "activation_function",
         "loss_function"
       ],
-      "related_terms": [
-        "perceptron"
-      ]
+      "related_terms": []
     },
     "few_shot": {
       "term": "Few-Shot",
       "difficulty": "Beginner",
       "subdomain": "Agentic AI",
-      "prerequisites": [
-        "prompt_engineering"
-      ],
-      "related_terms": [
-        "agent",
-        "prompt_engineering"
-      ]
+      "prerequisites": [],
+      "related_terms": []
     },
     "few_shot_learning": {
       "term": "Few-Shot Learning",
       "difficulty": "Intermediate",
       "subdomain": "Natural Language Processing",
-      "prerequisites": [
-        "prompt_engineering"
-      ],
-      "related_terms": [
-        "language_model",
-        "prompt_engineering"
-      ]
+      "prerequisites": [],
+      "related_terms": []
     },
     "fine_tuning": {
       "term": "Fine-Tuning",
@@ -477,9 +485,7 @@
         "training",
         "language_model"
       ],
-      "related_terms": [
-        "agent"
-      ]
+      "related_terms": []
     },
     "function_calling": {
       "term": "Function Calling",
@@ -489,9 +495,19 @@
         "language_model",
         "tool_calling"
       ],
+      "related_terms": []
+    },
+    "gradient_boosting": {
+      "term": "Gradient Boosting",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "decision_trees",
+        "loss_function"
+      ],
       "related_terms": [
-        "language_model",
-        "prompt_engineering"
+        "decision_trees",
+        "random_forest"
       ]
     },
     "gradient_descent": {
@@ -501,9 +517,7 @@
       "prerequisites": [
         "loss_function"
       ],
-      "related_terms": [
-        "perceptron"
-      ]
+      "related_terms": []
     },
     "grounding": {
       "term": "Grounding",
@@ -513,9 +527,17 @@
         "context_injection",
         "hallucination"
       ],
+      "related_terms": []
+    },
+    "gru": {
+      "term": "GRU",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "sequence_modeling"
+      ],
       "related_terms": [
-        "retrieval_augmented_generation",
-        "context_injection"
+        "lstm"
       ]
     },
     "guardrails": {
@@ -523,13 +545,9 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "language_model",
-        "prompt_engineering"
+        "language_model"
       ],
-      "related_terms": [
-        "scalability",
-        "api_design"
-      ]
+      "related_terms": []
     },
     "hallucination": {
       "term": "Hallucination",
@@ -538,9 +556,17 @@
       "prerequisites": [
         "language_model"
       ],
+      "related_terms": []
+    },
+    "hierarchical_clustering": {
+      "term": "Hierarchical Clustering",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "clustering"
+      ],
       "related_terms": [
-        "language_model",
-        "prompt_engineering"
+        "dbscan"
       ]
     },
     "hybrid_search": {
@@ -551,9 +577,31 @@
         "similarity_search",
         "bm25"
       ],
+      "related_terms": []
+    },
+    "image_classification": {
+      "term": "Image Classification",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "convolution",
+        "pooling",
+        "feed_forward_network"
+      ],
       "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "object_detection"
+      ]
+    },
+    "image_segmentation": {
+      "term": "Image Segmentation",
+      "difficulty": "Advanced",
+      "subdomain": "Computer Vision",
+      "prerequisites": [
+        "object_detection",
+        "image_classification"
+      ],
+      "related_terms": [
+        "object_detection"
       ]
     },
     "instruction_tuning": {
@@ -563,10 +611,7 @@
       "prerequisites": [
         "fine_tuning"
       ],
-      "related_terms": [
-        "agent",
-        "fine_tuning"
-      ]
+      "related_terms": []
     },
     "knowledge_base": {
       "term": "Knowledge Base",
@@ -576,9 +621,37 @@
         "document_parsing",
         "embedding"
       ],
+      "related_terms": []
+    },
+    "kubeflow": {
+      "term": "Kubeflow",
+      "difficulty": "Advanced",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "deployment",
+        "data_pipeline"
+      ],
+      "related_terms": []
+    },
+    "k_means": {
+      "term": "K-Means",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "clustering"
+      ],
       "related_terms": [
-        "retrieval_augmented_generation",
-        "chunking"
+        "hierarchical_clustering",
+        "dbscan"
+      ]
+    },
+    "k_nearest_neighbors": {
+      "term": "K-Nearest Neighbors",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
+      "prerequisites": [],
+      "related_terms": [
+        "overfitting"
       ]
     },
     "langchain": {
@@ -586,13 +659,9 @@
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "agent"
       ],
-      "related_terms": [
-        "scalability",
-        "litellm"
-      ]
+      "related_terms": []
     },
     "langgraph": {
       "term": "LangGraph",
@@ -602,10 +671,7 @@
         "langchain",
         "workflow_orchestration"
       ],
-      "related_terms": [
-        "scalability",
-        "litellm"
-      ]
+      "related_terms": []
     },
     "language_model": {
       "term": "Language Model",
@@ -624,10 +690,7 @@
       "prerequisites": [
         "api_design"
       ],
-      "related_terms": [
-        "scalability",
-        "benchmarking"
-      ]
+      "related_terms": []
     },
     "lemmatization": {
       "term": "Lemmatization",
@@ -636,9 +699,17 @@
       "prerequisites": [
         "tokenization"
       ],
+      "related_terms": []
+    },
+    "linear_regression": {
+      "term": "Linear Regression",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
+      "prerequisites": [],
       "related_terms": [
-        "language_model",
-        "tokenization"
+        "logistic_regression",
+        "decision_trees",
+        "random_forest"
       ]
     },
     "litellm": {
@@ -649,22 +720,16 @@
         "api_design",
         "model_serving"
       ],
-      "related_terms": [
-        "scalability"
-      ]
+      "related_terms": []
     },
     "llamaindex": {
       "term": "LlamaIndex",
       "difficulty": "Intermediate",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "retrieval_augmented_generation",
         "embedding"
       ],
-      "related_terms": [
-        "scalability",
-        "litellm"
-      ]
+      "related_terms": []
     },
     "load_balancing": {
       "term": "Load Balancing",
@@ -674,9 +739,19 @@
         "api_design",
         "scalability"
       ],
+      "related_terms": []
+    },
+    "logistic_regression": {
+      "term": "Logistic Regression",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "linear_regression"
+      ],
       "related_terms": [
-        "scalability",
-        "api_design"
+        "linear_regression",
+        "decision_trees",
+        "random_forest"
       ]
     },
     "lora": {
@@ -686,10 +761,7 @@
       "prerequisites": [
         "fine_tuning"
       ],
-      "related_terms": [
-        "agent",
-        "fine_tuning"
-      ]
+      "related_terms": []
     },
     "loss_function": {
       "term": "Loss Function",
@@ -698,9 +770,27 @@
       "prerequisites": [
         "perceptron"
       ],
+      "related_terms": []
+    },
+    "lstm": {
+      "term": "LSTM",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "sequence_modeling"
+      ],
       "related_terms": [
-        "perceptron"
+        "gru"
       ]
+    },
+    "markov_decision_process": {
+      "term": "Markov Decision Process",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "reward_function"
+      ],
+      "related_terms": []
     },
     "masked_language_model": {
       "term": "Masked Language Model",
@@ -710,9 +800,7 @@
         "language_model",
         "transformer"
       ],
-      "related_terms": [
-        "language_model"
-      ]
+      "related_terms": []
     },
     "memory": {
       "term": "Memory",
@@ -721,9 +809,7 @@
       "prerequisites": [
         "language_model"
       ],
-      "related_terms": [
-        "agent"
-      ]
+      "related_terms": []
     },
     "metadata_extraction": {
       "term": "Metadata Extraction",
@@ -732,10 +818,7 @@
       "prerequisites": [
         "document_parsing"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "chunking"
-      ]
+      "related_terms": []
     },
     "milvus": {
       "term": "Milvus",
@@ -744,10 +827,7 @@
       "prerequisites": [
         "vector_database"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "vector_database"
-      ]
+      "related_terms": []
     },
     "mlflow": {
       "term": "MLflow",
@@ -757,9 +837,18 @@
         "training",
         "deployment"
       ],
-      "related_terms": [
-        "training"
-      ]
+      "related_terms": []
+    },
+    "model_evaluation": {
+      "term": "Model Evaluation",
+      "difficulty": "Intermediate",
+      "subdomain": "MLOps",
+      "prerequisites": [
+        "training",
+        "accuracy",
+        "benchmarking"
+      ],
+      "related_terms": []
     },
     "model_serving": {
       "term": "Model Serving",
@@ -770,10 +859,7 @@
         "scalability",
         "latency"
       ],
-      "related_terms": [
-        "scalability",
-        "api_design"
-      ]
+      "related_terms": []
     },
     "monitoring": {
       "term": "Monitoring",
@@ -782,9 +868,7 @@
       "prerequisites": [
         "deployment"
       ],
-      "related_terms": [
-        "training"
-      ]
+      "related_terms": []
     },
     "multi_agent_system": {
       "term": "Multi-Agent System",
@@ -793,9 +877,7 @@
       "prerequisites": [
         "agent"
       ],
-      "related_terms": [
-        "agent"
-      ]
+      "related_terms": []
     },
     "multi_head_attention": {
       "term": "Multi-Head Attention",
@@ -804,10 +886,7 @@
       "prerequisites": [
         "self_attention"
       ],
-      "related_terms": [
-        "perceptron",
-        "transformer"
-      ]
+      "related_terms": []
     },
     "named_entity_recognition": {
       "term": "Named Entity Recognition",
@@ -817,10 +896,7 @@
         "tokenization",
         "language_model"
       ],
-      "related_terms": [
-        "language_model",
-        "tokenization"
-      ]
+      "related_terms": []
     },
     "next_token_prediction": {
       "term": "Next Token Prediction",
@@ -830,20 +906,47 @@
         "autoregressive_model",
         "tokenization"
       ],
+      "related_terms": []
+    },
+    "object_detection": {
+      "term": "Object Detection",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "image_classification"
+      ],
       "related_terms": [
-        "language_model"
+        "image_classification"
       ]
     },
     "one_shot": {
       "term": "One-Shot",
       "difficulty": "Beginner",
       "subdomain": "Agentic AI",
+      "prerequisites": [],
+      "related_terms": []
+    },
+    "overfitting": {
+      "term": "Overfitting",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
       "prerequisites": [
-        "prompt_engineering"
+        "training",
+        "loss_function"
       ],
       "related_terms": [
-        "agent",
-        "prompt_engineering"
+        "regularization"
+      ]
+    },
+    "pca": {
+      "term": "PCA",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "dimensionality_reduction"
+      ],
+      "related_terms": [
+        "dimensionality_reduction"
       ]
     },
     "peft": {
@@ -854,10 +957,7 @@
         "fine_tuning",
         "lora"
       ],
-      "related_terms": [
-        "agent",
-        "fine_tuning"
-      ]
+      "related_terms": []
     },
     "perceptron": {
       "term": "Perceptron",
@@ -873,10 +973,7 @@
       "prerequisites": [
         "vector_database"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "vector_database"
-      ]
+      "related_terms": []
     },
     "planner": {
       "term": "Planner",
@@ -886,8 +983,29 @@
         "chain_of_thought",
         "language_model"
       ],
+      "related_terms": []
+    },
+    "policy_gradient": {
+      "term": "Policy Gradient",
+      "difficulty": "Advanced",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "markov_decision_process",
+        "reward_function"
+      ],
       "related_terms": [
-        "agent"
+        "q_learning"
+      ]
+    },
+    "pooling": {
+      "term": "Pooling",
+      "difficulty": "Beginner",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "convolution"
+      ],
+      "related_terms": [
+        "feature_maps"
       ]
     },
     "positional_encoding": {
@@ -897,10 +1015,7 @@
       "prerequisites": [
         "attention"
       ],
-      "related_terms": [
-        "perceptron",
-        "transformer"
-      ]
+      "related_terms": []
     },
     "ppo": {
       "term": "Proximal Policy Optimization",
@@ -909,10 +1024,7 @@
       "prerequisites": [
         "rlhf"
       ],
-      "related_terms": [
-        "agent",
-        "fine_tuning"
-      ]
+      "related_terms": []
     },
     "prompt_engineering": {
       "term": "Prompt Engineering",
@@ -921,9 +1033,7 @@
       "prerequisites": [
         "language_model"
       ],
-      "related_terms": [
-        "language_model"
-      ]
+      "related_terms": []
     },
     "qlora": {
       "term": "QLoRA",
@@ -932,9 +1042,17 @@
       "prerequisites": [
         "lora"
       ],
+      "related_terms": []
+    },
+    "q_learning": {
+      "term": "Q-Learning",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "markov_decision_process"
+      ],
       "related_terms": [
-        "agent",
-        "fine_tuning"
+        "deep_q_networks"
       ]
     },
     "ragas": {
@@ -942,12 +1060,19 @@
       "difficulty": "Advanced",
       "subdomain": "AI Engineering",
       "prerequisites": [
-        "faithfulness",
-        "retrieval_augmented_generation"
+        "faithfulness"
+      ],
+      "related_terms": []
+    },
+    "random_forest": {
+      "term": "Random Forest",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "decision_trees"
       ],
       "related_terms": [
-        "scalability",
-        "benchmarking"
+        "gradient_boosting"
       ]
     },
     "react_pattern": {
@@ -958,9 +1083,7 @@
         "planner",
         "tool_use"
       ],
-      "related_terms": [
-        "agent"
-      ]
+      "related_terms": []
     },
     "reciprocal_rank_fusion": {
       "term": "Reciprocal Rank Fusion",
@@ -970,9 +1093,18 @@
         "hybrid_search",
         "reranking"
       ],
+      "related_terms": []
+    },
+    "regularization": {
+      "term": "Regularization",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "overfitting",
+        "loss_function"
+      ],
       "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
+        "overfitting"
       ]
     },
     "reranking": {
@@ -983,10 +1115,17 @@
         "similarity_search",
         "cross_encoder"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
+    },
+    "resnet": {
+      "term": "ResNet",
+      "difficulty": "Advanced",
+      "subdomain": "Computer Vision",
+      "prerequisites": [
+        "image_classification",
+        "convolution"
+      ],
+      "related_terms": []
     },
     "retrieval_augmented_generation": {
       "term": "Retrieval Augmented Generation",
@@ -1000,8 +1139,16 @@
         "context_injection",
         "language_model"
       ],
+      "related_terms": []
+    },
+    "reward_function": {
+      "term": "Reward Function",
+      "difficulty": "Beginner",
+      "subdomain": "Machine Learning",
+      "prerequisites": [],
       "related_terms": [
-        "agent"
+        "q_learning",
+        "deep_q_networks"
       ]
     },
     "rlaif": {
@@ -1012,10 +1159,7 @@
         "rlhf",
         "dpo"
       ],
-      "related_terms": [
-        "agent",
-        "fine_tuning"
-      ]
+      "related_terms": []
     },
     "rlhf": {
       "term": "RLHF",
@@ -1025,22 +1169,14 @@
         "fine_tuning",
         "training"
       ],
-      "related_terms": [
-        "agent",
-        "fine_tuning"
-      ]
+      "related_terms": []
     },
     "role_prompting": {
       "term": "Role Prompting",
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
-      "prerequisites": [
-        "prompt_engineering"
-      ],
-      "related_terms": [
-        "agent",
-        "prompt_engineering"
-      ]
+      "prerequisites": [],
+      "related_terms": []
     },
     "scalability": {
       "term": "Scalability",
@@ -1049,9 +1185,7 @@
       "prerequisites": [
         "api_design"
       ],
-      "related_terms": [
-        "api_design"
-      ]
+      "related_terms": []
     },
     "self_attention": {
       "term": "Self-Attention",
@@ -1060,10 +1194,7 @@
       "prerequisites": [
         "attention"
       ],
-      "related_terms": [
-        "perceptron",
-        "transformer"
-      ]
+      "related_terms": []
     },
     "semantic_router": {
       "term": "Semantic Router",
@@ -1073,10 +1204,7 @@
         "embedding",
         "similarity_search"
       ],
-      "related_terms": [
-        "scalability",
-        "api_design"
-      ]
+      "related_terms": []
     },
     "semantic_similarity": {
       "term": "Semantic Similarity",
@@ -1086,10 +1214,7 @@
         "cosine_similarity",
         "embedding"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "embedding"
-      ]
+      "related_terms": []
     },
     "sentence_window_retrieval": {
       "term": "Sentence Window Retrieval",
@@ -1099,10 +1224,17 @@
         "chunking",
         "top_k_retrieval"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
+    },
+    "sequence_modeling": {
+      "term": "Sequence Modeling",
+      "difficulty": "Intermediate",
+      "subdomain": "Deep Learning",
+      "prerequisites": [
+        "feed_forward_network",
+        "tokenization"
+      ],
+      "related_terms": []
     },
     "similarity_search": {
       "term": "Similarity Search",
@@ -1112,9 +1244,7 @@
         "embedding",
         "vector_database"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation"
-      ]
+      "related_terms": []
     },
     "stemming": {
       "term": "Stemming",
@@ -1123,10 +1253,7 @@
       "prerequisites": [
         "tokenization"
       ],
-      "related_terms": [
-        "language_model",
-        "tokenization"
-      ]
+      "related_terms": []
     },
     "stop_words": {
       "term": "Stop Words",
@@ -1135,31 +1262,30 @@
       "prerequisites": [
         "tokenization"
       ],
-      "related_terms": [
-        "language_model",
-        "tokenization"
-      ]
+      "related_terms": []
     },
     "structured_prompting": {
       "term": "Structured Prompting",
       "difficulty": "Intermediate",
       "subdomain": "Agentic AI",
+      "prerequisites": [],
+      "related_terms": []
+    },
+    "support_vector_machine": {
+      "term": "Support Vector Machine",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
       "prerequisites": [
-        "prompt_engineering"
+        "linear_regression"
       ],
-      "related_terms": [
-        "agent",
-        "prompt_engineering"
-      ]
+      "related_terms": []
     },
     "tokenization": {
       "term": "Tokenization",
       "difficulty": "Beginner",
       "subdomain": "Natural Language Processing",
       "prerequisites": [],
-      "related_terms": [
-        "language_model"
-      ]
+      "related_terms": []
     },
     "tool_calling": {
       "term": "Tool Calling",
@@ -1168,10 +1294,7 @@
       "prerequisites": [
         "language_model"
       ],
-      "related_terms": [
-        "language_model",
-        "prompt_engineering"
-      ]
+      "related_terms": []
     },
     "tool_use": {
       "term": "Tool Use",
@@ -1180,9 +1303,7 @@
       "prerequisites": [
         "function_calling"
       ],
-      "related_terms": [
-        "agent"
-      ]
+      "related_terms": []
     },
     "top_k_retrieval": {
       "term": "Top-K Retrieval",
@@ -1191,10 +1312,7 @@
       "prerequisites": [
         "similarity_search"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "similarity_search"
-      ]
+      "related_terms": []
     },
     "training": {
       "term": "Training",
@@ -1214,9 +1332,7 @@
         "feed_forward_network",
         "training"
       ],
-      "related_terms": [
-        "perceptron"
-      ]
+      "related_terms": []
     },
     "transformer": {
       "term": "Transformer",
@@ -1226,8 +1342,32 @@
         "encoder",
         "decoder"
       ],
+      "related_terms": []
+    },
+    "t_sne": {
+      "term": "t-SNE",
+      "difficulty": "Advanced",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "dimensionality_reduction",
+        "embedding"
+      ],
       "related_terms": [
-        "perceptron"
+        "pca",
+        "umap"
+      ]
+    },
+    "umap": {
+      "term": "UMAP",
+      "difficulty": "Advanced",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "dimensionality_reduction",
+        "embedding"
+      ],
+      "related_terms": [
+        "t_sne",
+        "pca"
       ]
     },
     "vector_database": {
@@ -1238,9 +1378,7 @@
         "embedding",
         "approximate_nearest_neighbor"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation"
-      ]
+      "related_terms": []
     },
     "vector_representation": {
       "term": "Vector Representation",
@@ -1249,9 +1387,18 @@
       "prerequisites": [
         "feed_forward_network"
       ],
+      "related_terms": []
+    },
+    "vision_transformer": {
+      "term": "Vision Transformer",
+      "difficulty": "Advanced",
+      "subdomain": "Computer Vision",
+      "prerequisites": [
+        "transformer",
+        "image_classification"
+      ],
       "related_terms": [
-        "retrieval_augmented_generation",
-        "embedding"
+        "transformer"
       ]
     },
     "weaviate": {
@@ -1261,10 +1408,7 @@
       "prerequisites": [
         "vector_database"
       ],
-      "related_terms": [
-        "retrieval_augmented_generation",
-        "vector_database"
-      ]
+      "related_terms": []
     },
     "weights_and_biases": {
       "term": "Weights & Biases",
@@ -1273,10 +1417,7 @@
       "prerequisites": [
         "training"
       ],
-      "related_terms": [
-        "training",
-        "mlflow"
-      ]
+      "related_terms": []
     },
     "workflow_orchestration": {
       "term": "Workflow Orchestration",
@@ -1285,21 +1426,38 @@
       "prerequisites": [
         "multi_agent_system"
       ],
+      "related_terms": []
+    },
+    "xgboost": {
+      "term": "XGBoost",
+      "difficulty": "Intermediate",
+      "subdomain": "Machine Learning",
+      "prerequisites": [
+        "gradient_boosting"
+      ],
       "related_terms": [
-        "agent"
+        "gradient_boosting",
+        "decision_trees",
+        "random_forest"
+      ]
+    },
+    "yolo": {
+      "term": "YOLO",
+      "difficulty": "Advanced",
+      "subdomain": "Computer Vision",
+      "prerequisites": [
+        "object_detection"
+      ],
+      "related_terms": [
+        "object_detection"
       ]
     },
     "zero_shot": {
       "term": "Zero-Shot",
       "difficulty": "Beginner",
       "subdomain": "Agentic AI",
-      "prerequisites": [
-        "prompt_engineering"
-      ],
-      "related_terms": [
-        "agent",
-        "prompt_engineering"
-      ]
+      "prerequisites": [],
+      "related_terms": []
     }
   }
 }

@@ -14,11 +14,7 @@
     "Our team discussed the differences between Transformer and alternative solutions.",
     "Understanding Transformer is highly beneficial when scaling our Transformers capabilities."
   ],
-  "related_terms": [
-    "Transformer",
-    "Deep Learning Foundations",
-    "Transformers"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Encoder",
     "Decoder"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Transformer, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Transformer."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1706.03762"
+  ]
 }

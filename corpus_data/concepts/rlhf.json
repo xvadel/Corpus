@@ -14,11 +14,7 @@
     "Our team discussed the differences between RLHF and alternative solutions.",
     "Understanding RLHF is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "RLHF",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Fine-Tuning",
     "Training"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for RLHF, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of RLHF."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2203.02155"
+  ]
 }

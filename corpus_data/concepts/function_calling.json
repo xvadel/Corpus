@@ -14,11 +14,7 @@
     "Our team discussed the differences between Function Calling and alternative solutions.",
     "Understanding Function Calling is highly beneficial when scaling our LLMs capabilities."
   ],
-  "related_terms": [
-    "Function Calling",
-    "Natural Language Processing",
-    "LLMs"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Language Model",
     "Tool Calling"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Function Calling, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Function Calling."
   ],
-  "references": []
+  "references": [
+    "https://platform.openai.com/docs/guides/function-calling"
+  ]
 }

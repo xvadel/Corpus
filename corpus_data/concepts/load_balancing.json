@@ -14,11 +14,7 @@
     "Our team discussed the differences between Load Balancing and alternative solutions.",
     "Understanding Load Balancing is highly beneficial when scaling our System Design capabilities."
   ],
-  "related_terms": [
-    "Load Balancing",
-    "AI Engineering",
-    "System Design"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "API Design",
     "Scalability"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Load Balancing, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Load Balancing."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Load_balancing_(computing)"
+  ]
 }

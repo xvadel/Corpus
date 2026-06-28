@@ -14,11 +14,7 @@
     "Our team discussed the differences between Perceptron and alternative solutions.",
     "Understanding Perceptron is highly beneficial when scaling our Neural Networks capabilities."
   ],
-  "related_terms": [
-    "Perceptron",
-    "Deep Learning Foundations",
-    "Neural Networks"
-  ],
+  "related_terms": [],
   "prerequisites": [],
   "interview_questions": [
     "How does Perceptron fit into standard Deep Learning Foundations architectures?",
@@ -29,5 +25,7 @@
     "Misconfiguring parameters for Perceptron, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Perceptron."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Perceptron"
+  ]
 }

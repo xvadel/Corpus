@@ -1,0 +1,37 @@
+{
+  "id": "airflow",
+  "domain": "AI",
+  "subdomain": "MLOps",
+  "category": "Tools",
+  "term": "Airflow",
+  "difficulty": "Intermediate",
+  "definition": "Airflow is an open-source platform used to programmatically define, schedule, and monitor workflows, particularly in the context of machine learning and data engineering pipelines.",
+  "simple_explanation": "Airflow is a tool that helps manage and automate tasks, like data processing and model training, by creating a schedule and monitoring the progress. It's like a project manager for complex data projects. This way, data scientists and engineers can focus on the tasks that require human intelligence and creativity.",
+  "technical_explanation": "Airflow provides a flexible framework for defining workflows as directed acyclic graphs (DAGs) of tasks, which can be executed on a variety of platforms, including local machines, cloud services, and containerized environments. It supports a wide range of operators for tasks such as data ingestion, processing, and model training, as well as sensors and hooks for integrating with external systems. Airflow also includes features for monitoring, logging, and alerting, making it easier to debug and optimize workflows. Additionally, Airflow has a large community of users and contributors, which ensures that it stays up-to-date with the latest developments in the field.",
+  "investor_explanation": "Airflow is a critical component of the modern data science and machine learning stack, enabling organizations to streamline their workflows, reduce manual errors, and increase productivity. By automating complex data pipelines, Airflow helps companies to accelerate their time-to-market, improve model accuracy, and reduce costs. As the demand for AI and ML solutions continues to grow, Airflow is well-positioned to become a key player in the industry, with a wide range of applications across sectors such as finance, healthcare, and e-commerce.",
+  "examples": [
+    "We use Airflow to schedule our daily data ingestion pipeline, which fetches data from multiple sources and loads it into our data warehouse.",
+    "Airflow is used to automate our model training workflow, which includes data preprocessing, feature engineering, and hyperparameter tuning.",
+    "We've integrated Airflow with our CI/CD pipeline to automate the deployment of our machine learning models to production."
+  ],
+  "related_terms": [
+    "Apache Beam",
+    "Kubeflow",
+    "Zapier"
+  ],
+  "prerequisites": [
+    "Data Pipeline"
+  ],
+  "references": [
+    "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
+  ],
+  "interview_questions": [
+    "How would you use Airflow to automate a data pipeline?",
+    "What are some best practices for designing and implementing Airflow workflows?",
+    "How do you handle errors and retries in Airflow?"
+  ],
+  "common_mistakes": [
+    "Not properly handling task dependencies and ordering in Airflow DAGs",
+    "Insufficient monitoring and logging of Airflow workflows, leading to debugging challenges"
+  ]
+}

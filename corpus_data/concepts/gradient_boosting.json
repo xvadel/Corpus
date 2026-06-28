@@ -1,0 +1,39 @@
+{
+  "id": "gradient_boosting",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "Gradient Boosting",
+  "difficulty": "Intermediate",
+  "definition": "Gradient Boosting is a supervised learning algorithm that combines multiple weak models to create a strong predictive model by iteratively training each subsequent model to correct the errors of the previous model.",
+  "simple_explanation": "Imagine you're trying to guess someone's weight, and you ask multiple friends for their guesses. Each friend might not be very good at guessing, but if you take all their guesses and combine them in a smart way, you might get a really good estimate. Gradient Boosting works in a similar way, using many simple models to create one very accurate model. It's a way for computers to learn from data by combining many small pieces of information.",
+  "technical_explanation": "Gradient Boosting is an ensemble learning technique that constructs an additive model by training a sequence of decision trees, with each tree attempting to correct the errors of the previous tree. The algorithm works by computing the gradient of the loss function with respect to the predictions of the previous model, and using this gradient to train the next model. This process is repeated multiple times, with the final prediction being a weighted sum of the predictions from all the individual models. Gradient Boosting can be used for both regression and classification tasks, and is particularly effective for handling complex, non-linear relationships between features.",
+  "investor_explanation": "Gradient Boosting is a crucial technology for any company looking to build accurate predictive models from large datasets. By leveraging Gradient Boosting, businesses can unlock significant value from their data, whether it's predicting customer churn, forecasting sales, or identifying high-risk loans. With its ability to handle complex relationships and non-linear interactions, Gradient Boosting can provide a significant competitive advantage in industries such as finance, healthcare, and marketing. As a result, investing in Gradient Boosting technology can have a substantial impact on a company's bottom line.",
+  "examples": [
+    "I used Gradient Boosting to build a model that predicts customer churn, and it outperformed our previous model by 20%.",
+    "We applied Gradient Boosting to our sales forecasting data, and it allowed us to reduce our forecasting error by 15%.",
+    "Gradient Boosting was instrumental in helping us identify high-risk loans, which has saved our company millions of dollars in potential losses."
+  ],
+  "related_terms": [
+    "Decision Trees",
+    "Random Forest",
+    "AdaBoost",
+    "Ensemble Learning"
+  ],
+  "prerequisites": [
+    "Decision Trees",
+    "Loss Function"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1203.3498"
+  ],
+  "interview_questions": [
+    "How does Gradient Boosting handle missing values in the data?",
+    "What is the difference between Gradient Boosting and AdaBoost, and when would you use each?",
+    "How do you tune the hyperparameters of a Gradient Boosting model to optimize its performance?"
+  ],
+  "common_mistakes": [
+    "Not handling missing values properly, which can lead to biased models.",
+    "Overfitting the model by using too many decision trees or too complex trees."
+  ]
+}

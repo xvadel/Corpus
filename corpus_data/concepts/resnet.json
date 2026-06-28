@@ -1,0 +1,38 @@
+{
+  "id": "resnet",
+  "domain": "AI",
+  "subdomain": "Computer Vision",
+  "category": "Models",
+  "term": "ResNet",
+  "difficulty": "Advanced",
+  "definition": "ResNet is a deep neural network architecture that utilizes residual connections to ease the training process and improve the accuracy of image classification tasks.",
+  "simple_explanation": "ResNet is a type of computer model that helps machines recognize objects in images more accurately by using a special technique to connect different parts of the model. This technique allows the model to learn from its mistakes and get better over time. It's like a big team of experts working together to solve a puzzle.",
+  "technical_explanation": "ResNet, short for Residual Network, is a convolutional neural network (CNN) architecture that introduces residual connections, which are skip connections that bypass a few layers, to mitigate the vanishing gradient problem. This allows the model to learn much deeper representations than previously possible, leading to state-of-the-art performance on image classification tasks. The residual connections also help to regularize the model and reduce overfitting. ResNet has been widely adopted and has become a standard component in many computer vision pipelines.",
+  "investor_explanation": "ResNet is a game-changer for computer vision applications, enabling machines to accurately recognize and classify objects in images. This technology has far-reaching implications for industries such as healthcare, security, and autonomous vehicles, where accurate image recognition is critical. By investing in ResNet-based solutions, companies can unlock new revenue streams and gain a competitive edge in the market. With its potential to revolutionize image recognition, ResNet is an attractive opportunity for investors looking to capitalize on the growing demand for AI-powered computer vision solutions.",
+  "examples": [
+    "We used ResNet-50 as the backbone for our object detection model to achieve state-of-the-art performance on the COCO dataset.",
+    "The ResNet architecture allowed us to train a deep neural network with over 100 layers, which significantly improved our model's accuracy on the ImageNet classification task.",
+    "By leveraging the residual connections in ResNet, we were able to reduce the training time of our model by 30% while maintaining its accuracy."
+  ],
+  "related_terms": [
+    "ConvNet",
+    "ImageNet",
+    "Batch Normalization"
+  ],
+  "prerequisites": [
+    "Image Classification",
+    "Convolution"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1512.03385"
+  ],
+  "interview_questions": [
+    "How do residual connections in ResNet help to alleviate the vanishing gradient problem?",
+    "What are the key differences between ResNet and other deep neural network architectures?",
+    "How would you implement a ResNet-based model for a real-world image classification task?"
+  ],
+  "common_mistakes": [
+    "Failing to properly initialize the weights of the residual connections, leading to unstable training.",
+    "Not using batch normalization in conjunction with ResNet, which can significantly impact the model's performance."
+  ]
+}

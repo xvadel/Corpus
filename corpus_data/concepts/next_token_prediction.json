@@ -14,11 +14,7 @@
     "Our team discussed the differences between Next Token Prediction and alternative solutions.",
     "Understanding Next Token Prediction is highly beneficial when scaling our Language Modeling capabilities."
   ],
-  "related_terms": [
-    "Next Token Prediction",
-    "Natural Language Processing",
-    "Language Modeling"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Autoregressive Model",
     "Tokenization"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Next Token Prediction, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Next Token Prediction."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.14165"
+  ]
 }

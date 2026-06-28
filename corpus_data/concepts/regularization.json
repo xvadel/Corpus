@@ -1,0 +1,38 @@
+{
+  "id": "regularization",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "Regularization",
+  "difficulty": "Intermediate",
+  "definition": "Regularization is a technique used in machine learning to prevent overfitting by adding a penalty term to the loss function to discourage large weights.",
+  "simple_explanation": "Imagine you're trying to learn how to throw a ball into a basket, but you're getting too good at throwing it into one specific spot, so you add a rule to make it harder to throw it exactly into that spot, to make your throwing skills more general. Regularization is like that rule, it helps the machine learning model be more general and not too perfect for just one set of data. This way, it can work better with new, unseen data.",
+  "technical_explanation": "Regularization techniques, such as L1 and L2 regularization, are used to reduce overfitting by adding a penalty term to the loss function that is proportional to the magnitude of the model's weights. This encourages the model to use smaller weights, which can help to prevent overfitting. Additionally, dropout regularization can be used to randomly drop out units during training, which can help to prevent the model from relying too heavily on any one unit. Regularization can be particularly useful in models with a large number of parameters, such as neural networks.",
+  "investor_explanation": "Regularization is a critical component of machine learning models, as it enables them to generalize well to new, unseen data. This is particularly important in commercial applications, where models are often trained on limited datasets and must be able to perform well in a variety of scenarios. By preventing overfitting, regularization can help to improve the accuracy and reliability of machine learning models, which can in turn drive business value by enabling more effective decision-making and automation. As such, investing in research and development of regularization techniques can have significant commercial benefits.",
+  "examples": [
+    "We used L2 regularization to prevent overfitting in our neural network model, which improved its performance on the test set.",
+    "I applied dropout regularization to my model, which helped to reduce its reliance on any one feature and improved its overall robustness.",
+    "The regularization term in our loss function helped to prevent the model from fitting the noise in the training data, which improved its generalization performance."
+  ],
+  "related_terms": [
+    "Overfitting",
+    "Underfitting",
+    "Hyperparameter Tuning"
+  ],
+  "prerequisites": [
+    "Overfitting",
+    "Loss Function"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1412.6980"
+  ],
+  "interview_questions": [
+    "Can you explain the difference between L1 and L2 regularization?",
+    "How does dropout regularization work, and what are its benefits?",
+    "How would you determine the optimal regularization strength for a given model?"
+  ],
+  "common_mistakes": [
+    "Using too much regularization, which can lead to underfitting.",
+    "Not using regularization at all, which can lead to overfitting."
+  ]
+}

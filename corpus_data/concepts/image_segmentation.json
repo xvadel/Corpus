@@ -1,0 +1,38 @@
+{
+  "id": "image_segmentation",
+  "domain": "AI",
+  "subdomain": "Computer Vision",
+  "category": "Image Processing",
+  "term": "Image Segmentation",
+  "difficulty": "Advanced",
+  "definition": "Image segmentation is a computer vision technique that involves dividing an image into its constituent parts or objects, where each part is a collection of pixels that share similar characteristics.",
+  "simple_explanation": "Image segmentation is like taking a picture and separating it into different parts, like identifying the sky, trees, and cars in a photo. It helps computers understand what's in an image and where things are. This is useful for things like self-driving cars, medical imaging, and surveillance systems.",
+  "technical_explanation": "Image segmentation is a fundamental task in computer vision that involves assigning a label to each pixel in an image, where the label corresponds to a specific object or region of interest. This is typically achieved using deep learning models, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), which learn to identify patterns and features in images. The output of image segmentation can be used for various applications, including object detection, tracking, and scene understanding.",
+  "investor_explanation": "Image segmentation is a critical technology for various industries, including healthcare, automotive, and security. By enabling computers to accurately identify and separate objects within images, image segmentation can improve the accuracy of medical diagnoses, enhance the safety of self-driving cars, and increase the effectiveness of surveillance systems. As such, investing in image segmentation technology can have significant commercial returns and societal benefits.",
+  "examples": [
+    "We used image segmentation to separate the tumor from the surrounding tissue in the medical images.",
+    "The self-driving car's computer vision system relied on image segmentation to detect and respond to pedestrians and other vehicles.",
+    "The surveillance system used image segmentation to identify and track individuals within the camera's field of view."
+  ],
+  "related_terms": [
+    "Object Detection",
+    "Semantic Segmentation",
+    "Instance Segmentation"
+  ],
+  "prerequisites": [
+    "Object Detection",
+    "Image Classification"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1505.04597"
+  ],
+  "interview_questions": [
+    "How would you approach image segmentation for a dataset with varying lighting conditions?",
+    "What are the key differences between semantic segmentation and instance segmentation?",
+    "How do you handle class imbalance in image segmentation tasks?"
+  ],
+  "common_mistakes": [
+    "Failing to preprocess images properly, leading to poor segmentation performance.",
+    "Not accounting for class imbalance in the dataset, resulting in biased models."
+  ]
+}

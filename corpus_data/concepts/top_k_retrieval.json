@@ -14,11 +14,7 @@
     "Our team discussed the differences between Top-K Retrieval and alternative solutions.",
     "Understanding Top-K Retrieval is highly beneficial when scaling our Retrieval capabilities."
   ],
-  "related_terms": [
-    "Top-K Retrieval",
-    "Retrieval Augmented Generation",
-    "Retrieval"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Similarity Search"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Top-K Retrieval, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Top-K Retrieval."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.11401"
+  ]
 }

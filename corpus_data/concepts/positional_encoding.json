@@ -14,11 +14,7 @@
     "Our team discussed the differences between Positional Encoding and alternative solutions.",
     "Understanding Positional Encoding is highly beneficial when scaling our Transformers capabilities."
   ],
-  "related_terms": [
-    "Positional Encoding",
-    "Deep Learning Foundations",
-    "Transformers"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Attention"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Positional Encoding, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Positional Encoding."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1706.03762"
+  ]
 }

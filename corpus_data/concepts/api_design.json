@@ -14,11 +14,7 @@
     "Our team discussed the differences between API Design and alternative solutions.",
     "Understanding API Design is highly beneficial when scaling our System Design capabilities."
   ],
-  "related_terms": [
-    "API Design",
-    "AI Engineering",
-    "System Design"
-  ],
+  "related_terms": [],
   "prerequisites": [],
   "interview_questions": [
     "How does API Design fit into standard AI Engineering architectures?",
@@ -29,5 +25,7 @@
     "Misconfiguring parameters for API Design, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of API Design."
   ],
-  "references": []
+  "references": [
+    "https://swagger.io/specification/"
+  ]
 }

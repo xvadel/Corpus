@@ -14,14 +14,8 @@
     "Our team discussed the differences between Chain of Thought and alternative solutions.",
     "Understanding Chain of Thought is highly beneficial when scaling our LLMs capabilities."
   ],
-  "related_terms": [
-    "Chain of Thought",
-    "Natural Language Processing",
-    "LLMs"
-  ],
-  "prerequisites": [
-    "Prompt Engineering"
-  ],
+  "related_terms": [],
+  "prerequisites": [],
   "interview_questions": [
     "How does Chain of Thought fit into standard Natural Language Processing architectures?",
     "What are the major engineering trade-offs when implementing Chain of Thought?",
@@ -31,5 +25,7 @@
     "Misconfiguring parameters for Chain of Thought, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Chain of Thought."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2201.11903"
+  ]
 }

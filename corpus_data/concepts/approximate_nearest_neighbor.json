@@ -14,11 +14,7 @@
     "Our team discussed the differences between Approximate Nearest Neighbor and alternative solutions.",
     "Understanding Approximate Nearest Neighbor is highly beneficial when scaling our Retrieval capabilities."
   ],
-  "related_terms": [
-    "Approximate Nearest Neighbor",
-    "Retrieval Augmented Generation",
-    "Retrieval"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Embedding",
     "Cosine Similarity"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Approximate Nearest Neighbor, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Approximate Nearest Neighbor."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1702.08734"
+  ]
 }

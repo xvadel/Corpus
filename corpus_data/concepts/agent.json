@@ -14,11 +14,7 @@
     "Our team discussed the differences between Agent and alternative solutions.",
     "Understanding Agent is highly beneficial when scaling our Core Concepts capabilities."
   ],
-  "related_terms": [
-    "Agent",
-    "Agentic AI",
-    "Core Concepts"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Planner",
     "Memory",
@@ -33,5 +29,7 @@
     "Misconfiguring parameters for Agent, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Agent."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2210.03629"
+  ]
 }

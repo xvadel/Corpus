@@ -14,11 +14,7 @@
     "Our team discussed the differences between Tool Calling and alternative solutions.",
     "Understanding Tool Calling is highly beneficial when scaling our LLMs capabilities."
   ],
-  "related_terms": [
-    "Tool Calling",
-    "Natural Language Processing",
-    "LLMs"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Language Model"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Tool Calling, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Tool Calling."
   ],
-  "references": []
+  "references": [
+    "https://platform.openai.com/docs/guides/function-calling"
+  ]
 }

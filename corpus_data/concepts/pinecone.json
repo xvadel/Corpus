@@ -14,11 +14,7 @@
     "Our team discussed the differences between Pinecone and alternative solutions.",
     "Understanding Pinecone is highly beneficial when scaling our Vector Databases capabilities."
   ],
-  "related_terms": [
-    "Pinecone",
-    "Retrieval Augmented Generation",
-    "Vector Databases"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Vector Database"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Pinecone, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Pinecone."
   ],
-  "references": []
+  "references": [
+    "https://docs.pinecone.io/"
+  ]
 }

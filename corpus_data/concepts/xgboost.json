@@ -1,0 +1,37 @@
+{
+  "id": "xgboost",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Supervised Learning",
+  "term": "XGBoost",
+  "difficulty": "Intermediate",
+  "definition": "XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible, and portable.",
+  "simple_explanation": "XGBoost is a type of machine learning model that helps computers make predictions or decisions by combining many weak models into a strong one. It's particularly good at handling large datasets and is often used in competitions and real-world applications. XGBoost is also very fast and efficient, making it a popular choice among data scientists.",
+  "technical_explanation": "XGBoost is an implementation of the gradient boosting framework that uses a tree-based model as the base learner. It utilizes a gradient boosting algorithm to iteratively add decision trees that correct the errors of the previous trees, resulting in a highly accurate predictive model. XGBoost also incorporates several key optimizations, including sparse-aware handling, blocked structure for parallel computing, and a cache-aware accessor, which significantly improve its performance and scalability. Additionally, XGBoost supports various objective functions, including regression, classification, and ranking, making it a versatile tool for a wide range of machine learning tasks.",
+  "investor_explanation": "XGBoost is a game-changer for businesses that rely on data-driven decision-making. By providing a highly efficient and scalable machine learning solution, XGBoost enables companies to unlock the full potential of their data, driving significant improvements in predictive accuracy and business outcomes. With its widespread adoption in the data science community and its proven track record of delivering results, XGBoost is an attractive investment opportunity for companies looking to stay ahead of the curve in the rapidly evolving AI landscape. By investing in XGBoost, companies can gain a competitive edge in the market and drive long-term growth and success.",
+  "examples": [
+    "We used XGBoost to build a predictive model that forecasted customer churn with high accuracy, allowing us to proactively target at-risk customers and reduce churn rates.",
+    "XGBoost was instrumental in helping us win the Kaggle competition by providing a highly optimized and scalable solution for handling large datasets.",
+    "Our team leveraged XGBoost to develop a recommender system that delivered personalized product recommendations to customers, resulting in significant increases in sales and customer engagement."
+  ],
+  "related_terms": [
+    "Gradient Boosting",
+    "Decision Trees",
+    "Random Forest"
+  ],
+  "prerequisites": [
+    "Gradient Boosting"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1603.02754"
+  ],
+  "interview_questions": [
+    "How does XGBoost handle missing values in the dataset?",
+    "What are the key hyperparameters in XGBoost and how do you tune them?",
+    "How does XGBoost compare to other gradient boosting frameworks, such as LightGBM and CatBoost?"
+  ],
+  "common_mistakes": [
+    "Not handling missing values properly, which can lead to biased models and poor performance.",
+    "Not tuning hyperparameters, which can result in suboptimal performance and overfitting."
+  ]
+}

@@ -14,14 +14,8 @@
     "Our team discussed the differences between Zero-Shot and alternative solutions.",
     "Understanding Zero-Shot is highly beneficial when scaling our Prompt Engineering capabilities."
   ],
-  "related_terms": [
-    "Zero-Shot",
-    "Agentic AI",
-    "Prompt Engineering"
-  ],
-  "prerequisites": [
-    "Prompt Engineering"
-  ],
+  "related_terms": [],
+  "prerequisites": [],
   "interview_questions": [
     "How does Zero-Shot fit into standard Agentic AI architectures?",
     "What are the major engineering trade-offs when implementing Zero-Shot?",
@@ -31,5 +25,7 @@
     "Misconfiguring parameters for Zero-Shot, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Zero-Shot."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2005.14165"
+  ]
 }

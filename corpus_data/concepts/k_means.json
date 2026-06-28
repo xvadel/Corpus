@@ -1,0 +1,37 @@
+{
+  "id": "k_means",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Unsupervised Learning",
+  "term": "K-Means",
+  "difficulty": "Beginner",
+  "definition": "K-Means is an unsupervised machine learning algorithm that partitions the data into K clusters based on their similarities.",
+  "simple_explanation": "Imagine you have a bunch of different colored balls, and you want to group them by color. K-Means is like a tool that helps you do that, but instead of colors, it groups things by how similar they are. It's useful for finding patterns in data that aren't immediately obvious.",
+  "technical_explanation": "K-Means is a type of unsupervised learning algorithm that uses an iterative refinement approach to partition the data into K clusters. The algorithm starts by randomly initializing K centroids, then assigns each data point to the closest centroid, and finally updates the centroids by calculating the mean of all data points assigned to each cluster. This process is repeated until the centroids converge or a stopping criterion is met. K-Means is sensitive to the initial placement of centroids and can get stuck in local optima, so techniques like K-Means++ are often used to improve the initialization.",
+  "investor_explanation": "K-Means is a powerful tool for uncovering hidden patterns in customer data, allowing businesses to segment their market and tailor their products and services to specific groups. By applying K-Means to large datasets, companies can identify trends and preferences that would be difficult to detect through traditional analysis, giving them a competitive edge in the market. As data continues to grow in importance, K-Means and other machine learning algorithms will play an increasingly critical role in driving business success.",
+  "examples": [
+    "We used K-Means to cluster our customer data and identified three distinct segments with different purchasing behaviors.",
+    "K-Means helped us to group similar genes together based on their expression levels, which aided in the discovery of new biological pathways.",
+    "The K-Means algorithm was applied to the sensor data to detect anomalous patterns that could indicate equipment failure."
+  ],
+  "related_terms": [
+    "Hierarchical Clustering",
+    "DBSCAN",
+    "Expectation-Maximization"
+  ],
+  "prerequisites": [
+    "Clustering"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1703.01784"
+  ],
+  "interview_questions": [
+    "How would you determine the optimal number of clusters for a K-Means model?",
+    "What are some common techniques for initializing the centroids in K-Means?",
+    "How does K-Means handle outliers and noisy data?"
+  ],
+  "common_mistakes": [
+    "Choosing an inappropriate value for K, which can lead to over- or under-clustering.",
+    "Not scaling the data before applying K-Means, which can cause features with large ranges to dominate the clustering process."
+  ]
+}

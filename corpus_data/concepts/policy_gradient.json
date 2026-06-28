@@ -1,0 +1,37 @@
+{
+  "id": "policy_gradient",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Reinforcement Learning",
+  "term": "Policy Gradient",
+  "difficulty": "Advanced",
+  "definition": "Policy gradient is a type of reinforcement learning algorithm that learns the optimal policy by directly optimizing the expected cumulative reward using gradient ascent.",
+  "simple_explanation": "Imagine you're trying to teach a robot to play a game, and you want it to learn the best way to play by trying different actions and seeing what works. Policy gradient is a way for the robot to figure out the best actions to take by using a special kind of math that helps it learn from its mistakes. It's like the robot is getting better at the game by practicing and adjusting its strategy.",
+  "technical_explanation": "Policy gradient methods are a class of model-free reinforcement learning algorithms that learn the optimal policy by directly optimizing the expected cumulative reward using gradient ascent. This is achieved by computing the gradient of the expected cumulative reward with respect to the policy parameters and updating the parameters in the direction of the gradient. Policy gradient methods can be further divided into two categories: vanilla policy gradient and actor-critic methods, with the latter using a value function estimate to reduce the variance of the gradient estimate. The policy gradient theorem provides a framework for computing the gradient of the expected cumulative reward, which is essential for policy gradient methods.",
+  "investor_explanation": "Policy gradient is a crucial component of reinforcement learning, enabling autonomous systems to learn from their environment and make decisions in complex, dynamic situations. This technology has significant commercial potential, particularly in areas such as robotics, game playing, and autonomous vehicles, where systems need to adapt and learn from their interactions with the environment. By investing in policy gradient research and development, companies can unlock new opportunities for innovation and stay ahead of the competition in the rapidly evolving AI landscape.",
+  "examples": [
+    "We used policy gradient to train our robot to navigate through a maze and reach the goal in the shortest possible time.",
+    "The policy gradient algorithm allowed our game-playing agent to learn the optimal strategy and beat human opponents.",
+    "In our autonomous driving project, we employed policy gradient to teach the vehicle to adapt to different road conditions and avoid obstacles."
+  ],
+  "related_terms": [
+    "Q-Learning",
+    "Actor-Critic Methods"
+  ],
+  "prerequisites": [
+    "Markov Decision Process",
+    "Reward Function"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1506.02438"
+  ],
+  "interview_questions": [
+    "How does policy gradient differ from Q-learning, and when would you use each?",
+    "Can you explain the policy gradient theorem and its significance in reinforcement learning?",
+    "How would you implement a policy gradient algorithm to solve a complex control problem?"
+  ],
+  "common_mistakes": [
+    "Confusing the policy gradient with the value function gradient, which can lead to incorrect updates and poor performance.",
+    "Failing to properly initialize the policy parameters, which can cause the algorithm to converge to a suboptimal solution."
+  ]
+}

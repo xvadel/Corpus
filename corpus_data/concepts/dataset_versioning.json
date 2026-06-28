@@ -14,11 +14,7 @@
     "Our team discussed the differences between Dataset Versioning and alternative solutions.",
     "Understanding Dataset Versioning is highly beneficial when scaling our Data Management capabilities."
   ],
-  "related_terms": [
-    "Dataset Versioning",
-    "MLOps",
-    "Data Management"
-  ],
+  "related_terms": [],
   "prerequisites": [],
   "interview_questions": [
     "How does Dataset Versioning fit into standard MLOps architectures?",
@@ -29,5 +25,7 @@
     "Misconfiguring parameters for Dataset Versioning, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Dataset Versioning."
   ],
-  "references": []
+  "references": [
+    "https://dvc.org/doc/start"
+  ]
 }

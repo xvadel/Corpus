@@ -14,11 +14,7 @@
     "Our team discussed the differences between Data Pipeline and alternative solutions.",
     "Understanding Data Pipeline is highly beneficial when scaling our Data Management capabilities."
   ],
-  "related_terms": [
-    "Data Pipeline",
-    "MLOps",
-    "Data Management"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Dataset Versioning"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for Data Pipeline, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Data Pipeline."
   ],
-  "references": []
+  "references": [
+    "https://en.wikipedia.org/wiki/Pipeline_(computing)"
+  ]
 }

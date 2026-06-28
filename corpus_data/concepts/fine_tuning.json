@@ -14,11 +14,7 @@
     "Our team discussed the differences between Fine-Tuning and alternative solutions.",
     "Understanding Fine-Tuning is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "Fine-Tuning",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Training",
     "Language Model"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for Fine-Tuning, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Fine-Tuning."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/1801.06146"
+  ]
 }

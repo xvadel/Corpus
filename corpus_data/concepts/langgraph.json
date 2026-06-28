@@ -14,11 +14,7 @@
     "Our team discussed the differences between LangGraph and alternative solutions.",
     "Understanding LangGraph is highly beneficial when scaling our Orchestration capabilities."
   ],
-  "related_terms": [
-    "LangGraph",
-    "AI Engineering",
-    "Orchestration"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "LangChain",
     "Workflow Orchestration"
@@ -32,5 +28,7 @@
     "Misconfiguring parameters for LangGraph, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of LangGraph."
   ],
-  "references": []
+  "references": [
+    "https://langchain-ai.github.io/langgraph/"
+  ]
 }

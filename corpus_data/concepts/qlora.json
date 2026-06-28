@@ -14,11 +14,7 @@
     "Our team discussed the differences between QLoRA and alternative solutions.",
     "Understanding QLoRA is highly beneficial when scaling our Model Adaptation capabilities."
   ],
-  "related_terms": [
-    "QLoRA",
-    "Agentic AI",
-    "Model Adaptation"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "LoRA"
   ],
@@ -31,5 +27,7 @@
     "Misconfiguring parameters for QLoRA, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of QLoRA."
   ],
-  "references": []
+  "references": [
+    "https://arxiv.org/abs/2305.14314"
+  ]
 }

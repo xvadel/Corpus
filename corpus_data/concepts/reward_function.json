@@ -1,0 +1,34 @@
+{
+  "id": "reward_function",
+  "domain": "AI",
+  "subdomain": "Machine Learning",
+  "category": "Reinforcement Learning",
+  "term": "Reward Function",
+  "difficulty": "Beginner",
+  "definition": "A reward function is a mathematical function that maps an agent's actions to a reward signal, indicating the desirability of the action in a given state.",
+  "simple_explanation": "Imagine you're training a robot to pick up toys, and every time it picks one up, you give it a treat, which is like a reward, so it learns to pick up more toys to get more treats. The reward function is like a rule that decides how many treats the robot gets for each toy it picks up. This helps the robot learn what actions are good or bad.",
+  "technical_explanation": "In reinforcement learning, the reward function is a crucial component that guides the learning process of an agent by providing feedback in the form of rewards or penalties. The reward function is typically designed to capture the desired behavior or objective of the task, and its output is used to update the agent's policy. A well-designed reward function should be able to balance exploration and exploitation, and provide a clear signal to the agent about what actions are desirable. The reward function can be either manually designed or learned from data, and its complexity can vary greatly depending on the task at hand.",
+  "investor_explanation": "The reward function is a key innovation in AI that enables machines to learn from their environment and make decisions autonomously. By designing effective reward functions, companies can create AI systems that optimize business outcomes, such as maximizing revenue or minimizing costs. This technology has the potential to disrupt industries such as robotics, healthcare, and finance, and investors who understand its power can gain a competitive edge in the market. With the right reward function, AI systems can learn to make decisions that align with business objectives, leading to increased efficiency and profitability.",
+  "examples": [
+    "We designed a reward function that penalizes the agent for taking actions that result in high energy consumption, so it learns to optimize its behavior for energy efficiency.",
+    "The reward function we used in our robotics project rewards the robot for picking up objects quickly and accurately, which improved its overall performance.",
+    "In our game-playing AI, the reward function gives a high reward for winning the game and a low reward for losing, which helps the agent learn to make strategic decisions."
+  ],
+  "related_terms": [
+    "Q-Learning",
+    "Deep Q-Networks"
+  ],
+  "prerequisites": [],
+  "references": [
+    "https://arxiv.org/abs/1802.09477"
+  ],
+  "interview_questions": [
+    "How would you design a reward function for a robot that needs to navigate a maze and reach a goal?",
+    "What are some common challenges in designing effective reward functions, and how would you address them?",
+    "Can you explain the difference between a reward function and a value function in reinforcement learning?"
+  ],
+  "common_mistakes": [
+    "Designing a reward function that is too sparse or too dense, which can lead to slow learning or convergence issues.",
+    "Not considering the potential for reward hacking, where the agent finds ways to exploit the reward function and achieve high rewards without achieving the desired behavior."
+  ]
+}

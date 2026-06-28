@@ -1,0 +1,37 @@
+{
+  "id": "object_detection",
+  "domain": "AI",
+  "subdomain": "Deep Learning",
+  "category": "CNN",
+  "term": "Object Detection",
+  "difficulty": "Intermediate",
+  "definition": "Object detection is a computer vision technique that involves locating and classifying objects within an image or video using deep learning models.",
+  "simple_explanation": "Object detection is a way for computers to find and identify things in pictures or videos, like cars, people, or animals. It's like a game of 'I Spy' for computers. This technology is used in self-driving cars, security cameras, and social media platforms to recognize and tag objects.",
+  "technical_explanation": "Object detection algorithms, such as YOLO, SSD, and Faster R-CNN, utilize convolutional neural networks (CNNs) to extract features from images and classify objects. These models are trained on large datasets of labeled images to learn the patterns and characteristics of different objects. The detection process involves generating bounding boxes around the objects, which are then classified into specific categories. Object detection has numerous applications in computer vision, including image and video analysis, surveillance, and autonomous vehicles.",
+  "investor_explanation": "Object detection is a crucial technology for various industries, including automotive, security, and healthcare. It has the potential to revolutionize applications such as self-driving cars, smart homes, and medical diagnosis. By investing in object detection research and development, companies can gain a competitive edge in the market and create innovative products that improve people's lives. The technology has already shown significant promise in improving safety, efficiency, and accuracy in various domains.",
+  "examples": [
+    "We used a object detection algorithm to identify pedestrians and cars in the self-driving car's camera feed.",
+    "The object detection model was able to detect tumors in medical images with high accuracy.",
+    "The security system employed object detection to detect and alert authorities about suspicious activity."
+  ],
+  "related_terms": [
+    "Image Classification",
+    "Segmentation",
+    "Convolutional Neural Networks"
+  ],
+  "prerequisites": [
+    "Image Classification"
+  ],
+  "references": [
+    "https://arxiv.org/abs/1506.01497"
+  ],
+  "interview_questions": [
+    "How does the YOLO algorithm work, and what are its advantages and disadvantages?",
+    "What is the difference between object detection and image classification, and how do they relate to each other?",
+    "How would you approach object detection in a scenario with limited training data and high variability in object appearance?"
+  ],
+  "common_mistakes": [
+    "Not considering the class imbalance problem in object detection datasets, which can lead to biased models.",
+    "Not evaluating object detection models using appropriate metrics, such as mean average precision (mAP), which can provide a comprehensive understanding of the model's performance."
+  ]
+}

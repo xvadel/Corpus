@@ -14,16 +14,14 @@
     "Our team discussed the differences between Bi-Encoder and alternative solutions.",
     "Understanding Bi-Encoder is highly beneficial when scaling our Retrieval capabilities."
   ],
-  "related_terms": [
-    "Bi-Encoder",
-    "Retrieval Augmented Generation",
-    "Retrieval"
-  ],
+  "related_terms": [],
   "prerequisites": [
     "Embedding",
     "Similarity Search"
   ],
-  "references": [],
+  "references": [
+    "https://arxiv.org/abs/1908.10084"
+  ],
   "interview_questions": [
     "How does Bi-Encoder fit into standard Retrieval Augmented Generation architectures?",
     "What are the major engineering trade-offs when implementing Bi-Encoder?",
