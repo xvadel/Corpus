@@ -1,148 +1,288 @@
-# Corpus 🗣️💼
+# Corpus
 
-> **Domain-specific language learning for high-stakes professional communication.**
-> Master specialized vocabulary, pitch with confidence, and communicate like an expert in your field.
+[![Status](https://img.shields.io/badge/Status-Alpha-orange.svg)](https://github.com/xvadel/Corpus)
+[![Python Version](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-June%202026-brightgreen.svg)](https://github.com/xvadel/Corpus)
 
----
-
-**Corpus** is an AI-powered, self-hostable learning platform designed to bridge the gap between technical mastery and professional communication. Unlike generic language platforms, Corpus targets the specialized vocabulary, architectural concepts, and conversational patterns needed in high-stakes professional environments—investor pitches, technical design reviews, system design interviews, and executive business alignment meetings.
-
----
-
-## 🎯 Core Problem We Solve
-
-*   **Terminology Gaps**: Technical practitioners often struggle to explain system design concepts or financial structures using correct, professional terms.
-*   **High-Stakes Speaking Anxiety**: Learners lack sandbox environments to practice roleplaying critical, interactive scenarios with real-time domain vocabulary reinforcement.
-*   **Generalist Scope**: Traditional language apps focus on standard conversational situations rather than domain-specific professional scenarios.
+> **Corpus** is an AI-powered educational platform that transforms software projects and technical concepts into personalized learning experiences using Knowledge-First RAG, curriculum generation, and adaptive AI tutoring.
 
 ---
 
-## ✨ Features & Architecture Highlights
+## Table of Contents
 
-### 1. Knowledge-First RAG Pipeline
-Built on a deep, prerequisites-aware Ontology database of **108 concepts** across Deep Learning, NLP, RAG, Fine-Tuning, and AI Engineering. 
-*   **Stage 1 Retrieval (Bi-Encoder Recall)**: Uses `BAAI/bge-small-en-v1.5` text embeddings (automatically query-prefixed for asymmetric search) to fetch the top candidate concepts from a local `ChromaDB` instance.
-*   **Stage 2 Precision (Cross-Encoder Rerank)**: Reranks candidate vectors using the `BAAI/bge-reranker-base` model.
-
-### 2. User Skill Tracking & Curriculum
-*   **SQLite UserSkillModel**: Persists user interactions (success/failure) and calculates dynamic mastery levels via an **Exponential Moving Average (EMA)** algorithm.
-*   **GapAnalyzer Curriculum Engine**: Performs topological sorting over prerequisite concepts to generate personalized learning paths based on the gaps in the user's active skill model.
-
-### 3. AI Coach Simulator
-Provides interactive domain-specific roleplay coaches:
-*   **Alex Mercer** (Startup & VC Partner): Financial pitches, runway, and valuations.
-*   **Sarah Connor** (Principal Software Architect): Low-latency designs, scaling, and technical debt.
-*   **Dr. Evelyn Vance** (Lead AI Architect): Document chunking, embeddings, and RAG architectures.
-*   **Michael Vance** (Product Management Director): KPI alignment, Q3 roadmap, and churn rate.
-
----
-
-## 📊 Retrieval Performance Metrics
-
-Our evaluation benchmark (evaluating 60 complex queries across Easy, Medium, and Hard tiers) shows a massive retrieval recall and precision uplift:
-
-| Metric | Vector Only | Vector + Cross-Encoder Rerank | Delta |
-| :--- | :---: | :---: | :---: |
-| **Recall@1** | 56.7% | **70.0%** | **+13.3%** |
-| **Recall@3** | 68.3% | **83.3%** | **+15.0%** |
-| **Recall@5** | 75.0% | **86.7%** | **+11.7%** |
-| **Mean Reciprocal Rank (MRR)** | 0.6411 | **0.7659** | **+0.1248** |
+* [Project Vision](#project-vision)
+* [Key Features](#key-features)
+* [Architecture Diagram](#architecture-diagram)
+* [Repository Structure](#repository-structure)
+* [Knowledge-First Architecture](#knowledge-first-architecture)
+* [Retrieval Pipeline](#retrieval-pipeline)
+* [Curriculum Engine](#curriculum-engine)
+* [Evaluation Framework](#evaluation-framework)
+* [Installation](#installation)
+* [Quick Start](#quick-start)
+* [Current Development Status](#current-development-status)
+* [Technology Stack](#technology-stack)
+* [Documentation](#documentation)
+* [Contributing](#contributing)
+* [Future Work](#future-work)
+* [License](#license)
 
 ---
 
-## 🏗️ Technical Stack
+## Project Vision
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend** | Svelte 5 + TypeScript + Vite + Tailwind CSS |
-| **Backend** | FastAPI (Python 3.11+) + Uvicorn |
-| **Database** | SQLite + ChromaDB (Vector Store) |
-| **AI Models** | Groq (Llama 3.3 70B), SentenceTransformers (`bge-small-en-v1.5` & `bge-reranker-base`) |
-| **Testing** | Pytest |
-| **Containerization** | Docker + Docker Compose |
+Corpus bridges the gap between deep technical mastery and high-stakes professional communication. Software developers, system architects, and AI practitioners often possess intense functional skills but struggle to pitch their projects, defend design tradeoffs, or communicate concepts using correct, authoritative terminology.
+
+Corpus solves this problem by providing an interactive simulation sandbox. Learners converse with AI-powered persona coaches—such as Venture Capitalists, Principal Architects, and Lead PMs—who validate and score their domain vocabulary usage in real-time. By grounding the learning process in structured technical concepts first, Corpus eliminates generic conversational drift and ensures high-fidelity professional alignment.
 
 ---
 
-## 📁 Repository Structure & Setup Guides
+## Key Features
 
-*   **[infrastructure/setup/CONTRIBUTING.md](file:///d:/Corpus/infrastructure/setup/CONTRIBUTING.md)**: Developer guide mapping python interpreter configurations, code standards, and PR workflows.
-*   **[infrastructure/setup/dependencies.toml](file:///d:/Corpus/infrastructure/setup/dependencies.toml)**: System dependencies manifest for Python backend and Svelte frontend.
-*   **[docs/API.md](file:///d:/Corpus/docs/API.md)**: Standard REST API specifications.
-*   **[docs/concept_schema.md](file:///d:/Corpus/docs/concept_schema.md)**: Ontology JSON document schemas.
+### Knowledge Layer
+* **AI Domain Ontology**: Core conceptual structures mapping Deep Learning, NLP, RAG, Fine-Tuning, and AI Engineering domains.
+* **Concept Repository**: Rich, JSON-documented nodes containing precise technical definitions, applications, examples, counter-examples, and commonly confused neighbors.
+* **Knowledge Graph**: A directed graph representation defining prerequisites and learning chains.
+
+### Retrieval
+* **ChromaDB Integration**: Fast local database persistence for concept retrieval.
+* **Local Embeddings**: Dense vector representations generated via local `BAAI/bge-small-en-v1.5` embeddings.
+* **Context Builder**: Dynamic assembly of definitions, keywords, and explicit disambiguation metadata into LLM agent prompts.
+* **Semantic Search**: Precise asymmetric query matching combined with cross-encoder re-ranking.
+
+### Learning
+* **Curriculum Generation**: Prerequisite-aware learning path creation via topological sorting of concept dependencies.
+* **Skill Gap Analysis**: Performance tracking using an Exponential Moving Average (EMA) scoring system to pinpoint weak nodes.
+* **Personalized Learning Paths**: Dynamic, adaptive progression paths based on structural skill gaps.
+
+### Evaluation
+* **Retrieval Metrics**: Automatic tracking of Recall@K, Precision@K, nDCG, and MRR.
+* **Knowledge Validation**: Graph-level sanity assertions for cycle detection, orphan nodes, and content quality.
+* **Suite of Tests**: Modular integration and unit tests validating ontology and retrieval logic.
 
 ---
 
-## 🚀 Quick Start
+## Architecture Diagram
 
-### Option A: Running via Docker (Recommended for Self-Hosting)
-Requires only Docker and Docker Compose installed.
+The execution flow of Corpus centers around grounding LLM generations with structured domain context pulled dynamically from the knowledge repository:
+
+```mermaid
+graph TD
+    User([User Prompt]) --> Retriever[Retriever / ChromaDB]
+    Retriever --> KB[(Knowledge Repository)]
+    KB --> CB[Context Builder]
+    CB --> Prompt[Prompt Assembly]
+    Prompt --> LLM[LLM Provider / Groq]
+    LLM --> Response([Persona Response])
+```
+
+---
+
+## Repository Structure
+
+```
+.
+├── backend/                # FastAPI application & business logic
+│   ├── curriculum/         # Gap analysis and learning path generation
+│   ├── evaluation/         # Metrics, validation scripts, and benchmarks
+│   ├── models/             # Database schemas and user state management
+│   └── retrieval/          # ChromaDB retriever and cross-encoder re-ranking
+├── corpus_data/            # Local data storage
+│   ├── chromadb/           # Persistent vector index
+│   └── concepts/           # Master JSON repository of technical concepts
+├── docs/                   # API references and JSON schemas
+├── frontend/               # Svelte 5 single page web application
+├── infrastructure/         # Environment setup and developer config files
+├── scripts/                # Database build, validation, and enrichment scripts
+└── tests/                  # Pytest unit and integration test suite
+```
+
+---
+
+## Knowledge-First Architecture
+
+Unlike prompt-heavy educational applications that experience vocabulary drift and hallucinations, Corpus relies on a **Knowledge-First Architecture**:
+
+1. **Ontology**: Defines explicit boundaries of the subject matter domain.
+2. **Concept Repository**: Models every term with a standard JSON schema containing technical explanations, keywords, aliases, and misconceptions.
+3. **Knowledge Graph**: Enforces topological order so prerequisites must be mastered before advanced topics are unlocked.
+4. **Retrieval Layer**: Serves as the real-time context provider, retrieving and injecting exact technical constraints into the LLM system prompt.
+5. **Curriculum Engine**: Adapts dynamically, selecting learning activities targeted at unresolved gaps in the knowledge graph.
+
+---
+
+## Retrieval Pipeline
+
+The retrieval pipeline processes query strings to extract relevant concept nodes.
+
+```mermaid
+graph LR
+    Query[User Query] --> BiEncoder[Stage 1: Bi-Encoder BGE-Small]
+    BiEncoder --> Chroma[(ChromaDB)]
+    Chroma --> Candidates[Top-K Candidates]
+    Candidates --> CrossEncoder[Stage 2: Cross-Encoder Rerank]
+    CrossEncoder --> Context[Context Assembly]
+    Context --> Generation[LLM Generation]
+```
+
+* **Embeddings**: Documents map term definitions, aliases, keywords, and misconceptions using `BAAI/bge-small-en-v1.5`.
+* **Retrieval**: ChromaDB queries candidates using cosine similarity.
+* **Context Building**: Concept definitions, applications, and misconceptions are extracted and parsed into prompt blocks.
+* **Generation**: The LLM persona receives the context blocks to guide response constraints.
+
+---
+
+## Curriculum Engine
+
+The curriculum engine maps out dynamic learning trajectories by calculating user skills against graph dependencies.
+
+```mermaid
+graph TD
+    Skills[User Skills] --> Gap[Gap Analysis]
+    Gap --> Graph[Knowledge Graph]
+    Graph --> Path[Learning Path]
+    Path --> Curriculum[Personalized Curriculum]
+```
+
+---
+
+## Evaluation Framework
+
+Corpus runs an automated evaluation framework to verify both retrieval precision and knowledge integrity.
+
+### Retrieval Metrics
+Retrieval precision is benchmarked using a 90-query dataset across Easy, Medium, and Hard tiers. The framework tracks:
+* **Recall@K (K=1, 3, 5)**: Evaluates if the primary concept is retrieved.
+* **Precision@K (K=5)**: Tracks the density of ground-truth concepts in the top results.
+* **nDCG@5**: Measures ranking quality using graded relevance.
+* **Mean Reciprocal Rank (MRR)**: Evaluates the rank position of the primary target.
+
+### Knowledge Validation
+Ontology sanity checks are run deterministically at build time:
+* **Cycle Detection**: Validates that prerequisite definitions do not create circular dependencies.
+* **Orphan Detection**: Assures that every concept is integrated within the ontology hierarchy.
+* **Coverage & Quality Checks**: Verifies field compliance, URL validity, and minimum content densities.
+
+### Automated Testing
+* **Unit Tests**: Test core curriculum logic, skill tracking, and model serialization.
+* **Integration Tests**: Verify database migration, vector embedding updates, and API routing.
+
+---
+
+## Installation
+
+Ensure you have Python 3.11+ installed before proceeding.
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/Corpus.git
+# Clone the repository
+git clone https://github.com/xvadel/Corpus.git
 cd Corpus
 
-# 2. Configure environment variables
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Setup your environment variables
 cp .env.example .env
-# Edit .env and supply your GROQ_API_KEY (and optionally GEMINI_API_KEY)
-
-# 3. Spin up the containers
-docker compose up --build
-# Open http://localhost:8000
+# Edit .env to populate your GROQ_API_KEY or GEMINI_API_KEY
 ```
-
-### Option B: Local Development (For Contributors)
-
-#### 1. Backend Environment Setup
-Create and configure an isolated virtual environment (`venv`) to resolve import pathways:
-
-*   **Windows (PowerShell)**:
-    ```powershell
-    powershell -ExecutionPolicy Bypass -File infrastructure/setup/setup_venv.ps1
-    ```
-*   **macOS / Linux (Terminal)**:
-    ```bash
-    chmod +x infrastructure/setup/setup_venv.sh
-    ./infrastructure/setup/setup_venv.sh
-    ```
-
-#### 2. Run the Servers
-*   **Activate Environment and Start FastAPI Backend**:
-    ```bash
-    # Windows
-    venv\Scripts\Activate.ps1
-    # Unix
-    source venv/bin/activate
-
-    uvicorn backend.main:app --reload --port 8000
-    ```
-*   **Start the Frontend Svelte Dev Server**:
-    ```bash
-    cd frontend
-    npm install
-    npm run dev
-    ```
-    Open [http://localhost:5173/](http://localhost:5173/) to see your hot-reloaded changes.
 
 ---
 
-## 🔬 Testing & Validation
+## Quick Start
 
-Run unit tests and verify code compliance:
+Get the system up and running locally in a few simple commands:
 
 ```bash
-# Run backend unit tests
-venv\Scripts\pytest tests/
-
-# Re-build and validate ontology graphs
+# 1. Build the knowledge repository and index vector embeddings
 python scripts/build_knowledge_graph.py
+python scripts/embed_concepts.py
 
-# Run retrieval benchmark metrics
-python backend/evaluation/benchmark_runner.py
+# 2. Run the backend API server
+uvicorn backend.main:app --port 8000
 ```
+
+Once running, the documentation is interactive at [http://localhost:8000/docs](http://localhost:8000/docs).
 
 ---
 
-## 📄 License
+## Current Development Status
 
-Corpus is open-source software licensed under the [MIT License](LICENSE).
+*   **Knowledge Layer**
+    *   ✅ Concept Ontology & Schemas
+    *   ✅ Master Concept Dataset (149 concepts)
+*   **Knowledge Graph**
+    *   ✅ Topological sorting
+    *   ✅ Build validation & Quality Checks
+*   **Retrieval**
+    *   ✅ ChromaDB Vector retrieval
+    *   ✅ Cross-Encoder Re-ranking
+*   **Evaluation**
+    *   ✅ Metrics suite & automated runner
+    *   ✅ Validation integration
+*   **Curriculum Engine**
+    *   ✅ Prerequisite resolving
+    *   ✅ UserSkill tracking
+*   **Specialized Agents**
+    *   🚧 Conversational coaches integration
+*   **Frontend**
+    *   🚧 Svelte 5 dashboard
+*   **Adaptive Learning**
+    *   📅 Future roadmap
+
+---
+
+## Technology Stack
+
+### Backend
+* **FastAPI**: Core REST API framework
+* **Uvicorn**: ASGI server implementation
+* **Python**: Base runtime environment
+
+### Knowledge Layer
+* **ChromaDB**: Native vector database
+* **SQLite**: Local relational database for user progress tracking
+
+### AI Core
+* **BAAI/bge-small-en-v1.5**: Asymmetric bi-encoder embedding model
+* **BAAI/bge-reranker-base**: Cross-encoder re-ranking model
+* **Groq / Gemini**: LLM orchestration backends
+
+### Evaluation
+* **pytest**: Test automation runner
+
+---
+
+## Documentation
+
+* [API Reference](file:///d:/Corpus/docs/API.md): Detailed description of REST endpoints and payloads.
+* [Concept Schema Definition](file:///d:/Corpus/docs/concept_schema.md): Documentation of the JSON schemas regulating technical concepts.
+
+---
+
+## Contributing
+
+1. Fork the repository on GitHub.
+2. Create a feature branch off the main line.
+3. Commit your changes with clear messages.
+4. Open a Pull Request targeting the default branch.
+
+Ensure all local unit tests pass (`pytest tests/`) and build validation scripts run successfully (`python scripts/build_knowledge_graph.py`) before opening a PR.
+
+---
+
+## Future Work
+
+* **Interactive Multi-Agent Coach Scenarios**: Let multiple agent coaches cross-examine the learner in system design panels.
+* **Frontend Analytics Dashboard**: Visual progression tracking showing the user's active concept mastery across subdomains.
+* **Dynamic Query Expansion**: Real-time synonym expansion based on local domain ontology mappings.
+
+---
+
+## License
+
+This project is licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
