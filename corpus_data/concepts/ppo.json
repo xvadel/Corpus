@@ -29,5 +29,13 @@
   "common_mistakes": [
     "Misconfiguring parameters for Proximal Policy Optimization, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Proximal Policy Optimization."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

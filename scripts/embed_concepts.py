@@ -77,6 +77,28 @@ def embed_all_concepts():
             doc_text += f" Prerequisites: {prereqs}."
         if related:
             doc_text += f" Related concepts: {related}."
+
+        # New disambiguation fields — these significantly help the embedding
+        # model distinguish semantically similar concepts.
+        aliases = data.get("aliases", []) + data.get("abbreviations", [])
+        if aliases:
+            doc_text += f" Also known as: {', '.join(aliases)}."
+
+        keywords = data.get("keywords", [])
+        if keywords:
+            doc_text += f" Keywords: {', '.join(keywords)}."
+
+        applications = data.get("applications", [])
+        if applications:
+            doc_text += f" Applications: {'; '.join(applications[:3])}."
+
+        not_confuse = data.get("not_to_confuse_with", []) + data.get("commonly_confused_with", [])
+        if not_confuse:
+            doc_text += f" Not to confuse with: {', '.join(dict.fromkeys(not_confuse))}."
+
+        misconceptions = data.get("common_misconceptions", [])
+        if misconceptions:
+            doc_text += f" Misconception: {' '.join(misconceptions[:1])}"
         
         # Serialize list metadata fields as comma-separated strings to avoid schema errors across ChromaDB versions
         prereqs = ",".join(data.get("prerequisites", []))

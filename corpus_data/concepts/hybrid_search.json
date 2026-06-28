@@ -30,5 +30,32 @@
   ],
   "references": [
     "https://arxiv.org/abs/2210.07316"
+  ],
+  "aliases": [
+    "Sparse-Dense Hybrid Retrieval",
+    "Combined Multi-Retriever Search"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "sparse dense fusion vector",
+    "reciprocal rank fusion RRF",
+    "lexical semantic integration query"
+  ],
+  "counter_examples": [
+    "Using only dense vector similarity search, or using only keyword search (like database queries)"
+  ],
+  "applications": [
+    "Enterprise search systems handling both slang (semantic) and product serial numbers (lexical)",
+    "RAG pipelines to increase base retrieval recall prior to cross-encoder reranking",
+    "E-commerce product search handling synonym queries and exact SKU matches"
+  ],
+  "not_to_confuse_with": [
+    "bm25"
+  ],
+  "commonly_confused_with": [
+    "bm25"
+  ],
+  "common_misconceptions": [
+    "Hybrid Search is the overall search architecture that combines multiple models. BM25 is just one of the individual sparse algorithms used within a hybrid search system."
   ]
 }

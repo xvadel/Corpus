@@ -27,5 +27,32 @@
   ],
   "references": [
     "https://arxiv.org/abs/1508.07909"
+  ],
+  "aliases": [
+    "Word Segmentation",
+    "Text Splitting"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "word boundary boundary splitting",
+    "whitespace punctuation tokenizer",
+    "downstream parsing text preparation"
+  ],
+  "counter_examples": [
+    "Extracting raw embeddings directly from whole text files without dividing them into unit steps (tokens)"
+  ],
+  "applications": [
+    "Preprocessing text for vocabulary lookup in NLP pipelines",
+    "Converting strings to integer IDs for LLM context injection",
+    "Sentence splitting in search indexing pipelines"
+  ],
+  "not_to_confuse_with": [
+    "byte_pair_encoding"
+  ],
+  "commonly_confused_with": [
+    "byte_pair_encoding"
+  ],
+  "common_misconceptions": [
+    "Tokenization is the general task of dividing text into units. Byte Pair Encoding (BPE) is a specific, advanced subword algorithm used to implement tokenization in modern LLMs to prevent out-of-vocabulary errors."
   ]
 }

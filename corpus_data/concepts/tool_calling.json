@@ -29,5 +29,32 @@
   ],
   "references": [
     "https://platform.openai.com/docs/guides/function-calling"
+  ],
+  "aliases": [
+    "Tool Execution Interactivity",
+    "External Tool Integration"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "multi-tool invocation execution",
+    "parallel tool output integration",
+    "runtime tool environment loop"
+  ],
+  "counter_examples": [
+    "Internal retrieval logic (like RAG database queries) done automatically behind the scenes without the LLM explicitly choosing to call a tool."
+  ],
+  "applications": [
+    "ReAct agents executing bash commands, calculators, and search queries dynamically",
+    "Multi-agent frameworks assigning specialized tool subsets to subprocesses",
+    "Chatbots fetching real-time weather or flight booking updates via external APIs"
+  ],
+  "not_to_confuse_with": [
+    "function_calling"
+  ],
+  "commonly_confused_with": [
+    "function_calling"
+  ],
+  "common_misconceptions": [
+    "Tool Calling is the general capability of an LLM to interact with external systems. While often implemented using function calling under the hood, Tool Calling abstracts this to cover file systems, search engines, and multiple parallel executions in one step."
   ]
 }

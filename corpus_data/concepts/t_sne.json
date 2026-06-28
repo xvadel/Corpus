@@ -34,5 +34,33 @@
   "common_mistakes": [
     "Using t-SNE as a preprocessing step for supervised learning tasks without considering the impact on the model's performance.",
     "Interpreting the t-SNE embedding as a direct representation of the underlying data, rather than a simplified visualization tool."
+  ],
+  "aliases": [
+    "t-Distributed Stochastic Neighbor Embedding"
+  ],
+  "abbreviations": [
+    "t-SNE"
+  ],
+  "keywords": [
+    "probabilistic neighborhood mapping similarity",
+    "Student-t distribution local clustering",
+    "perplexity parameter tuning optimization"
+  ],
+  "counter_examples": [
+    "Autoencoders (which learn a parametric reconstruction mapping, whereas t-SNE learns a non-parametric layout directly on the data points)"
+  ],
+  "applications": [
+    "Visualizing deep feature spaces in image classification models",
+    "Checking quality of word or concept embeddings by plotting in 2D",
+    "Exploring high-dimensional tabular data clusters"
+  ],
+  "not_to_confuse_with": [
+    "umap"
+  ],
+  "commonly_confused_with": [
+    "umap"
+  ],
+  "common_misconceptions": [
+    "t-SNE preserves local neighborhoods but does NOT preserve global structure or distance between distant clusters. UMAP, by contrast, preserves both local and global structures and scales much better computationally."
   ]
 }

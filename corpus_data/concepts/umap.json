@@ -34,5 +34,33 @@
   "common_mistakes": [
     "Using UMAP as a replacement for other dimensionality reduction techniques without considering the specific characteristics of the data",
     "Not tuning the hyperparameters of the UMAP algorithm, which can significantly affect the quality of the results"
+  ],
+  "aliases": [
+    "Uniform Manifold Approximation and Projection"
+  ],
+  "abbreviations": [
+    "UMAP"
+  ],
+  "keywords": [
+    "algebraic topology manifold learning",
+    "fuzzy simplicial set math",
+    "global structure preservation layout"
+  ],
+  "counter_examples": [
+    "Principal Component Analysis (PCA, which is a linear projection technique)"
+  ],
+  "applications": [
+    "Visualizing high-dimensional embeddings in 2D or 3D",
+    "Preprocessing high-dimensional single-cell RNA sequencing data",
+    "Feature reduction before applying clustering algorithms"
+  ],
+  "not_to_confuse_with": [
+    "t_sne"
+  ],
+  "commonly_confused_with": [
+    "t_sne"
+  ],
+  "common_misconceptions": [
+    "UMAP is significantly faster and preserves global structure/macro-clusters better than t-SNE, which struggles with large datasets and loses global distance relationships (the distances between distant clusters in t-SNE are meaningless)."
   ]
 }

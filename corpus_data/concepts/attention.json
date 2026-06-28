@@ -29,5 +29,36 @@
   ],
   "references": [
     "https://arxiv.org/abs/1706.03762"
+  ],
+  "aliases": [
+    "Attention Mechanism",
+    "Soft Attention"
+  ],
+  "abbreviations": [
+    "Attn"
+  ],
+  "keywords": [
+    "query key value compatibility",
+    "dynamic context vector weighting",
+    "softmax sequence matching alignment"
+  ],
+  "counter_examples": [
+    "A recurrent loop (RNN) that updates hidden state sequentially, or a fixed-weight convolutional filter"
+  ],
+  "applications": [
+    "Machine translation (mapping target tokens back to source tokens)",
+    "Image captioning (focusing on specific regions of the input image)",
+    "Document summarization"
+  ],
+  "not_to_confuse_with": [
+    "self_attention",
+    "encoder"
+  ],
+  "commonly_confused_with": [
+    "self_attention",
+    "encoder"
+  ],
+  "common_misconceptions": [
+    "Attention is a general mathematical mechanism for computing dynamic context vectors. Self-attention is a specific subclass of attention where queries, keys, and values all come from the same input sequence. An encoder is a high-level network block that uses self-attention inside it."
   ]
 }

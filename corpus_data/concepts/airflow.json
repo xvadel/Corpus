@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Not properly handling task dependencies and ordering in Airflow DAGs",
     "Insufficient monitoring and logging of Airflow workflows, leading to debugging challenges"
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

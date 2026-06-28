@@ -35,5 +35,13 @@
   "common_mistakes": [
     "Not handling missing values properly, which can lead to biased models.",
     "Overfitting the model by using too many decision trees or too complex trees."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

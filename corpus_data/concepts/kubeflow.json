@@ -35,5 +35,13 @@
   "common_mistakes": [
     "Underestimating the complexity of deploying machine learning models in production environments",
     "Failing to properly configure and monitor Kubeflow pipelines, leading to performance issues and errors"
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

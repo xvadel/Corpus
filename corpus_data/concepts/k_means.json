@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Choosing an inappropriate value for K, which can lead to over- or under-clustering.",
     "Not scaling the data before applying K-Means, which can cause features with large ranges to dominate the clustering process."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

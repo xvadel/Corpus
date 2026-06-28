@@ -31,5 +31,13 @@
   "common_mistakes": [
     "Not handling missing values or outliers in the data",
     "Not tuning hyperparameters, such as the maximum depth of the tree"
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

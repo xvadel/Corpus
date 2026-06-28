@@ -35,5 +35,13 @@
   "common_mistakes": [
     "Not preprocessing the data properly, leading to poor model performance.",
     "Not using data augmentation techniques to increase the size of the training dataset."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

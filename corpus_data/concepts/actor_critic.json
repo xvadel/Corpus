@@ -32,5 +32,13 @@
   "common_mistakes": [
     "Failing to properly balance the learning rates of the actor and critic components, leading to unstable or biased learning.",
     "Not accounting for the potential bias in the critic's value estimates, which can affect the actor's policy updates."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

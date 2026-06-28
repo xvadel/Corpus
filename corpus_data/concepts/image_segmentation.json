@@ -34,5 +34,13 @@
   "common_mistakes": [
     "Failing to preprocess images properly, leading to poor segmentation performance.",
     "Not accounting for class imbalance in the dataset, resulting in biased models."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

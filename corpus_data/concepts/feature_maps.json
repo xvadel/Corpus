@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Confusing feature maps with activation maps, which are the output of the activation function applied to the feature maps.",
     "Not properly tuning the number of feature maps and filter sizes, leading to suboptimal performance."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

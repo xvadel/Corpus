@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Not tuning the hyperparameters of the Random Forest model, which can lead to suboptimal performance.",
     "Using too few decision trees in the ensemble, which can result in overfitting."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

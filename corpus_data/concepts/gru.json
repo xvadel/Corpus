@@ -32,5 +32,34 @@
   "common_mistakes": [
     "Forgetting to initialize the GRU's hidden state properly, leading to inconsistent or poor performance.",
     "Using a GRU without considering the vanishing gradient problem, which can lead to poor performance on long sequences."
+  ],
+  "aliases": [
+    "Gated Recurrent Unit",
+    "GRU Cell"
+  ],
+  "abbreviations": [
+    "GRU"
+  ],
+  "keywords": [
+    "update gate reset gate recurrent",
+    "sequential temporal gating mechanism",
+    "hidden state carry forward cell"
+  ],
+  "counter_examples": [
+    "Feedforward networks that process fixed-length inputs without sequential state memory"
+  ],
+  "applications": [
+    "Speech recognition sequence labeling",
+    "Time series anomaly detection",
+    "Natural language generation with faster training than LSTM"
+  ],
+  "not_to_confuse_with": [
+    "lstm"
+  ],
+  "commonly_confused_with": [
+    "lstm"
+  ],
+  "common_misconceptions": [
+    "GRU and LSTM are both gated recurrent architectures for sequences, but GRU uses fewer parameters (reset + update gates only vs LSTM's input/forget/output gates + cell state), making it faster to train at the cost of some expressiveness."
   ]
 }

@@ -34,5 +34,13 @@
   "common_mistakes": [
     "Using too many features, which can lead to overfitting and decreased model performance.",
     "Not properly normalizing or scaling the extracted features, which can affect model performance."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

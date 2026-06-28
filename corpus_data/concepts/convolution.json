@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Confusing the convolution operation with the correlation operation",
     "Not understanding the impact of filter size and stride on the output of the convolution operation"
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

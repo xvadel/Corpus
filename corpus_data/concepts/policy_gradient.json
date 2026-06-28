@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Confusing the policy gradient with the value function gradient, which can lead to incorrect updates and poor performance.",
     "Failing to properly initialize the policy parameters, which can cause the algorithm to converge to a suboptimal solution."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

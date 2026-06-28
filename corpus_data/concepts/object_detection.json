@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Not considering the class imbalance problem in object detection datasets, which can lead to biased models.",
     "Not evaluating object detection models using appropriate metrics, such as mean average precision (mAP), which can provide a comprehensive understanding of the model's performance."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

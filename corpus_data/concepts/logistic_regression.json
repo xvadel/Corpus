@@ -34,5 +34,13 @@
   "common_mistakes": [
     "Assuming that the relationship between the features and the target variable is linear, when in fact it may be non-linear.",
     "Not checking for multicollinearity between features, which can lead to unstable estimates of the model coefficients."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

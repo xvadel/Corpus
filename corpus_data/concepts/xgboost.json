@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Not handling missing values properly, which can lead to biased models and poor performance.",
     "Not tuning hyperparameters, which can result in suboptimal performance and overfitting."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

@@ -34,5 +34,35 @@
   ],
   "references": [
     "https://arxiv.org/abs/2005.11401"
+  ],
+  "aliases": [
+    "Retrieval-Augmented Generation",
+    "Retrieval Augmented Generation"
+  ],
+  "abbreviations": [
+    "RAG"
+  ],
+  "keywords": [
+    "knowledge retrieval",
+    "grounding context",
+    "vector search database",
+    "contextual injection augmentation"
+  ],
+  "counter_examples": [
+    "Generating an answer relying purely on parametric model weights without searching external files"
+  ],
+  "applications": [
+    "Enterprise search",
+    "Customer support chatbots",
+    "Context-aware code completion engines"
+  ],
+  "not_to_confuse_with": [
+    "ragas"
+  ],
+  "commonly_confused_with": [
+    "ragas"
+  ],
+  "common_misconceptions": [
+    "RAG is the generation pattern itself. It should not be confused with RAGAS, which is an independent framework used to evaluate RAG outputs."
   ]
 }

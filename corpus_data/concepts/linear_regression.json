@@ -31,5 +31,13 @@
   "common_mistakes": [
     "Not checking the assumptions of linear regression, such as linearity and homoscedasticity.",
     "Not handling missing values and outliers in the data, which can lead to biased models."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

@@ -29,5 +29,34 @@
   "common_mistakes": [
     "Misconfiguring parameters for Byte Pair Encoding, resulting in degraded quality.",
     "Underestimating the computational cost or memory footprint of Byte Pair Encoding."
+  ],
+  "aliases": [
+    "BPE Subword Tokenization",
+    "Byte-Pair Compression Tokenizer"
+  ],
+  "abbreviations": [
+    "BPE"
+  ],
+  "keywords": [
+    "subword frequency merge loop",
+    "out of vocabulary reduction",
+    "merge table vocabulary constraint"
+  ],
+  "counter_examples": [
+    "Rule-based whitespace or punctuation splitting (which does not use statistical subword merging)"
+  ],
+  "applications": [
+    "Training GPT/Llama models with a custom subword tokenizer",
+    "Subword compression for multilingual datasets",
+    "Handling compound words and unseen tokens in machine translation"
+  ],
+  "not_to_confuse_with": [
+    "tokenization"
+  ],
+  "commonly_confused_with": [
+    "tokenization"
+  ],
+  "common_misconceptions": [
+    "Byte Pair Encoding is a specific algorithm used to generate a subword vocabulary, which is then used for tokenization. It is not the general concept of tokenization (which also includes simple word/whitespace splitting)."
   ]
 }

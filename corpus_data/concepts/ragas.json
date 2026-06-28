@@ -29,5 +29,35 @@
   ],
   "references": [
     "https://arxiv.org/abs/2309.15217"
+  ],
+  "aliases": [
+    "RAG Assessment",
+    "RAG Evaluation Framework"
+  ],
+  "abbreviations": [
+    "Ragas"
+  ],
+  "keywords": [
+    "evaluation metrics",
+    "answer relevance assessment",
+    "context precision score",
+    "faithfulness check"
+  ],
+  "counter_examples": [
+    "A retrieval system (e.g. Pinecone/ChromaDB) or a generator (e.g. OpenAI GPT-4)"
+  ],
+  "applications": [
+    "Automated evaluation of RAG pipelines in CI/CD",
+    "Benchmarking LLM output accuracy and grounding",
+    "Continuous optimization of search and chunking parameters"
+  ],
+  "not_to_confuse_with": [
+    "retrieval_augmented_generation"
+  ],
+  "commonly_confused_with": [
+    "retrieval_augmented_generation"
+  ],
+  "common_misconceptions": [
+    "RAGAS is NOT the generation system itself; it is a metrics framework that uses an LLM to evaluate the quality of a separate RAG pipeline's outputs."
   ]
 }

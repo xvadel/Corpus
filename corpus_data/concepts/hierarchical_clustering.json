@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Not properly evaluating the quality of the clusters using metrics such as silhouette score or Calinski-Harabasz index.",
     "Not considering the impact of noise and outliers on the clustering results."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

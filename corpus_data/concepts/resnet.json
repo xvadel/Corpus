@@ -34,5 +34,13 @@
   "common_mistakes": [
     "Failing to properly initialize the weights of the residual connections, leading to unstable training.",
     "Not using batch normalization in conjunction with ResNet, which can significantly impact the model's performance."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

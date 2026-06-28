@@ -29,5 +29,32 @@
   ],
   "references": [
     "https://arxiv.org/abs/2309.15217"
+  ],
+  "aliases": [
+    "Factuality",
+    "Factual Consistency"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "factual grounding metric",
+    "contextual hallucination check",
+    "source document alignment"
+  ],
+  "counter_examples": [
+    "Coherence, fluency, or style of generation (which are independent of factual grounding)"
+  ],
+  "applications": [
+    "Measuring factual correctness of a summarization system",
+    "RAG pipeline output quality auditing",
+    "Filtering unfaithful answers in production agents"
+  ],
+  "not_to_confuse_with": [
+    "ragas"
+  ],
+  "commonly_confused_with": [
+    "ragas"
+  ],
+  "common_misconceptions": [
+    "Faithfulness is an abstract evaluation metric (factual alignment with context), whereas Ragas is a specific tool/software package used to compute that metric."
   ]
 }

@@ -30,5 +30,13 @@
   "common_mistakes": [
     "Designing a reward function that is too sparse or too dense, which can lead to slow learning or convergence issues.",
     "Not considering the potential for reward hacking, where the agent finds ways to exploit the reward function and achieve high rewards without achieving the desired behavior."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

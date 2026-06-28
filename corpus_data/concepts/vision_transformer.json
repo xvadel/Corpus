@@ -34,5 +34,13 @@
   "common_mistakes": [
     "Failing to properly preprocess the input images before feeding them into the Vision Transformer model.",
     "Not tuning the hyperparameters of the Vision Transformer model for the specific task at hand."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

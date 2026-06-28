@@ -32,5 +32,35 @@
   "common_mistakes": [
     "Not properly initializing the LSTM's memory cells and gates.",
     "Failing to consider the impact of sequence length on LSTM performance."
+  ],
+  "aliases": [
+    "Long Short-Term Memory",
+    "LSTM Network",
+    "LSTM Cell"
+  ],
+  "abbreviations": [
+    "LSTM"
+  ],
+  "keywords": [
+    "forget input output gate cell state",
+    "long term memory gradient vanishing sequence",
+    "recurrent hidden state context carry"
+  ],
+  "counter_examples": [
+    "Transformer attention (which processes entire sequences in parallel with no recurrent state)"
+  ],
+  "applications": [
+    "Sentiment analysis over document-length text",
+    "Sequence-to-sequence machine translation before Transformers",
+    "Financial time series forecasting with long historical windows"
+  ],
+  "not_to_confuse_with": [
+    "gru"
+  ],
+  "commonly_confused_with": [
+    "gru"
+  ],
+  "common_misconceptions": [
+    "LSTM uses three gates (input, forget, output) plus an explicit cell state for long-range memory. GRU simplifies this to two gates (reset, update) with no separate cell state, making it lighter but slightly less expressive."
   ]
 }

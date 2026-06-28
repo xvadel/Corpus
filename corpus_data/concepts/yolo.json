@@ -32,5 +32,13 @@
   "common_mistakes": [
     "Not properly tuning YOLO's hyperparameters for the specific use case, leading to suboptimal performance.",
     "Not considering the trade-off between speed and accuracy when deploying YOLO in a real-world application."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

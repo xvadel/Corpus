@@ -33,5 +33,13 @@
   "common_mistakes": [
     "Not evaluating the impact of dimensionality reduction on the model's performance",
     "Choosing a dimensionality reduction technique without considering the nature of the data and the analysis goals"
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

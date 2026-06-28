@@ -30,5 +30,32 @@
   ],
   "references": [
     "https://arxiv.org/abs/2210.03629"
+  ],
+  "aliases": [
+    "Planning Agent Component",
+    "Dynamic Task Planner"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "dynamic goal subtask decomposition",
+    "LLM reasoning path planner",
+    "runtime plan repair correction"
+  ],
+  "counter_examples": [
+    "A hardcoded Python script that runs tasks sequentially, or static DAG executors like Airflow"
+  ],
+  "applications": [
+    "Autonomous coding agents (e.g., Devin) breaking down coding goals into steps",
+    "ReAct prompt templates deciding when to call search versus calculation tools",
+    "LLM Compiler pipelines scheduling parallel tool calls"
+  ],
+  "not_to_confuse_with": [
+    "workflow_orchestration"
+  ],
+  "commonly_confused_with": [
+    "workflow_orchestration"
+  ],
+  "common_misconceptions": [
+    "A Planner decomposes goals dynamically at runtime using LLM reasoning (e.g., ReAct, Plan-and-Solve). Workflow Orchestration, conversely, uses predefined, static code structures (like DAGs or state machines in LangGraph/Airflow) to coordinate task execution paths."
   ]
 }

@@ -31,5 +31,13 @@
   "common_mistakes": [
     "Choosing the wrong clustering algorithm for the problem at hand",
     "Not properly preprocessing the data before applying clustering"
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

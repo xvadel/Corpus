@@ -30,5 +30,34 @@
   ],
   "references": [
     "https://arxiv.org/abs/1706.03762"
+  ],
+  "aliases": [
+    "Encoder Block",
+    "Encoder Stack"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "transformer encoder representation",
+    "bidirectional context layer stack",
+    "feed forward residual connection block"
+  ],
+  "counter_examples": [
+    "Decoder network block (which includes cross-attention layers and casual masking to prevent looking ahead)"
+  ],
+  "applications": [
+    "Feature extraction from raw sequence inputs",
+    "BERT-style bidirectional language encoding",
+    "Context representation creation for seq2seq translation"
+  ],
+  "not_to_confuse_with": [
+    "attention",
+    "self_attention"
+  ],
+  "commonly_confused_with": [
+    "attention",
+    "self_attention"
+  ],
+  "common_misconceptions": [
+    "The Encoder is a structural network component consisting of multiple layers of self-attention and feed-forward sublayers. It uses self-attention inside it, but it is not self-attention itself."
   ]
 }

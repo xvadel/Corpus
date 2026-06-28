@@ -34,5 +34,13 @@
   "common_mistakes": [
     "Not using regularization or other techniques to prevent overfitting",
     "Not evaluating the model's performance on unseen data using cross-validation or other methods"
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

@@ -34,5 +34,13 @@
   "common_mistakes": [
     "Using too much regularization, which can lead to underfitting.",
     "Not using regularization at all, which can lead to overfitting."
-  ]
+  ],
+  "aliases": [],
+  "abbreviations": [],
+  "keywords": [],
+  "counter_examples": [],
+  "applications": [],
+  "not_to_confuse_with": [],
+  "commonly_confused_with": [],
+  "common_misconceptions": []
 }

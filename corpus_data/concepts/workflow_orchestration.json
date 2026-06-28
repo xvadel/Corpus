@@ -29,5 +29,32 @@
   ],
   "references": [
     "https://arxiv.org/abs/2308.08155"
+  ],
+  "aliases": [
+    "Stateful Workflow Management",
+    "Agent Execution Flow Coordination"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "state machine execution DAG",
+    "static transition logic coordination",
+    "deterministic multi agent runtime"
+  ],
+  "counter_examples": [
+    "An LLM dynamically choosing subtasks on the fly without a predefined transition graph"
+  ],
+  "applications": [
+    "LangGraph stateful agent graphs coordinating multi-agent loops",
+    "Airflow orchestrating data pipelines",
+    "Temporal/Prefect managing distributed microservices"
+  ],
+  "not_to_confuse_with": [
+    "planner"
+  ],
+  "commonly_confused_with": [
+    "planner"
+  ],
+  "common_misconceptions": [
+    "Workflow Orchestration coordinates tasks deterministically using pre-written code structures (e.g., DAGs, state machines). It is not a runtime LLM-driven Planner, which decides tasks dynamically on the fly based on user inputs."
   ]
 }

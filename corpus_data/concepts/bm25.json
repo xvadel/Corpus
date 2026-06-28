@@ -30,5 +30,34 @@
   ],
   "references": [
     "https://dl.acm.org/doi/10.1561/1500000019"
+  ],
+  "aliases": [
+    "Okapi BM25",
+    "Best Match 25"
+  ],
+  "abbreviations": [
+    "BM25"
+  ],
+  "keywords": [
+    "term frequency saturation curve",
+    "document length normalization weight",
+    "inverse document frequency tfidf sparse"
+  ],
+  "counter_examples": [
+    "Dense retrievers like SentenceTransformers (which encode overall sentence semantics rather than raw word frequency matches)"
+  ],
+  "applications": [
+    "Building search index keyword matchers in Elasticsearch or Solr",
+    "First-stage candidate recall retrieval in hybrid search pipelines",
+    "Finding exact phrases and acronym matches in documentation"
+  ],
+  "not_to_confuse_with": [
+    "hybrid_search"
+  ],
+  "commonly_confused_with": [
+    "hybrid_search"
+  ],
+  "common_misconceptions": [
+    "BM25 is a specific, non-learning lexical algorithm for scoring keyword matches based on term frequency and document length. Hybrid Search is the multi-retriever system that merges BM25 results with vector search results."
   ]
 }

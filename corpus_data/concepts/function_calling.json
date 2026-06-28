@@ -30,5 +30,32 @@
   ],
   "references": [
     "https://platform.openai.com/docs/guides/function-calling"
+  ],
+  "aliases": [
+    "Structured API Output Generation",
+    "Model-Generated Subroutine Invocation"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "JSON schema definition",
+    "arguments parsing parameter generation",
+    "function signature constraint validation"
+  ],
+  "counter_examples": [
+    "The model outputting raw conversational text, or writing free-form python code to run in a sandbox"
+  ],
+  "applications": [
+    "Extracting structured contact details from email text",
+    "Generating SQL parameters for database lookup",
+    "Routing user intents to specific backend services"
+  ],
+  "not_to_confuse_with": [
+    "tool_calling"
+  ],
+  "commonly_confused_with": [
+    "tool_calling"
+  ],
+  "common_misconceptions": [
+    "In LLMs, Function Calling refers to the model generating arguments for a single schema-defined function. Tool Calling is a newer, broader abstraction that lets the model call multiple tools (including functions) in a single turn, often choosing dynamically between them."
   ]
 }

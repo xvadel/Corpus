@@ -29,5 +29,34 @@
   ],
   "references": [
     "https://arxiv.org/abs/1706.03762"
+  ],
+  "aliases": [
+    "Intra-Attention",
+    "Scaled Dot-Product Attention"
+  ],
+  "abbreviations": [],
+  "keywords": [
+    "scaled dot product attention",
+    "query key value projections matrix",
+    "sequence self correlation weights"
+  ],
+  "counter_examples": [
+    "Encoder-Decoder cross-attention (where queries come from target decoder but keys/values come from source encoder)"
+  ],
+  "applications": [
+    "GPT-style next-token autoregressive modeling",
+    "BERT-style bidirectional language representation",
+    "Sentence representation learning"
+  ],
+  "not_to_confuse_with": [
+    "attention",
+    "encoder"
+  ],
+  "commonly_confused_with": [
+    "attention",
+    "encoder"
+  ],
+  "common_misconceptions": [
+    "Self-Attention is specifically a query-key-value mechanism operating on a single sequence to compute internal representations. It should not be confused with general attention (which can map between different sequences, e.g. cross-attention) or the encoder itself."
   ]
 }
