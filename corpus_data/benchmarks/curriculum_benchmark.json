@@ -1,0 +1,86 @@
+[
+  {
+    "id": "rag_from_scratch",
+    "goal": "retrieval_augmented_generation",
+    "known_concepts": [],
+    "expected_path": [
+      {"id": "embedding",                    "difficulty": "Beginner"},
+      {"id": "vector_database",              "difficulty": "Beginner"},
+      {"id": "chunking",                     "difficulty": "Intermediate"},
+      {"id": "retrieval_augmented_generation","difficulty": "Intermediate"}
+    ]
+  },
+  {
+    "id": "lora_from_transformer",
+    "goal": "lora",
+    "known_concepts": ["transformer"],
+    "expected_path": [
+      {"id": "fine_tuning", "difficulty": "Intermediate"},
+      {"id": "peft",        "difficulty": "Intermediate"},
+      {"id": "lora",        "difficulty": "Advanced"}
+    ]
+  },
+  {
+    "id": "qlora_from_lora",
+    "goal": "qlora",
+    "known_concepts": ["transformer", "lora"],
+    "expected_path": [
+      {"id": "peft",  "difficulty": "Intermediate"},
+      {"id": "qlora", "difficulty": "Advanced"}
+    ]
+  },
+  {
+    "id": "dqn_from_basics",
+    "goal": "deep_q_networks",
+    "known_concepts": ["feed_forward_network"],
+    "expected_path": [
+      {"id": "reward_function",       "difficulty": "Beginner"},
+      {"id": "markov_decision_process","difficulty": "Intermediate"},
+      {"id": "q_learning",             "difficulty": "Intermediate"},
+      {"id": "deep_q_networks",        "difficulty": "Advanced"}
+    ]
+  },
+  {
+    "id": "resnet_from_basics",
+    "goal": "resnet",
+    "known_concepts": [],
+    "expected_path": [
+      {"id": "perceptron",   "difficulty": "Beginner"},
+      {"id": "convolution",  "difficulty": "Intermediate"},
+      {"id": "pooling",      "difficulty": "Intermediate"},
+      {"id": "feature_maps", "difficulty": "Intermediate"},
+      {"id": "resnet",       "difficulty": "Advanced"}
+    ]
+  },
+  {
+    "id": "reranking_pipeline",
+    "goal": "reranking",
+    "known_concepts": ["embedding", "vector_database"],
+    "expected_path": [
+      {"id": "cosine_similarity", "difficulty": "Beginner"},
+      {"id": "bi_encoder",        "difficulty": "Intermediate"},
+      {"id": "cross_encoder",     "difficulty": "Intermediate"},
+      {"id": "reranking",         "difficulty": "Advanced"}
+    ]
+  },
+  {
+    "id": "rlhf_pipeline",
+    "goal": "rlhf",
+    "known_concepts": ["transformer", "fine_tuning"],
+    "expected_path": [
+      {"id": "reward_function", "difficulty": "Intermediate"},
+      {"id": "rlhf",            "difficulty": "Advanced"}
+    ]
+  },
+  {
+    "id": "langgraph_from_scratch",
+    "goal": "langgraph",
+    "known_concepts": [],
+    "expected_path": [
+      {"id": "agent",             "difficulty": "Beginner"},
+      {"id": "planner",           "difficulty": "Intermediate"},
+      {"id": "multi_agent_system","difficulty": "Advanced"},
+      {"id": "langgraph",         "difficulty": "Advanced"}
+    ]
+  }
+]

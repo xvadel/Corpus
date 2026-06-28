@@ -1,19 +1,25 @@
 """
 Corpus Concept Generator
 ========================
-Reads concepts_seed.csv and uses the Gemini API to generate rich,
-structured JSON definitions for each concept.
+Reads concepts_seed.csv and uses an LLM (Groq by default, Gemini optional)
+to generate rich, structured JSON definitions for each concept.
 
 Output: corpus_data/concepts/<id>.json
 
 Usage (from project root, with venv activated):
     python scripts/generate_concepts.py
 
+    # Use Groq (default, recommended — higher rate limits)
+    python scripts/generate_concepts.py --provider groq
+
+    # Use Gemini (requires GEMINI_API_KEY)
+    python scripts/generate_concepts.py --provider gemini
+
     # Dry-run (no API calls, print prompts only)
     python scripts/generate_concepts.py --dry-run
 
     # Process only one subdomain
-    python scripts/generate_concepts.py --subdomain "Retrieval Augmented Generation"
+    python scripts/generate_concepts.py --subdomain "Machine Learning"
 
     # Resume from last checkpoint (skips already-generated files)
     python scripts/generate_concepts.py --skip-existing
@@ -21,8 +27,9 @@ Usage (from project root, with venv activated):
     # Limit to N concepts (useful for testing)
     python scripts/generate_concepts.py --limit 5
 
-Environment variables required:
-    GEMINI_API_KEY   — your Google AI Studio key (set in .env)
+Environment variables (set in .env):
+    GROQ_API_KEY    — Groq API key (default provider)
+    GEMINI_API_KEY  — Google AI Studio key (optional, --provider gemini)
 """
 
 from __future__ import annotations

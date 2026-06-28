@@ -1,0 +1,12 @@
+[
+  {"query": "How do blockchain smart contracts work?",       "expected_behavior": "reject"},
+  {"query": "Explain Python the programming language.",      "expected_behavior": "reject"},
+  {"query": "Explain Quantum Annealing.",                   "expected_behavior": "reject"},
+  {"query": "How does TCP/IP networking work?",             "expected_behavior": "reject"},
+  {"query": "What is the French Revolution?",               "expected_behavior": "reject"},
+  {"query": "How do I make a sourdough starter?",           "expected_behavior": "reject"},
+  {"query": "What is the capital of France?",               "expected_behavior": "reject"},
+  {"query": "How does a combustion engine work?",           "expected_behavior": "reject"},
+  {"query": "Explain photosynthesis.",                      "expected_behavior": "reject"},
+  {"query": "What is supply chain management?",             "expected_behavior": "redirect"}
+]

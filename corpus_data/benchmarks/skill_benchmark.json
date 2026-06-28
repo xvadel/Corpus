@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rag_no_knowledge",
+    "known_concepts": ["embedding", "transformer"],
+    "goal": "retrieval_augmented_generation",
+    "expected_gaps": ["vector_database", "chunking", "retrieval_augmented_generation"]
+  },
+  {
+    "id": "lora_partial_knowledge",
+    "known_concepts": ["transformer", "fine_tuning"],
+    "goal": "lora",
+    "expected_gaps": ["peft", "lora"]
+  },
+  {
+    "id": "qlora_has_lora",
+    "known_concepts": ["transformer", "fine_tuning", "lora", "peft"],
+    "goal": "qlora",
+    "expected_gaps": ["qlora"]
+  },
+  {
+    "id": "dqn_from_ml_basics",
+    "known_concepts": ["linear_regression", "decision_trees"],
+    "goal": "deep_q_networks",
+    "expected_gaps": ["feed_forward_network", "reward_function", "markov_decision_process", "q_learning", "deep_q_networks"]
+  },
+  {
+    "id": "xgboost_from_decision_trees",
+    "known_concepts": ["linear_regression", "decision_trees"],
+    "goal": "xgboost",
+    "expected_gaps": ["random_forest", "gradient_boosting", "xgboost"]
+  },
+  {
+    "id": "reranking_has_retrieval",
+    "known_concepts": ["embedding", "vector_database", "cosine_similarity"],
+    "goal": "reranking",
+    "expected_gaps": ["bi_encoder", "cross_encoder", "reranking"]
+  },
+  {
+    "id": "vision_transformer_from_cnn",
+    "known_concepts": ["convolution", "pooling", "feature_maps"],
+    "goal": "vision_transformer",
+    "expected_gaps": ["self_attention", "transformer", "vision_transformer"]
+  },
+  {
+    "id": "langgraph_has_agent",
+    "known_concepts": ["agent", "langchain"],
+    "goal": "langgraph",
+    "expected_gaps": ["planner", "multi_agent_system", "langgraph"]
+  }
+]

@@ -158,9 +158,68 @@ def build_knowledge_graph():
     GRAPH_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(GRAPH_FILE, "w", encoding="utf-8") as f:
         json.dump(graph_data, f, indent=2, ensure_ascii=False)
-        
+
     print(f"Knowledge graph built successfully with {len(graph_data['concepts'])} nodes.")
     print(f"Saved to: {GRAPH_FILE}")
+
+    # 4. Content Quality Checks (runs on raw concept JSONs, not the resolved graph)
+    MIN_DEFINITION_CHARS = 80
+    MIN_CONCEPTS_PER_SUBDOMAIN = 5
+    quality_warnings = []
+
+    for concept_id, data in concepts.items():
+        defn = data.get("definition", "").strip()
+        if not defn:
+            quality_warnings.append(f"  [{concept_id}] Missing definition")
+        elif len(defn) < MIN_DEFINITION_CHARS:
+            quality_warnings.append(f"  [{concept_id}] Definition too short ({len(defn)} chars)")
+
+        if not data.get("examples"):
+            quality_warnings.append(f"  [{concept_id}] Missing examples")
+
+        if not data.get("references"):
+            quality_warnings.append(f"  [{concept_id}] Missing references")
+
+        if not data.get("prerequisites"):
+            # Only warn for non-beginner concepts — beginners legitimately have none
+            if data.get("difficulty", "").lower() not in ("beginner", ""):
+                quality_warnings.append(f"  [{concept_id}] No prerequisites (difficulty={data.get('difficulty')})")
+
+    if quality_warnings:
+        print(f"\nContent Quality Warnings ({len(quality_warnings)}):")
+        for w in quality_warnings[:20]:  # cap output to first 20
+            print(w)
+        if len(quality_warnings) > 20:
+            print(f"  ... and {len(quality_warnings) - 20} more.")
+    else:
+        print("\nContent quality: all concepts pass.")
+
+    # 5. Subdomain Coverage Summary
+    subdomain_counts: dict[str, int] = {}
+    for data in concepts.values():
+        sd = data.get("subdomain", "Unknown")
+        subdomain_counts[sd] = subdomain_counts.get(sd, 0) + 1
+
+    print("\nSubdomain Coverage:")
+    for sd, count in sorted(subdomain_counts.items(), key=lambda x: -x[1]):
+        flag = "OK" if count >= MIN_CONCEPTS_PER_SUBDOMAIN else "!!"
+        print(f"  [{flag}]  {sd:<40} {count:>3} concepts")
+
+    # 6. Orphan detection — concepts with no edges (no prereqs AND not a prereq of anything)
+    all_prereq_targets = set()
+    for node in graph_data["concepts"].values():
+        all_prereq_targets.update(node["prerequisites"])
+
+    orphans = [
+        cid for cid, node in graph_data["concepts"].items()
+        if not node["prerequisites"] and cid not in all_prereq_targets
+    ]
+    if orphans:
+        print(f"\nOrphan Concepts (no edges): {len(orphans)}")
+        for o in orphans:
+            print(f"  {o}")
+    else:
+        print("\nNo orphan concepts found.")
 
 def heal_graph_cycles(graph_data: dict):
     # Standard cycle breaking: run DFS and remove any prerequisite edge that goes to an active stack node

@@ -61,6 +61,11 @@ corpus_dev.db
 # ── RAG / Vector DB artifacts ─────────────────────────────────
 /rag/chroma_db/
 /rag/*.pkl
+corpus_data/chromadb/
+corpus_data/test_user_skills.db
+
+# ── Generated reports ─────────────────────────────────────────
+reports/
 
 # ── Tests cache ───────────────────────────────────────────────
 /tests/.pytest_cache/

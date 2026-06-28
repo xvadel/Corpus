@@ -1,99 +1,151 @@
+"""
+retrieval_metrics.py
+====================
+Evaluation metrics for vector retrieval.
+
+Supports both the legacy schema  {"ground_truth_id": str}
+and the v2.0 schema              {"primary": str, "ground_truth": [str, ...]}
+
+Metrics:
+    Recall@K     — is the primary answer in the top-K results?
+    Precision@K  — what fraction of top-K results are in ground_truth?
+    nDCG@K       — primary answer ranked higher earns a higher score
+    MRR          — reciprocal rank of the primary answer
+"""
+
+from __future__ import annotations
+import math
 from typing import List, Dict, Any
 
-def compute_recall_at_k(retrieved_ids: List[str], ground_truth_id: str, k: int) -> float:
-    """
-    Calculates Recall@K. Returns 1.0 if ground_truth_id is within the top k retrieved_ids, else 0.0.
-    """
-    top_k = retrieved_ids[:k]
-    return 1.0 if ground_truth_id in top_k else 0.0
 
-def compute_reciprocal_rank(retrieved_ids: List[str], ground_truth_id: str) -> float:
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+
+def _primary(item: Dict) -> str:
+    """Return the single canonical answer for a query (v1 and v2 schemas)."""
+    return item.get("primary") or item.get("ground_truth_id", "")
+
+
+def _ground_truth(item: Dict) -> List[str]:
+    """Return the full set of acceptable answers (v1 and v2 schemas)."""
+    gt = item.get("ground_truth")
+    if gt:
+        return gt
+    primary = item.get("ground_truth_id", "")
+    return [primary] if primary else []
+
+
+# ---------------------------------------------------------------------------
+# Per-query metric functions
+# ---------------------------------------------------------------------------
+
+def compute_recall_at_k(retrieved_ids: List[str], item: Dict, k: int) -> float:
+    """1.0 if the *primary* answer appears in the top-K results, else 0.0."""
+    return 1.0 if _primary(item) in retrieved_ids[:k] else 0.0
+
+
+def compute_precision_at_k(retrieved_ids: List[str], item: Dict, k: int) -> float:
+    """Fraction of top-K retrieved results that belong to ground_truth."""
+    top_k = retrieved_ids[:k]
+    if not top_k:
+        return 0.0
+    gt = set(_ground_truth(item))
+    hits = sum(1 for r in top_k if r in gt)
+    return hits / k
+
+
+def compute_ndcg_at_k(retrieved_ids: List[str], item: Dict, k: int) -> float:
     """
-    Calculates Reciprocal Rank. Returns 1 / rank of the ground_truth_id in retrieved_ids (1-indexed).
-    Returns 0.0 if not found.
+    nDCG@K using binary relevance.
+    Primary answer has relevance 2; other ground_truth members have relevance 1.
+    Ideal DCG assumes primary is at rank 1 and all others follow.
     """
-    if ground_truth_id in retrieved_ids:
-        rank = retrieved_ids.index(ground_truth_id) + 1
-        return 1.0 / rank
+    gt = set(_ground_truth(item))
+    primary = _primary(item)
+
+    def relevance(doc_id: str) -> int:
+        if doc_id == primary:
+            return 2
+        if doc_id in gt:
+            return 1
+        return 0
+
+    top_k = retrieved_ids[:k]
+    dcg = sum(relevance(doc) / math.log2(i + 2) for i, doc in enumerate(top_k))
+
+    # Ideal DCG: primary at rank 1, then remaining gt members
+    ideal_order = [primary] + [g for g in _ground_truth(item) if g != primary]
+    ideal_top_k = ideal_order[:k]
+    idcg = sum(relevance(doc) / math.log2(i + 2) for i, doc in enumerate(ideal_top_k))
+
+    return dcg / idcg if idcg > 0 else 0.0
+
+
+def compute_reciprocal_rank(retrieved_ids: List[str], item: Dict) -> float:
+    """1 / rank of the *primary* answer (1-indexed). 0.0 if not found."""
+    primary = _primary(item)
+    if primary in retrieved_ids:
+        return 1.0 / (retrieved_ids.index(primary) + 1)
     return 0.0
 
-def evaluate_retrieval_dataset(
-    retriever,
-    dataset: List[Dict[str, str]],
-    k: int = 5,
-    verbose: bool = False,
-    **kwargs
-) -> Dict[str, float]:
-    """
-    Evaluates a list of {"query": str, "ground_truth_id": str} query pairs.
 
-    Performs a SINGLE retrieval call per query (at limit=max(k,10)) and
-    computes Recall@k and MRR from the same result list — avoids redundant
-    ChromaDB round-trips.
-
-    Returns average Recall@K and average MRR.
-    """
-    total = len(dataset)
-    if total == 0:
-        return {"recall_at_k": 0.0, "mrr": 0.0}
-
-    recall_sum = 0.0
-    rr_sum = 0.0
-
-    for i, item in enumerate(dataset):
-        query = item["query"]
-        gt_id = item["ground_truth_id"]
-
-        # Single retrieval pass — fetch enough results for MRR denominator
-        results = retriever.retrieve(query, limit=max(k, 10), **kwargs)
-        retrieved_ids = [r["id"] for r in results]
-
-        recall_sum += compute_recall_at_k(retrieved_ids, gt_id, k)
-        rr_sum     += compute_reciprocal_rank(retrieved_ids, gt_id)
-
-        if verbose:
-            hit = "[HIT]" if gt_id in retrieved_ids[:k] else "[---]"
-            print(f"  [{i+1:>3}/{total}] {hit}  gt={gt_id:<35} top1={retrieved_ids[0] if retrieved_ids else 'none'}", flush=True)
-
-    return {
-        "recall_at_k": recall_sum / total,
-        "mrr":         rr_sum / total
-    }
+# ---------------------------------------------------------------------------
+# Dataset-level evaluation
+# ---------------------------------------------------------------------------
 
 def evaluate_all_ks(
     retriever,
-    dataset: List[Dict[str, str]],
+    dataset: List[Dict],
     ks: List[int] = (1, 3, 5),
     verbose: bool = False,
-    **kwargs
+    **kwargs,
 ) -> Dict[str, float]:
     """
-    Evaluate multiple k values in a single retrieval pass per query.
-    Returns {f"recall@{k}": float, ..., "mrr": float}.
+    Single retrieval pass per query. Returns:
+        recall@K, precision@K, ndcg@K  (for each k)
+        mrr
     """
     total = len(dataset)
     if total == 0:
-        return {f"recall@{k}": 0.0 for k in ks} | {"mrr": 0.0}
+        result = {}
+        for k in ks:
+            result[f"recall@{k}"] = 0.0
+            result[f"precision@{k}"] = 0.0
+            result[f"ndcg@{k}"] = 0.0
+        result["mrr"] = 0.0
+        return result
 
     max_k = max(ks)
-    recall_sums = {k: 0.0 for k in ks}
+    recall_sums    = {k: 0.0 for k in ks}
+    precision_sums = {k: 0.0 for k in ks}
+    ndcg_sums      = {k: 0.0 for k in ks}
     rr_sum = 0.0
 
     for i, item in enumerate(dataset):
-        query = item["query"]
-        gt_id = item["ground_truth_id"]
-
-        results = retriever.retrieve(query, limit=max(max_k, 10), **kwargs)
+        results = retriever.retrieve(item["query"], limit=max(max_k, 10), **kwargs)
         retrieved_ids = [r["id"] for r in results]
 
         for k in ks:
-            recall_sums[k] += compute_recall_at_k(retrieved_ids, gt_id, k)
-        rr_sum += compute_reciprocal_rank(retrieved_ids, gt_id)
+            recall_sums[k]    += compute_recall_at_k(retrieved_ids, item, k)
+            precision_sums[k] += compute_precision_at_k(retrieved_ids, item, k)
+            ndcg_sums[k]      += compute_ndcg_at_k(retrieved_ids, item, k)
+        rr_sum += compute_reciprocal_rank(retrieved_ids, item)
 
         if verbose:
-            hit = "[HIT]" if gt_id in retrieved_ids[:max_k] else "[---]"
-            print(f"  [{i+1:>3}/{total}] {hit}  gt={gt_id:<35} top1={retrieved_ids[0] if retrieved_ids else 'none'}", flush=True)
+            primary = _primary(item)
+            hit = "[HIT]" if primary in retrieved_ids[:max_k] else "[---]"
+            top1 = retrieved_ids[0] if retrieved_ids else "none"
+            print(
+                f"  [{i+1:>3}/{total}] {hit}  "
+                f"gt={primary:<35} top1={top1}",
+                flush=True,
+            )
 
-    result = {f"recall@{k}": recall_sums[k] / total for k in ks}
+    result = {}
+    for k in ks:
+        result[f"recall@{k}"]    = recall_sums[k] / total
+        result[f"precision@{k}"] = precision_sums[k] / total
+        result[f"ndcg@{k}"]      = ndcg_sums[k] / total
     result["mrr"] = rr_sum / total
     return result
